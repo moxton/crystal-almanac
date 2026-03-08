@@ -5786,5 +5786,1888 @@
     ],
     "priceRange": "$10-50/ct (commercial)  ·  $50-200/ct (fine vivid raspberry)  ·  $300+/ct (large, exceptional)",
     "seoDescription": "Rhodolite Garnet: the raspberry-pink garnet that rivals pink sapphire at a fraction of the price. East African deposits, pyrope-almandine chemistry, and rising value."
+  },
+  {
+    "id": "gold",
+    "name": "Gold",
+    "subtitle": "The Eternal Metal",
+    "category": "Native Element",
+    "colors": [
+      "Bright Yellow",
+      "Rich Golden",
+      "Pale Yellow (electrum)",
+      "Rose (copper alloy)"
+    ],
+    "colorHexes": [
+      "#EAB308",
+      "#CA8A04",
+      "#FDE68A",
+      "#F59E0B"
+    ],
+    "hardness": 2.5,
+    "chemicalFormula": "Au",
+    "crystalSystem": "Cubic",
+    "luster": "Metallic",
+    "streak": "Golden Yellow",
+    "transparency": "Opaque",
+    "specificGravity": "19.30",
+    "localities": [
+      {
+        "name": "South Africa",
+        "region": "Witwatersrand Basin",
+        "note": "World's largest gold deposits, deep mining"
+      },
+      {
+        "name": "United States",
+        "region": "California, Alaska, Nevada",
+        "note": "Historic Gold Rush, modern industrial mining"
+      },
+      {
+        "name": "Australia",
+        "region": "Western Australia (Kalgoorlie)",
+        "note": "Major producer, large nuggets found"
+      },
+      {
+        "name": "Russia",
+        "region": "Siberia",
+        "note": "Significant alluvial and hard-rock deposits"
+      }
+    ],
+    "formation": "Gold forms deep in the Earth's crust through hydrothermal processes - superheated water dissolving gold from surrounding rock and depositing it in quartz veins and fracture systems as the fluid cools. Most gold deposits formed billions of years ago, and the gold itself was created in neutron star collisions before Earth existed. Every atom of gold on Earth was forged in the violent merger of dead stars and delivered to our planet by asteroid bombardment 4 billion years ago.\n\nGold occurs in two primary deposit types. Lode deposits (hard-rock gold) are quartz veins containing native gold that formed from hydrothermal fluids at temperatures of 200-400 degrees Celsius. Placer deposits are secondary - gold eroded from lode deposits accumulates in stream and river gravels because its extreme density (19.3) causes it to settle while lighter material washes away. The California Gold Rush of 1849 targeted placer deposits.\n\nGold's remarkable properties explain its value: it doesn't corrode, oxidize, or tarnish. It's the most malleable metal - a single ounce can be hammered into a sheet covering 9 square meters. It's an excellent electrical conductor. And it's genuinely rare - all the gold ever mined in human history would form a cube only 22 meters on each side.",
+    "identification": "Native gold is identified by its bright yellow metallic color, extreme density (19.3 - it feels shockingly heavy), malleability (it bends without breaking), and the fact that it doesn't tarnish. The golden yellow streak on a streak plate is diagnostic.\n\nDistinguish from pyrite ('fool's gold' - harder at 6.5, brittle, breaks rather than bends), chalcopyrite (brassy yellow, tarnishes to iridescent), and mica flakes in streams (flat, lightweight, float). The simplest test: hit it with a hammer. Gold flattens; pyrite shatters.",
+    "howToSpotFakes": "In the specimen market, gold on quartz matrix is sometimes enhanced by attaching additional gold flakes or nuggets to genuine quartz with adhesive. Look for unnatural attachment points and gold that appears 'placed' rather than grown into the matrix. Gold-plated pyrite and brass are obvious fakes - they lack gold's density and malleability. For gold nuggets, specific gravity testing is definitive. In jewelry, gold purity is stamped (14K, 18K, 24K) - testing kits using acid or electronic testers verify purity.",
+    "metaphysical": {
+      "chakra": "Solar Plexus, Heart, Crown",
+      "zodiac": "Leo",
+      "element": "Fire",
+      "traditions": "Gold has been revered across virtually every civilization in human history. Ancient Egyptians associated it with the sun god Ra and believed pharaohs would become one with the sun upon death - hence the gold burial masks. Alchemists spent centuries trying to transmute base metals into gold (the philosopher's stone). In Hindu tradition, gold represents the energy of the sun and is considered the most auspicious metal. Inca civilization called gold 'the sweat of the sun.' Gold's incorruptibility made it a symbol of immortality across cultures."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Pyrite",
+        "relation": "Fool's gold - similar color, completely different",
+        "color": "#EAB308"
+      },
+      {
+        "name": "Silver",
+        "relation": "Another precious native metal",
+        "color": "#D1D5DB"
+      },
+      {
+        "name": "Electrum",
+        "relation": "Natural gold-silver alloy",
+        "color": "#FDE68A"
+      },
+      {
+        "name": "Copper",
+        "relation": "Another native metal element",
+        "color": "#B45309"
+      }
+    ],
+    "priceRange": "Market price per troy ounce (fluctuates)  ·  $50-500 small specimen flakes on matrix  ·  $1,000-50,000+ nuggets and crystalline specimens",
+    "seoDescription": "Gold: the eternal metal forged in neutron star collisions. Why it never tarnishes, how to tell it from pyrite, and the mineral that built civilizations."
+  },
+  {
+    "id": "silver",
+    "name": "Silver",
+    "subtitle": "The Moon Metal",
+    "category": "Native Element",
+    "colors": [
+      "Bright Silver-White",
+      "Tarnished Black (acanthite)",
+      "Wire Silver"
+    ],
+    "colorHexes": [
+      "#D1D5DB",
+      "#E5E7EB",
+      "#374151"
+    ],
+    "hardness": 2.5,
+    "chemicalFormula": "Ag",
+    "crystalSystem": "Cubic",
+    "luster": "Metallic",
+    "streak": "Silver-White",
+    "transparency": "Opaque",
+    "specificGravity": "10.50",
+    "localities": [
+      {
+        "name": "Mexico",
+        "region": "Guanajuato, Zacatecas",
+        "note": "World's historic and current leading producer"
+      },
+      {
+        "name": "Bolivia",
+        "region": "Potosi",
+        "note": "Legendary Cerro Rico, colonial-era production"
+      },
+      {
+        "name": "United States",
+        "region": "Nevada, Idaho, Montana",
+        "note": "Comstock Lode and modern mining"
+      },
+      {
+        "name": "Morocco",
+        "region": "Imiter Mine",
+        "note": "Fine wire and crystalline native silver specimens"
+      }
+    ],
+    "formation": "Native silver forms in the oxidation and enrichment zones of silver ore deposits, where silver-bearing solutions deposit metallic silver in cavities and fractures. Unlike gold, native silver is relatively uncommon - most of the world's silver is extracted from sulfide minerals like argentite (silver sulfide) and as a byproduct of lead and copper mining.\n\nWhen native silver does occur, it can take spectacular forms: wire silver (twisted, hair-like wires), dendritic silver (branching tree-like growths), and crystalline silver (cubic crystals, rare and highly valued). The finest wire silver specimens from Kongsberg, Norway, and various Mexican mines are among the most striking mineral specimens in any category.\n\nSilver tarnishes readily in air, forming a black coating of silver sulfide (acanthite) when exposed to sulfur compounds. This tarnishing tendency means native silver specimens require careful storage and occasional cleaning. Fresh native silver has a brilliant mirror-like luster unmatched by any other naturally occurring metal.",
+    "identification": "Native silver is identified by its bright white metallic luster (when untarnished), high density (10.5), malleability, and tendency to tarnish black. The silver-white streak on a streak plate is diagnostic.\n\nDistinguish from galena (lead sulfide - cubic crystals, perfect cleavage, not malleable), platinum (much denser at 21.5, doesn't tarnish), and nickel (harder, magnetic). Silver's combination of white metallic luster, malleability, and tarnishing behavior is unique.",
+    "howToSpotFakes": "In the mineral specimen market, the main concern is silver specimens that have been artificially grown using electrolysis or chemical deposition. These lab-grown specimens have a distinctive 'spiky' crystal habit unlike natural wire or dendritic silver. Some Mexican silver specimens are enhanced with additional silver deposited on genuine matrix. For silver bullion and coins, specific gravity testing and acid testing confirm purity. Sterling silver (92.5% Ag) can be verified with a magnet test - silver is not magnetic.",
+    "metaphysical": {
+      "chakra": "Crown, Third Eye",
+      "zodiac": "Cancer, Aquarius",
+      "element": "Water",
+      "traditions": "Silver has been associated with the moon across virtually all civilizations - the counterpart to gold's solar associations. Ancient Greeks associated silver with Artemis (the moon goddess). In European folklore, silver was the only metal that could harm werewolves and other supernatural beings - hence 'silver bullet.' In Chinese medicine, silver needles are preferred for acupuncture. Silver's antimicrobial properties (scientifically verified) were known intuitively for centuries - nobility ate with silver utensils partly for hygiene."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Gold",
+        "relation": "Sister precious metal, solar vs lunar",
+        "color": "#EAB308"
+      },
+      {
+        "name": "Copper",
+        "relation": "Another native metal, often found nearby",
+        "color": "#B45309"
+      },
+      {
+        "name": "Argentite",
+        "relation": "Silver sulfide, the primary silver ore mineral",
+        "color": "#374151"
+      },
+      {
+        "name": "Galena",
+        "relation": "Lead sulfide, commonly contains silver",
+        "color": "#6B7280"
+      }
+    ],
+    "priceRange": "Market price per troy ounce (fluctuates)  ·  $30-200 small native specimens  ·  $200-5,000+ fine wire or crystalline silver",
+    "seoDescription": "Silver: the moon metal that kills bacteria and werewolves. Native wire silver, why it tarnishes black, and Mexico's 500-year mining legacy."
+  },
+  {
+    "id": "emerald",
+    "name": "Emerald",
+    "subtitle": "The Stone of Successful Love",
+    "category": "Beryl Family",
+    "colors": [
+      "Deep Green",
+      "Bluish Green",
+      "Vivid Green",
+      "Yellowish Green"
+    ],
+    "colorHexes": [
+      "#059669",
+      "#047857",
+      "#10B981",
+      "#16A34A"
+    ],
+    "hardness": 7.5,
+    "chemicalFormula": "Be₃Al₂Si₆O₁₈ (with Cr, V)",
+    "crystalSystem": "Hexagonal",
+    "luster": "Vitreous",
+    "streak": "White",
+    "transparency": "Transparent to Translucent",
+    "specificGravity": "2.72",
+    "localities": [
+      {
+        "name": "Colombia",
+        "region": "Muzo and Chivor",
+        "note": "World's finest emeralds, legendary pure green"
+      },
+      {
+        "name": "Zambia",
+        "region": "Kagem Mine",
+        "note": "Major producer, slightly bluish green"
+      },
+      {
+        "name": "Brazil",
+        "region": "Minas Gerais, Bahia",
+        "note": "Good commercial quality, some fine stones"
+      },
+      {
+        "name": "Ethiopia",
+        "region": "Various",
+        "note": "Emerging source of good quality material"
+      }
+    ],
+    "formation": "Emerald is the green variety of beryl, colored by trace amounts of chromium and sometimes vanadium. Like alexandrite, emerald requires beryllium and chromium to occur together - an extremely unlikely geological event because these elements originate from different rock types.\n\nColombian emeralds formed through a unique process: beryllium-bearing hydrothermal fluids percolated through chromium-rich black shales during Cretaceous mountain building. The specific chemistry of these shales provided the chromium coloring agent, while the hydrothermal fluids supplied beryllium, silicon, and aluminum. The result is emeralds with a warm, pure green color unique to Colombian material.\n\nAlmost all emeralds contain visible inclusions - fractures, mineral crystals, and fluid-filled cavities called 'jardin' (French for garden) because of their resemblance to plant growth. Unlike most gemstones, these inclusions are accepted and even valued in emeralds. An eye-clean emerald is so rare that it would be suspected of being synthetic. The gemological trade accepts oil treatment of emeralds (filling surface-reaching fractures with cedar oil or resin) as standard practice.",
+    "identification": "Emerald is identified by its distinctive green color, hexagonal crystal habit, hardness of 7.5-8, and characteristic inclusions. The green is noticeably different from green tourmaline (more blue-green) or chrome diopside (too dark).\n\nDistinguish from green tourmaline (different crystal system, different green tone), tsavorite garnet (no hexagonal crystals, different inclusions), and chrome diopside (softer, too dark). Emerald's inclusions under magnification are diagnostic - three-phase inclusions (containing solid, liquid, and gas) in Colombian emeralds are essentially fingerprints of natural origin.",
+    "howToSpotFakes": "The emerald market has more treatments and synthetics than almost any other gemstone. Cedar oil treatment is universal and accepted but should be disclosed. Synthetic emeralds (hydrothermal and flux-grown) are chemically identical and require lab testing. Glass-filled emeralds (composite emeralds) are heavily treated stones where significant fractures are filled with colored resin - these are worth a fraction of natural. Any emerald over 1 carat should come with a lab report from GIA, Gubelin, AGL, or SSEF. The terms 'minor,' 'moderate,' and 'significant' oil describe treatment levels.",
+    "metaphysical": {
+      "chakra": "Heart",
+      "zodiac": "Taurus, Gemini, Aries",
+      "element": "Earth, Water",
+      "traditions": "Cleopatra was famously obsessed with emeralds, claiming ownership of all emerald mines in Egypt. The Incas revered emeralds as sacred objects. Mughal emperors inscribed prayers onto emeralds. In medieval Europe, emerald was believed to cure diseases and reveal truth - a person wearing an emerald while lying would supposedly trigger the stone to shatter. Modern practitioners associate it with unconditional love, unity, and abundance. Emerald is the May birthstone and the gem of 20th and 35th wedding anniversaries."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Aquamarine",
+        "relation": "Same beryl family, iron-colored instead of chromium",
+        "color": "#38BDF8"
+      },
+      {
+        "name": "Morganite",
+        "relation": "Pink beryl variety, manganese-colored",
+        "color": "#FDA4AF"
+      },
+      {
+        "name": "Tsavorite",
+        "relation": "Green garnet, similar color, different mineral",
+        "color": "#059669"
+      },
+      {
+        "name": "Chrome Diopside",
+        "relation": "Chromium-green like emerald but softer",
+        "color": "#166534"
+      }
+    ],
+    "priceRange": "$50-500/ct (commercial, heavily included)  ·  $1,000-10,000/ct (fine, minor oil)  ·  $30,000-100,000+/ct (top Colombian, untreated)",
+    "seoDescription": "Emerald: the chromium-green beryl that Cleopatra hoarded. Colombian vs Zambian, why inclusions are expected, and the oil treatment everyone accepts."
+  },
+  {
+    "id": "native-copper",
+    "name": "Native Copper",
+    "subtitle": "The Builder's Metal",
+    "category": "Native Element",
+    "colors": [
+      "Bright Copper-Red",
+      "Tarnished Green (patina)",
+      "Iridescent"
+    ],
+    "colorHexes": [
+      "#B45309",
+      "#166534",
+      "#D97706"
+    ],
+    "hardness": 2.5,
+    "chemicalFormula": "Cu",
+    "crystalSystem": "Cubic",
+    "luster": "Metallic",
+    "streak": "Copper-Red",
+    "transparency": "Opaque",
+    "specificGravity": "8.94",
+    "localities": [
+      {
+        "name": "United States",
+        "region": "Michigan (Keweenaw Peninsula)",
+        "note": "World's greatest native copper deposits, massive specimens"
+      },
+      {
+        "name": "Namibia",
+        "region": "Tsumeb Mine",
+        "note": "Fine crystalline specimens"
+      },
+      {
+        "name": "Russia",
+        "region": "Ural Mountains",
+        "note": "Classic European source"
+      },
+      {
+        "name": "Bolivia",
+        "region": "Corocoro",
+        "note": "Crystallized specimens in sandstone"
+      }
+    ],
+    "formation": "Native copper - pure metallic copper occurring in its elemental form - is geologically uncommon. Most of the world's copper is extracted from sulfide and oxide ores, not native metal. The most extraordinary exception is Michigan's Keweenaw Peninsula, which produced more native copper than the rest of the world combined.\n\nThe Michigan copper formed about 1.1 billion years ago when basaltic lava flows were infiltrated by copper-bearing hydrothermal fluids. The copper precipitated in gas cavities (vesicles) within the basalt and in the porous tops between individual lava flows. Some native copper masses from Michigan weigh hundreds of tons - the largest single piece ever found (the Ontonagon Boulder) weighs over 1,600 kilograms.\n\nNative copper was humanity's first metal. The Copper Age (Chalcolithic period, roughly 5500-3000 BCE) began when people discovered that native copper nuggets could be hammered into tools and ornaments without smelting. Michigan's copper was traded across prehistoric North America through extensive indigenous trade networks thousands of years before European contact.",
+    "identification": "Native copper is identified by its distinctive copper-red color on fresh surfaces, malleability, high density (8.94), and copper-red streak. It tarnishes to brown, then eventually develops green patina (copper carbonate/sulfate) with exposure to air and moisture.\n\nDistinguish from copper-bearing minerals like chalcopyrite (brassy yellow, harder), bornite (iridescent tarnish but purple-blue, not copper-colored), and cuprite (red copper oxide, harder, non-malleable). Native copper bends without breaking - if a reddish metallic specimen snaps when bent, it's not native copper.",
+    "howToSpotFakes": "Native copper specimens from Michigan are abundant and affordable for most sizes, so faking is uncommon. Extremely large or well-crystallized specimens command premium prices and are worth verifying. Some sellers clean copper specimens aggressively with acid, removing the natural patina to show bright metal - this is a matter of collector preference rather than deception. Green-patinated specimens are sometimes artificially patinated with chemicals for aesthetic purposes.",
+    "metaphysical": {
+      "chakra": "Root, Sacral",
+      "zodiac": "Taurus, Sagittarius",
+      "element": "Earth, Fire",
+      "traditions": "Copper has been associated with Venus/Aphrodite since antiquity - the chemical symbol Cu comes from 'cuprum,' named after the island of Cyprus where the Romans mined it and which was sacred to Aphrodite. In Ayurvedic tradition, drinking water stored in copper vessels is believed to have health benefits (copper does have antimicrobial properties). Ancient Egyptians used copper tools in pyramid construction. Modern crystal practitioners associate copper with energy amplification, channeling, and communication."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Gold",
+        "relation": "Another native metal element",
+        "color": "#EAB308"
+      },
+      {
+        "name": "Silver",
+        "relation": "Another native metal, often found in same deposits",
+        "color": "#D1D5DB"
+      },
+      {
+        "name": "Malachite",
+        "relation": "Green copper carbonate, forms from weathered copper",
+        "color": "#22C55E"
+      },
+      {
+        "name": "Azurite",
+        "relation": "Blue copper carbonate, another weathering product",
+        "color": "#1E40AF"
+      }
+    ],
+    "priceRange": "$5-20 small specimens  ·  $20-200 medium specimens with crystal faces  ·  $200-5,000+ large Michigan or crystallized specimens",
+    "seoDescription": "Native Copper: humanity's first metal and Michigan's billion-year-old geological treasure. Keweenaw Peninsula megadeposits, prehistoric trade, and Venus connections."
+  },
+  {
+    "id": "calcite",
+    "name": "Calcite",
+    "subtitle": "The Shapeshifter",
+    "category": "Carbonate Group",
+    "colors": [
+      "Colorless (Iceland Spar)",
+      "Orange",
+      "Blue",
+      "Green",
+      "Honey Yellow",
+      "Pink"
+    ],
+    "colorHexes": [
+      "#F0F9FF",
+      "#F97316",
+      "#60A5FA",
+      "#4ADE80",
+      "#F59E0B",
+      "#FDA4AF"
+    ],
+    "hardness": 3,
+    "chemicalFormula": "CaCO₃",
+    "crystalSystem": "Trigonal",
+    "luster": "Vitreous to Pearly",
+    "streak": "White",
+    "transparency": "Transparent to Opaque",
+    "specificGravity": "2.71",
+    "localities": [
+      {
+        "name": "Mexico",
+        "region": "Charcas, Santa Eulalia",
+        "note": "Spectacular crystal specimens in every form"
+      },
+      {
+        "name": "Iceland",
+        "region": "Helgustadir",
+        "note": "Historic source of optical-grade Iceland spar"
+      },
+      {
+        "name": "United States",
+        "region": "Elmwood Mine, Tennessee",
+        "note": "World-class transparent crystals"
+      },
+      {
+        "name": "China",
+        "region": "Various",
+        "note": "Major producer of all colors and forms"
+      }
+    ],
+    "formation": "Calcite is one of the most common and most versatile minerals on Earth. It's the primary mineral in limestone, marble, and chalk. It forms stalactites and stalagmites in caves. It makes up coral reefs and seashells. It precipitates from hot springs and volcanic vents. It fills fractures in virtually every rock type. No other mineral forms in as many different environments or takes as many different shapes.\n\nCalcite crystallizes in over 800 known crystal forms - more than any other mineral. The most common are rhombohedrons (tilted cubes), scalenohedrons (pointed, dog-tooth shapes), and prismatic crystals. This extraordinary polymorphism makes calcite the most visually diverse mineral in any collection.\n\nIceland spar - perfectly transparent calcite - demonstrates one of the most dramatic optical properties in mineralogy: double refraction. Place a piece of Iceland spar over text and you see doubled letters. This occurs because calcite splits light into two polarized beams traveling at different speeds through the crystal. Viking navigators may have used Iceland spar as a polarizing filter to locate the sun on overcast days.",
+    "identification": "Calcite is identified by three properties: hardness 3 (scratched by a copper coin), perfect rhombohedral cleavage (breaks into tilted parallelogram shapes), and vigorous effervescence in dilute hydrochloric acid (it fizzes dramatically). These three tests together are definitive.\n\nDistinguish from quartz (much harder at 7, no acid reaction), aragonite (same chemistry but different crystal system), and dolomite (slower acid reaction, only fizzes in hot acid or when powdered). Calcite's rhombohedral cleavage - visible in any broken piece - is one of the most diagnostic features of any mineral.",
+    "howToSpotFakes": "Calcite is so common and affordable that faking is pointless for most specimens. Rare varieties (large optical-quality Iceland spar, deeply colored specimens, unusual crystal forms) are occasionally misrepresented. Some 'blue calcite' on the market is dyed - genuine blue calcite has a soft, natural blue rather than vivid artificial blue. Green calcite is sometimes confused with green fluorite (different hardness, different cleavage). The acid test instantly confirms calcite versus any non-carbonate mineral.",
+    "metaphysical": {
+      "chakra": "Varies by color - Orange: Sacral, Blue: Throat, Green: Heart, Clear: Crown",
+      "zodiac": "Cancer, Leo",
+      "element": "Fire, Water",
+      "traditions": "Calcite's diversity of colors has made it popular across many metaphysical traditions, with each color associated with different properties. Clear calcite (Iceland spar) has been connected to clarity and insight since the Viking era. Orange calcite is one of the most popular energy stones in the crystal market. In ancient Egypt, calcite (in the form of alabaster) was carved into canopic jars and sacred vessels. The Elmwood Mine specimens from Tennessee are considered among the finest mineral specimens of any species."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Aragonite",
+        "relation": "Same CaCO₃ chemistry, different crystal structure",
+        "color": "#D97706"
+      },
+      {
+        "name": "Dolomite",
+        "relation": "Calcium-magnesium carbonate, similar appearance",
+        "color": "#D6D3D1"
+      },
+      {
+        "name": "Fluorite",
+        "relation": "Similar crystal forms, different chemistry",
+        "color": "#A78BFA"
+      },
+      {
+        "name": "Iceland Spar",
+        "relation": "Optical-grade transparent calcite variety",
+        "color": "#F0F9FF"
+      }
+    ],
+    "priceRange": "$1-5 tumbled  ·  $5-50 crystal specimens  ·  $50-1,000+ large display or rare color specimens",
+    "seoDescription": "Calcite: the shapeshifter mineral with 800+ crystal forms. Iceland spar double vision, the acid fizz test, and why it's in everything from caves to coral reefs."
+  },
+  {
+    "id": "moss-agate",
+    "name": "Moss Agate",
+    "subtitle": "The Gardener's Stone",
+    "category": "Quartz Family (Chalcedony)",
+    "colors": [
+      "Translucent with Green Filaments",
+      "Clear with Dark Moss-like Inclusions"
+    ],
+    "colorHexes": [
+      "#22C55E",
+      "#F5F5F4",
+      "#166534"
+    ],
+    "hardness": 7,
+    "chemicalFormula": "SiO₂ with chlorite/hornblende inclusions",
+    "crystalSystem": "Trigonal (microcrystalline)",
+    "luster": "Waxy to Vitreous",
+    "streak": "White",
+    "transparency": "Translucent",
+    "specificGravity": "2.60",
+    "localities": [
+      {
+        "name": "India",
+        "region": "Deccan Plateau",
+        "note": "Major commercial source, wide variety"
+      },
+      {
+        "name": "Brazil",
+        "region": "Rio Grande do Sul",
+        "note": "Fine translucent material"
+      },
+      {
+        "name": "United States",
+        "region": "Montana, Oregon",
+        "note": "Scenic specimens with vivid inclusions"
+      },
+      {
+        "name": "Uruguay",
+        "region": "Various",
+        "note": "Good quality agate with moss inclusions"
+      }
+    ],
+    "formation": "Moss agate isn't technically an agate (it lacks the banding that defines true agate) - it's translucent chalcedony with green filamentous inclusions of chlorite, hornblende, or iron oxide minerals that resemble moss, ferns, or tree branches growing inside the stone.\n\nThese inclusions form when mineral-rich fluids infiltrate silica gel during the chalcedony's formation in volcanic rock cavities. The green minerals crystallize within the gel in branching patterns influenced by diffusion physics - the same processes that create dendritic agate's tree patterns, but with three-dimensional green mineral growths rather than flat manganese oxide deposits.\n\nThe result is a stone that genuinely looks like it contains tiny fossilized plants - a visual coincidence that has made moss agate one of the most popular semiprecious stones for thousands of years. The best specimens show vivid green inclusions suspended in clear to translucent chalcedony, creating a miniature landscape effect.",
+    "identification": "Moss agate is identified by its translucent chalcedony host containing green, filamentous inclusions that resemble moss or lichen. At hardness 7, it's durable and takes a good polish.\n\nDistinguish from dendritic agate (flat black/brown dendrites vs three-dimensional green filaments), tree agate (opaque white with green spots, not translucent), and serpentine (uniform green, no inclusions in clear host). The green inclusions in moss agate have depth and dimension visible when the stone is rotated.",
+    "howToSpotFakes": "Moss agate is common and inexpensive, making faking rare. Glass imitations with embedded green material exist but lack the natural randomness of genuine inclusions. Dyed green agate may be sold as moss agate but lacks the characteristic filamentous inclusion pattern. Genuine moss agate's green inclusions follow natural crystal growth patterns visible under magnification.",
+    "metaphysical": {
+      "chakra": "Heart",
+      "zodiac": "Virgo",
+      "element": "Earth",
+      "traditions": "European farmers historically placed moss agate in fields and hung it from trees to ensure successful harvests and protect livestock. It was considered the most powerful agricultural talisman. In Indian tradition, moss agate is associated with nature spirits. Modern crystal practitioners call it the gardener's stone, associating it with abundance, new beginnings, and connection to nature. It's popular among people who work with plants or spend time outdoors."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Dendritic Agate",
+        "relation": "Related chalcedony with flat black dendrites instead",
+        "color": "#1C1917"
+      },
+      {
+        "name": "Tree Agate",
+        "relation": "Opaque white chalcedony with green spots",
+        "color": "#4ADE80"
+      },
+      {
+        "name": "Agate",
+        "relation": "Same chalcedony family, banded variety",
+        "color": "#78716C"
+      },
+      {
+        "name": "Green Aventurine",
+        "relation": "Green quartz with sparkle, different inclusion type",
+        "color": "#16A34A"
+      }
+    ],
+    "priceRange": "$2-8 tumbled  ·  $10-50 cabochons or polished  ·  $30-200 exceptional scenic specimens",
+    "seoDescription": "Moss Agate: the stone with tiny gardens inside. Why the green filaments aren't plants, the European harvest talisman tradition, and this chalcedony's 3D landscape effect."
+  },
+  {
+    "id": "blue-lace-agate",
+    "name": "Blue Lace Agate",
+    "subtitle": "The Communication Stone",
+    "category": "Quartz Family (Chalcedony/Agate)",
+    "colors": [
+      "Pale Periwinkle Blue with White Lace Banding",
+      "Soft Lavender-Blue"
+    ],
+    "colorHexes": [
+      "#93C5FD",
+      "#BFDBFE",
+      "#DBEAFE"
+    ],
+    "hardness": 7,
+    "chemicalFormula": "SiO₂",
+    "crystalSystem": "Trigonal (microcrystalline)",
+    "luster": "Waxy to Vitreous",
+    "streak": "White",
+    "transparency": "Translucent",
+    "specificGravity": "2.60",
+    "localities": [
+      {
+        "name": "Namibia",
+        "region": "Ysterputs Farm, near Windhoek",
+        "note": "Primary world source, largely depleted"
+      },
+      {
+        "name": "South Africa",
+        "region": "Various",
+        "note": "Limited quantities, similar material"
+      }
+    ],
+    "formation": "Blue lace agate is a variety of banded chalcedony distinguished by its delicate pale blue and white lace-like banding patterns. It formed in volcanic rock cavities where silica-rich fluids deposited successive layers of microcrystalline quartz. The blue color comes from the Rayleigh scattering of light by microscopic particles within the chalcedony - the same mechanism that makes the sky blue.\n\nThe primary deposit at Ysterputs Farm in Namibia produced most of the world's supply. This deposit formed in andesitic volcanic rocks where specific conditions of temperature, pressure, and fluid chemistry created the distinctive pale blue banding. The deposit has been heavily worked and high-quality material is becoming increasingly scarce.\n\nThe delicate, rhythmic banding in blue lace agate records oscillating conditions during formation - each band represents a change in the depositing fluid's chemistry, temperature, or flow rate. The lace-like appearance comes from wavy, undulating bands rather than the straight parallel bands of common agate.",
+    "identification": "Blue lace agate is identified by its distinctive pale blue and white wavy banding pattern - no other common agate variety shows this specific color and pattern combination. At hardness 7, it's durable and takes a smooth polish.\n\nDistinguish from blue chalcedony (uniform blue without banding), angelite (softer at 3.5, no banding), and blue-dyed agate (vivid blue rather than soft pale blue, dye visible in cracks). The gentle, natural pale blue color and wavy lace-like bands are diagnostic.",
+    "howToSpotFakes": "Dyed agate in bright blue is commonly sold as blue lace agate - the giveaway is color intensity. Genuine blue lace agate is soft, pale, subtle blue. Anything vivid or bright blue is almost certainly dyed. Check for dye concentration in cracks and fractures. With genuine supply dwindling from the Namibian deposit, prices are rising and dyed substitutes are increasingly common. If the price seems too good for the quantity, question the source.",
+    "metaphysical": {
+      "chakra": "Throat, Third Eye",
+      "zodiac": "Gemini, Pisces",
+      "element": "Air, Water",
+      "traditions": "Blue lace agate is the quintessential throat chakra stone in modern crystal practice - associated with gentle communication, self-expression, and calming anxiety around speaking. Its pale blue color and soft energy make it popular for people who struggle with public speaking or difficult conversations. It has no ancient traditions (the deposit was only discovered in the 20th century). Some practitioners use it for cooling inflammation, drawing on its visual association with cool water."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Agate",
+        "relation": "Same mineral, different colors and patterns",
+        "color": "#78716C"
+      },
+      {
+        "name": "Angelite",
+        "relation": "Similar pale blue, much softer, different mineral",
+        "color": "#93C5FD"
+      },
+      {
+        "name": "Blue Chalcedony",
+        "relation": "Related, uniform blue without banding",
+        "color": "#BFDBFE"
+      },
+      {
+        "name": "Crazy Lace Agate",
+        "relation": "Similar lace banding in warm colors",
+        "color": "#F97316"
+      }
+    ],
+    "priceRange": "$3-10 tumbled  ·  $15-80 cabochons  ·  $50-300+ quality rough or large pieces",
+    "seoDescription": "Blue Lace Agate: the pale blue stone running out of supply. Why the Namibian deposit matters, Rayleigh scattering in stone, and spotting dyed fakes."
+  },
+  {
+    "id": "snowflake-obsidian",
+    "name": "Snowflake Obsidian",
+    "subtitle": "The Stone of Balance",
+    "category": "Volcanic Glass",
+    "colors": [
+      "Black with White Snowflake Patterns"
+    ],
+    "colorHexes": [
+      "#1C1917",
+      "#F5F5F4"
+    ],
+    "hardness": 5.5,
+    "chemicalFormula": "SiO₂ (with cristobalite inclusions)",
+    "crystalSystem": "Amorphous",
+    "luster": "Vitreous",
+    "streak": "White",
+    "transparency": "Opaque",
+    "specificGravity": "2.40",
+    "localities": [
+      {
+        "name": "United States",
+        "region": "Utah, Oregon, Wyoming",
+        "note": "Major source of quality material"
+      },
+      {
+        "name": "Mexico",
+        "region": "Various",
+        "note": "Commercial quantities"
+      },
+      {
+        "name": "Iceland",
+        "region": "Various",
+        "note": "Volcanic terrain produces various obsidian types"
+      }
+    ],
+    "formation": "Snowflake obsidian is black volcanic glass containing white spherulitic inclusions of cristobalite - a high-temperature polymorph of quartz. These white 'snowflake' patterns form through a process called devitrification, where the amorphous glass slowly begins to crystallize over time.\n\nWhen obsidian first forms from rapidly cooling lava, it's entirely glass - no crystal structure. But glass is thermodynamically unstable. Over thousands to millions of years, parts of the glass begin to reorganize into crystalline forms. Cristobalite nucleates at points within the glass and grows outward in radial patterns, creating the characteristic snowflake or flower-like shapes.\n\nThis means snowflake obsidian represents obsidian caught in the act of transforming from glass to crystal. Given enough time (millions of years), all obsidian would eventually devitrify completely. Snowflake obsidian is the midpoint of that process - a geological time-lapse frozen in stone.",
+    "identification": "Snowflake obsidian is one of the easiest stones to identify - the stark contrast of white cristobalite patterns on jet-black glass is unmistakable. At hardness 5-5.5, it's softer than quartz. The glass matrix has a conchoidal fracture and vitreous luster.\n\nDistinguish from dalmatian stone (white feldspar with black tourmaline spots - reversed color pattern), porphyritic basalt (white crystals in dark rock, but not glassy), and painted/printed imitations (patterns lack three-dimensional depth).",
+    "howToSpotFakes": "Snowflake obsidian is abundant and inexpensive, so outright faking is rare. Some imitations use black glass or ceramic with white paint or applied patterns - genuine snowflake obsidian's cristobalite clusters are three-dimensional and visible at different depths within the glass. The snowflake patterns should appear naturally random, not stamped or repetitive. The glass matrix should show conchoidal fracture on any chipped edges.",
+    "metaphysical": {
+      "chakra": "Root, Third Eye",
+      "zodiac": "Virgo, Capricorn",
+      "element": "Earth, Fire",
+      "traditions": "Snowflake obsidian inherits obsidian's general metaphysical tradition (grounding, protection, truth-revealing) with the addition of balance symbolism from the black-and-white contrast. Modern practitioners associate it with recognizing patterns in behavior, releasing stagnation, and finding balance between opposing forces. The devitrification process - glass transforming into crystal - is interpreted as a metaphor for personal transformation from chaos to order."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Obsidian",
+        "relation": "The parent volcanic glass before devitrification",
+        "color": "#1C1917"
+      },
+      {
+        "name": "Cristobalite",
+        "relation": "The white mineral forming the snowflake patterns",
+        "color": "#F5F5F4"
+      },
+      {
+        "name": "Apache Tear",
+        "relation": "Rounded, translucent obsidian nodules",
+        "color": "#292524"
+      },
+      {
+        "name": "Mahogany Obsidian",
+        "relation": "Obsidian with iron oxide instead of cristobalite",
+        "color": "#78350F"
+      }
+    ],
+    "priceRange": "$1-5 tumbled  ·  $5-25 polished or carved  ·  $10-60 larger display specimens",
+    "seoDescription": "Snowflake Obsidian: volcanic glass caught in the act of crystallizing. How devitrification creates the white patterns and why all obsidian eventually transforms."
+  },
+  {
+    "id": "morganite",
+    "name": "Morganite",
+    "subtitle": "The Divine Love Stone",
+    "category": "Beryl Family",
+    "colors": [
+      "Pale Pink",
+      "Peach",
+      "Salmon",
+      "Rose"
+    ],
+    "colorHexes": [
+      "#FDA4AF",
+      "#FDBA74",
+      "#FB923C",
+      "#F9A8D4"
+    ],
+    "hardness": 7.5,
+    "chemicalFormula": "Be₃Al₂Si₆O₁₈ (with Mn)",
+    "crystalSystem": "Hexagonal",
+    "luster": "Vitreous",
+    "streak": "White",
+    "transparency": "Transparent",
+    "specificGravity": "2.72",
+    "localities": [
+      {
+        "name": "Brazil",
+        "region": "Minas Gerais",
+        "note": "Largest crystals and major gem source"
+      },
+      {
+        "name": "Madagascar",
+        "region": "Various",
+        "note": "Fine pink color, significant production"
+      },
+      {
+        "name": "Afghanistan",
+        "region": "Nuristan",
+        "note": "Exceptional saturated pink crystals"
+      },
+      {
+        "name": "United States",
+        "region": "San Diego County, California",
+        "note": "Original discovery locality"
+      }
+    ],
+    "formation": "Morganite is the pink variety of beryl - the same mineral species that includes emerald (green) and aquamarine (blue). The pink color comes from manganese (Mn²⁺) substituting into the beryl crystal structure. Like all beryl varieties, morganite forms in granitic pegmatites where beryllium-bearing fluids crystallize in the final stages of magma cooling.\n\nMorganite was first identified in 1910 in Madagascar and named after J.P. Morgan, the American financier and gem collector, by George Frederick Kunz of Tiffany & Co. (the same Kunz who lent his name to kunzite). Morgan's gem collection, assembled by Kunz, is now housed at the American Museum of Natural History.\n\nMorganite crystals can reach impressive sizes - specimens over 10 kg have been found in Brazil. Most gem morganite is heat-treated to improve the pink color by removing yellowish or orange overtones. This treatment is permanent, widely accepted, and transforms peach-colored material into the more desirable pure pink.",
+    "identification": "Morganite is identified by its pink to peach color, hexagonal crystal habit, hardness of 7.5-8, and beryl properties (no cleavage, vitreous luster). The specific shade of pink - warm, slightly peachy - is distinctive.\n\nDistinguish from kunzite (similar pink but different crystal system, stronger pleochroism, light-sensitive), pink tourmaline (different crystal shape, stronger color), and rose quartz (translucent massive vs transparent crystalline, much cheaper). Morganite's hexagonal crystals and beryl-family properties are diagnostic.",
+    "howToSpotFakes": "Synthetic morganite doesn't exist commercially, so any genuine beryl in pink is natural. Heat treatment to improve pink color is universal and accepted. Glass and pink CZ imitations lack morganite's specific gravity and crystal properties. The main market issue is pink-coated clear beryl sold as morganite - coatings wear off over time. For engagement ring purchases (morganite's fastest-growing market), verify the stone is natural beryl with appropriate documentation.",
+    "metaphysical": {
+      "chakra": "Heart",
+      "zodiac": "Libra, Taurus",
+      "element": "Water",
+      "traditions": "Morganite is too recently named (1910) to have ancient traditions. In modern crystal practice, it's strongly associated with divine love, compassion, and emotional healing. Its popularity has surged with its adoption as an engagement ring stone - the pink color and beryl durability make it a more affordable alternative to pink sapphire or pink diamond. Practitioners associate it with attracting love, deepening relationships, and healing grief."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Emerald",
+        "relation": "Same beryl species, green (chromium)",
+        "color": "#059669"
+      },
+      {
+        "name": "Aquamarine",
+        "relation": "Same beryl species, blue (iron)",
+        "color": "#38BDF8"
+      },
+      {
+        "name": "Kunzite",
+        "relation": "Similar pink, different mineral (spodumene)",
+        "color": "#F9A8D4"
+      },
+      {
+        "name": "Rose Quartz",
+        "relation": "Similar color, different mineral, much cheaper",
+        "color": "#FDA4AF"
+      }
+    ],
+    "priceRange": "$20-100/ct (commercial)  ·  $100-400/ct (fine saturated pink)  ·  $500+/ct (large, exceptional)",
+    "seoDescription": "Morganite: the pink beryl named after J.P. Morgan. Sister to emerald and aquamarine, the rising engagement ring alternative, and why heat treatment is standard."
+  },
+  {
+    "id": "galena",
+    "name": "Galena",
+    "subtitle": "The Mirror Stone",
+    "category": "Sulfide Group",
+    "colors": [
+      "Lead-Gray",
+      "Bright Silver (fresh)",
+      "Dull Gray (tarnished)"
+    ],
+    "colorHexes": [
+      "#6B7280",
+      "#9CA3AF",
+      "#4B5563"
+    ],
+    "hardness": 2.5,
+    "chemicalFormula": "PbS",
+    "crystalSystem": "Cubic",
+    "luster": "Metallic",
+    "streak": "Lead-Gray",
+    "transparency": "Opaque",
+    "specificGravity": "7.58",
+    "localities": [
+      {
+        "name": "United States",
+        "region": "Missouri (Tri-State District), Kansas, Oklahoma",
+        "note": "Classic cubes, major historic producer"
+      },
+      {
+        "name": "Bulgaria",
+        "region": "Madan",
+        "note": "Exceptional crystal specimens"
+      },
+      {
+        "name": "Peru",
+        "region": "Various",
+        "note": "Fine specimens, often with pyrite"
+      },
+      {
+        "name": "United Kingdom",
+        "region": "Northern England",
+        "note": "Historic mining, classic specimens"
+      }
+    ],
+    "formation": "Galena is the primary ore mineral of lead and one of the most abundant sulfide minerals on Earth. It forms in hydrothermal veins associated with zinc, copper, and silver ore deposits, and in sedimentary environments where metal-rich brines interact with sulfur-bearing fluids. The Mississippi Valley-type deposits of the American Midwest produced enormous quantities of galena from limestone-hosted ore bodies.\n\nGalena crystallizes as near-perfect cubes - it has the cubic crystal system and perfect cubic cleavage, meaning it breaks into smaller and smaller cubes when struck. This cubic perfection makes galena one of the most geometrically satisfying minerals in any collection. The metallic luster on fresh cleavage surfaces is mirror-bright.\n\nGalena frequently contains silver (sometimes several percent by weight), which made galena mining economically important for silver production as well as lead. The extraction of silver from galena ore (cupellation) was one of the earliest metallurgical processes, practiced since at least 3000 BCE.",
+    "identification": "Galena is identified by its lead-gray color, extreme density (7.58 - it feels very heavy), perfect cubic cleavage, metallic luster, and softness (2.5 - scratched by a fingernail with effort). The cubic cleavage is the most diagnostic feature.\n\nDistinguish from stibnite (bladed crystals, not cubic), molybdenite (foliated, bluish gray), and other metallic gray minerals. Galena's cubic cleavage and exceptional weight immediately identify it. CAUTION: Galena contains lead. Wash hands after handling and do not ingest or inhale dust.",
+    "howToSpotFakes": "Galena is common and inexpensive, so faking is unnecessary. The main concern is safety rather than authenticity - galena is lead sulfide and should be handled with basic precautions (wash hands, don't let children mouth specimens, store separately from food). Some sellers fail to mention the lead content. Well-crystallized specimens from classic localities command modest premiums. Very large perfect cubes are natural and characteristic of galena.",
+    "metaphysical": {
+      "chakra": "Root",
+      "zodiac": "Capricorn",
+      "element": "Earth",
+      "traditions": "Galena was used in ancient Egypt as kohl - ground galena was applied as eye makeup. While this sounds dangerous (lead!), the lead sulfide actually has mild antimicrobial properties and provided some protection against eye infections common in dusty, sunny environments. The Romans used galena as a lead ore for plumbing (the word 'plumbing' comes from 'plumbum,' Latin for lead). Modern crystal practitioners associate galena with grounding and self-transformation, though they should always note the lead content in safety advisories."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Pyrite",
+        "relation": "Another metallic sulfide, golden vs gray",
+        "color": "#EAB308"
+      },
+      {
+        "name": "Sphalerite",
+        "relation": "Zinc sulfide, commonly found with galena",
+        "color": "#D97706"
+      },
+      {
+        "name": "Silver",
+        "relation": "Often contained within galena as impurity",
+        "color": "#D1D5DB"
+      },
+      {
+        "name": "Fluorite",
+        "relation": "Commonly occurs alongside galena in same veins",
+        "color": "#A78BFA"
+      }
+    ],
+    "priceRange": "$3-10 small cubes  ·  $10-50 display specimens  ·  $50-300 large crystal groups or classic locality",
+    "seoDescription": "Galena: the lead mineral that breaks into perfect cubes. Ancient Egyptian eye makeup, 7,000 years of mining history, and safe handling of this beautiful sulfide."
+  },
+  {
+    "id": "fire-agate",
+    "name": "Fire Agate",
+    "subtitle": "The Flame Within",
+    "category": "Quartz Family (Chalcedony)",
+    "colors": [
+      "Iridescent Orange-Red",
+      "Green Flash",
+      "Gold Fire",
+      "Purple Flash"
+    ],
+    "colorHexes": [
+      "#EA580C",
+      "#22C55E",
+      "#F59E0B",
+      "#7C3AED"
+    ],
+    "hardness": 7,
+    "chemicalFormula": "SiO₂ with iron oxide layers",
+    "crystalSystem": "Trigonal (microcrystalline)",
+    "luster": "Waxy to Vitreous",
+    "streak": "White",
+    "transparency": "Translucent to Opaque",
+    "specificGravity": "2.60",
+    "localities": [
+      {
+        "name": "Mexico",
+        "region": "Aguascalientes, Chihuahua",
+        "note": "Finest specimens with vivid fire play"
+      },
+      {
+        "name": "United States",
+        "region": "Arizona (Slaughter Mountain, Deer Creek)",
+        "note": "Classic American source, fine quality"
+      }
+    ],
+    "formation": "Fire agate is a variety of chalcedony that displays an iridescent play of color caused by thin layers of iron oxide (limonite/goethite) deposited between layers of chalcedony during formation. Light reflecting between these microscopically thin layers produces spectral colors through thin-film interference - the same physics that creates colors in oil slicks and soap bubbles.\n\nFire agate formed in volcanic environments during the Tertiary period (roughly 24-36 million years ago) when silica-rich fluids saturated with iron percolated through volcanic rock. The alternating deposition of silica and iron oxide built up layered botryoidal structures. The thickness of the iron oxide layers determines which colors appear - thinner layers produce blues and greens, thicker layers produce oranges and reds.\n\nCutting fire agate is an art form requiring exceptional skill. The fire layers are extremely thin and buried beneath an outer layer of ordinary chalcedony. The cutter must carefully grind away the outer material to expose the fire without grinding through it - going even a fraction of a millimeter too deep destroys the color. Master fire agate cutters are rare and their work commands significant premiums.",
+    "identification": "Fire agate is identified by its botryoidal shape and iridescent play of color visible when light hits the surface at certain angles. The colors shift and move as the stone is rotated. At hardness 7, it's durable.\n\nDistinguish from Mexican fire opal (transparent orange, no play of color like fire agate), ammolite (fossilized, flat iridescence), and labradorite (different mineral, broader flash). Fire agate's play of color is localized in specific areas of the stone's bubbly surface, not uniform across the piece.",
+    "howToSpotFakes": "Fire agate is rarely faked because the botryoidal form and thin-film iridescence are extremely difficult to replicate. Glass imitations lack the natural botryoidal texture and show different optical effects. The main market concern is quality variation - weak fire (faint, limited color) sells for much less than vivid multi-color fire. Cutting quality dramatically affects value. A poorly cut fire agate with damaged fire layers is worth a fraction of a well-cut one.",
+    "metaphysical": {
+      "chakra": "Root, Sacral, Solar Plexus",
+      "zodiac": "Aries, Leo, Sagittarius",
+      "element": "Fire",
+      "traditions": "Fire agate is associated with the spiritual flame in modern crystal healing - practitioners consider it one of the most powerful protection stones, creating a shield of fire energy around the wearer. Its Mexican and Southwestern US origin connects it to indigenous fire traditions. Modern practitioners associate it with courage, vitality, and creative inspiration. The difficulty of cutting fire agate (requiring patience and skill to reveal hidden beauty) is seen as a metaphor for personal development."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Agate",
+        "relation": "Same chalcedony family, banded variety",
+        "color": "#78716C"
+      },
+      {
+        "name": "Fire Opal",
+        "relation": "Different mineral, similar name, no play of color",
+        "color": "#EA580C"
+      },
+      {
+        "name": "Opal",
+        "relation": "Play of color from silica spheres instead of iron layers",
+        "color": "#F0F9FF"
+      },
+      {
+        "name": "Carnelian",
+        "relation": "Related chalcedony, iron-colored but not iridescent",
+        "color": "#EA580C"
+      }
+    ],
+    "priceRange": "$5-20 rough or weak fire  ·  $50-300 good fire cabochons  ·  $300-3,000+ exceptional multi-color fire",
+    "seoDescription": "Fire Agate: the chalcedony with real flames trapped inside. Thin-film interference from iron oxide layers, why master cutters are rare, and Mexican vs Arizona sources."
+  },
+  {
+    "id": "spirit-quartz",
+    "name": "Spirit Quartz",
+    "subtitle": "The Fairy Quartz",
+    "category": "Quartz Family",
+    "colors": [
+      "Amethyst Purple (most common)",
+      "Citrine Golden",
+      "White/Clear",
+      "Smoky"
+    ],
+    "colorHexes": [
+      "#8B5CF6",
+      "#F59E0B",
+      "#F5F5F4",
+      "#78716C"
+    ],
+    "hardness": 7,
+    "chemicalFormula": "SiO₂",
+    "crystalSystem": "Trigonal",
+    "luster": "Vitreous to Druzy",
+    "streak": "White",
+    "transparency": "Translucent to Opaque",
+    "specificGravity": "2.65",
+    "localities": [
+      {
+        "name": "South Africa",
+        "region": "Mpumalanga Province (Magaliesberg)",
+        "note": "The only known source of true spirit quartz"
+      }
+    ],
+    "formation": "Spirit quartz is a unique variety of quartz found at a single deposit in South Africa's Mpumalanga Province. Its defining feature is a central crystal point encrusted with hundreds of tiny secondary crystal terminations growing outward from all faces - giving the crystal a sparkly, druzy coating that catches light from every angle.\n\nThe formation process involves two stages. First, a primary quartz crystal grows under normal conditions. Then, a second generation of silica-rich fluid deposits tiny quartz crystals over the surfaces of the original crystal. The result is a crystal that appears to be wearing a coat of smaller crystals - hence the folk name 'cactus quartz' (the tiny points resemble cactus spines).\n\nSpirit quartz occurs in several color varieties matching the standard quartz colors: amethyst spirit quartz (purple, most popular and valuable), citrine spirit quartz (golden), white spirit quartz, and smoky spirit quartz. The amethyst variety's purple color comes from iron impurities and natural radiation, same as regular amethyst.",
+    "identification": "Spirit quartz is unmistakable - the central crystal point covered in tiny secondary terminations is unique. No other quartz variety shows this specific growth habit. At hardness 7, it's standard quartz hardness.\n\nDistinguish from druzy quartz (tiny crystals lining a cavity, not coating a larger crystal), cactus quartz (same thing, just a different name), and cathedral quartz (stepped growth, not encrusted). If a quartz crystal looks like it's covered in tiny sparkling points growing outward from its faces, it's spirit quartz.",
+    "howToSpotFakes": "Spirit quartz from South Africa is the only genuine article. Some sellers market heavily included or druzy-coated quartz from other localities as 'spirit quartz,' but the specific growth habit - secondary terminations coating all faces of a primary crystal - is unique to the Mpumalanga deposit. Dyed spirit quartz exists (vibrant unnatural colors applied to white spirit quartz). Natural amethyst spirit quartz has the characteristic pale-to-medium purple of natural amethyst, not vivid artificial purple.",
+    "metaphysical": {
+      "chakra": "Crown, Third Eye (amethyst), Solar Plexus (citrine)",
+      "zodiac": "Virgo, Capricorn, Pisces, Aquarius",
+      "element": "Earth",
+      "traditions": "Spirit quartz was unknown to the gem and mineral market before the late 1990s when the South African deposit was commercialized. In Zulu tradition, crystals from this region are associated with ancestor spirits. The name 'spirit quartz' was coined for the Western crystal market, connecting the stone's ethereal appearance to spiritual communication. Modern practitioners associate it with community, harmony, and aligning personal energy with group intentions."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Amethyst",
+        "relation": "Same quartz variety, standard crystal form",
+        "color": "#8B5CF6"
+      },
+      {
+        "name": "Citrine",
+        "relation": "Golden quartz, also found as spirit quartz",
+        "color": "#F59E0B"
+      },
+      {
+        "name": "Druzy Quartz",
+        "relation": "Similar tiny crystals, different growth pattern",
+        "color": "#F5F5F4"
+      },
+      {
+        "name": "Clear Quartz",
+        "relation": "Same mineral without secondary crystal coating",
+        "color": "#F0F9FF"
+      }
+    ],
+    "priceRange": "$5-15 small points  ·  $15-80 medium specimens  ·  $80-500+ large or exceptional amethyst clusters",
+    "seoDescription": "Spirit Quartz: the crystal wearing a coat of crystals, found at one deposit in South Africa. Cactus quartz formation, Zulu ancestor traditions, and color varieties."
+  },
+  {
+    "id": "black-onyx",
+    "name": "Black Onyx",
+    "subtitle": "The Stone of Strength",
+    "category": "Quartz Family (Chalcedony)",
+    "colors": [
+      "Solid Black",
+      "Black with White Banding (sardonyx)"
+    ],
+    "colorHexes": [
+      "#0A0A0A",
+      "#1C1917"
+    ],
+    "hardness": 7,
+    "chemicalFormula": "SiO₂",
+    "crystalSystem": "Trigonal (microcrystalline)",
+    "luster": "Waxy to Vitreous",
+    "streak": "White",
+    "transparency": "Opaque",
+    "specificGravity": "2.60",
+    "localities": [
+      {
+        "name": "Brazil",
+        "region": "Various",
+        "note": "Major source of dyed black onyx"
+      },
+      {
+        "name": "India",
+        "region": "Gujarat",
+        "note": "Traditional cutting and dyeing center"
+      },
+      {
+        "name": "Uruguay",
+        "region": "Various",
+        "note": "Source material for treated onyx"
+      },
+      {
+        "name": "Madagascar",
+        "region": "Various",
+        "note": "Some natural dark material"
+      }
+    ],
+    "formation": "Here's a fact that surprises most people: virtually all black onyx is dyed. Natural solid black onyx is extremely rare in nature. The overwhelming majority of 'black onyx' in jewelry and the crystal market is gray or pale agate that has been dyed black using a sugar-acid treatment that has been practiced for thousands of years.\n\nThe traditional process involves soaking pale agate in a sugar solution for weeks, then treating it with sulfuric acid. The acid carbonizes the sugar that has penetrated the stone's microscopic pores, turning it permanently black. This treatment is ancient (practiced by the Romans), permanent, and universally accepted in the gem trade - but almost never disclosed to consumers.\n\nTrue onyx, mineralogically speaking, is banded chalcedony with alternating black and white layers. 'Sardonyx' has brown/red and white bands. The term 'onyx' has evolved in the marketplace to mean solid black chalcedony regardless of whether it's natural or treated.",
+    "identification": "Black onyx is identified as solid black chalcedony at hardness 7. In practice, identification means determining whether it's natural or dyed - and it's almost always dyed.\n\nDistinguish from obsidian (volcanic glass, conchoidal fracture, slightly translucent at thin edges), black tourmaline (crystal faces, striations), jet (organic, much lighter weight), and black spinel (much denser, vitreous rather than waxy). Under strong transmitted light, dyed onyx may show the original banding of the agate that was dyed.",
+    "howToSpotFakes": "The irony is that black onyx itself is essentially a 'fake' in the sense that natural solid black onyx barely exists. The dyeing treatment is so universal and longstanding that the gem trade considers it standard. The real question is whether the base material is genuine agate/chalcedony or glass/plastic. Glass imitations are warmer to the touch, may contain bubbles, and lack the fine texture of genuine chalcedony. Plastic imitations are much lighter and scratch easily.",
+    "metaphysical": {
+      "chakra": "Root",
+      "zodiac": "Leo, Capricorn",
+      "element": "Earth",
+      "traditions": "In ancient Rome, onyx was carved into cameos and intaglios (carved seal stones). Soldiers carried onyx into battle for strength and courage. In Indian tradition, onyx is believed to absorb negative energy. Arabic and Hebrew traditions associated onyx with grief and sorrow - it was worn during mourning. Modern crystal practitioners associate black onyx with grounding, protection, and inner strength. It's one of the most popular stones in men's jewelry."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Agate",
+        "relation": "The base material usually dyed to create black onyx",
+        "color": "#78716C"
+      },
+      {
+        "name": "Obsidian",
+        "relation": "Natural black volcanic glass, different material",
+        "color": "#1C1917"
+      },
+      {
+        "name": "Sardonyx",
+        "relation": "Banded variety with brown/red and white layers",
+        "color": "#92400E"
+      },
+      {
+        "name": "Carnelian",
+        "relation": "Same chalcedony family, orange-red variety",
+        "color": "#EA580C"
+      }
+    ],
+    "priceRange": "$1-5 tumbled or beads  ·  $5-30 cabochons  ·  $20-100 carved or larger pieces",
+    "seoDescription": "Black Onyx: the open secret that almost none of it is natural. The ancient Roman sugar-acid dyeing process, why the trade accepts it, and what you're really buying."
+  },
+  {
+    "id": "septarian",
+    "name": "Septarian",
+    "subtitle": "The Dragon Stone",
+    "category": "Concretion (Multi-mineral)",
+    "colors": [
+      "Yellow Calcite Veins",
+      "Brown Aragonite Shell",
+      "Gray Limestone Matrix"
+    ],
+    "colorHexes": [
+      "#F59E0B",
+      "#92400E",
+      "#6B7280"
+    ],
+    "hardness": 4,
+    "chemicalFormula": "Variable (CaCO₃ calcite + aragonite + limestone)",
+    "crystalSystem": "N/A (concretion)",
+    "luster": "Waxy to Vitreous (calcite veins)",
+    "streak": "White (calcite component)",
+    "transparency": "Opaque",
+    "specificGravity": "2.60-2.80",
+    "localities": [
+      {
+        "name": "Madagascar",
+        "region": "Mahajanga Province",
+        "note": "Primary commercial source, exceptional quality"
+      },
+      {
+        "name": "United States",
+        "region": "Utah (Orderville)",
+        "note": "Large nodules, classic specimens"
+      },
+      {
+        "name": "Morocco",
+        "region": "Various",
+        "note": "Good quality material"
+      },
+      {
+        "name": "New Zealand",
+        "region": "Canterbury (Moeraki Boulders)",
+        "note": "Famous giant septarian concretions"
+      }
+    ],
+    "formation": "Septarian nodules formed 50-70 million years ago when volcanic activity killed marine life, which sank to the seafloor and decomposed. The decomposition produced chemical reactions in the surrounding sediment that caused mud to compact into hard, ball-shaped concretions. As the concretions dried, they contracted and cracked internally, creating the characteristic angular crack patterns.\n\nOver time, mineral-rich groundwater percolated through these internal cracks, depositing golden calcite crystals in the fissures and brown aragonite along the crack walls. The result is a three-part stone: gray limestone/mudstone exterior, brown aragonite crack walls, and bright yellow calcite crystal fills. When cut and polished, the contrast between these three components creates the distinctive dragon-scale or turtle-shell pattern.\n\nThe name 'septarian' comes from the Latin 'septum' meaning partition - referring to the internal walls that divide the nodule into chambers. The Moeraki Boulders on New Zealand's South Island coast are giant septarian concretions up to 2 meters in diameter, eroding from coastal cliffs.",
+    "identification": "Septarian is immediately recognizable when cut - the angular pattern of yellow calcite veins in brown aragonite within gray mudstone creates a unique appearance no other stone replicates. The calcite veins may contain visible crystal terminations.\n\nDistinguish from dragon blood jasper (green and red, completely different composition), turtle jasper (marketing name for various patterned stones), and artificial resin-filled stones. Genuine septarian's calcite veins respond to acid (fizzing confirms carbonate).",
+    "howToSpotFakes": "Septarian is affordable enough that faking isn't worthwhile. The main concerns are quality variation (some nodules have dramatic patterns while others are dull) and whether the polish is genuine or coated with resin. Some septarian specimens are stabilized with resin to fill porous areas - this is a practical treatment for display purposes. The calcite veins should be genuinely crystalline (showing crystal faces in unpolished areas).",
+    "metaphysical": {
+      "chakra": "Root, Sacral, Solar Plexus",
+      "zodiac": "Taurus",
+      "element": "Earth",
+      "traditions": "Septarian's resemblance to dragon scales earned it the trade name 'dragon stone' in the crystal market. Modern practitioners associate it with grounding, patience, and public speaking (the calcite component is connected to communication). In Malagasy tradition, septarian nodules are considered lucky and are placed in homes for protection. The multi-mineral composition is interpreted as representing the integration of different aspects of self."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Calcite",
+        "relation": "The yellow crystal veins filling the cracks",
+        "color": "#F59E0B"
+      },
+      {
+        "name": "Aragonite",
+        "relation": "The brown lining of the crack walls",
+        "color": "#D97706"
+      },
+      {
+        "name": "Limestone",
+        "relation": "The gray mudstone matrix",
+        "color": "#6B7280"
+      },
+      {
+        "name": "Concretion",
+        "relation": "The geological process that formed the nodule",
+        "color": "#78716C"
+      }
+    ],
+    "priceRange": "$5-15 tumbled  ·  $15-80 polished slabs or eggs  ·  $50-300 large display geodes",
+    "seoDescription": "Septarian: the dragon stone formed from dead sea creatures 50 million years ago. Three minerals in one nodule, crack-and-fill geology, and New Zealand's giant boulders."
+  },
+  {
+    "id": "serpentine",
+    "name": "Serpentine",
+    "subtitle": "The Serpent Stone",
+    "category": "Phyllosilicate Group",
+    "colors": [
+      "Olive Green",
+      "Dark Green",
+      "Yellow-Green",
+      "Black-Green"
+    ],
+    "colorHexes": [
+      "#65A30D",
+      "#166534",
+      "#A3E635",
+      "#1C1917"
+    ],
+    "hardness": 3.5,
+    "chemicalFormula": "(Mg,Fe)₃Si₂O₅(OH)₄",
+    "crystalSystem": "Monoclinic",
+    "luster": "Waxy to Greasy",
+    "streak": "White",
+    "transparency": "Translucent to Opaque",
+    "specificGravity": "2.55",
+    "localities": [
+      {
+        "name": "United States",
+        "region": "California, Vermont",
+        "note": "State rock of California"
+      },
+      {
+        "name": "Italy",
+        "region": "Liguria",
+        "note": "Fine verde antico, architectural use"
+      },
+      {
+        "name": "China",
+        "region": "Various",
+        "note": "Carved as 'new jade' in decorative arts"
+      },
+      {
+        "name": "Afghanistan",
+        "region": "Various",
+        "note": "Dark green bowenite variety"
+      }
+    ],
+    "formation": "Serpentine is a group of minerals that form through the hydration and metamorphism of ultramafic rocks - iron and magnesium-rich rocks from the Earth's mantle. When oceanic crust is thrust onto continental margins (a process called obduction), the mantle rocks are exposed to water and undergo serpentinization - a chemical reaction where olivine and pyroxene minerals absorb water and transform into serpentine.\n\nThis process is geologically significant: serpentinization releases hydrogen gas and heat, and may support deep subsurface microbial life. Some scientists have proposed that serpentinization on early Earth could have provided the chemical energy for the origin of life.\n\nSerpentine ranges from translucent lime green (antigorite and chrysotile varieties) to dark, waxy olive green (lizardite). The name comes from the Latin 'serpentinus' meaning 'resembling a serpent' - the mottled green color and sometimes scaly texture reminded early mineralogists of snakeskin. Bowenite, the hardest and most translucent variety, is carved as a jade substitute in some traditions.",
+    "identification": "Serpentine is identified by its greasy to waxy luster, green color, low hardness (3-5 depending on variety), and association with ultramafic rocks. It feels soapy or slippery to the touch.\n\nDistinguish from jade (much harder at 6-7, denser), green marble (fizzes in acid), and soapstone (even softer at 1-2). Serpentine is commonly mislabeled as 'new jade' in the crystal market - it's a completely different mineral. The waxy feel and low hardness are the quickest distinguishing tests.",
+    "howToSpotFakes": "Serpentine itself isn't faked, but it's frequently mislabeled. 'New jade,' 'olive jade,' 'Korean jade,' and 'Styrian jade' are all serpentine, not jade. This matters because genuine jade (jadeite or nephrite) is significantly more valuable. If you're told something is jade and it feels waxy-soft and scratches easily with a knife, it's likely serpentine. NOTE: Some serpentine varieties (chrysotile) are a form of asbestos. Polished serpentine specimens are safe to handle, but cutting or grinding raw serpentine should only be done with proper respiratory protection.",
+    "metaphysical": {
+      "chakra": "Heart, Crown",
+      "zodiac": "Gemini, Scorpio",
+      "element": "Earth",
+      "traditions": "In Italian folk tradition, serpentine protected against snakebite and was carried as a talisman by travelers. The Maori of New Zealand use bowenite (tangiwai) as a traditional carving stone. In Mesoamerican cultures, serpentine was carved into ornamental objects and associated with the feathered serpent deity Quetzalcoatl. Modern practitioners associate it with kundalini energy (the serpent imagery aligns well), meditation, and accessing ancient wisdom."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Jade",
+        "relation": "Commonly confused, much harder and more valuable",
+        "color": "#15803D"
+      },
+      {
+        "name": "Olivine",
+        "relation": "The mineral serpentine forms from during serpentinization",
+        "color": "#84CC16"
+      },
+      {
+        "name": "Soapstone",
+        "relation": "Even softer, similar soapy feel",
+        "color": "#A8A29E"
+      },
+      {
+        "name": "Chrysotile",
+        "relation": "Fibrous serpentine variety (a type of asbestos)",
+        "color": "#86EFAC"
+      }
+    ],
+    "priceRange": "$1-5 tumbled  ·  $5-30 polished or carved  ·  $20-200 bowenite or fine carved specimens",
+    "seoDescription": "Serpentine: the snakeskin stone formed from Earth's mantle. Why it's NOT jade despite what sellers say, the asbestos connection, and a possible role in life's origin."
+  },
+  {
+    "id": "phantom-quartz",
+    "name": "Phantom Quartz",
+    "subtitle": "The Ghost Crystal",
+    "category": "Quartz Family",
+    "colors": [
+      "Clear with Green Phantom",
+      "Clear with White Phantom",
+      "Smoky with Dark Phantom"
+    ],
+    "colorHexes": [
+      "#22C55E",
+      "#F5F5F4",
+      "#78716C"
+    ],
+    "hardness": 7,
+    "chemicalFormula": "SiO₂ (with mineral inclusion layers)",
+    "crystalSystem": "Trigonal",
+    "luster": "Vitreous",
+    "streak": "White",
+    "transparency": "Transparent to Translucent",
+    "specificGravity": "2.65",
+    "localities": [
+      {
+        "name": "Brazil",
+        "region": "Minas Gerais",
+        "note": "Major source of all phantom varieties"
+      },
+      {
+        "name": "Madagascar",
+        "region": "Various",
+        "note": "Fine green and clear phantoms"
+      },
+      {
+        "name": "United States",
+        "region": "Arkansas",
+        "note": "Classic American quartz locality"
+      },
+      {
+        "name": "Austria",
+        "region": "Alps",
+        "note": "Historic alpine phantom crystals"
+      }
+    ],
+    "formation": "Phantom quartz contains a visible 'ghost' of an earlier, smaller crystal preserved inside the current crystal - a geological time capsule recording interrupted growth. The phantom forms when a quartz crystal stops growing (due to changes in temperature, pressure, or fluid supply), and a thin layer of another mineral (chlorite, iron oxide, clay) deposits on its surface. When growth resumes, new quartz crystallizes over the coated surface, trapping the mineral layer inside as a phantom outline.\n\nThe phantom precisely mirrors the shape of the crystal's termination at the moment growth paused - a perfect smaller crystal frozen within the larger one. Some specimens contain multiple phantoms recording multiple growth interruptions, creating nested ghost crystals like geological Russian dolls.\n\nGreen phantoms (chlorite inclusions) are the most sought after. White phantoms (clay or feldspar) and red/orange phantoms (iron oxide/hematite) are also common. The clarity of the phantom and the contrast between it and the surrounding clear quartz determine the specimen's desirability.",
+    "identification": "Phantom quartz is identified by the visible outline of an earlier crystal termination preserved inside the crystal. The phantom should conform to the hexagonal habit of quartz and be visible as a distinct layer within the crystal.\n\nDistinguish from included quartz (random inclusions, not conforming to crystal shape), lodolite/garden quartz (dense irregular inclusions), and artificially coated quartz (surface treatment, not internal). Genuine phantoms follow the geometry of the crystal's growth faces precisely.",
+    "howToSpotFakes": "Phantom quartz is natural and relatively common in quartz-producing regions, so outright faking is rare. Some sellers polish crystals heavily to make faint phantoms more visible - this is cosmetic but should be disclosed. Artificial phantoms created by coating a crystal and then growing synthetic quartz over it are theoretically possible but not commercially viable. The main issue is quality grading - sharp, well-defined phantoms in clear quartz are worth much more than faint, blurry ones.",
+    "metaphysical": {
+      "chakra": "Crown, Third Eye",
+      "zodiac": "All signs",
+      "element": "Earth",
+      "traditions": "Phantom quartz's visible growth history makes it a natural symbol of evolution, growth through difficulty, and learning from the past. Modern practitioners use it for meditation on personal history, accessing past lives, and understanding cyclical patterns. The multiple-phantom variety (nested ghosts) is associated with many lifetimes of wisdom. Green phantoms specifically are connected to nature healing and abundance."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Clear Quartz",
+        "relation": "The host crystal without phantom inclusions",
+        "color": "#F0F9FF"
+      },
+      {
+        "name": "Chlorite",
+        "relation": "Green mineral that creates green phantoms",
+        "color": "#22C55E"
+      },
+      {
+        "name": "Lodolite",
+        "relation": "Heavily included quartz, denser than phantoms",
+        "color": "#78716C"
+      },
+      {
+        "name": "Smoky Quartz",
+        "relation": "Can contain dark phantoms",
+        "color": "#57534E"
+      }
+    ],
+    "priceRange": "$5-20 small points  ·  $20-100 clear phantoms  ·  $100-1,000+ sharp green or multi-phantom specimens",
+    "seoDescription": "Phantom Quartz: the crystal with a ghost inside. How interrupted growth creates geological Russian dolls, green chlorite phantoms, and reading a crystal's autobiography."
+  },
+  {
+    "id": "lemurian-quartz",
+    "name": "Lemurian Quartz",
+    "subtitle": "The Seed Crystal",
+    "category": "Quartz Family",
+    "colors": [
+      "Clear with Horizontal Striations",
+      "Pale Pink-Tinted",
+      "Smoky Lemurian"
+    ],
+    "colorHexes": [
+      "#F0F9FF",
+      "#FECDD3",
+      "#A8A29E"
+    ],
+    "hardness": 7,
+    "chemicalFormula": "SiO₂",
+    "crystalSystem": "Trigonal",
+    "luster": "Vitreous",
+    "streak": "White",
+    "transparency": "Transparent to Translucent",
+    "specificGravity": "2.65",
+    "localities": [
+      {
+        "name": "Brazil",
+        "region": "Serra do Cabral, Minas Gerais",
+        "note": "Original Lemurian seed crystal deposit"
+      },
+      {
+        "name": "Colombia",
+        "region": "Various",
+        "note": "Pink-tinted variety"
+      },
+      {
+        "name": "Russia",
+        "region": "Various",
+        "note": "Some material marketed as Lemurian"
+      }
+    ],
+    "formation": "Lemurian quartz is quartz. Mineralogically, there is nothing unique about its composition or crystal structure. What distinguishes 'Lemurian' crystals is a surface feature: prominent horizontal striations (growth lines) on alternating crystal faces, and the fact that the original specimens were found loose in sandy soil rather than attached to matrix.\n\nThe horizontal striations are growth lines that occur on many quartz crystals worldwide - they record the layer-by-layer growth of the crystal face. In Lemurian quartz, these striations are particularly pronounced and can be felt as ridges when running a finger across the crystal face. The alternating smooth and striated faces follow the normal crystallographic symmetry of quartz.\n\nThe 'Lemurian' name and mythology were created in the late 1990s by crystal healers who attributed the crystals to the legendary lost civilization of Lemuria - a 19th-century hypothetical continent later disproven by plate tectonics. The crystals were said to be 'programmed' with ancient wisdom. This is a modern marketing narrative, not geology. The crystals themselves are genuine quartz with a common surface feature given extraordinary significance by the metaphysical market.",
+    "identification": "Lemurian quartz is identified by prominent horizontal striations on alternating crystal faces, typically found as individual points (not clusters), often with a slightly frosted or matte surface texture from being loose in soil. The striations should be feel-able ridges, not just visual lines.\n\nDistinguish from regular striated quartz (striations are common on many quartz crystals), laser quartz (very elongated, different shape), and polished quartz sold as Lemurian (genuine Lemurians have natural surface texture). The distinction between 'Lemurian' and 'regular striated quartz' is primarily a trade/metaphysical distinction, not a mineralogical one.",
+    "howToSpotFakes": "Since Lemurian quartz is regular quartz with a marketing premium, the 'fake' question is nuanced. Any striated quartz crystal can be (and is) sold as Lemurian. The original Serra do Cabral material has a specific appearance (frosted surface, individual points, pronounced striations), but the term has been applied to striated quartz from many localities. You're paying for the crystal's physical qualities and your connection to it, not for a mineralogically distinct variety.",
+    "metaphysical": {
+      "chakra": "Crown, All Chakras (via striations)",
+      "zodiac": "All signs",
+      "element": "Water, Earth",
+      "traditions": "The Lemurian mythology holds that an advanced ancient civilization (Lemuria) encoded knowledge into quartz crystals and seeded them across the Earth before their civilization's destruction. Practitioners 'read' the striations by running a finger along them during meditation, believing each line contains stored information. While the Lemuria narrative has no historical or geological basis, the practice of focused meditation with these crystals is meaningful to many practitioners. The Lemurian quartz market demonstrates how mythology and marketing can create value beyond a mineral's geological identity."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Clear Quartz",
+        "relation": "The same mineral, standard variety",
+        "color": "#F0F9FF"
+      },
+      {
+        "name": "Phantom Quartz",
+        "relation": "Another growth-feature quartz variety",
+        "color": "#22C55E"
+      },
+      {
+        "name": "Laser Quartz",
+        "relation": "Elongated quartz, also marketed with metaphysical names",
+        "color": "#F5F5F4"
+      },
+      {
+        "name": "Amethyst",
+        "relation": "Purple quartz, can also show striations",
+        "color": "#8B5CF6"
+      }
+    ],
+    "priceRange": "$5-20 small points  ·  $20-80 medium crystals  ·  $80-500+ large, clear, pronounced striations",
+    "seoDescription": "Lemurian Quartz: striated quartz crystals, lost civilization mythology, and the most successful branding story in the crystal market. What you're actually buying."
+  },
+  {
+    "id": "k2-stone",
+    "name": "K2 Stone",
+    "subtitle": "The Mountain Stone",
+    "category": "Granite with Azurite",
+    "colors": [
+      "White-Gray Granite with Blue Azurite Spots"
+    ],
+    "colorHexes": [
+      "#D1D5DB",
+      "#2563EB"
+    ],
+    "hardness": 6,
+    "chemicalFormula": "Variable (granite + Cu₃(CO₃)₂(OH)₂ azurite)",
+    "crystalSystem": "N/A (rock with mineral inclusions)",
+    "luster": "Dull (granite) to Vitreous (azurite spots)",
+    "streak": "White",
+    "transparency": "Opaque",
+    "specificGravity": "2.70",
+    "localities": [
+      {
+        "name": "Pakistan",
+        "region": "K2 Mountain / Karakorum Range",
+        "note": "The only known source, extreme altitude"
+      }
+    ],
+    "formation": "K2 stone is white granite containing vivid blue azurite spheres - found at the base of K2, the world's second-highest mountain, in the Karakorum Range of northern Pakistan. The granite formed as a plutonic intrusion, and the azurite spots developed later when copper-bearing hydrothermal fluids infiltrated the granite along micro-fractures, depositing copper carbonate in spherical concentrations.\n\nThe combination is geologically unusual - azurite in granite is rare because the chemical environments that produce each are quite different. The specific conditions at K2's base (copper-rich fluids from nearby ore deposits meeting the granite) created this unique material.\n\nThe extreme altitude and remoteness of the source area (the Karakorum Range includes some of the most rugged terrain on Earth) limits supply. Collection requires arduous overland travel in one of the world's most dangerous mountain regions. This genuine difficulty of access, combined with the stone's striking appearance, has made K2 stone highly sought after in the crystal market.",
+    "identification": "K2 stone is identified by its white to pale gray granite matrix containing spherical blue azurite spots ranging from a few millimeters to about 2 centimeters in diameter. The contrast between white granite and vivid blue dots is distinctive.\n\nDistinguish from sodalite in matrix (sodalite is typically in nepheline syenite, not granite), lapis lazuli (different blue mineral, different host rock), and painted granite (blue spots in genuine K2 stone have depth and internal crystal structure visible under magnification). The azurite spots should fizz slightly in dilute acid, confirming carbonate composition.",
+    "howToSpotFakes": "K2 stone's popularity has led to imitations. The most common fake is white granite with painted blue dots - the paint sits on the surface rather than extending into the stone. Genuine K2 stone's azurite spots have depth and a slightly uneven, natural distribution. Under magnification, genuine azurite shows crystal structure. Some sellers have also marketed blue-spotted feldspar from other localities as 'K2 stone' - the genuine article comes only from Pakistan's Karakorum Range.",
+    "metaphysical": {
+      "chakra": "Third Eye, Crown",
+      "zodiac": "Sagittarius",
+      "element": "Earth, Air",
+      "traditions": "K2 stone entered the crystal market around 2014 and has no ancient traditions. Its association with K2 - known as the 'Savage Mountain' for its extreme climbing difficulty - has given it metaphysical associations with overcoming seemingly impossible challenges, reaching new heights, and spiritual ascension. Modern practitioners combine the grounding energy attributed to granite with the intuitive energy attributed to azurite. The rarity and extreme source location add to its perceived power."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Azurite",
+        "relation": "The blue mineral forming the spots",
+        "color": "#2563EB"
+      },
+      {
+        "name": "Granite",
+        "relation": "The host rock matrix",
+        "color": "#D1D5DB"
+      },
+      {
+        "name": "Lapis Lazuli",
+        "relation": "Different blue mineral in different host",
+        "color": "#1E3A8A"
+      },
+      {
+        "name": "Sodalite",
+        "relation": "Similar blue-on-white appearance, different minerals",
+        "color": "#3B82F6"
+      }
+    ],
+    "priceRange": "$5-15 tumbled  ·  $15-80 polished pieces  ·  $50-200 palm stones or large specimens",
+    "seoDescription": "K2 Stone: azurite spots in granite from the world's deadliest mountain. Pakistan's Karakorum source, how to spot painted fakes, and the 2014 market discovery."
+  },
+  {
+    "id": "bumblebee-jasper",
+    "name": "Bumble Bee Jasper",
+    "subtitle": "The Radiant Stone",
+    "category": "Volcanic Rock (not true jasper)",
+    "colors": [
+      "Vivid Yellow",
+      "Orange",
+      "Black Banding",
+      "White-Gray"
+    ],
+    "colorHexes": [
+      "#EAB308",
+      "#F97316",
+      "#1C1917",
+      "#D1D5DB"
+    ],
+    "hardness": 5,
+    "chemicalFormula": "Variable (calcium carbonate + sulfur + arsenic minerals)",
+    "crystalSystem": "N/A (rock)",
+    "luster": "Waxy to Dull",
+    "streak": "N/A (rock)",
+    "transparency": "Opaque",
+    "specificGravity": "2.40",
+    "localities": [
+      {
+        "name": "Indonesia",
+        "region": "Mount Papandayan, West Java",
+        "note": "The only known source, active volcano"
+      }
+    ],
+    "formation": "Bumble bee jasper isn't jasper at all - it's a volcanic rock composed of sulfur, calcium carbonate (aragonite), and various arsenic-bearing minerals including realgar and orpiment. It forms at fumaroles (volcanic gas vents) on the active volcano Mount Papandayan in West Java, Indonesia.\n\nThe vivid yellow bands are sulfur. The orange-red bands are realgar (arsenic sulfide). The black bands are pyrite or manganese oxide. The white-gray areas are calcium carbonate. This multicolored banding occurs as different minerals precipitate from hot volcanic gases and fluids at the fumarole vent, creating layered deposits.\n\nIMPORTANT SAFETY NOTE: Bumble bee jasper contains arsenic-bearing minerals (realgar and orpiment). Polished pieces are safe to handle briefly and display, but do not make gem elixirs (water infusions), do not inhale dust when cutting, and wash hands after handling. The arsenic content is locked in the mineral structure when the stone is intact, but becomes hazardous if the stone is ground, dissolved, or heated.",
+    "identification": "Bumble bee jasper is identified by its vivid yellow, orange, and black banding pattern - the color intensity and contrast are unlike any true jasper. The yellow (sulfur) is brighter and more saturated than any silicate mineral. At hardness 5, it's softer than true jasper (7).\n\nDistinguish from actual jasper varieties (harder, different composition), tiger iron (red, gold, and black but metallic), and painted stones (genuine bumble bee jasper's colors extend through the stone). The sulfur component may have a faint sulfurous smell when freshly cut.",
+    "howToSpotFakes": "Bumble bee jasper is distinctive enough and affordable enough that faking is uncommon. The main issues are: 1) the misnomer 'jasper' (it's not jasper), 2) failure to disclose arsenic content, and 3) some sellers marketing other yellow-banded stones under the name. Genuine bumble bee jasper comes only from Mount Papandayan, Indonesia. The vivid sulfur-yellow color is essentially impossible to replicate with dyes on actual jasper.",
+    "metaphysical": {
+      "chakra": "Solar Plexus, Sacral",
+      "zodiac": "Leo, Taurus",
+      "element": "Fire, Earth",
+      "traditions": "Bumble bee jasper entered the crystal market in the 2010s and has no ancient traditions. Modern practitioners associate it with creative energy, self-confidence, and manifestation - drawing on the vivid warm colors and the bee symbolism of productive work and community. The volcanic origin connects it to transformation and primal Earth energy. However, practitioners should be aware of the arsenic content and exercise appropriate caution. This stone should never be used in gem elixirs or placed in drinking water."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Sulfur",
+        "relation": "The vivid yellow component",
+        "color": "#EAB308"
+      },
+      {
+        "name": "Realgar",
+        "relation": "The orange-red arsenic sulfide component",
+        "color": "#F97316"
+      },
+      {
+        "name": "Orpiment",
+        "relation": "Another arsenic sulfide, yellow-orange",
+        "color": "#FDE68A"
+      },
+      {
+        "name": "Jasper",
+        "relation": "True jasper is different mineral (quartz), misnomer",
+        "color": "#DC2626"
+      }
+    ],
+    "priceRange": "$5-15 tumbled  ·  $15-60 cabochons or polished  ·  $30-150 larger display specimens",
+    "seoDescription": "Bumble Bee Jasper: not jasper, contains arsenic, and comes from an active volcano. The safety facts, why the yellow is sulfur not quartz, and Mount Papandayan's toxic beauty."
+  },
+  {
+    "id": "dragon-blood-jasper",
+    "name": "Dragon Blood Jasper",
+    "subtitle": "The Stone of Courage",
+    "category": "Epidote-Piemontite Rock",
+    "colors": [
+      "Deep Green with Red Spots",
+      "Forest Green with Scarlet Veins"
+    ],
+    "colorHexes": [
+      "#166534",
+      "#DC2626"
+    ],
+    "hardness": 7,
+    "chemicalFormula": "Variable (epidote + piemontite + quartz)",
+    "crystalSystem": "N/A (rock)",
+    "luster": "Waxy to Vitreous",
+    "streak": "Variable",
+    "transparency": "Opaque",
+    "specificGravity": "3.20-3.40",
+    "localities": [
+      {
+        "name": "South Africa",
+        "region": "Limpopo Province",
+        "note": "Primary commercial source"
+      },
+      {
+        "name": "Australia",
+        "region": "Western Australia",
+        "note": "Some material marketed under this name"
+      }
+    ],
+    "formation": "Dragon blood jasper (also called dragon stone or dragon blood stone) is technically not a jasper either - it's a metamorphic rock composed primarily of green epidote with red piemontite (a manganese-rich epidote variety) and sometimes minor quartz. The green provides the 'dragon scale' base color while the red creates the 'dragon blood' spots and veins.\n\nBoth epidote and piemontite form during regional metamorphism of iron and manganese-bearing rocks. The specific conditions that produce vivid green epidote alongside vivid red piemontite require both iron and manganese in the original rock, plus metamorphic conditions that separate these elements into distinct mineral phases.\n\nThe 'dragon blood' trade name is marketing, but effective marketing - the deep green with scattered red genuinely resembles a mythological creature's scales spotted with blood. The stone is distinct from bloodstone/heliotrope (which is green chalcedony with red jasper spots - a completely different mineral assemblage).",
+    "identification": "Dragon blood jasper is identified by its dark green color with scattered red spots and veins. At hardness 6.5-7 (depending on composition), it's moderately hard and takes a good polish. The green is typically deeper and darker than bloodstone.\n\nDistinguish from bloodstone (green chalcedony with red spots - lighter green, waxy luster, different composition), ruby in zoisite (vivid red ruby crystals in green zoisite - brighter colors, visible crystal faces), and unakite (pink rather than red, pistachio rather than forest green). Dragon blood jasper's epidote-piemontite composition gives it a denser feel than chalcedony-based stones.",
+    "howToSpotFakes": "Dragon blood jasper is affordable and its distinctive color combination is hard to replicate, so faking is rare. The main confusion is with bloodstone, which is a completely different stone that happens to also be green with red. If the green is light, translucent, and waxy (chalcedony), it's bloodstone. If the green is dark, opaque, and slightly dense-feeling, it's likely dragon blood jasper. Some material sold as 'dragon blood' may be dyed or enhanced.",
+    "metaphysical": {
+      "chakra": "Heart, Root",
+      "zodiac": "Aries, Leo",
+      "element": "Fire, Earth",
+      "traditions": "The dragon imagery drives this stone's metaphysical associations - courage, strength, and power. In South African tradition, green and red stones are associated with the land and vitality. Modern crystal practitioners use dragon blood jasper for self-confidence, overcoming obstacles, and connecting to personal power. It's popular in men's crystal jewelry. The epidote component is independently associated with increase and growth in crystal healing traditions."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Bloodstone",
+        "relation": "Similar color concept, different minerals entirely",
+        "color": "#166534"
+      },
+      {
+        "name": "Epidote",
+        "relation": "The green component mineral",
+        "color": "#65A30D"
+      },
+      {
+        "name": "Piemontite",
+        "relation": "The red component mineral",
+        "color": "#DC2626"
+      },
+      {
+        "name": "Ruby in Zoisite",
+        "relation": "Another green-and-red stone, different minerals",
+        "color": "#22C55E"
+      }
+    ],
+    "priceRange": "$2-8 tumbled  ·  $10-40 cabochons or polished  ·  $20-100 larger specimens",
+    "seoDescription": "Dragon Blood Jasper: not jasper, but epidote and piemontite creating dragon-scale green with blood-red spots. How it differs from bloodstone and the South African source."
+  },
+  {
+    "id": "wulfenite",
+    "name": "Wulfenite",
+    "subtitle": "The Painter's Stone",
+    "category": "Molybdate Group",
+    "colors": [
+      "Bright Orange",
+      "Yellow-Orange",
+      "Red",
+      "Honey Yellow"
+    ],
+    "colorHexes": [
+      "#F97316",
+      "#F59E0B",
+      "#DC2626",
+      "#D97706"
+    ],
+    "hardness": 3,
+    "chemicalFormula": "PbMoO₄",
+    "crystalSystem": "Tetragonal",
+    "luster": "Adamantine to Resinous",
+    "streak": "White",
+    "transparency": "Transparent to Translucent",
+    "specificGravity": "6.80",
+    "localities": [
+      {
+        "name": "United States",
+        "region": "Arizona (Red Cloud Mine)",
+        "note": "World-famous thick orange tabular crystals"
+      },
+      {
+        "name": "Mexico",
+        "region": "Los Lamentos, Chihuahua",
+        "note": "Exceptional thin transparent orange blades"
+      },
+      {
+        "name": "Morocco",
+        "region": "Mibladen",
+        "note": "Fine yellow to orange specimens"
+      },
+      {
+        "name": "Austria",
+        "region": "Bleiberg, Carinthia",
+        "note": "Type locality, named after Austrian mineralogist"
+      }
+    ],
+    "formation": "Wulfenite is a lead molybdate mineral that forms in the oxidized zone of lead ore deposits - the weathered near-surface area where primary sulfide minerals break down through interaction with air and water. When lead from galena and molybdenum from trace sources in the host rock dissolve and recombine in oxygen-rich conditions, wulfenite precipitates as brilliantly colored tabular crystals.\n\nThe thin, square, plate-like crystal habit is distinctive and visually striking - wulfenite crystals can be paper-thin yet display vivid orange, red, or yellow color with an almost diamond-like adamantine luster. The Red Cloud Mine in Arizona's Yuma County has produced some of the finest wulfenite specimens ever found - thick, vivid orange tabular crystals on matrix that are icons of American mineralogy.\n\nWulfenite is named after Franz Xavier von Wulfen, an 18th-century Austrian mineralogist. It's the state mineral of Arizona, where several classic localities have produced world-class specimens. SAFETY NOTE: Wulfenite contains lead. Handle with care and wash hands afterward.",
+    "identification": "Wulfenite is identified by its distinctive thin tabular (plate-like) crystals, vivid orange-yellow-red color, adamantine luster, and high specific gravity (6.80 - very heavy for a non-metallic mineral). The square, flat crystal shape is essentially diagnostic.\n\nDistinguish from crocoite (lead chromate - also bright orange but prismatic not tabular), vanadinite (lead vanadate - hexagonal prisms, different habit), and orange calcite (much lighter, fizzes in acid). Wulfenite's combination of tabular habit, adamantine luster, and extreme density is unique.",
+    "howToSpotFakes": "Wulfenite crystals are fragile (hardness 3, perfect cleavage) and difficult to fake convincingly due to their distinctive thin tabular habit and adamantine luster. The main market concern is damage - many specimens have repaired or reattached crystals, which should be disclosed. Matrix specimens sometimes have crystals reset with glue after being damaged in collection. UV light can sometimes reveal glue repairs. For significant purchases, examine attachment points carefully.",
+    "metaphysical": {
+      "chakra": "Sacral, Solar Plexus",
+      "zodiac": "Sagittarius",
+      "element": "Fire, Earth",
+      "traditions": "Wulfenite has no extensive folk traditions - it's primarily a collector's mineral. In modern crystal practice, its vivid orange color connects it to creativity, artistic expression, and creative flow. Some practitioners call it the 'painter's stone' or 'artist's stone.' Its fragility is interpreted as a reminder to handle creative inspiration with care. NOTE: As a lead mineral, wulfenite should be handled responsibly and is not suitable for gem elixirs."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Vanadinite",
+        "relation": "Another colorful lead mineral, hexagonal habit",
+        "color": "#DC2626"
+      },
+      {
+        "name": "Crocoite",
+        "relation": "Lead chromate, similar vivid orange, different habit",
+        "color": "#F97316"
+      },
+      {
+        "name": "Galena",
+        "relation": "Primary lead sulfide, parent mineral in deposit",
+        "color": "#6B7280"
+      },
+      {
+        "name": "Mimetite",
+        "relation": "Lead arsenate, similar secondary origin",
+        "color": "#EAB308"
+      }
+    ],
+    "priceRange": "$10-40 small crystals  ·  $40-200 quality specimens  ·  $200-5,000+ Red Cloud Mine or museum-grade",
+    "seoDescription": "Wulfenite: the paper-thin orange crystal with diamond luster. Arizona's state mineral, the Red Cloud Mine legend, and why collectors obsess over flat crystals."
+  },
+  {
+    "id": "variscite",
+    "name": "Variscite",
+    "subtitle": "The Healer's Heart Stone",
+    "category": "Phosphate Group",
+    "colors": [
+      "Mint Green",
+      "Apple Green",
+      "Emerald Green",
+      "Blue-Green"
+    ],
+    "colorHexes": [
+      "#A7F3D0",
+      "#4ADE80",
+      "#059669",
+      "#2DD4BF"
+    ],
+    "hardness": 4.5,
+    "chemicalFormula": "AlPO₄·2H₂O",
+    "crystalSystem": "Orthorhombic",
+    "luster": "Vitreous to Waxy",
+    "streak": "White",
+    "transparency": "Translucent to Opaque",
+    "specificGravity": "2.57",
+    "localities": [
+      {
+        "name": "United States",
+        "region": "Utah (Lucin, Fairfield)",
+        "note": "Premier source, finest green material"
+      },
+      {
+        "name": "Australia",
+        "region": "Queensland",
+        "note": "Good quality material"
+      },
+      {
+        "name": "Germany",
+        "region": "Saxony (Vogtland)",
+        "note": "Type locality, named after Variscia (old name for region)"
+      },
+      {
+        "name": "Brazil",
+        "region": "Various",
+        "note": "Some gem-quality material"
+      }
+    ],
+    "formation": "Variscite is a hydrated aluminum phosphate that forms in the near-surface oxidation zone where phosphate-rich solutions (often derived from bone, guano, or organic material) interact with aluminum-bearing rocks. It typically fills fractures and cavities in sedimentary rocks as massive, botryoidal, or nodular deposits.\n\nThe finest variscite comes from Utah, where nodules of vivid apple-green material form in limestone and shale. Utah variscite's intense green color comes from trace chromium - the same element that colors emerald and chrome tourmaline. The saturation and evenness of color in top Utah material rivals turquoise in beauty.\n\nVariscite has been used as a gemstone for thousands of years - prehistoric inhabitants of the Iberian Peninsula mined variscite for beads and ornaments. It's been found in Neolithic burial sites across Europe, indicating it held significant cultural value long before modern mineralogy identified it as a distinct species.",
+    "identification": "Variscite is identified by its apple-green to mint-green color, waxy to vitreous luster, and moderate hardness (4-5). It's softer than turquoise (5-6) and has a slightly different green tone - variscite tends toward true green or yellow-green, while turquoise leans blue-green.\n\nDistinguish from turquoise (harder, typically more blue, different matrix pattern), chrysoprase (harder at 7, chalcedony not phosphate), and green-dyed howlite (dye concentrates in cracks). Variscite often occurs with characteristic black or brown matrix veining.",
+    "howToSpotFakes": "Variscite is sometimes sold as turquoise (which commands higher prices). The color difference is the main tell - variscite is greener while turquoise is bluer. Dyed howlite and dyed magnesite are also sold as variscite. The hardness test helps: variscite is softer (4-5) than turquoise (5-6). Some material sold as 'green turquoise' is actually variscite. For expensive pieces, lab testing confirms identity.",
+    "metaphysical": {
+      "chakra": "Heart",
+      "zodiac": "Gemini, Scorpio, Taurus",
+      "element": "Water, Earth",
+      "traditions": "Variscite's Neolithic use as burial goods suggests it held spiritual significance in prehistoric European cultures. Modern practitioners associate it with emotional healing, calming anxiety, and heart-centered compassion. Its gentle green color connects it to nature and growth. Variscite is less well-known than turquoise in the crystal market, which gives it an 'insider' appeal among knowledgeable collectors."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Turquoise",
+        "relation": "Similar appearance, different phosphate mineral",
+        "color": "#06B6D4"
+      },
+      {
+        "name": "Chrysoprase",
+        "relation": "Similar green color, different mineral (silicate)",
+        "color": "#4ADE80"
+      },
+      {
+        "name": "Wavellite",
+        "relation": "Another aluminum phosphate, radiating crystal form",
+        "color": "#86EFAC"
+      },
+      {
+        "name": "Strengite",
+        "relation": "Iron phosphate analog of variscite",
+        "color": "#C084FC"
+      }
+    ],
+    "priceRange": "$5-15 tumbled  ·  $20-100 cabochons  ·  $50-500 fine Utah specimens",
+    "seoDescription": "Variscite: the green phosphate gem that predates civilization. Neolithic burial beads, Utah's chrome-green nodules, and how to tell it from turquoise."
+  },
+  {
+    "id": "strawberry-quartz",
+    "name": "Strawberry Quartz",
+    "subtitle": "The Stone of Universal Love",
+    "category": "Quartz Family",
+    "colors": [
+      "Pink-Red Translucent",
+      "Strawberry Pink",
+      "Rose with Sparkle"
+    ],
+    "colorHexes": [
+      "#F43F5E",
+      "#FDA4AF",
+      "#FB7185"
+    ],
+    "hardness": 7,
+    "chemicalFormula": "SiO₂ with iron oxide/goethite/lepidocrocite inclusions",
+    "crystalSystem": "Trigonal",
+    "luster": "Vitreous",
+    "streak": "White",
+    "transparency": "Transparent to Translucent",
+    "specificGravity": "2.65",
+    "localities": [
+      {
+        "name": "Mexico",
+        "region": "Various",
+        "note": "Fine translucent pink material"
+      },
+      {
+        "name": "Russia",
+        "region": "Kazakhstan border region",
+        "note": "Original significant source"
+      },
+      {
+        "name": "Brazil",
+        "region": "Various",
+        "note": "Some material, variable quality"
+      },
+      {
+        "name": "Madagascar",
+        "region": "Various",
+        "note": "Limited quantities"
+      }
+    ],
+    "formation": "Strawberry quartz is clear to translucent quartz that gets its pink to reddish-pink color from dense inclusions of iron oxide minerals - typically hematite, goethite, or lepidocrocite in microscopic platelet or needle forms. These inclusions scatter light internally, giving the quartz a warm pink glow and sometimes a subtle sparkle.\n\nThe 'strawberry' name comes from the stone's resemblance to the color of strawberry juice - a warm, slightly orange-tinted pink distinct from rose quartz's cooler pink. Unlike rose quartz (where the color comes from microscopic dumortierite fibers), strawberry quartz's color comes from visible iron oxide inclusions.\n\nGenuine strawberry quartz is relatively rare and significantly more expensive than rose quartz. This price difference has created a market flooded with imitations - dyed quartz, synthetic red glass, and even melted-down cherry quartz glass are all commonly sold as 'strawberry quartz.'",
+    "identification": "Strawberry quartz is identified by its translucent pink-red color with visible iron oxide inclusions (often sparkly or reflective under light). At hardness 7, it's standard quartz hardness. The color should show visible included particles rather than being uniformly colored.\n\nDistinguish from rose quartz (cooler pink, no visible sparkly inclusions, much more common), dyed quartz (uniform color, dye in cracks), and cherry quartz glass (contains bubbles, too uniform, feels warm). Under magnification, genuine strawberry quartz shows platelet or needle inclusions of iron oxide.",
+    "howToSpotFakes": "Strawberry quartz is one of the most commonly faked crystals. 'Cherry quartz' or 'strawberry quartz' sold cheaply is almost always glass - look for bubbles, perfectly uniform color, and warm feel. Dyed clear quartz shows color concentrated in cracks. Genuine strawberry quartz has a natural variation in color intensity and visible reflective inclusions. If it looks too perfect, too uniform, or too cheap, it's not genuine. Real strawberry quartz commands $20+ even for small tumbled pieces.",
+    "metaphysical": {
+      "chakra": "Heart, Crown",
+      "zodiac": "Libra",
+      "element": "Water, Fire",
+      "traditions": "Strawberry quartz is a modern addition to crystal healing with no ancient traditions. Practitioners associate it with universal love, gratitude, and attracting soulmate connections. Its rarity compared to rose quartz gives it a perceived higher energetic value. The warm, joyful pink color connects it to happiness and self-love. Due to the prevalence of fakes, many practitioners unknowingly work with glass or dyed material under the strawberry quartz name."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Rose Quartz",
+        "relation": "More common pink quartz, different color mechanism",
+        "color": "#FDA4AF"
+      },
+      {
+        "name": "Hematite",
+        "relation": "Iron oxide that creates the pink inclusions",
+        "color": "#6B7280"
+      },
+      {
+        "name": "Lepidocrocite",
+        "relation": "Another iron oxide found as inclusions",
+        "color": "#F43F5E"
+      },
+      {
+        "name": "Clear Quartz",
+        "relation": "The host crystal without inclusions",
+        "color": "#F0F9FF"
+      }
+    ],
+    "priceRange": "$20-50 small genuine tumbled  ·  $50-200 polished or faceted  ·  $200+  fine transparent specimens (beware cheap 'strawberry quartz' - it's glass)",
+    "seoDescription": "Strawberry Quartz: the rare pink quartz that's almost always fake. How iron oxide creates the real thing, cherry glass flooding the market, and what genuine specimens actually cost."
+  },
+  {
+    "id": "fluorapatite",
+    "name": "Fluorapatite",
+    "subtitle": "The Gemstone in Your Teeth",
+    "category": "Phosphate Group (Apatite)",
+    "colors": [
+      "Neon Blue-Green",
+      "Purple",
+      "Yellow",
+      "Colorless",
+      "Pink"
+    ],
+    "colorHexes": [
+      "#06B6D4",
+      "#7C3AED",
+      "#EAB308",
+      "#F0F9FF",
+      "#F9A8D4"
+    ],
+    "hardness": 5,
+    "chemicalFormula": "Ca₅(PO₄)₃F",
+    "crystalSystem": "Hexagonal",
+    "luster": "Vitreous to Resinous",
+    "streak": "White",
+    "transparency": "Transparent to Translucent",
+    "specificGravity": "3.20",
+    "localities": [
+      {
+        "name": "Brazil",
+        "region": "Minas Gerais (Paraiba)",
+        "note": "Neon blue 'Paraiba-type' apatite"
+      },
+      {
+        "name": "Madagascar",
+        "region": "Various",
+        "note": "Vivid neon blue and green"
+      },
+      {
+        "name": "Mexico",
+        "region": "Cerro de Mercado",
+        "note": "Fine yellow and purple crystals"
+      },
+      {
+        "name": "Morocco",
+        "region": "Various",
+        "note": "Excellent crystal specimens"
+      }
+    ],
+    "formation": "Apatite is the most common phosphate mineral on Earth and the defining mineral of hardness 5 on the Mohs scale. Fluorapatite (the fluorine-dominant variety) is the most abundant apatite species, forming in igneous, metamorphic, and sedimentary environments.\n\nWhat makes apatite remarkable is its biological role: your bones and teeth are made of hydroxyapatite, a close relative of fluorapatite. When fluoride is added to drinking water or toothpaste, it converts tooth hydroxyapatite to the more acid-resistant fluorapatite - this is literally the chemistry of cavity prevention. Fluorapatite in your teeth is the same mineral species as the neon blue gemstone.\n\nGem-quality apatite comes in a spectacular range of colors: neon blue-green from Paraiba-type localities (colored by manganese and rare earth elements), vivid purple (manganese), bright yellow (iron), and pink (manganese and rare earths). The neon blue-green variety from Madagascar and Brazil has surged in popularity as an affordable alternative to Paraiba tourmaline.",
+    "identification": "Apatite is identified by its hexagonal crystal habit, hardness of exactly 5 (the Mohs scale reference mineral), and characteristic colors. The neon blue-green variety is particularly distinctive.\n\nDistinguish from tourmaline (harder at 7, different crystal shape), beryl (harder at 7.5-8), and fluorite (softer at 4, cubic not hexagonal). Apatite's hardness of 5 is its most practical diagnostic - it's scratched by a knife (5.5) but not by a copper coin (3.5). This makes it too soft for most ring settings but fine for pendants and earrings.",
+    "howToSpotFakes": "Synthetic apatite doesn't exist commercially for gem purposes. The main concerns are: 1) apatite sold as more expensive stones (neon blue apatite labeled as Paraiba tourmaline), 2) heavily treated material (some apatite is heated to improve color), and 3) glass imitations of neon blue apatite. The hardness test (5, scratchable by a knife) quickly separates apatite from tourmaline (7) or beryl (7.5+). Apatite's relative softness is the buyer's best verification tool.",
+    "metaphysical": {
+      "chakra": "Throat (blue), Solar Plexus (yellow), Heart (green)",
+      "zodiac": "Gemini, Libra",
+      "element": "Air, Water",
+      "traditions": "Apatite's name comes from the Greek 'apate' meaning deceit - it was frequently mistaken for other minerals (beryl, tourmaline, olivine). Modern crystal practitioners have repurposed this etymology positively, associating apatite with seeing through deception and accessing truth. Blue apatite is popular for communication and self-expression work. The bone and teeth connection gives it associations with physical healing and structural support."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Tourmaline",
+        "relation": "Similar neon blue, much harder, different mineral",
+        "color": "#06B6D4"
+      },
+      {
+        "name": "Fluorite",
+        "relation": "Similar colors available, softer at 4",
+        "color": "#A78BFA"
+      },
+      {
+        "name": "Beryl",
+        "relation": "Also hexagonal, much harder, different chemistry",
+        "color": "#22C55E"
+      },
+      {
+        "name": "Hydroxyapatite",
+        "relation": "The biological form in bones and teeth",
+        "color": "#F5F5F4"
+      }
+    ],
+    "priceRange": "$5-20 rough or tumbled  ·  $20-100/ct gem-quality faceted  ·  $100-500/ct neon blue Paraiba-type",
+    "seoDescription": "Fluorapatite: the neon blue gem that's also in your teeth. How fluoride toothpaste creates this exact mineral, the Paraiba-blue variety, and why the name means 'deceit.'"
+  },
+  {
+    "id": "sphalerite",
+    "name": "Sphalerite",
+    "subtitle": "The Fire Diamond",
+    "category": "Sulfide Group",
+    "colors": [
+      "Honey Yellow",
+      "Dark Brown-Black",
+      "Red-Orange",
+      "Green (rare)"
+    ],
+    "colorHexes": [
+      "#F59E0B",
+      "#292524",
+      "#EA580C",
+      "#22C55E"
+    ],
+    "hardness": 3.5,
+    "chemicalFormula": "ZnS",
+    "crystalSystem": "Cubic",
+    "luster": "Adamantine to Resinous",
+    "streak": "Pale Yellow to Brown",
+    "transparency": "Transparent to Translucent",
+    "specificGravity": "4.09",
+    "localities": [
+      {
+        "name": "Spain",
+        "region": "Santander (Picos de Europa)",
+        "note": "World's finest gem-quality honey sphalerite"
+      },
+      {
+        "name": "Mexico",
+        "region": "Charcas, Naica",
+        "note": "Excellent crystal specimens"
+      },
+      {
+        "name": "United States",
+        "region": "Tri-State District (Missouri, Kansas, Oklahoma)",
+        "note": "Classic mining district specimens"
+      },
+      {
+        "name": "Bulgaria",
+        "region": "Madan",
+        "note": "Dark crystals with galena"
+      }
+    ],
+    "formation": "Sphalerite is zinc sulfide - the primary ore mineral of zinc and one of the most common sulfide minerals. It forms in hydrothermal vein deposits alongside galena, pyrite, and calcite, and in sedimentary-hosted massive sulfide deposits.\n\nWhat makes sphalerite remarkable as a gemstone is its optical dispersion - the ability to split white light into spectral colors. Sphalerite's dispersion (0.156) is more than three times that of diamond (0.044). This means faceted sphalerite produces more 'fire' (rainbow flashes) than any other natural gemstone. Spanish honey sphalerite from Santander, when expertly faceted, produces a light show that makes diamond look restrained.\n\nThe problem is that sphalerite is extremely soft (3.5) and has perfect cleavage in six directions, making it both difficult to facet and impractical for most jewelry. It's a collector's gemstone - beautiful to look at under controlled conditions but too fragile for daily wear.",
+    "identification": "Sphalerite is identified by its adamantine to resinous luster, perfect dodecahedral cleavage (six cleavage directions), high specific gravity (4.09), and characteristic honey yellow to dark brown color. Gem-quality transparent sphalerite shows extraordinary fire in faceted stones.\n\nDistinguish from amber (organic, much lighter, no cleavage), citrine (much harder at 7, no cleavage), and cassiterite (much harder at 6-7, higher SG). Sphalerite's combination of adamantine luster, dodecahedral cleavage, and high density is diagnostic.",
+    "howToSpotFakes": "Gem sphalerite from Spain is valuable enough that glass imitations exist. Glass lacks sphalerite's extreme dispersion and characteristic cleavage. CZ (cubic zirconia) can mimic the fire but has different specific gravity and hardness. For faceted gems, the extraordinary fire combined with softness and visible cleavage confirm sphalerite. Lab reports are worthwhile for expensive faceted pieces.",
+    "metaphysical": {
+      "chakra": "Solar Plexus, Root",
+      "zodiac": "Gemini",
+      "element": "Fire, Earth",
+      "traditions": "Sphalerite's name comes from the Greek 'sphaleros' meaning treacherous - because it was frequently mistaken for galena but yielded no lead when smelted, frustrating miners. In modern crystal practice, its extraordinary fire and dispersion are associated with creative inspiration, energy, and personal power. Its fragility is seen as a reminder that the most brilliant things in life require careful handling. Sphalerite is a niche stone in the metaphysical market, known mainly to serious collectors."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Galena",
+        "relation": "Lead sulfide, commonly found with sphalerite",
+        "color": "#6B7280"
+      },
+      {
+        "name": "Pyrite",
+        "relation": "Iron sulfide, another common sulfide associate",
+        "color": "#EAB308"
+      },
+      {
+        "name": "Wurtzite",
+        "relation": "Same ZnS composition, different crystal structure",
+        "color": "#78350F"
+      },
+      {
+        "name": "Diamond",
+        "relation": "Famous for fire, but sphalerite has 3x more",
+        "color": "#F0F9FF"
+      }
+    ],
+    "priceRange": "$5-20 crystal specimens  ·  $30-100/ct faceted Spanish gem  ·  $100-500/ct large, exceptional fire",
+    "seoDescription": "Sphalerite: the gemstone with three times diamond's fire. Spanish honey sphalerite's rainbow flashes, why it's too fragile to wear, and the 'treacherous' name."
   }
 ]
