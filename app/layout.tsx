@@ -72,6 +72,12 @@ function Header() {
             Browse
           </Link>
           <Link
+            href="/blog"
+            className="text-brand-muted hover:text-white transition-colors"
+          >
+            Blog
+          </Link>
+          <Link
             href="/about"
             className="text-brand-muted hover:text-white transition-colors"
           >
@@ -86,13 +92,31 @@ function Header() {
 function Footer() {
   return (
     <footer className="border-t border-brand-border mt-24">
-      <div className="max-w-6xl mx-auto px-4 py-12 text-center">
-        <Logo />
-        <p className="text-brand-muted text-sm mt-4 font-body max-w-md mx-auto">
-          A modern encyclopedia bridging geological science and crystal
-          traditions. Scientific accuracy meets editorial storytelling.
-        </p>
-        <p className="text-brand-muted/50 text-xs mt-8 font-body">
+      <div className="max-w-6xl mx-auto px-4 py-12">
+        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
+          <div className="md:max-w-sm">
+            <Logo />
+            <p className="text-brand-muted text-sm mt-4 font-body">
+              A modern encyclopedia bridging geological science and crystal
+              traditions. Scientific accuracy meets editorial storytelling.
+            </p>
+          </div>
+          <div className="flex gap-12 text-sm font-body">
+            <div className="flex flex-col gap-2">
+              <span className="text-white font-medium mb-1">Explore</span>
+              <Link href="/" className="text-brand-muted hover:text-white transition-colors">Browse Crystals</Link>
+              <Link href="/blog" className="text-brand-muted hover:text-white transition-colors">Blog</Link>
+              <Link href="/about" className="text-brand-muted hover:text-white transition-colors">About</Link>
+              <Link href="/contact" className="text-brand-muted hover:text-white transition-colors">Contact</Link>
+            </div>
+            <div className="flex flex-col gap-2">
+              <span className="text-white font-medium mb-1">Legal</span>
+              <Link href="/privacy" className="text-brand-muted hover:text-white transition-colors">Privacy Policy</Link>
+              <Link href="/terms" className="text-brand-muted hover:text-white transition-colors">Terms of Use</Link>
+            </div>
+          </div>
+        </div>
+        <p className="text-brand-muted/50 text-xs mt-10 font-body text-center">
           &copy; {new Date().getFullYear()} Crystal Almanac. All rights
           reserved.
         </p>
