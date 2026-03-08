@@ -352,13 +352,72 @@ export default async function CrystalPage({
             </Section>
 
             <Section title="Price Guide">
-              <p className="text-white/85 font-body">{crystal.priceRange}</p>
+              <div className="space-y-2">
+                {crystal.priceRange.split("  ·  ").map((tier, i) => {
+                  const labels = ["Entry", "Mid-Range", "Collector"];
+                  const colors = ["text-emerald-400", "text-amber-400", "text-rose-400"];
+                  return (
+                    <div
+                      key={i}
+                      className="flex items-center justify-between py-2 border-b border-brand-border/50 last:border-0"
+                    >
+                      <span className={`text-xs font-body uppercase tracking-wider ${colors[i] || "text-brand-muted"}`}>
+                        {labels[i] || "Premium"}
+                      </span>
+                      <span className="text-white/85 text-sm font-body">
+                        {tier.trim()}
+                      </span>
+                    </div>
+                  );
+                })}
+              </div>
+            </Section>
+
+            {/* Good to Know - fun facts that don't alienate serious collectors */}
+            <Section title="Good to Know">
+              <div className="bg-brand-surface border border-brand-border rounded-xl p-5 space-y-4">
+                <div className="flex items-start gap-3">
+                  <span className="text-lg">💎</span>
+                  <p className="text-white/85 text-sm font-body">
+                    <strong className="text-white">Scratch test:</strong>{" "}
+                    {crystal.hardness >= 7
+                      ? `At hardness ${crystal.hardness}, ${crystal.name} can scratch glass and steel. It's durable enough for any type of jewelry.`
+                      : crystal.hardness >= 5
+                      ? `At hardness ${crystal.hardness}, ${crystal.name} resists scratching from a knife but can be scratched by quartz. Best for pendants and earrings rather than rings.`
+                      : crystal.hardness >= 3
+                      ? `At hardness ${crystal.hardness}, ${crystal.name} can be scratched with a copper coin. Handle gently and keep away from harder stones in your collection.`
+                      : `At hardness ${crystal.hardness}, ${crystal.name} can be scratched with a fingernail. This is a display specimen, not a wearable stone.`}
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-lg">🌍</span>
+                  <p className="text-white/85 text-sm font-body">
+                    <strong className="text-white">Sources:</strong>{" "}
+                    {crystal.localities.length === 1
+                      ? `Found at only one location on Earth - ${crystal.localities[0].name}. Supply is inherently limited.`
+                      : `Found in ${crystal.localities.length} notable locations worldwide, from ${crystal.localities[0].name} to ${crystal.localities[crystal.localities.length - 1].name}.`}
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-lg">⚖️</span>
+                  <p className="text-white/85 text-sm font-body">
+                    <strong className="text-white">Heft test:</strong>{" "}
+                    {parseFloat(crystal.specificGravity) >= 5
+                      ? `With a specific gravity of ${crystal.specificGravity}, ${crystal.name} feels surprisingly heavy for its size. This weight is actually a useful identification tool.`
+                      : parseFloat(crystal.specificGravity) >= 3.5
+                      ? `${crystal.name} has a specific gravity of ${crystal.specificGravity} - noticeably heavier than quartz. You'll feel the density when you pick it up.`
+                      : parseFloat(crystal.specificGravity) >= 2.5
+                      ? `${crystal.name} has average mineral density (${crystal.specificGravity}). It feels about as heavy as you'd expect from a stone its size.`
+                      : `With a specific gravity of ${crystal.specificGravity}, ${crystal.name} feels lighter than most minerals. This lightness can help identify it.`}
+                  </p>
+                </div>
+              </div>
             </Section>
           </div>
 
           {/* DESKTOP sidebar - hidden on mobile (shown above instead) */}
           <div className="hidden lg:block lg:col-span-1">
-            <div className="sticky top-24 space-y-6">
+            <div className="sticky top-24 max-h-[calc(100vh-7rem)] overflow-y-auto space-y-6 pr-1 scrollbar-thin">
               <div className="bg-brand-surface border border-brand-border rounded-xl p-5">
                 <h3 className="font-heading text-lg text-white mb-4">
                   Quick Facts

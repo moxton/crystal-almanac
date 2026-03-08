@@ -31,6 +31,21 @@ body {
   background: #A78BFA;
 }
 
+/* Subtle sidebar scrollbar */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #1a1a2e;
+  border-radius: 2px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #A78BFA;
+}
+
 /* Blog content styling */
 .blog-content h2 {
   font-family: "Playfair Display", serif;
