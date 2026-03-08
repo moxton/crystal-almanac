@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   description:
     "The modern encyclopedia of crystals and minerals. Scientific identification, formation stories, fake-spotting guides, and cultural traditions for every stone.",
   metadataBase: new URL("https://crystalalmanac.com"),
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -116,10 +122,14 @@ function Footer() {
             </div>
           </div>
         </div>
-        <p className="text-brand-muted/50 text-xs mt-10 font-body text-center">
-          &copy; {new Date().getFullYear()} Crystal Almanac. All rights
-          reserved.
-        </p>
+        <div className="flex items-center justify-center gap-3 text-brand-muted/50 text-xs mt-10 font-body">
+          <p>
+            &copy; {new Date().getFullYear()} Crystal Almanac. All rights
+            reserved.
+          </p>
+          <span>·</span>
+          <span>v1.0</span>
+        </div>
       </div>
     </footer>
   );
