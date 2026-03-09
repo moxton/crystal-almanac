@@ -191,14 +191,14 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
               placeholder="Search by name, color, or category..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full bg-brand-surface border border-brand-border rounded-lg pl-9 pr-4 py-2.5 text-white placeholder-brand-muted font-body text-sm focus:outline-none focus:border-brand-accent/50 transition-colors"
+              className="w-full bg-brand-surface border border-brand-border rounded-lg pl-9 pr-4 py-2.5 text-white placeholder-brand-muted font-body text-base focus:outline-none focus:border-brand-accent/50 transition-colors"
             />
           </div>
 
           <select
             value={hardnessFilter || ""}
             onChange={(e) => setHardnessFilter(e.target.value || null)}
-            className="bg-brand-surface border border-brand-border rounded-lg px-3 py-2.5 text-sm font-body text-brand-muted focus:outline-none focus:border-brand-accent/50 appearance-none cursor-pointer"
+            className="bg-brand-surface border border-brand-border rounded-lg px-3 py-2.5 text-base font-body text-brand-muted focus:outline-none focus:border-brand-accent/50 appearance-none cursor-pointer"
           >
             <option value="">All Hardnesses</option>
             {HARDNESS_RANGES.map((r) => (
@@ -209,7 +209,7 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
           <select
             value={colorFilter || ""}
             onChange={(e) => setColorFilter(e.target.value || null)}
-            className="bg-brand-surface border border-brand-border rounded-lg px-3 py-2.5 text-sm font-body text-brand-muted focus:outline-none focus:border-brand-accent/50 appearance-none cursor-pointer"
+            className="bg-brand-surface border border-brand-border rounded-lg px-3 py-2.5 text-base font-body text-brand-muted focus:outline-none focus:border-brand-accent/50 appearance-none cursor-pointer"
           >
             <option value="">All Colors</option>
             {COLOR_FILTERS.map((f) => (
