@@ -65,6 +65,8 @@ function Logo() {
   );
 }
 
+import { GuidesDropdown } from "@/app/components/GuidesDropdown";
+
 function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-brand-bg/80 backdrop-blur-xl border-b border-brand-border">
@@ -77,6 +79,7 @@ function Header() {
           >
             Browse
           </Link>
+          <GuidesDropdown />
           <Link
             href="/blog"
             className="text-brand-muted hover:text-white transition-colors"
