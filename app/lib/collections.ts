@@ -38,9 +38,10 @@ export const COLLECTIONS: Collection[] = [
     description: "Protection stones represent one of the oldest and most universal uses of minerals in human culture. Roman soldiers rubbed hematite on their bodies before battle. Aztec priests carved obsidian mirrors to ward off evil. Turquoise has been sewn into horse bridles, set in sword hilts, and worn as amulets across four continents. Whatever your relationship with these traditions, the cultural history is rich and genuinely ancient.",
     disclaimer: "Protective associations are cultural and historical traditions. Crystal Almanac documents these traditions without endorsing supernatural claims.",
     accentColor: "#1C1917",
-    crystalIds: ["black-tourmaline", "obsidian", "hematite", "tiger-eye", "labradorite", "smoky-quartz", "amethyst", "turquoise", "malachite", "shungite"],
+    crystalIds: ["black-tourmaline", "apache-tear", "obsidian", "hematite", "tiger-eye", "labradorite", "smoky-quartz", "amethyst", "turquoise", "malachite", "shungite"],
     reasons: {
       "black-tourmaline": "The most popular protection stone in the modern crystal market. Pyroelectric and piezoelectric properties were observed centuries before they were scientifically explained.",
+      "apache-tear": "Carried for comfort during grief and loss. The Apache warrior legend makes it one of the most emotionally resonant protection stones.",
       "obsidian": "Aztec priests used obsidian mirrors for scrying and protection. The volcanic glass has been associated with shielding across Mesoamerican cultures for millennia.",
       "hematite": "Roman soldiers rubbed it on their bodies believing it made them invincible. The name means 'blood stone' in Greek.",
       "tiger-eye": "Ancient Egyptian deity statues had tiger's eye eyes. The chatoyant shimmer was believed to represent all-seeing divine vision.",
@@ -59,8 +60,9 @@ export const COLLECTIONS: Collection[] = [
     description: "The connection between pink and green stones and matters of the heart stretches across cultures and centuries. Rose quartz was placed in tombs by ancient Egyptians as a love token. Emerald was Cleopatra's obsession. Rhodochrosite carries the Incan tradition of petrified rulers' blood. These associations aren't random - they reflect deep cultural patterns connecting color, beauty, and emotional meaning.",
     disclaimer: "These are cultural and historical traditions. Crystals do not cause romantic attraction or heal relationships. They can, however, serve as meaningful tokens and meditation tools.",
     accentColor: "#EC4899",
-    crystalIds: ["rose-quartz", "rhodochrosite", "emerald", "morganite", "kunzite", "rhodonite", "pink-opal", "watermelon-tourmaline", "chrysoprase", "unakite"],
+    crystalIds: ["rose-quartz", "coral", "rhodochrosite", "emerald", "morganite", "kunzite", "rhodonite", "pink-opal", "watermelon-tourmaline", "chrysoprase", "unakite"],
     reasons: {
+      "coral": "Italian cornicello tradition, Tibetan sacred treasure, and one of the oldest love-protection amulets in Mediterranean culture.",
       "rose-quartz": "The universal love stone. Ancient Egyptians placed rose quartz face masks in tombs. Romans and Greeks associated it with Aphrodite/Venus.",
       "rhodochrosite": "Called 'Rosa del Inca' - the Incan rose. Argentina's national gemstone, associated with passionate, compassionate love.",
       "emerald": "Cleopatra's stone. Associated with successful love and loyalty across cultures from Egyptian to Mughal to European.",
@@ -164,8 +166,9 @@ export const COLLECTIONS: Collection[] = [
     description: "Using stones as meditation aids is one of the oldest and most pragmatic applications of crystals. The practice is straightforward: holding a smooth, cool stone provides tactile focus that anchors attention. Examining a crystal's internal structure under light gives the mind a genuinely complex visual object to explore. These are attention tools, not magic - and they work for the same reason worry stones, prayer beads, and fidget tools work: they give the body something to do while the mind settles.",
     disclaimer: "Meditation associations are cultural traditions. The tactile and visual focus benefits of holding minerals during meditation are practical, not supernatural.",
     accentColor: "#A78BFA",
-    crystalIds: ["amethyst", "clear-quartz", "selenite", "labradorite", "fluorite", "apophyllite", "scolecite", "phantom-quartz", "lemurian-quartz", "danburite"],
+    crystalIds: ["amethyst", "tibetan-quartz", "clear-quartz", "selenite", "labradorite", "fluorite", "apophyllite", "scolecite", "phantom-quartz", "lemurian-quartz", "danburite"],
     reasons: {
+      "tibetan-quartz": "Hand-collected at 5,000 meters in the Himalayas. Tibetan Buddhist monks have used crystals in meditation practice for centuries.",
       "amethyst": "Tibetan Buddhist tradition uses amethyst rosaries for meditation. Its purple color and accessible price make it the most widely used meditation crystal.",
       "clear-quartz": "The most versatile meditation stone. Its internal structures (phantoms, veils, rainbows) provide complex visual focus during contemplative practice.",
       "selenite": "Named after Selene, Greek moon goddess. Its translucent, luminous quality creates a calming visual focus in low light.",

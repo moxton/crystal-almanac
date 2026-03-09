@@ -29,7 +29,7 @@ function getWaterSafety(crystal: Crystal): "safe" | "brief" | "avoid" | "dissolv
   if (name.includes("halite") || name.includes("gypsum")) return "dissolves";
   // Avoid water - soft, porous, or reactive
   if (crystal.hardness <= 3) return "avoid";
-  if (["malachite", "azurite", "chrysocolla", "lepidolite", "lapis-lazuli", "pyrite", "hematite", "galena", "vanadinite", "wulfenite", "crocoite", "cuprite", "native-copper", "gold", "silver", "calcite", "aragonite", "rhodochrosite", "celestite", "amber", "pearl", "jet", "coral", "turquoise", "howlite", "shungite", "k2-stone", "bumble-bee-jasper", "magnetite", "scolecite", "stilbite", "cavansite", "bismuth", "moldavite"].includes(id)) return "avoid";
+  if (["malachite", "azurite", "chrysocolla", "lepidolite", "lapis-lazuli", "pyrite", "hematite", "galena", "vanadinite", "wulfenite", "crocoite", "cuprite", "native-copper", "gold", "silver", "calcite", "aragonite", "rhodochrosite", "celestite", "amber", "pearl", "jet", "coral", "turquoise", "howlite", "shungite", "k2-stone", "bumble-bee-jasper", "magnetite", "coral", "cinnabar", "peacock-ore", "mimetite", "adamite", "pyromorphite", "cassiterite", "vivianite", "caribbean-calcite", "dolomite", "epidote", "scolecite", "stilbite", "cavansite", "bismuth", "moldavite"].includes(id)) return "avoid";
   // Brief rinse only
   if (crystal.hardness <= 5) return "brief";
   if (["fluorite", "fluorapatite", "apophyllite", "kunzite", "moonstone", "opal", "sunstone", "larimar", "amazonite", "labradorite", "kyanite"].includes(id)) return "brief";
@@ -92,6 +92,17 @@ function getCareNotes(crystal: Crystal): string {
     "diamond": "Extremely durable. Safe for ultrasonic cleaning. Avoid hard impacts along cleavage.",
     "bismuth": "Lab-grown rainbow surface may tarnish over time. Avoid water.",
     "lepidolite": "Mica structure can delaminate if wet. Keep dry.",
+    "coral": "Organic gem. Avoid chemicals, perfume, ultrasonic cleaners. Clean with damp cloth.",
+    "cinnabar": "TOXIC: Contains mercury. Handle briefly, wash hands immediately. Display in enclosed case. Never heat or grind.",
+    "moissanite": "Extremely durable (9.25 Mohs). Safe for ultrasonic cleaning. Nearly indestructible for jewelry.",
+    "caribbean-calcite": "Dissolves in water. Very soft. Clean with dry cloth only. Store carefully.",
+    "peacock-ore": "Acid-treated surface may dull over time. Avoid water. Handle minimally.",
+    "vivianite": "Darkens irreversibly in light. Store in complete darkness to preserve color. Extremely soft and fragile.",
+    "mimetite": "Contains lead and arsenic. Display only. Wash hands after handling.",
+    "adamite": "Contains arsenic. Display only. Wash hands after handling. Beautiful but toxic.",
+    "pyromorphite": "Contains lead. Handle with care. Wash hands afterward.",
+    "cassiterite": "Heavy and durable but avoid prolonged water contact.",
+    "enhydro-quartz": "Avoid temperature extremes - trapped water can expand and crack the crystal.",
   };
   return notes[id] || (crystal.hardness >= 7 ? "Durable. Safe for cleaning with mild soap and water." : "Clean with dry or slightly damp cloth. Store away from harder minerals.");
 }
@@ -128,7 +139,7 @@ export default function CarePage() {
   const waterDanger = careData.filter((c) => c.water === "dissolves" || c.water === "avoid");
   const sunDanger = careData.filter((c) => c.sun === "fades" || c.sun === "avoid");
   const toxicStones = careData.filter((c) =>
-    ["galena", "vanadinite", "wulfenite", "crocoite", "bumble-bee-jasper", "malachite", "cinnabar"].includes(c.id)
+    ["galena", "vanadinite", "wulfenite", "crocoite", "bumble-bee-jasper", "malachite", "cinnabar", "mimetite", "adamite", "pyromorphite"].includes(c.id)
   );
 
   return (
