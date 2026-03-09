@@ -46,6 +46,15 @@ body {
   background: #A78BFA;
 }
 
+/* Hidden scrollbar for horizontal scroll */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /* Blog content styling */
 .blog-content h2 {
   font-family: "Playfair Display", serif;
