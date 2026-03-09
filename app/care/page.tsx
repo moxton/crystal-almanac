@@ -3,11 +3,13 @@ import { getAllCrystals } from "@/app/lib/crystals";
 import type { Crystal } from "@/app/lib/crystals";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Crystal Care Guide - Water, Sunlight & Handling",
-  description:
-    "Which crystals can go in water? Which fade in sunlight? The complete care reference for 200 crystals and minerals, based on mineral science.",
-};
+export function generateMetadata(): Metadata {
+  const count = getAllCrystals().length;
+  return {
+    title: "Crystal Care Guide - Water, Sunlight & Handling",
+    description: `Which crystals can go in water? Which fade in sunlight? The complete care reference for ${count} crystals and minerals, based on mineral science.`,
+  };
+}
 
 interface CareInfo {
   id: string;

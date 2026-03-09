@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getAllCrystals } from "@/app/lib/crystals";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -99,6 +100,7 @@ function Header() {
 }
 
 function Footer() {
+  const crystalCount = getAllCrystals().length;
   return (
     <footer className="border-t border-brand-border mt-24">
       <div className="max-w-6xl mx-auto px-4 py-12">
@@ -108,6 +110,9 @@ function Footer() {
             <p className="text-brand-muted text-sm mt-4 font-body">
               A modern encyclopedia of crystals, minerals, and stones.
               Scientific accuracy meets editorial storytelling.
+            </p>
+            <p className="text-brand-muted/60 text-xs mt-2 font-body">
+              {crystalCount} minerals and counting.
             </p>
           </div>
           <div className="flex gap-8 sm:gap-12 text-sm font-body flex-wrap">
@@ -139,7 +144,7 @@ function Footer() {
             reserved.
           </p>
           <span>·</span>
-          <span>v1.3</span>
+          <span>v1.4</span>
         </div>
       </div>
     </footer>

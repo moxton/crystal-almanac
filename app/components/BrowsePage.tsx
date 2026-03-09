@@ -198,8 +198,15 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
           c.name.toLowerCase().includes(q) ||
           c.subtitle.toLowerCase().includes(q) ||
           c.category.toLowerCase().includes(q) ||
-          c.colors.some((col) => col.toLowerCase().includes(q))
+          c.chemicalFormula.toLowerCase().includes(q) ||
+          c.crystalSystem.toLowerCase().includes(q)
       );
+      // Boost: sort exact name matches to top
+      result.sort((a, b) => {
+        const aName = a.name.toLowerCase().startsWith(q) ? 0 : 1;
+        const bName = b.name.toLowerCase().startsWith(q) ? 0 : 1;
+        return aName - bName;
+      });
     }
     if (hardnessFilter) {
       const range = HARDNESS_RANGES.find((r) => r.label === hardnessFilter);
@@ -311,7 +318,7 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
           <div>
             <p className="text-brand-accent text-xs uppercase tracking-[0.2em] font-body mb-2">
-              Encyclopedia of Crystals, Minerals & Stones
+              Encyclopedia of {crystals.length} Crystals, Minerals & Stones
             </p>
             <h1 className="font-heading text-3xl md:text-5xl text-white leading-tight">
               Crystal <em>Almanac</em>
