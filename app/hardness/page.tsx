@@ -57,7 +57,7 @@ export default function HardnessPage() {
         Mohs Hardness <em>Scale</em>
       </h1>
       <p className="text-brand-muted text-lg font-body mt-4 max-w-2xl leading-relaxed">
-        All {crystals.length} crystals and minerals mapped to the Mohs scale.
+        Every crystal, mineral, and stone mapped to the Mohs scale.
         See at a glance what scratches what, what survives daily wear, and what
         needs careful handling.
       </p>

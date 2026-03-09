@@ -141,7 +141,7 @@ export default function CarePage() {
       </h1>
       <p className="text-brand-muted text-lg font-body mt-4 max-w-2xl leading-relaxed">
         Water safety, sunlight sensitivity, fragility, and handling notes for
-        every crystal in our encyclopedia. Based on mineral science, not
+        every stone in our encyclopedia. Based on mineral science, not
         guesswork.
       </p>
 

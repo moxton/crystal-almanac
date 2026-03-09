@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Crystal Almanac - Encyclopedia of Crystals & Minerals",
+    default: "Crystal Almanac - Encyclopedia of Crystals, Minerals & Stones",
     template: "%s | Crystal Almanac",
   },
   description:
@@ -103,14 +103,14 @@ function Footer() {
           <div className="md:max-w-sm">
             <Logo />
             <p className="text-brand-muted text-sm mt-4 font-body">
-              A modern encyclopedia bridging geological science and crystal
-              traditions. Scientific accuracy meets editorial storytelling.
+              A modern encyclopedia of crystals, minerals, and stones.
+              Scientific accuracy meets editorial storytelling.
             </p>
           </div>
           <div className="flex gap-8 sm:gap-12 text-sm font-body flex-wrap">
             <div className="flex flex-col gap-2">
               <span className="text-white font-medium mb-1">Explore</span>
-              <Link href="/" className="text-brand-muted hover:text-white transition-colors">Browse Crystals</Link>
+              <Link href="/?browse=all" className="text-brand-muted hover:text-white transition-colors">Browse All</Link>
               <Link href="/blog" className="text-brand-muted hover:text-white transition-colors">Blog</Link>
               <Link href="/about" className="text-brand-muted hover:text-white transition-colors">About</Link>
               <Link href="/contact" className="text-brand-muted hover:text-white transition-colors">Contact</Link>

@@ -243,7 +243,7 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
         <section className="max-w-6xl mx-auto px-4 pt-8 pb-4">
           <div className="flex items-center justify-between mb-4">
             <h1 className="font-heading text-2xl text-white">
-              Browse <em>All Crystals</em>
+              Browse <em>All</em>
             </h1>
             <button
               onClick={clearAll}
@@ -311,7 +311,7 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
           <div>
             <p className="text-brand-accent text-xs uppercase tracking-[0.2em] font-body mb-2">
-              Encyclopedia of Crystals & Minerals
+              Encyclopedia of Crystals, Minerals & Stones
             </p>
             <h1 className="font-heading text-3xl md:text-5xl text-white leading-tight">
               Crystal <em>Almanac</em>
@@ -324,7 +324,7 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
             onClick={() => setShowFullGrid(true)}
             className="text-brand-accent text-sm font-body hover:underline whitespace-nowrap self-start md:self-auto"
           >
-            Browse all {crystals.length} crystals →
+            Browse all crystals & minerals →
           </button>
         </div>
 
@@ -430,7 +430,7 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
                 Mohs Hardness Scale
               </h3>
               <p className="text-brand-muted text-sm font-body mt-2 leading-relaxed">
-                All {crystals.length} crystals mapped by hardness. See what survives daily wear, what scratches glass, and what needs careful handling.
+                Every crystal and mineral mapped by hardness. See what survives daily wear, what scratches glass, and what needs careful handling.
               </p>
               <span className="text-brand-accent text-xs font-body mt-3 inline-block group-hover:underline">
                 Full scale →
@@ -444,7 +444,7 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
                 Crystal Care Guide
               </h3>
               <p className="text-brand-muted text-sm font-body mt-2 leading-relaxed">
-                Water safety, sunlight sensitivity, toxicity warnings, and handling notes for every crystal. Based on mineral science.
+                Water safety, sunlight sensitivity, toxicity warnings, and handling notes for every stone. Based on mineral science.
               </p>
               <span className="text-brand-accent text-xs font-body mt-3 inline-block group-hover:underline">
                 Full guide →
