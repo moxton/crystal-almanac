@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Crystal Care Guide - Water, Sunlight & Handling",
   description:
-    "Which crystals can go in water? Which fade in sunlight? The complete care reference for 125+ crystals and minerals, based on mineral science.",
+    "Which crystals can go in water? Which fade in sunlight? The complete care reference for 200 crystals and minerals, based on mineral science.",
 };
 
 interface CareInfo {
@@ -29,7 +29,7 @@ function getWaterSafety(crystal: Crystal): "safe" | "brief" | "avoid" | "dissolv
   if (name.includes("halite") || name.includes("gypsum")) return "dissolves";
   // Avoid water - soft, porous, or reactive
   if (crystal.hardness <= 3) return "avoid";
-  if (["malachite", "azurite", "chrysocolla", "lepidolite", "lapis-lazuli", "pyrite", "hematite", "galena", "vanadinite", "wulfenite", "crocoite", "cuprite", "native-copper", "gold", "silver", "calcite", "aragonite", "rhodochrosite", "celestite", "amber", "pearl", "jet", "coral", "turquoise", "howlite", "shungite", "k2-stone", "bumble-bee-jasper", "magnetite", "coral", "cinnabar", "peacock-ore", "mimetite", "adamite", "pyromorphite", "cassiterite", "vivianite", "caribbean-calcite", "dolomite", "epidote", "scolecite", "stilbite", "cavansite", "bismuth", "moldavite"].includes(id)) return "avoid";
+  if (["malachite", "azurite", "chrysocolla", "lepidolite", "lapis-lazuli", "pyrite", "hematite", "galena", "vanadinite", "wulfenite", "crocoite", "cuprite", "native-copper", "gold", "silver", "calcite", "aragonite", "rhodochrosite", "celestite", "amber", "pearl", "jet", "coral", "turquoise", "howlite", "shungite", "k2-stone", "bumble-bee-jasper", "magnetite", "coral", "cinnabar", "peacock-ore", "mimetite", "adamite", "pyromorphite", "cassiterite", "vivianite", "caribbean-calcite", "dolomite", "epidote", "scolecite", "stilbite", "cavansite", "bismuth", "moldavite", "realgar", "orpiment", "stibnite", "erythrite", "legrandite", "marcasite", "aurichalcite", "cobaltocalcite"].includes(id)) return "avoid";
   // Brief rinse only
   if (crystal.hardness <= 5) return "brief";
   if (["fluorite", "fluorapatite", "apophyllite", "kunzite", "moonstone", "opal", "sunstone", "larimar", "amazonite", "labradorite", "kyanite"].includes(id)) return "brief";
@@ -41,18 +41,18 @@ function getWaterSafety(crystal: Crystal): "safe" | "brief" | "avoid" | "dissolv
 function getSunSafety(crystal: Crystal): "safe" | "caution" | "fades" | "avoid" {
   const id = crystal.id;
   // Known to fade significantly
-  if (["amethyst", "kunzite", "rose-quartz", "smoky-quartz", "chrysoprase", "celestite", "fluorite", "ametrine"].includes(id)) return "fades";
+  if (["amethyst", "kunzite", "rose-quartz", "smoky-quartz", "chrysoprase", "celestite", "fluorite", "ametrine", "hackmanite", "tugtupite", "hiddenite"].includes(id)) return "fades";
   // Caution - may fade with prolonged exposure
-  if (["aquamarine", "citrine", "blue-lace-agate", "larimar", "turquoise", "opal", "amber", "prasiolite", "spirit-quartz", "grape-agate", "pink-opal"].includes(id)) return "caution";
+  if (["aquamarine", "citrine", "blue-lace-agate", "larimar", "turquoise", "opal", "amber", "prasiolite", "spirit-quartz", "grape-agate", "pink-opal", "fire-opal"].includes(id)) return "caution";
   // Avoid - structurally affected
-  if (["selenite", "pearl"].includes(id)) return "avoid";
+  if (["selenite", "pearl", "realgar", "vivianite"].includes(id)) return "avoid";
   return "safe";
 }
 
 function getFragility(crystal: Crystal): boolean {
   const id = crystal.id;
   if (crystal.hardness <= 3) return true;
-  if (["selenite", "celestite", "apophyllite", "scolecite", "stilbite", "wulfenite", "crocoite", "cavansite", "kunzite", "kyanite", "bismuth", "seraphinite", "desert-rose", "vanadinite", "cuprite"].includes(id)) return true;
+  if (["selenite", "celestite", "apophyllite", "scolecite", "stilbite", "wulfenite", "crocoite", "cavansite", "kunzite", "kyanite", "bismuth", "seraphinite", "desert-rose", "vanadinite", "cuprite", "okenite", "aurichalcite", "stibnite", "fulgurite", "erythrite", "marcasite"].includes(id)) return true;
   return false;
 }
 
@@ -103,6 +103,24 @@ function getCareNotes(crystal: Crystal): string {
     "pyromorphite": "Contains lead. Handle with care. Wash hands afterward.",
     "cassiterite": "Heavy and durable but avoid prolonged water contact.",
     "enhydro-quartz": "Avoid temperature extremes - trapped water can expand and crack the crystal.",
+    "realgar": "TOXIC: Contains arsenic. Decomposes in sunlight into yellow powder. Store in complete darkness. Handle briefly, wash hands immediately. Display in enclosed case.",
+    "orpiment": "TOXIC: Contains arsenic. Light-sensitive. Store away from sunlight. Handle briefly, wash hands immediately. Never heat or grind.",
+    "erythrite": "TOXIC: Contains cobalt and arsenic. Display only. Wash hands after handling. Never use for gem elixirs.",
+    "legrandite": "Contains arsenic. Display only. Wash hands after handling. Do not use for gem elixirs.",
+    "stibnite": "Contains antimony. Wash hands after handling. Extremely soft and fragile. Handle by matrix only.",
+    "marcasite": "Chemically unstable. Decomposes in humidity into sulfuric acid ('pyrite disease'). Keep dry. Store with desiccant packets. Inspect periodically for white powdery residue.",
+    "okenite": "EXTREMELY fragile. Never touch crystal fibers - skin oils permanently mat them. Handle by matrix only. Store in protective display case.",
+    "aurichalcite": "EXTREMELY fragile. Delicate crystal tufts crush on contact. Display only. Store in padded display case.",
+    "fulgurite": "Extremely fragile hollow tubes. Handle with extreme care. Many specimens break during transport.",
+    "hackmanite": "Color changes with UV/sunlight exposure (tenebrescence). Not damaging but color fades in dark, returns in UV. Store in light for strongest color.",
+    "tugtupite": "Color deepens in sunlight, fades in dark (tenebrescence). Strong UV fluorescence. Handle normally.",
+    "hiddenite": "Can fade with prolonged UV exposure. Store away from direct sunlight. Has perfect cleavage - avoid impacts.",
+    "fire-opal": "Contains water like all opal. Avoid sudden temperature changes. Can crack from dehydration. More stable than Australian opal but still sensitive.",
+    "boulder-opal": "Ironstone backing provides stability but opal layer is still sensitive to heat and dehydration. Avoid ultrasonic cleaners.",
+    "nephrite": "Toughest natural material. Virtually indestructible. Safe for water, mild soap. One of the most durable stones for jewelry.",
+    "cobaltocalcite": "Soft (Mohs 3). Avoid water. Clean with dry cloth only. Handle carefully to preserve druzy crystal surfaces.",
+    "optical-calcite": "Perfect cleavage in three directions. Avoid impacts. Clean carefully. Fascinating double-refraction demonstration piece.",
+    "imperial-topaz": "Durable (Mohs 8) but has perfect basal cleavage. Avoid sharp impacts. Safe for gentle cleaning.",
   };
   return notes[id] || (crystal.hardness >= 7 ? "Durable. Safe for cleaning with mild soap and water." : "Clean with dry or slightly damp cloth. Store away from harder minerals.");
 }
@@ -139,7 +157,7 @@ export default function CarePage() {
   const waterDanger = careData.filter((c) => c.water === "dissolves" || c.water === "avoid");
   const sunDanger = careData.filter((c) => c.sun === "fades" || c.sun === "avoid");
   const toxicStones = careData.filter((c) =>
-    ["galena", "vanadinite", "wulfenite", "crocoite", "bumble-bee-jasper", "malachite", "cinnabar", "mimetite", "adamite", "pyromorphite"].includes(c.id)
+    ["galena", "vanadinite", "wulfenite", "crocoite", "bumble-bee-jasper", "malachite", "cinnabar", "mimetite", "adamite", "pyromorphite", "realgar", "orpiment", "erythrite", "legrandite", "stibnite"].includes(c.id)
   );
 
   return (
@@ -213,7 +231,7 @@ export default function CarePage() {
             ))}
           </div>
           <p className="text-white/40 text-xs font-body mt-2">
-            Contain lead, arsenic, or copper. Wash hands after handling. Never
+            Contain lead, arsenic, antimony, or mercury. Wash hands after handling. Never
             use for gem elixirs.
           </p>
         </div>

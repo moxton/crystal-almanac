@@ -17,7 +17,7 @@ export const COLLECTIONS: Collection[] = [
     description: "Across cultures and centuries, certain minerals have been consistently associated with calming energy and emotional regulation. Whether through the ritual of holding a smooth stone during stress, the meditative focus of examining a crystal's internal structure, or the cultural weight of a 3,000-year tradition, these stones have earned their reputation as tools for finding stillness.",
     disclaimer: "These associations are cultural traditions, not medical claims. If you experience anxiety, please consult a healthcare professional. Crystals are not substitutes for professional care.",
     accentColor: "#93C5FD",
-    crystalIds: ["amethyst", "lepidolite", "blue-lace-agate", "howlite", "smoky-quartz", "celestite", "angelite", "amazonite", "kunzite", "chrysocolla"],
+    crystalIds: ["amethyst", "lepidolite", "blue-lace-agate", "howlite", "smoky-quartz", "celestite", "angelite", "amazonite", "kunzite", "chrysocolla", "smithsonite"],
     reasons: {
       "amethyst": "The ancient Greeks' anti-anxiety stone. Its name literally means 'not intoxicated' - they believed it calmed the mind.",
       "lepidolite": "Contains lithium, the element used in mood-stabilizing medication. The lithium isn't bioavailable through touch, but the association is notable.",
@@ -29,6 +29,7 @@ export const COLLECTIONS: Collection[] = [
       "amazonite": "Called the 'hope stone.' Associated with setting healthy boundaries and reducing worry.",
       "kunzite": "Connected to unconditional love and emotional calming. Its gentle pink energy is considered soothing.",
       "chrysocolla": "Cleopatra reportedly carried it for diplomatic calm. Associated with thoughtful communication.",
+      "smithsonite": "Called the 'stone of charm.' Its soft pastel colors and botryoidal texture are associated with soothing emotional turbulence and easing anxiety.",
     },
   },
   {
@@ -38,7 +39,7 @@ export const COLLECTIONS: Collection[] = [
     description: "Protection stones represent one of the oldest and most universal uses of minerals in human culture. Roman soldiers rubbed hematite on their bodies before battle. Aztec priests carved obsidian mirrors to ward off evil. Turquoise has been sewn into horse bridles, set in sword hilts, and worn as amulets across four continents. Whatever your relationship with these traditions, the cultural history is rich and genuinely ancient.",
     disclaimer: "Protective associations are cultural and historical traditions. Crystal Almanac documents these traditions without endorsing supernatural claims.",
     accentColor: "#1C1917",
-    crystalIds: ["black-tourmaline", "apache-tear", "obsidian", "hematite", "tiger-eye", "labradorite", "smoky-quartz", "amethyst", "turquoise", "malachite", "shungite"],
+    crystalIds: ["black-tourmaline", "apache-tear", "obsidian", "hematite", "tiger-eye", "labradorite", "smoky-quartz", "amethyst", "turquoise", "malachite", "shungite", "nephrite", "tigers-iron"],
     reasons: {
       "black-tourmaline": "The most popular protection stone in the modern crystal market. Pyroelectric and piezoelectric properties were observed centuries before they were scientifically explained.",
       "apache-tear": "Carried for comfort during grief and loss. The Apache warrior legend makes it one of the most emotionally resonant protection stones.",
@@ -51,6 +52,8 @@ export const COLLECTIONS: Collection[] = [
       "turquoise": "One of the most universally protective stones. Persian horsemen attached it to bridles, believing it prevented falls. Native American peoples used it in ceremony for thousands of years.",
       "malachite": "Ancient Egyptians associated malachite with protective goddess Hathor. Used as eye paint partly for its perceived protective qualities.",
       "shungite": "Peter the Great established the first Russian spa at Karelian shungite deposits. Russian folk tradition associates it with purification.",
+      "nephrite": "Called the 'stone of heaven' in Chinese culture for over 5,000 years. The toughest natural material, used as protective amulets and ceremonial objects across Chinese, Maori, and Mesoamerican civilizations.",
+      "tigers-iron": "Combines three classic protection and grounding stones - tiger eye, hematite, and red jasper - in a single 2.5-billion-year-old formation. Triple the protective association in one stone.",
     },
   },
   {
@@ -60,7 +63,7 @@ export const COLLECTIONS: Collection[] = [
     description: "The connection between pink and green stones and matters of the heart stretches across cultures and centuries. Rose quartz was placed in tombs by ancient Egyptians as a love token. Emerald was Cleopatra's obsession. Rhodochrosite carries the Incan tradition of petrified rulers' blood. These associations aren't random - they reflect deep cultural patterns connecting color, beauty, and emotional meaning.",
     disclaimer: "These are cultural and historical traditions. Crystals do not cause romantic attraction or heal relationships. They can, however, serve as meaningful tokens and meditation tools.",
     accentColor: "#EC4899",
-    crystalIds: ["rose-quartz", "coral", "rhodochrosite", "emerald", "morganite", "kunzite", "rhodonite", "pink-opal", "watermelon-tourmaline", "chrysoprase", "unakite"],
+    crystalIds: ["rose-quartz", "coral", "rhodochrosite", "emerald", "morganite", "kunzite", "rhodonite", "pink-opal", "watermelon-tourmaline", "chrysoprase", "unakite", "cobaltocalcite", "tugtupite", "rubellite", "thulite"],
     reasons: {
       "coral": "Italian cornicello tradition, Tibetan sacred treasure, and one of the oldest love-protection amulets in Mediterranean culture.",
       "rose-quartz": "The universal love stone. Ancient Egyptians placed rose quartz face masks in tombs. Romans and Greeks associated it with Aphrodite/Venus.",
@@ -73,6 +76,10 @@ export const COLLECTIONS: Collection[] = [
       "watermelon-tourmaline": "Pink core + green rim maps to the heart chakra's dual energy: emotional love (pink) and growth (green).",
       "chrysoprase": "Alexander the Great wore chrysoprase into battle. Associated with Venus in medieval tradition.",
       "unakite": "Green epidote + pink feldspar. Used in fertility-related traditions and for balancing giving and receiving in relationships.",
+      "cobaltocalcite": "One of the most vivid pink minerals on Earth. Cobalt creates an intense magenta that practitioners associate with unconditional love and emotional opening.",
+      "tugtupite": "Called the 'stone of true love' in Greenlandic Inuit tradition. Legend says it glows when lovers are near. Its color deepens in light, symbolizing love that grows stronger.",
+      "rubellite": "The red tourmaline of deep, passionate love. Maintains its vivid red in any light - associated with love that doesn't shift or fade with changing circumstances.",
+      "thulite": "Norway's pink zoisite, named after the ancient Nordic land of Thule. Associated with joy, pleasure, and the celebration of life's emotional richness.",
     },
   },
   {
@@ -82,7 +89,7 @@ export const COLLECTIONS: Collection[] = [
     description: "Artists, writers, and musicians have reached for specific stones for centuries. Carnelian was the signet stone of architects and builders in ancient Egypt. Citrine sat on the desks of Renaissance merchants who valued both creative problem-solving and prosperity. The connection between warm-colored stones and creative fire runs deep in Western and Eastern traditions alike.",
     disclaimer: "Creative associations are cultural traditions. Crystals don't generate ideas, but they can serve as focus objects during creative practice.",
     accentColor: "#F97316",
-    crystalIds: ["carnelian", "citrine", "sunstone", "fire-agate", "ametrine", "fluorite", "labradorite", "azurite", "wulfenite", "sphalerite"],
+    crystalIds: ["carnelian", "citrine", "sunstone", "fire-agate", "ametrine", "fluorite", "labradorite", "azurite", "wulfenite", "sphalerite", "fire-opal", "tangerine-quartz", "spessartine-garnet"],
     reasons: {
       "carnelian": "Ancient Egyptian architects and builders wore carnelian. Associated with bold creative action and the courage to present work publicly.",
       "citrine": "Called 'the merchant's stone.' Associated with both creative vision and the ability to manifest ideas into reality.",
@@ -94,6 +101,9 @@ export const COLLECTIONS: Collection[] = [
       "azurite": "Renaissance painters ground it into blue pigment. Literally the color of creative expression in medieval and Renaissance art.",
       "wulfenite": "Called 'the painter's stone.' Its vivid orange and thin tabular form are associated with artistic vision.",
       "sphalerite": "Has three times diamond's fire. Associated with creative brilliance and the energy to pursue ambitious projects.",
+      "fire-opal": "The Aztec 'sun stone,' associated with Quetzalcoatl and creative fire. Its vivid body color glows like a live ember - pure creative intensity in stone form.",
+      "tangerine-quartz": "Iron-kissed quartz connected to the sacral chakra. Associated with playful creativity, sensory inspiration, and the joy of making.",
+      "spessartine-garnet": "Called 'mandarin garnet' for its electric orange. Associated with creative confidence, bold self-expression, and the energy to start ambitious projects.",
     },
   },
   {
@@ -103,7 +113,7 @@ export const COLLECTIONS: Collection[] = [
     description: "Grounding stones share a pattern: they're typically dark, dense, and often metallic or earthy in appearance. This isn't coincidence. The heaviest, most earth-connected minerals naturally suggest stability. When you hold a piece of hematite and feel its unexpected weight, or run your thumb across a polished obsidian surface, the physical experience itself is grounding. These stones have been used for centering practices across cultures.",
     disclaimer: "Grounding associations are cultural traditions. The physical experience of holding a dense, smooth stone can be genuinely calming through tactile focus, but this is a sensory effect, not a metaphysical one.",
     accentColor: "#78716C",
-    crystalIds: ["hematite", "black-tourmaline", "obsidian", "smoky-quartz", "tiger-eye", "jasper", "garnet", "bloodstone", "shungite", "magnetite"],
+    crystalIds: ["hematite", "black-tourmaline", "obsidian", "smoky-quartz", "tiger-eye", "jasper", "garnet", "bloodstone", "shungite", "magnetite", "petrified-wood", "tigers-iron"],
     reasons: {
       "hematite": "Specific gravity 5.26 - it feels shockingly heavy. The physical weight creates an immediate sense of substance and connection to earth.",
       "black-tourmaline": "The most popular grounding crystal. Its striated crystal faces and solid black color reinforce the 'rooted' association.",
@@ -115,6 +125,8 @@ export const COLLECTIONS: Collection[] = [
       "bloodstone": "Roman gladiators carried it for endurance. The combination of earth-green with blood-red spots symbolizes life force rooted in the physical world.",
       "shungite": "2 billion years old. The sheer geological age of this carbon-rich rock connects it to deep Earth history.",
       "magnetite": "Literally magnetic. Lodestone's physical pull on iron is the most dramatic demonstration of Earth energy in any mineral.",
+      "petrified-wood": "Ancient trees turned to stone over millions of years. The ultimate symbol of patience, deep time, and earth's transformative power. Holding 225-million-year-old wood grounds you in geological time.",
+      "tigers-iron": "2.5 billion years old - formed during the Great Oxidation Event. Combines three grounding minerals (tiger eye, hematite, red jasper) into one ancient stone.",
     },
   },
   {
@@ -124,7 +136,7 @@ export const COLLECTIONS: Collection[] = [
     description: "Gold-colored and green stones have been associated with wealth across cultures for obvious symbolic reasons - they resemble the things they're meant to attract. But the traditions run deeper than simple color association. Jade has been more valuable than gold in Chinese culture for millennia. Pyrite's metallic luster earned it the name 'fool's gold' precisely because people confused it with the real thing. These stones represent humanity's long relationship with material aspiration.",
     disclaimer: "Prosperity associations are cultural traditions. No mineral attracts money. These stones can serve as reminders of financial goals during intentional practice.",
     accentColor: "#F59E0B",
-    crystalIds: ["citrine", "pyrite", "jade", "aventurine", "gold", "tiger-eye", "malachite", "sunstone", "emerald", "moss-agate"],
+    crystalIds: ["citrine", "pyrite", "jade", "aventurine", "gold", "tiger-eye", "malachite", "sunstone", "emerald", "moss-agate", "tsavorite", "imperial-topaz", "chrysoberyl"],
     reasons: {
       "citrine": "Called 'the merchant's stone.' Shopkeepers historically placed citrine in cash registers. Associated with abundance and manifestation.",
       "pyrite": "'Fool's gold' - its resemblance to gold is so convincing it fooled prospectors. Associated with attracting wealth and recognizing opportunity.",
@@ -136,6 +148,9 @@ export const COLLECTIONS: Collection[] = [
       "sunstone": "Contains actual copper. The warm metallic shimmer is associated with solar energy, leadership, and attracting success.",
       "emerald": "The gem of royalty and wealth. Cleopatra, Mughal emperors, and European monarchs all hoarded emeralds as symbols of power.",
       "moss-agate": "European farmers placed moss agate in fields for abundant harvests. The oldest agricultural prosperity stone tradition in Western culture.",
+      "tsavorite": "The vivid green grossular garnet rivaling emerald. Discovered in 1967 and championed by Tiffany's, it represents modern gem-world abundance and the rewards of persistent searching.",
+      "imperial-topaz": "Named for Russian czars who claimed the finest golden-pink topaz exclusively for royalty. The 'imperial' designation itself is a statement of abundance and divine right.",
+      "chrysoberyl": "Cat's eye chrysoberyl was one of the most prized talismans in ancient India and Sri Lanka, believed to protect wealth and ward off financial misfortune.",
     },
   },
   {
@@ -145,7 +160,7 @@ export const COLLECTIONS: Collection[] = [
     description: "Blue and blue-green stones dominate the communication category across crystal traditions - a pattern that maps to throat chakra associations in Hindu tradition and to sky/heaven symbolism in Western and Middle Eastern cultures. The association between blue stones and truth-telling is remarkably consistent: lapis lazuli was the stone of Ma'at (Egyptian goddess of truth), turquoise was the 'truth stone' in Persian culture, and aquamarine was carried by sailors who needed to speak clearly under pressure.",
     disclaimer: "Communication associations are cultural traditions. Crystals do not improve speaking ability. They can serve as focus objects for communication-related intentions.",
     accentColor: "#38BDF8",
-    crystalIds: ["blue-lace-agate", "aquamarine", "sodalite", "amazonite", "lapis-lazuli", "chrysocolla", "kyanite", "turquoise", "larimar", "celestite"],
+    crystalIds: ["blue-lace-agate", "aquamarine", "sodalite", "amazonite", "lapis-lazuli", "chrysocolla", "kyanite", "turquoise", "larimar", "celestite", "blue-apatite", "indicolite"],
     reasons: {
       "blue-lace-agate": "The quintessential communication stone. Its soft blue color and gentle banding are associated with calm, clear self-expression.",
       "aquamarine": "The 'sailor's stone.' Associated with courage under pressure and clear communication in difficult situations.",
@@ -157,6 +172,8 @@ export const COLLECTIONS: Collection[] = [
       "turquoise": "Truth stone in Persian culture. Given as a gift symbolizing friendship and honest exchange across many traditions.",
       "larimar": "Dominican Republic's stone. Associated with calm expression and translating spiritual insight into words.",
       "celestite": "Named 'celestial' for its sky color. Associated with angelic communication and expressing higher truths.",
+      "blue-apatite": "Named from the Greek 'to deceive' because it mimics other gems. Associated with motivation, goal clarity, and articulating ambitions - the communication of vision.",
+      "indicolite": "The rare blue tourmaline. Combines tourmaline's protective energy with the throat-chakra association of blue stones. Connected to expressing difficult truths with compassion.",
     },
   },
   {
@@ -166,7 +183,7 @@ export const COLLECTIONS: Collection[] = [
     description: "Using stones as meditation aids is one of the oldest and most pragmatic applications of crystals. The practice is straightforward: holding a smooth, cool stone provides tactile focus that anchors attention. Examining a crystal's internal structure under light gives the mind a genuinely complex visual object to explore. These are attention tools, not magic - and they work for the same reason worry stones, prayer beads, and fidget tools work: they give the body something to do while the mind settles.",
     disclaimer: "Meditation associations are cultural traditions. The tactile and visual focus benefits of holding minerals during meditation are practical, not supernatural.",
     accentColor: "#A78BFA",
-    crystalIds: ["amethyst", "tibetan-quartz", "clear-quartz", "selenite", "labradorite", "fluorite", "apophyllite", "scolecite", "phantom-quartz", "lemurian-quartz", "danburite"],
+    crystalIds: ["amethyst", "tibetan-quartz", "clear-quartz", "selenite", "labradorite", "fluorite", "apophyllite", "scolecite", "phantom-quartz", "lemurian-quartz", "danburite", "lodolite", "optical-calcite", "hackmanite"],
     reasons: {
       "tibetan-quartz": "Hand-collected at 5,000 meters in the Himalayas. Tibetan Buddhist monks have used crystals in meditation practice for centuries.",
       "amethyst": "Tibetan Buddhist tradition uses amethyst rosaries for meditation. Its purple color and accessible price make it the most widely used meditation crystal.",
@@ -179,6 +196,9 @@ export const COLLECTIONS: Collection[] = [
       "phantom-quartz": "The visible 'ghost' crystal inside provides a meditation focus on growth, layers, and the passage of time.",
       "lemurian-quartz": "The horizontal striations provide a tactile meditation practice - running a finger along the ridges as a focus technique.",
       "danburite": "Called 'angel stone.' Its clarity and gentle energy are associated with deep, peaceful meditation states.",
+      "lodolite": "Garden quartz with miniature landscapes trapped inside. Each specimen is a unique meditation world - practitioners gaze into the internal 'gardens' as a visualization focus.",
+      "optical-calcite": "Viking sunstone with double refraction. Place it over text and see two images - a meditation on perception, duality, and seeing beyond the obvious.",
+      "hackmanite": "The color-changing sodalite. Shifts from violet to white and back, providing a literally transforming meditation focus. The impermanence of its color teaches present-moment awareness.",
     },
   },
 ];

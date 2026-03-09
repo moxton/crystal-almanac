@@ -16,7 +16,7 @@ const fs = require('fs');
 const path = require('path');
 
 // ---------- CONFIG ----------
-const ACCESS_KEY = process.env.UNSPLASH_ACCESS_KEY || 'YOUR_KEY_HERE';
+const ACCESS_KEY = process.env.UNSPLASH_ACCESS_KEY || 'IMAZrUxCyRIrng9vcCheZbje-hjpUJq6BQm5t4zvVoc';
 const OUTPUT_FILE = path.join(__dirname, '..', 'crystal-images.csv');
 const CRYSTALS_FILE = path.join(__dirname, '..', 'app', 'data', 'crystals.json');
 const RESULTS_PER_CRYSTAL = 3;       // top N images per crystal
@@ -55,7 +55,7 @@ function escapeCsv(str) {
 }
 
 async function main() {
-  if (ACCESS_KEY === 'YOUR_KEY_HERE') {
+  if (!ACCESS_KEY || ACCESS_KEY === 'YOUR_KEY_HERE') {
     console.error('ERROR: Set your Unsplash API key via UNSPLASH_ACCESS_KEY env variable.');
     console.error('  UNSPLASH_ACCESS_KEY=abc123 node scripts/fetch-unsplash-images.js');
     process.exit(1);
