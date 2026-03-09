@@ -107,13 +107,19 @@ function Footer() {
               traditions. Scientific accuracy meets editorial storytelling.
             </p>
           </div>
-          <div className="flex gap-12 text-sm font-body">
+          <div className="flex gap-8 sm:gap-12 text-sm font-body flex-wrap">
             <div className="flex flex-col gap-2">
               <span className="text-white font-medium mb-1">Explore</span>
               <Link href="/" className="text-brand-muted hover:text-white transition-colors">Browse Crystals</Link>
               <Link href="/blog" className="text-brand-muted hover:text-white transition-colors">Blog</Link>
               <Link href="/about" className="text-brand-muted hover:text-white transition-colors">About</Link>
               <Link href="/contact" className="text-brand-muted hover:text-white transition-colors">Contact</Link>
+            </div>
+            <div className="flex flex-col gap-2">
+              <span className="text-white font-medium mb-1">Guides</span>
+              <Link href="/birthstones" className="text-brand-muted hover:text-white transition-colors">Birthstones</Link>
+              <Link href="/hardness" className="text-brand-muted hover:text-white transition-colors">Hardness Scale</Link>
+              <Link href="/care" className="text-brand-muted hover:text-white transition-colors">Crystal Care</Link>
             </div>
             <div className="flex flex-col gap-2">
               <span className="text-white font-medium mb-1">Legal</span>
@@ -128,7 +134,7 @@ function Footer() {
             reserved.
           </p>
           <span>·</span>
-          <span>v1.0</span>
+          <span>v1.1</span>
         </div>
       </div>
     </footer>
