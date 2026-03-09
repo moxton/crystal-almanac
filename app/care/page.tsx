@@ -31,7 +31,7 @@ function getWaterSafety(crystal: Crystal): "safe" | "brief" | "avoid" | "dissolv
   if (name.includes("halite") || name.includes("gypsum")) return "dissolves";
   // Avoid water - soft, porous, or reactive
   if (crystal.hardness <= 3) return "avoid";
-  if (["malachite", "azurite", "chrysocolla", "lepidolite", "lapis-lazuli", "pyrite", "hematite", "galena", "vanadinite", "wulfenite", "crocoite", "cuprite", "native-copper", "gold", "silver", "calcite", "aragonite", "rhodochrosite", "celestite", "amber", "pearl", "jet", "coral", "turquoise", "howlite", "shungite", "k2-stone", "bumble-bee-jasper", "magnetite", "coral", "cinnabar", "peacock-ore", "mimetite", "adamite", "pyromorphite", "cassiterite", "vivianite", "caribbean-calcite", "dolomite", "epidote", "scolecite", "stilbite", "cavansite", "bismuth", "moldavite", "realgar", "orpiment", "stibnite", "erythrite", "legrandite", "marcasite", "aurichalcite", "cobaltocalcite", "chalcopyrite", "shattuckite", "creedite", "covellite"].includes(id)) return "avoid";
+  if (["malachite", "azurite", "chrysocolla", "lepidolite", "lapis-lazuli", "pyrite", "hematite", "galena", "vanadinite", "wulfenite", "crocoite", "cuprite", "native-copper", "gold", "silver", "calcite", "aragonite", "rhodochrosite", "celestite", "amber", "pearl", "jet", "coral", "turquoise", "howlite", "shungite", "k2-stone", "bumble-bee-jasper", "magnetite", "coral", "cinnabar", "peacock-ore", "mimetite", "adamite", "pyromorphite", "cassiterite", "vivianite", "caribbean-calcite", "dolomite", "epidote", "scolecite", "stilbite", "cavansite", "bismuth", "moldavite", "realgar", "orpiment", "stibnite", "erythrite", "legrandite", "marcasite", "aurichalcite", "cobaltocalcite", "chalcopyrite", "shattuckite", "creedite", "covellite", "iron-meteorite"].includes(id)) return "avoid";
   // Brief rinse only
   if (crystal.hardness <= 5) return "brief";
   if (["fluorite", "fluorapatite", "apophyllite", "kunzite", "moonstone", "opal", "sunstone", "larimar", "amazonite", "labradorite", "kyanite"].includes(id)) return "brief";
@@ -132,6 +132,10 @@ function getCareNotes(crystal: Crystal): string {
     "rainbow-moonstone": "Has feldspar cleavage. Avoid hard impacts. Brief rinse fine. Store separately from harder stones.",
     "gaspeite": "Nickel carbonate. Avoid prolonged water contact. Relatively soft (4.5). Clean with dry cloth.",
     "pink-amethyst": "Same care as amethyst. May fade with prolonged strong sunlight exposure. Durable for display and handling.",
+    "platinum": "Extremely durable. Doesn't tarnish. Safe for water and mild soap cleaning. Virtually indestructible.",
+    "native-sulfur": "FLAMMABLE. Keep away from heat, flame, and sparks. Can crack from thermal shock (even body heat on cold specimens). Store at stable room temperature. Never heat. Wash hands after handling.",
+    "iron-meteorite": "RUSTS if exposed to moisture. Store with desiccant packets in sealed container. If surface shows orange rust spots, treat with gun oil or Renaissance Wax. Never submerge in water. Handle with clean dry hands.",
+    "wolframite": "Very heavy and durable. Avoid prolonged water contact. Clean with dry cloth. The density can surprise you - handle securely.",
   };
   return notes[id] || (crystal.hardness >= 7 ? "Durable. Safe for cleaning with mild soap and water." : "Clean with dry or slightly damp cloth. Store away from harder minerals.");
 }

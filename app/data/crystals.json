@@ -17060,5 +17060,295 @@
     ],
     "priceRange": "$10-40 crystal specimens  ·  $50-200 twinned crystals  ·  $200-1,000+ fine reticulated twins",
     "seoDescription": "Rutile: titanium dioxide with diamond-like luster and geometric twins. Guide to the mineral that creates rutilated quartz, identification, and collecting."
+  },
+  {
+    "id": "platinum",
+    "name": "Platinum",
+    "subtitle": "The Noble Metal",
+    "category": "Native Element",
+    "colors": [
+      "Silvery White",
+      "Steel Gray"
+    ],
+    "colorHexes": [
+      "#D4D4D8",
+      "#9CA3AF"
+    ],
+    "hardness": 4.5,
+    "chemicalFormula": "Pt",
+    "crystalSystem": "Isometric",
+    "luster": "Metallic",
+    "streak": "Silvery White",
+    "transparency": "Opaque",
+    "specificGravity": "21.45",
+    "localities": [
+      {
+        "name": "South Africa",
+        "region": "Bushveld Complex, Merensky Reef",
+        "note": "World's largest platinum reserves, ~70% of global supply"
+      },
+      {
+        "name": "Russia",
+        "region": "Norilsk, Siberia / Ural Mountains",
+        "note": "Second-largest producer, placer deposits first discovered 1820s"
+      },
+      {
+        "name": "Canada",
+        "region": "Sudbury, Ontario",
+        "note": "Byproduct of nickel mining, significant production"
+      },
+      {
+        "name": "Colombia",
+        "region": "Chocó Department",
+        "note": "Historical placer deposits, pre-Columbian indigenous use"
+      }
+    ],
+    "formation": "Platinum forms in ultramafic igneous rocks, particularly in layered intrusions where dense platinum-group minerals settle out of cooling magma. The Bushveld Complex in South Africa contains the world's largest reserves in thin, laterally extensive layers called 'reefs' (the Merensky Reef and UG2 Reef).\n\nNative platinum occurs as small grains, nuggets, and rarely as cubic or octahedral crystals within dunite, chromitite, and other ultramafic rocks. It's almost always alloyed with other platinum-group elements (palladium, rhodium, iridium, osmium, ruthenium) and often contains iron.\n\nPlacer deposits (river gravels) were the original source of platinum. Indigenous peoples in Colombia's Chocó region worked platinum centuries before Europeans encountered it. Spanish conquistadors initially considered it a nuisance metal contaminating their gold, calling it 'platina' (little silver). They couldn't melt it with their technology and sometimes threw it back in the river. It wasn't until the 18th century that European scientists recognized platinum as a distinct, extraordinarily valuable element.",
+    "identification": "Native platinum is identified by its silvery-white color, very high specific gravity (21.45, the densest commonly encountered mineral), malleability, and resistance to acids. It doesn't tarnish in air and is only dissolved by aqua regia (a mixture of hydrochloric and nitric acids).\n\nDistinguish from silver (lighter SG of 10.5, tarnishes), white gold (an alloy, not found in nature), and palladium (slightly lighter SG, very similar appearance). Platinum's extreme density is the most practical field test: it feels remarkably heavy for its size.",
+    "howToSpotFakes": "Platinum nuggets are valuable enough to warrant caution. Lead or tungsten (both dense metals) could be silver-plated to imitate platinum. A density test is the most accessible verification: platinum's SG of 21.45 far exceeds silver (10.5) though tungsten (19.3) comes closer. Acid testing (resistance to nitric acid) and professional XRF analysis provide definitive confirmation. For specimen collectors, provenance documentation from known deposits adds confidence.",
+    "metaphysical": {
+      "chakra": "Crown, Soul Star",
+      "zodiac": "All signs",
+      "element": "Earth, Spirit",
+      "traditions": "Platinum is associated with transformation, endurance, and spiritual evolution in crystal healing. Its extreme rarity and resistance to corrosion connect it to themes of permanence and unwavering commitment. Some practitioners consider it the highest-vibration metal, used for amplifying the properties of other stones. Its role in catalytic converters (transforming pollutants into harmless gases) reinforces alchemical transformation associations."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Gold",
+        "relation": "Fellow noble metal, often found in similar placer deposits",
+        "color": "#EAB308"
+      },
+      {
+        "name": "Silver",
+        "relation": "Precious metal, much more common",
+        "color": "#D4D4D8"
+      },
+      {
+        "name": "Palladium",
+        "relation": "Platinum-group element, often alloyed with platinum",
+        "color": "#E5E7EB"
+      }
+    ],
+    "priceRange": "$50-200 small grains  ·  $200-2,000 small nuggets  ·  $5,000-50,000+ specimen-quality nuggets or crystals",
+    "seoDescription": "Platinum: the densest precious metal, from the conquistadors' nuisance to the world's most valuable element. Guide to identification and origins."
+  },
+  {
+    "id": "native-sulfur",
+    "name": "Native Sulfur",
+    "subtitle": "The Brimstone",
+    "category": "Native Element",
+    "colors": [
+      "Vivid Lemon Yellow",
+      "Honey Yellow",
+      "Greenish Yellow"
+    ],
+    "colorHexes": [
+      "#FDE047",
+      "#EAB308",
+      "#D9F99D"
+    ],
+    "hardness": 2,
+    "chemicalFormula": "S",
+    "crystalSystem": "Orthorhombic",
+    "luster": "Resinous to Adamantine",
+    "streak": "White to Pale Yellow",
+    "transparency": "Transparent to Translucent",
+    "specificGravity": "2.07",
+    "localities": [
+      {
+        "name": "Italy",
+        "region": "Sicily (Agrigento, Caltanissetta)",
+        "note": "Historic world source, spectacular museum crystals"
+      },
+      {
+        "name": "Indonesia",
+        "region": "Kawah Ijen, Java",
+        "note": "Active volcanic fumaroles, traditional mining"
+      },
+      {
+        "name": "Bolivia",
+        "region": "Various",
+        "note": "Fine crystal specimens from volcanic deposits"
+      },
+      {
+        "name": "United States",
+        "region": "Texas, Louisiana (salt dome deposits)",
+        "note": "Industrial extraction via Frasch process"
+      }
+    ],
+    "formation": "Native sulfur forms through three main processes. Volcanic sulfur deposits around fumaroles and hot springs, where sulfur-rich gases (H₂S, SO₂) cool and precipitate solid sulfur. Biogenic sulfur forms when anaerobic bacteria reduce sulfate minerals in evaporite deposits, producing elemental sulfur. Salt dome caprock sulfur in Texas and Louisiana formed through this bacterial process over millions of years.\n\nThe finest crystal specimens come from Sicily's historic sulfur mines, which operated for centuries and produced museum-quality transparent yellow crystals on celestite and aragonite matrix. These Sicilian specimens are classics of mineral collecting.\n\nAt Kawah Ijen in Java, miners still carry baskets of sulfur up from an active volcanic crater using traditional methods. The blue flames of burning sulfur gas at night make it one of the most photographed mineral extraction sites on Earth. Sulfur melts at only 113°C and ignites at 232°C, making it one of the lowest-melting and most flammable minerals.",
+    "identification": "Native sulfur is identified by its vivid yellow color, very low hardness (Mohs 2), resinous luster, low specific gravity (2.07, feels very light), and characteristic sulfur smell when scratched or heated. Crystals form distinctive bipyramidal shapes.\n\nDistinguish from orpiment (arsenic sulfide, don't confuse them - orpiment is toxic), citrine (much harder), and yellow calcite (effervesces in acid). Sulfur is so soft you can scratch it with a fingernail, and a scratch will often release a faint rotten-egg smell.",
+    "howToSpotFakes": "Native sulfur is not faked. The main concerns are handling: sulfur is flammable, melts easily, and releases toxic SO₂ gas when burned. Store away from heat sources. Sulfur specimens are also fragile and can crack from thermal shock (even the warmth of your hand on a cold specimen). The finest Sicilian crystal specimens are genuinely valuable collectibles, with large transparent crystals commanding serious prices.",
+    "metaphysical": {
+      "chakra": "Solar Plexus",
+      "zodiac": "Leo",
+      "element": "Fire",
+      "traditions": "Sulfur has been associated with purification and banishing since antiquity. The biblical 'brimstone' (burning stone) is sulfur, used in religious texts as a purifying fire. Ancient civilizations burned sulfur to fumigate homes and temples. In crystal healing, sulfur is associated with willpower, personal boundaries, and clearing negative energy. SAFETY: Flammable. Do not heat. Store away from flame. Wash hands after handling."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Celestite",
+        "relation": "Often found together in Sicilian deposits",
+        "color": "#BFDBFE"
+      },
+      {
+        "name": "Orpiment",
+        "relation": "Yellow arsenic sulfide, similar color but toxic",
+        "color": "#EAB308"
+      },
+      {
+        "name": "Aragonite",
+        "relation": "Common matrix mineral for Sicilian sulfur crystals",
+        "color": "#FDE68A"
+      }
+    ],
+    "priceRange": "$10-30 small crystal specimens  ·  $50-200 fine Sicilian crystals  ·  $200-2,000+ museum-quality crystal groups",
+    "seoDescription": "Native sulfur: the biblical brimstone with dazzling yellow crystals. Guide to volcanic origins, Sicilian specimens, and safe handling."
+  },
+  {
+    "id": "wolframite",
+    "name": "Wolframite",
+    "subtitle": "The Tungsten Ore",
+    "category": "Tungstate Mineral",
+    "colors": [
+      "Iron Black",
+      "Dark Brown-Black",
+      "Submetallic Dark"
+    ],
+    "colorHexes": [
+      "#1C1917",
+      "#292524",
+      "#44403C"
+    ],
+    "hardness": 5,
+    "chemicalFormula": "(Fe,Mn)WO₄",
+    "crystalSystem": "Monoclinic",
+    "luster": "Submetallic to Resinous",
+    "streak": "Dark Brown to Black",
+    "transparency": "Opaque to Translucent (thin edges)",
+    "specificGravity": "7.0-7.5",
+    "localities": [
+      {
+        "name": "China",
+        "region": "Jiangxi, Hunan, Guangdong",
+        "note": "World's dominant tungsten producer (~80% of global supply)"
+      },
+      {
+        "name": "Portugal",
+        "region": "Panasqueira Mine",
+        "note": "Classic European specimens, operating since 1886"
+      },
+      {
+        "name": "Bolivia",
+        "region": "Llallagua, Potosí",
+        "note": "Fine crystal specimens from tin-tungsten veins"
+      },
+      {
+        "name": "Rwanda",
+        "region": "Various",
+        "note": "Significant African producer, 'conflict mineral' concerns"
+      }
+    ],
+    "formation": "Wolframite is the primary ore of tungsten, the metal with the highest melting point of any element (3,422°C). It forms in high-temperature hydrothermal veins associated with granitic intrusions, often alongside cassiterite (tin ore), quartz, and arsenopyrite.\n\nThe mineral is actually a solid solution series between two end members: ferberite (iron-dominant, FeWO₄) and hübnerite (manganese-dominant, MnWO₄). Most specimens contain both iron and manganese and are simply called wolframite.\n\nThe name has a colorful etymology. Medieval German tin miners noticed that certain dark, heavy minerals contaminated their tin smelting, causing the tin to foam and reducing yields. They called it 'wolfram' (wolf's froth or wolf's cream) because it 'ate the tin like a wolf.' The element tungsten takes its symbol (W) from this name. 'Tungsten' itself comes from Swedish: 'tung sten' meaning 'heavy stone.'",
+    "identification": "Wolframite is identified by its dark brown-black color, submetallic luster, bladed to tabular crystal habit, very high specific gravity (7.0-7.5, remarkably heavy for a non-metallic-looking mineral), and one perfect cleavage direction.\n\nDistinguish from tourmaline (lighter SG, different luster), columbite-tantalite (similar appearance but even heavier), and ilmenite (different streak, trigonal). The extreme heaviness is the most immediate diagnostic clue: wolframite feels much heavier than it looks.",
+    "howToSpotFakes": "Wolframite is not commonly faked. It's primarily a specimen mineral and industrial ore, with value coming from well-crystallized specimens on quartz matrix. The main collector concern is distinguishing wolframite from scheelite (calcium tungstate), the other major tungsten ore. Scheelite is lighter colored (white to orange) and fluoresces bright blue-white under shortwave UV, while wolframite does not fluoresce.",
+    "metaphysical": {
+      "chakra": "Root",
+      "zodiac": "Capricorn, Scorpio",
+      "element": "Earth, Fire",
+      "traditions": "Wolframite is associated with strength, endurance, and perseverance in crystal healing. The tungsten connection (highest melting point of any metal) reinforces associations with withstanding extreme pressure and maintaining integrity under fire. Some practitioners use it for building determination and completing difficult long-term projects."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Scheelite",
+        "relation": "The other tungsten ore, calcium tungstate",
+        "color": "#FEF3C7"
+      },
+      {
+        "name": "Cassiterite",
+        "relation": "Tin ore, frequently found alongside wolframite",
+        "color": "#78350F"
+      },
+      {
+        "name": "Ferberite",
+        "relation": "Iron-rich end member of the wolframite series",
+        "color": "#1C1917"
+      }
+    ],
+    "priceRange": "$15-50 small crystal specimens  ·  $50-200 bladed crystals on quartz  ·  $200-1,000+ fine Panasqueira or Bolivian specimens",
+    "seoDescription": "Wolframite: the tungsten ore that 'ate tin like a wolf.' Guide to the world's highest-melting-point metal, identification, and the name's etymology."
+  },
+  {
+    "id": "iron-meteorite",
+    "name": "Iron Meteorite",
+    "subtitle": "Metal from the Stars",
+    "category": "Extraterrestrial Metal",
+    "colors": [
+      "Silvery Metallic",
+      "Rusty Brown (weathered)",
+      "Widmanstätten Pattern"
+    ],
+    "colorHexes": [
+      "#9CA3AF",
+      "#78350F",
+      "#D4D4D8"
+    ],
+    "hardness": 5,
+    "chemicalFormula": "Fe-Ni alloy (kamacite + taenite)",
+    "crystalSystem": "Isometric (kamacite: body-centered cubic)",
+    "luster": "Metallic",
+    "streak": "Gray",
+    "transparency": "Opaque",
+    "specificGravity": "7.0-8.0",
+    "localities": [
+      {
+        "name": "Namibia",
+        "region": "Gibeon (Great Nama Land)",
+        "note": "Famous large shower, fine Widmanstätten patterns"
+      },
+      {
+        "name": "Argentina",
+        "region": "Campo del Cielo, Chaco",
+        "note": "Massive individual specimens, some over 30 tons"
+      },
+      {
+        "name": "Russia",
+        "region": "Sikhote-Alin, Primorsky Krai",
+        "note": "1947 witnessed fall, abundant shrapnel fragments"
+      },
+      {
+        "name": "Sweden",
+        "region": "Muonionalusta, Norrbotten",
+        "note": "Oldest known meteorite (~1 million years on Earth), exceptional etch patterns"
+      }
+    ],
+    "formation": "Iron meteorites are fragments of the metallic cores of ancient protoplanets that formed in the first few million years of the solar system, approximately 4.5 billion years ago. These protoplanets grew large enough for gravitational differentiation: heavy iron-nickel sank to the core while lighter silicates rose to form a mantle, just as happened on Earth.\n\nCollisions between these protoplanets shattered them, exposing their metallic cores to space. These fragments orbited the Sun for billions of years before eventually crossing Earth's path and falling as meteorites.\n\nThe signature feature of iron meteorites is the Widmanstätten pattern, revealed when a polished surface is etched with mild acid. This crystalline pattern of interlocking kamacite (low-nickel iron) and taenite (high-nickel iron) plates formed as the metal cooled at rates of 1-100°C per million years deep inside a protoplanet's core. This cooling rate is so slow that the pattern cannot be replicated artificially, making it an absolute proof of extraterrestrial origin.",
+    "identification": "Iron meteorites are identified by their metallic composition, high density (7.0-8.0), magnetic attraction, and the Widmanstätten pattern revealed by acid etching. A polished and etched surface showing the geometric interlocking crystal pattern is definitive.\n\nDistinguish from terrestrial iron ore (not metallic, not magnetic in the same way), industrial slag (irregular vesicles, lower density), and magnetite (mineral, not metallic). Iron meteorites contain 5-25% nickel, which terrestrial iron rarely does. A nickel spot test or XRF analysis confirms meteoritic origin.",
+    "howToSpotFakes": "The Widmanstätten pattern is the gold standard for authentication. This pattern forms only through millions of years of cooling and cannot be artificially produced. Any polished iron meteorite slice should show this pattern after etching. Fake 'meteorites' are common: industrial slag, magnetite, and man-made iron alloys are all sold as meteorites online. Buy from reputable dealers with classification documentation. Named meteorites (Gibeon, Campo del Cielo, Sikhote-Alin, Muonionalusta) are well-documented falls with established material available through legitimate channels.",
+    "metaphysical": {
+      "chakra": "Root, Solar Plexus, Crown",
+      "zodiac": "All signs (cosmic origin)",
+      "element": "Fire, Earth, Metal",
+      "traditions": "Iron meteorites have been revered as sacred objects across cultures for millennia. Ancient Egyptians called meteoritic iron 'iron from heaven' and crafted King Tutankhamun's dagger from it. Tibetans used meteoritic iron for sacred ritual objects. The Black Stone of the Kaaba in Mecca is believed by some scholars to be meteoritic. In crystal healing, iron meteorites are associated with cosmic connection, strength, and grounding higher consciousness into physical reality."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Tektite",
+        "relation": "Terrestrial glass created by meteorite impacts",
+        "color": "#1C1917"
+      },
+      {
+        "name": "Moldavite",
+        "relation": "Impact glass from a specific meteorite event",
+        "color": "#4ADE80"
+      },
+      {
+        "name": "Hematite",
+        "relation": "Iron oxide, terrestrial iron mineral",
+        "color": "#6B7280"
+      }
+    ],
+    "priceRange": "$20-80 small Sikhote-Alin fragments  ·  $50-300 polished slices showing Widmanstätten pattern  ·  $500-10,000+ large or rare specimens",
+    "seoDescription": "Iron meteorite: 4.5-billion-year-old metal from shattered protoplanets. Guide to the Widmanstätten pattern, authentication, and famous falls."
   }
 ]

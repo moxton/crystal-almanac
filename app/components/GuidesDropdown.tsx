@@ -5,6 +5,7 @@ import Link from "next/link";
 
 const GUIDES = [
   { href: "/collections", label: "Collections", sub: "Curated by tradition" },
+  { href: "/groups", label: "Mineral Groups", sub: "Browse by family" },
   { href: "/colors", label: "Browse by Color", sub: "The geology of color" },
   { href: "/birthstones", label: "Birthstones", sub: "Stones by month" },
   { href: "/hardness", label: "Hardness Scale", sub: "Mohs scale mapped" },

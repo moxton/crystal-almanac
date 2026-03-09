@@ -126,6 +126,7 @@ function Footer() {
             <div className="flex flex-col gap-2">
               <span className="text-white font-medium mb-1">Guides</span>
               <Link href="/collections" className="text-brand-muted hover:text-white transition-colors">Collections</Link>
+              <Link href="/groups" className="text-brand-muted hover:text-white transition-colors">Mineral Groups</Link>
               <Link href="/colors" className="text-brand-muted hover:text-white transition-colors">By Color</Link>
               <Link href="/birthstones" className="text-brand-muted hover:text-white transition-colors">Birthstones</Link>
               <Link href="/hardness" className="text-brand-muted hover:text-white transition-colors">Hardness Scale</Link>
@@ -144,7 +145,7 @@ function Footer() {
             reserved.
           </p>
           <span>·</span>
-          <span>v1.4</span>
+          <span>v1.5</span>
         </div>
       </div>
     </footer>
