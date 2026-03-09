@@ -3,181 +3,137 @@
 /**
  * Crystal Almanac - Unsplash Image Finder
  * 
- * Searches Unsplash for images of each crystal in crystals.json
- * and outputs a CSV with crystal ID, name, image URL, photographer, and Unsplash link.
+ * Saves progress after each crystal. Auto-resumes where you left off.
+ * Auto-waits when rate-limited, or you can Ctrl+C and re-run later.
  *
  * Usage:
- *   UNSPLASH_ACCESS_KEY=your_key_here node scripts/fetch-unsplash-images.js
+ *   node scripts/fetch-unsplash-images.js          # run (resumes automatically)
+ *   node scripts/fetch-unsplash-images.js --reset   # start fresh
  *
- * Or set the key below directly.
+ * Free tier: 50 requests/hour (takes ~7 runs with waits, or leave it running).
+ * Production tier: 5,000/hr (finishes in ~5 min). Apply at unsplash.com/developers.
  */
 
 const fs = require('fs');
 const path = require('path');
 
-// ---------- CONFIG ----------
 const ACCESS_KEY = process.env.UNSPLASH_ACCESS_KEY || 'IMAZrUxCyRIrng9vcCheZbje-hjpUJq6BQm5t4zvVoc';
 const OUTPUT_FILE = path.join(__dirname, '..', 'crystal-images.csv');
 const CRYSTALS_FILE = path.join(__dirname, '..', 'app', 'data', 'crystals.json');
-const RESULTS_PER_CRYSTAL = 3;       // top N images per crystal
-const DELAY_MS = 200;                 // delay between requests (Unsplash rate limit: 50/hr on demo, 5000/hr on production)
-// ----------------------------
+const RESULTS_PER_CRYSTAL = 3;
+const DELAY_MS = 1200;
 
-async function searchUnsplash(query, perPage = 3) {
-  const url = `https://api.unsplash.com/search/photos?query=${encodeURIComponent(query)}&per_page=${perPage}&orientation=landscape&content_filter=high`;
-  
+const CSV_HEADER = 'crystal_id,crystal_name,rank,image_url_regular,image_url_small,image_url_raw,width,height,photographer,photographer_url,unsplash_link,description,download_url';
+
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+function esc(str) {
+  if (!str) return '';
+  str = String(str);
+  return (str.includes(',') || str.includes('"') || str.includes('\n'))
+    ? `"${str.replace(/"/g, '""')}"` : str;
+}
+
+function getCompletedIds() {
+  if (!fs.existsSync(OUTPUT_FILE)) return new Set();
+  const lines = fs.readFileSync(OUTPUT_FILE, 'utf-8').split('\n').slice(1);
+  const ids = new Set();
+  for (const line of lines) {
+    if (line.trim()) ids.add(line.split(',')[0].replace(/"/g, ''));
+  }
+  return ids;
+}
+
+function appendRows(rows) {
+  const needsHeader = !fs.existsSync(OUTPUT_FILE) || fs.readFileSync(OUTPUT_FILE, 'utf-8').trim() === '';
+  fs.appendFileSync(OUTPUT_FILE, (needsHeader ? CSV_HEADER + '\n' : '') + rows.join('\n') + '\n');
+}
+
+async function searchUnsplash(query) {
+  const url = `https://api.unsplash.com/search/photos?query=${encodeURIComponent(query)}&per_page=${RESULTS_PER_CRYSTAL}&orientation=landscape&content_filter=high`;
   const res = await fetch(url, {
-    headers: {
-      'Authorization': `Client-ID ${ACCESS_KEY}`,
-      'Accept-Version': 'v1'
-    }
+    headers: { 'Authorization': `Client-ID ${ACCESS_KEY}`, 'Accept-Version': 'v1' }
   });
 
-  if (!res.ok) {
-    const errorBody = await res.text();
-    throw new Error(`Unsplash API error ${res.status}: ${errorBody}`);
-  }
+  const remaining = res.headers.get('x-ratelimit-remaining');
+  if (remaining !== null) process.stdout.write(`[${remaining} left] `);
 
-  const data = await res.json();
-  return data.results || [];
+  if (res.status === 403 || res.status === 429) {
+    return { rateLimited: true, resetTime: parseInt(res.headers.get('x-ratelimit-reset') || '0') };
+  }
+  if (!res.ok) throw new Error(`API ${res.status}: ${await res.text()}`);
+
+  return { results: (await res.json()).results || [], rateLimited: false };
 }
 
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+async function searchWithFallback(crystal) {
+  const queries = [`${crystal.name} crystal`, `${crystal.name} mineral`, `${crystal.name} gemstone`, crystal.name];
+  for (const q of queries) {
+    const r = await searchUnsplash(q);
+    if (r.rateLimited) return r;
+    if (r.results.length > 0) return r;
+    await sleep(DELAY_MS);
+  }
+  return { results: [], rateLimited: false };
 }
 
-function escapeCsv(str) {
-  if (!str) return '';
-  if (str.includes(',') || str.includes('"') || str.includes('\n')) {
-    return `"${str.replace(/"/g, '""')}"`;
-  }
-  return str;
+function photoRow(id, name, rank, p) {
+  return [esc(id), esc(name), rank, esc(p.urls?.regular), esc(p.urls?.small), esc(p.urls?.raw),
+    p.width || '', p.height || '', esc(p.user?.name), esc(p.user?.links?.html),
+    esc(p.links?.html), esc(p.description || p.alt_description), esc(p.links?.download)].join(',');
 }
 
 async function main() {
-  if (!ACCESS_KEY || ACCESS_KEY === 'YOUR_KEY_HERE') {
-    console.error('ERROR: Set your Unsplash API key via UNSPLASH_ACCESS_KEY env variable.');
-    console.error('  UNSPLASH_ACCESS_KEY=abc123 node scripts/fetch-unsplash-images.js');
-    process.exit(1);
+  if (process.argv.includes('--reset') && fs.existsSync(OUTPUT_FILE)) {
+    fs.unlinkSync(OUTPUT_FILE);
+    console.log('Cleared previous results.\n');
   }
 
-  // Load crystals
   const crystals = JSON.parse(fs.readFileSync(CRYSTALS_FILE, 'utf-8'));
-  console.log(`Loaded ${crystals.length} crystals from crystals.json`);
+  const done = getCompletedIds();
+  const todo = crystals.filter(c => !done.has(c.id));
 
-  // CSV header
-  const rows = [
-    ['crystal_id', 'crystal_name', 'rank', 'image_url_regular', 'image_url_small', 'image_url_raw', 'width', 'height', 'photographer', 'photographer_url', 'unsplash_link', 'description', 'download_url'].join(',')
-  ];
+  console.log(`Total: ${crystals.length} | Done: ${done.size} | Remaining: ${todo.length}\n`);
+  if (!todo.length) { console.log('All done! Use --reset to redo.'); return; }
 
-  let successCount = 0;
-  let noResultCount = 0;
-  const noResults = [];
+  let found = 0, missed = 0, missList = [];
 
-  for (let i = 0; i < crystals.length; i++) {
-    const crystal = crystals[i];
-    const searchTerms = [
-      `${crystal.name} crystal`,
-      `${crystal.name} mineral`,
-      `${crystal.name} gemstone`
-    ];
+  for (let i = 0; i < todo.length; i++) {
+    const c = todo[i];
+    process.stdout.write(`[${done.size + found + missed + 1}/${crystals.length}] ${c.name}... `);
 
-    console.log(`[${i + 1}/${crystals.length}] Searching: ${crystal.name}...`);
+    const r = await searchWithFallback(c);
 
-    let allResults = [];
-
-    // Try primary search term first
-    try {
-      const results = await searchUnsplash(searchTerms[0], RESULTS_PER_CRYSTAL);
-      allResults = results;
-    } catch (err) {
-      console.error(`  Error searching "${searchTerms[0]}": ${err.message}`);
+    if (r.rateLimited) {
+      const waitMs = r.resetTime ? Math.max((r.resetTime * 1000) - Date.now() + 5000, 60000) : 3600000;
+      console.log(`\n\n--- RATE LIMITED ---`);
+      console.log(`Waiting ${Math.ceil(waitMs / 60000)} min. Progress saved. Ctrl+C to quit and re-run later.\n`);
+      await sleep(waitMs);
+      i--; // retry
+      continue;
     }
 
-    // If no results, try alternate terms
-    if (allResults.length === 0) {
-      await sleep(DELAY_MS);
-      try {
-        const results = await searchUnsplash(searchTerms[1], RESULTS_PER_CRYSTAL);
-        allResults = results;
-      } catch (err) {
-        console.error(`  Error searching "${searchTerms[1]}": ${err.message}`);
-      }
-    }
-
-    if (allResults.length === 0) {
-      await sleep(DELAY_MS);
-      try {
-        const results = await searchUnsplash(searchTerms[2], RESULTS_PER_CRYSTAL);
-        allResults = results;
-      } catch (err) {
-        console.error(`  Error searching "${searchTerms[2]}": ${err.message}`);
-      }
-    }
-
-    if (allResults.length === 0) {
-      // Last resort: just the name
-      await sleep(DELAY_MS);
-      try {
-        const results = await searchUnsplash(crystal.name, RESULTS_PER_CRYSTAL);
-        allResults = results;
-      } catch (err) {
-        console.error(`  Error searching "${crystal.name}": ${err.message}`);
-      }
-    }
-
-    if (allResults.length === 0) {
-      noResultCount++;
-      noResults.push(crystal.name);
-      console.log(`  No results found for ${crystal.name}`);
-      // Add empty row so we know it's missing
-      rows.push([
-        escapeCsv(crystal.id),
-        escapeCsv(crystal.name),
-        '1',
-        'NO_RESULTS',
-        '', '', '', '', '', '', '', '', ''
-      ].join(','));
+    if (!r.results.length) {
+      missed++;
+      missList.push(c.name);
+      appendRows([[esc(c.id), esc(c.name), 1, 'NO_RESULTS', '', '', '', '', '', '', '', '', ''].join(',')]);
+      console.log('no results');
     } else {
-      successCount++;
-      allResults.slice(0, RESULTS_PER_CRYSTAL).forEach((photo, rank) => {
-        rows.push([
-          escapeCsv(crystal.id),
-          escapeCsv(crystal.name),
-          String(rank + 1),
-          escapeCsv(photo.urls?.regular || ''),
-          escapeCsv(photo.urls?.small || ''),
-          escapeCsv(photo.urls?.raw || ''),
-          String(photo.width || ''),
-          String(photo.height || ''),
-          escapeCsv(photo.user?.name || ''),
-          escapeCsv(photo.user?.links?.html || ''),
-          escapeCsv(photo.links?.html || ''),
-          escapeCsv(photo.description || photo.alt_description || ''),
-          escapeCsv(photo.links?.download || '')
-        ].join(','));
-      });
-      console.log(`  Found ${allResults.length} images`);
+      found++;
+      appendRows(r.results.slice(0, RESULTS_PER_CRYSTAL).map((p, j) => photoRow(c.id, c.name, j + 1, p)));
+      console.log(`${r.results.length} images`);
     }
-
     await sleep(DELAY_MS);
   }
 
-  // Write CSV
-  fs.writeFileSync(OUTPUT_FILE, rows.join('\n'), 'utf-8');
-
-  console.log('\n--- DONE ---');
-  console.log(`Results written to: ${OUTPUT_FILE}`);
-  console.log(`Crystals with images: ${successCount}`);
-  console.log(`Crystals with no results: ${noResultCount}`);
-  if (noResults.length > 0) {
-    console.log(`Missing: ${noResults.join(', ')}`);
-  }
-  console.log(`\nRemember: Unsplash requires attribution. Include photographer credit when using images.`);
-  console.log(`Guidelines: https://unsplash.com/license`);
+  console.log(`\n--- DONE ---`);
+  console.log(`File: ${OUTPUT_FILE}`);
+  console.log(`Found: ${found} | No results: ${missed}`);
+  if (missList.length) console.log(`Missing: ${missList.join(', ')}`);
+  console.log(`\nUnsplash requires photographer attribution: unsplash.com/license`);
 }
 
-main().catch(err => {
-  console.error('Fatal error:', err);
+main().catch(e => {
+  console.error(`\nError: ${e.message}\nProgress saved. Re-run to resume.`);
   process.exit(1);
 });
