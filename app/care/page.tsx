@@ -29,7 +29,7 @@ function getWaterSafety(crystal: Crystal): "safe" | "brief" | "avoid" | "dissolv
   if (name.includes("halite") || name.includes("gypsum")) return "dissolves";
   // Avoid water - soft, porous, or reactive
   if (crystal.hardness <= 3) return "avoid";
-  if (["malachite", "azurite", "chrysocolla", "lepidolite", "lapis-lazuli", "pyrite", "hematite", "galena", "vanadinite", "wulfenite", "crocoite", "cuprite", "native-copper", "gold", "silver", "calcite", "aragonite", "rhodochrosite", "celestite", "amber", "pearl", "jet", "coral", "turquoise", "howlite", "shungite", "k2-stone", "bumble-bee-jasper", "magnetite", "coral", "cinnabar", "peacock-ore", "mimetite", "adamite", "pyromorphite", "cassiterite", "vivianite", "caribbean-calcite", "dolomite", "epidote", "scolecite", "stilbite", "cavansite", "bismuth", "moldavite", "realgar", "orpiment", "stibnite", "erythrite", "legrandite", "marcasite", "aurichalcite", "cobaltocalcite"].includes(id)) return "avoid";
+  if (["malachite", "azurite", "chrysocolla", "lepidolite", "lapis-lazuli", "pyrite", "hematite", "galena", "vanadinite", "wulfenite", "crocoite", "cuprite", "native-copper", "gold", "silver", "calcite", "aragonite", "rhodochrosite", "celestite", "amber", "pearl", "jet", "coral", "turquoise", "howlite", "shungite", "k2-stone", "bumble-bee-jasper", "magnetite", "coral", "cinnabar", "peacock-ore", "mimetite", "adamite", "pyromorphite", "cassiterite", "vivianite", "caribbean-calcite", "dolomite", "epidote", "scolecite", "stilbite", "cavansite", "bismuth", "moldavite", "realgar", "orpiment", "stibnite", "erythrite", "legrandite", "marcasite", "aurichalcite", "cobaltocalcite", "chalcopyrite", "shattuckite", "creedite", "covellite"].includes(id)) return "avoid";
   // Brief rinse only
   if (crystal.hardness <= 5) return "brief";
   if (["fluorite", "fluorapatite", "apophyllite", "kunzite", "moonstone", "opal", "sunstone", "larimar", "amazonite", "labradorite", "kyanite"].includes(id)) return "brief";
@@ -43,7 +43,7 @@ function getSunSafety(crystal: Crystal): "safe" | "caution" | "fades" | "avoid" 
   // Known to fade significantly
   if (["amethyst", "kunzite", "rose-quartz", "smoky-quartz", "chrysoprase", "celestite", "fluorite", "ametrine", "hackmanite", "tugtupite", "hiddenite"].includes(id)) return "fades";
   // Caution - may fade with prolonged exposure
-  if (["aquamarine", "citrine", "blue-lace-agate", "larimar", "turquoise", "opal", "amber", "prasiolite", "spirit-quartz", "grape-agate", "pink-opal", "fire-opal"].includes(id)) return "caution";
+  if (["aquamarine", "citrine", "blue-lace-agate", "larimar", "turquoise", "opal", "amber", "prasiolite", "spirit-quartz", "grape-agate", "pink-opal", "fire-opal", "pink-amethyst"].includes(id)) return "caution";
   // Avoid - structurally affected
   if (["selenite", "pearl", "realgar", "vivianite"].includes(id)) return "avoid";
   return "safe";
@@ -52,7 +52,7 @@ function getSunSafety(crystal: Crystal): "safe" | "caution" | "fades" | "avoid" 
 function getFragility(crystal: Crystal): boolean {
   const id = crystal.id;
   if (crystal.hardness <= 3) return true;
-  if (["selenite", "celestite", "apophyllite", "scolecite", "stilbite", "wulfenite", "crocoite", "cavansite", "kunzite", "kyanite", "bismuth", "seraphinite", "desert-rose", "vanadinite", "cuprite", "okenite", "aurichalcite", "stibnite", "fulgurite", "erythrite", "marcasite"].includes(id)) return true;
+  if (["selenite", "celestite", "apophyllite", "scolecite", "stilbite", "wulfenite", "crocoite", "cavansite", "kunzite", "kyanite", "bismuth", "seraphinite", "desert-rose", "vanadinite", "cuprite", "okenite", "aurichalcite", "stibnite", "fulgurite", "erythrite", "marcasite", "creedite", "covellite", "astrophyllite"].includes(id)) return true;
   return false;
 }
 
@@ -121,6 +121,15 @@ function getCareNotes(crystal: Crystal): string {
     "cobaltocalcite": "Soft (Mohs 3). Avoid water. Clean with dry cloth only. Handle carefully to preserve druzy crystal surfaces.",
     "optical-calcite": "Perfect cleavage in three directions. Avoid impacts. Clean carefully. Fascinating double-refraction demonstration piece.",
     "imperial-topaz": "Durable (Mohs 8) but has perfect basal cleavage. Avoid sharp impacts. Safe for gentle cleaning.",
+    "blue-halite": "DISSOLVES IN WATER. Store in completely dry environment with desiccant packets. Even humidity can damage. Display in enclosed case.",
+    "creedite": "Extremely fragile needle crystals. Display only. Handle by matrix. Even gentle contact can snap crystal tips.",
+    "covellite": "Extremely soft (Mohs 1.5) with perfect cleavage. Tarnishes in air. Avoid water. Handle minimally.",
+    "chalcopyrite": "Sulfide mineral that oxidizes when wet. Acid-treated 'peacock' surfaces may dull over time. Keep dry.",
+    "shattuckite": "Copper silicate, relatively soft. Avoid prolonged water contact. Clean with dry cloth.",
+    "blue-topaz": "Very durable (Mohs 8). Safe for jewelry and cleaning. Has basal cleavage so avoid sharp impacts along that plane.",
+    "rainbow-moonstone": "Has feldspar cleavage. Avoid hard impacts. Brief rinse fine. Store separately from harder stones.",
+    "gaspeite": "Nickel carbonate. Avoid prolonged water contact. Relatively soft (4.5). Clean with dry cloth.",
+    "pink-amethyst": "Same care as amethyst. May fade with prolonged strong sunlight exposure. Durable for display and handling.",
   };
   return notes[id] || (crystal.hardness >= 7 ? "Durable. Safe for cleaning with mild soap and water." : "Clean with dry or slightly damp cloth. Store away from harder minerals.");
 }
