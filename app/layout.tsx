@@ -117,6 +117,8 @@ function Footer() {
             </div>
             <div className="flex flex-col gap-2">
               <span className="text-white font-medium mb-1">Guides</span>
+              <Link href="/collections" className="text-brand-muted hover:text-white transition-colors">Collections</Link>
+              <Link href="/colors" className="text-brand-muted hover:text-white transition-colors">By Color</Link>
               <Link href="/birthstones" className="text-brand-muted hover:text-white transition-colors">Birthstones</Link>
               <Link href="/hardness" className="text-brand-muted hover:text-white transition-colors">Hardness Scale</Link>
               <Link href="/care" className="text-brand-muted hover:text-white transition-colors">Crystal Care</Link>

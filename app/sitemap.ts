@@ -1,4 +1,6 @@
 import { getAllCrystals } from "@/app/lib/crystals";
+import { getAllCollectionSlugs } from "@/app/lib/collections";
+import { COLOR_FAMILIES } from "@/app/lib/colors";
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -10,6 +12,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.8,
+  }));
+
+  const collectionPages = getAllCollectionSlugs().map((slug) => ({
+    url: `${baseUrl}/collections/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  const colorPages = COLOR_FAMILIES.map((family) => ({
+    url: `${baseUrl}/colors/${family.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
   }));
 
   return [
@@ -44,5 +60,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     ...crystalPages,
+    {
+      url: `${baseUrl}/collections`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    ...collectionPages,
+    {
+      url: `${baseUrl}/colors`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    ...colorPages,
   ];
 }
