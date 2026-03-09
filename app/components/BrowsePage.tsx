@@ -171,11 +171,22 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
     const chakra = searchParams.get("chakra");
     const zodiac = searchParams.get("zodiac");
     const element = searchParams.get("element");
+    const browse = searchParams.get("browse");
 
+    if (browse === "all") { setShowFullGrid(true); return; }
     if (urlSearch) { setSearch(urlSearch); setShowFullGrid(true); }
     if (chakra) { setMetaFilter({ type: "chakra", value: chakra }); setShowFullGrid(true); }
     else if (zodiac) { setMetaFilter({ type: "zodiac", value: zodiac }); setShowFullGrid(true); }
     else if (element) { setMetaFilter({ type: "element", value: element }); setShowFullGrid(true); }
+
+    // If no params at all, reset to curated home (handles logo click)
+    if (!urlSearch && !chakra && !zodiac && !element && !browse) {
+      setShowFullGrid(false);
+      setSearch("");
+      setHardnessFilter(null);
+      setColorFilter(null);
+      setMetaFilter(null);
+    }
   }, [searchParams]);
 
   const filtered = useMemo(() => {
@@ -306,7 +317,7 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
               Crystal <em>Almanac</em>
             </h1>
             <p className="text-brand-muted text-sm md:text-base font-body mt-2 max-w-lg">
-              {crystals.length} crystals documented with science, stories, and fake-spotting guides.
+              Where geological science meets the stories behind every stone.
             </p>
           </div>
           <button
@@ -358,32 +369,37 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
 
       {/* Collections */}
       <section className="max-w-6xl mx-auto px-4 mt-14">
-        <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center justify-between mb-6">
           <h2 className="font-heading text-xl text-white">Collections</h2>
           <Link href="/collections" className="text-brand-accent text-sm font-body hover:underline">
             View all →
           </Link>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           {[
-            { slug: "calming", name: "Calming", icon: "🌊" },
-            { slug: "protection", name: "Protection", icon: "🛡" },
-            { slug: "love", name: "Love", icon: "♥" },
-            { slug: "creativity", name: "Creativity", icon: "✦" },
-            { slug: "grounding", name: "Grounding", icon: "⬡" },
-            { slug: "abundance", name: "Abundance", icon: "◆" },
-            { slug: "communication", name: "Communication", icon: "◎" },
-            { slug: "meditation", name: "Meditation", icon: "◯" },
+            { slug: "calming", name: "Calming", sub: "Stillness & ease", color: "#93C5FD" },
+            { slug: "protection", name: "Protection", sub: "Shielding traditions", color: "#6B7280" },
+            { slug: "love", name: "Love", sub: "Heart & relationships", color: "#EC4899" },
+            { slug: "creativity", name: "Creativity", sub: "Inspiration & flow", color: "#F97316" },
+            { slug: "grounding", name: "Grounding", sub: "Stability & focus", color: "#78716C" },
+            { slug: "abundance", name: "Abundance", sub: "Prosperity traditions", color: "#F59E0B" },
+            { slug: "communication", name: "Communication", sub: "Expression & truth", color: "#38BDF8" },
+            { slug: "meditation", name: "Meditation", sub: "Focus & contemplation", color: "#A78BFA" },
           ].map((col) => (
             <Link
               key={col.slug}
               href={`/collections/${col.slug}`}
-              className="group bg-brand-surface border border-brand-border rounded-xl p-4 hover:border-brand-accent/40 transition-all hover:-translate-y-0.5"
+              className="group bg-brand-surface border border-brand-border rounded-xl overflow-hidden hover:border-brand-accent/40 transition-all hover:-translate-y-0.5"
             >
-              <span className="text-lg">{col.icon}</span>
-              <p className="font-heading text-sm text-white group-hover:text-brand-accent transition-colors mt-2">
-                {col.name}
-              </p>
+              <div className="h-1.5" style={{ backgroundColor: col.color }} />
+              <div className="p-5">
+                <h3 className="font-heading text-base text-white group-hover:text-brand-accent transition-colors">
+                  {col.name}
+                </h3>
+                <p className="text-brand-muted text-xs font-body mt-1">
+                  {col.sub}
+                </p>
+              </div>
             </Link>
           ))}
         </div>
@@ -391,31 +407,49 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
 
       {/* Reference Tools */}
       <section className="max-w-6xl mx-auto px-4 mt-14">
-        <h2 className="font-heading text-xl text-white mb-4">Reference Tools</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <Link href="/birthstones" className="group bg-brand-surface border border-brand-border rounded-xl p-5 hover:border-brand-accent/40 transition-all">
-            <h3 className="font-heading text-base text-white group-hover:text-brand-accent transition-colors">
-              Birthstones
-            </h3>
-            <p className="text-brand-muted text-sm font-body mt-1">
-              Modern and traditional birthstones for every month, with the history behind each designation.
-            </p>
+        <h2 className="font-heading text-xl text-white mb-6">Reference Tools</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+          <Link href="/birthstones" className="group bg-brand-surface border border-brand-border rounded-xl overflow-hidden hover:border-brand-accent/40 transition-all hover:-translate-y-0.5">
+            <div className="h-1.5 bg-gradient-to-r from-red-500 via-emerald-500 to-blue-500" />
+            <div className="p-6">
+              <h3 className="font-heading text-lg text-white group-hover:text-brand-accent transition-colors">
+                Birthstones by Month
+              </h3>
+              <p className="text-brand-muted text-sm font-body mt-2 leading-relaxed">
+                Modern and traditional stones for every month. The history behind each designation, from biblical breastplates to Tiffany's lobbying.
+              </p>
+              <span className="text-brand-accent text-xs font-body mt-3 inline-block group-hover:underline">
+                12 months →
+              </span>
+            </div>
           </Link>
-          <Link href="/hardness" className="group bg-brand-surface border border-brand-border rounded-xl p-5 hover:border-brand-accent/40 transition-all">
-            <h3 className="font-heading text-base text-white group-hover:text-brand-accent transition-colors">
-              Mohs Hardness Scale
-            </h3>
-            <p className="text-brand-muted text-sm font-body mt-1">
-              All {crystals.length} crystals mapped by hardness. See what survives daily wear and what needs careful handling.
-            </p>
+          <Link href="/hardness" className="group bg-brand-surface border border-brand-border rounded-xl overflow-hidden hover:border-brand-accent/40 transition-all hover:-translate-y-0.5">
+            <div className="h-1.5 bg-gradient-to-r from-rose-500 via-amber-500 to-cyan-500" />
+            <div className="p-6">
+              <h3 className="font-heading text-lg text-white group-hover:text-brand-accent transition-colors">
+                Mohs Hardness Scale
+              </h3>
+              <p className="text-brand-muted text-sm font-body mt-2 leading-relaxed">
+                All {crystals.length} crystals mapped by hardness. See what survives daily wear, what scratches glass, and what needs careful handling.
+              </p>
+              <span className="text-brand-accent text-xs font-body mt-3 inline-block group-hover:underline">
+                Full scale →
+              </span>
+            </div>
           </Link>
-          <Link href="/care" className="group bg-brand-surface border border-brand-border rounded-xl p-5 hover:border-brand-accent/40 transition-all">
-            <h3 className="font-heading text-base text-white group-hover:text-brand-accent transition-colors">
-              Crystal Care Guide
-            </h3>
-            <p className="text-brand-muted text-sm font-body mt-1">
-              Water safety, sunlight sensitivity, and handling notes for every crystal. Science-based, not guesswork.
-            </p>
+          <Link href="/care" className="group bg-brand-surface border border-brand-border rounded-xl overflow-hidden hover:border-brand-accent/40 transition-all hover:-translate-y-0.5">
+            <div className="h-1.5 bg-gradient-to-r from-emerald-500 via-amber-500 to-rose-500" />
+            <div className="p-6">
+              <h3 className="font-heading text-lg text-white group-hover:text-brand-accent transition-colors">
+                Crystal Care Guide
+              </h3>
+              <p className="text-brand-muted text-sm font-body mt-2 leading-relaxed">
+                Water safety, sunlight sensitivity, toxicity warnings, and handling notes for every crystal. Based on mineral science.
+              </p>
+              <span className="text-brand-accent text-xs font-body mt-3 inline-block group-hover:underline">
+                Full guide →
+              </span>
+            </div>
           </Link>
         </div>
       </section>

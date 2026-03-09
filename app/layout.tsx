@@ -72,7 +72,7 @@ function Header() {
         <Logo />
         <div className="flex items-center gap-6 text-sm font-body">
           <Link
-            href="/"
+            href="/?browse=all"
             className="text-brand-muted hover:text-white transition-colors"
           >
             Browse
