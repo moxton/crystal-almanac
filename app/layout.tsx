@@ -70,9 +70,9 @@ import { GuidesDropdown } from "@/app/components/GuidesDropdown";
 function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-brand-bg/80 backdrop-blur-xl border-b border-brand-border">
-      <nav className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <nav className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-8">
         <Logo />
-        <div className="flex items-center gap-6 text-sm font-body">
+        <div className="flex items-center gap-4 md:gap-6 text-sm font-body">
           <Link
             href="/?browse=all"
             className="text-brand-muted hover:text-white transition-colors"

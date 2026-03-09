@@ -316,8 +316,8 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
             <h1 className="font-heading text-3xl md:text-5xl text-white leading-tight">
               Crystal <em>Almanac</em>
             </h1>
-            <p className="text-brand-muted text-sm md:text-base font-body mt-2 max-w-lg">
-              Where geological science meets the stories behind every stone.
+            <p className="text-brand-muted text-sm md:text-base font-body mt-2 max-w-sm md:max-w-lg">
+              Where geological science meets the story behind every stone.
             </p>
           </div>
           <button
