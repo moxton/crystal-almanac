@@ -3,23 +3,20 @@
 /**
  * Crystal Almanac - Unsplash Image Finder
  * 
- * Saves progress after each crystal. Auto-resumes where you left off.
- * Auto-waits when rate-limited, or you can Ctrl+C and re-run later.
+ * Run from the crystal-almanac project folder:
+ *   node scripts/fetch-unsplash-images.js
  *
- * Usage:
- *   node scripts/fetch-unsplash-images.js          # run (resumes automatically)
- *   node scripts/fetch-unsplash-images.js --reset   # start fresh
- *
- * Free tier: 50 requests/hour (takes ~7 runs with waits, or leave it running).
- * Production tier: 5,000/hr (finishes in ~5 min). Apply at unsplash.com/developers.
+ * Output: ~/Downloads/crystal-images.csv
+ * Auto-resumes. Auto-waits on rate limit. Ctrl+C safe.
  */
 
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 
-const ACCESS_KEY = process.env.UNSPLASH_ACCESS_KEY || 'IMAZrUxCyRIrng9vcCheZbje-hjpUJq6BQm5t4zvVoc';
-const OUTPUT_FILE = path.join(__dirname, '..', 'crystal-images.csv');
-const CRYSTALS_FILE = path.join(__dirname, '..', 'app', 'data', 'crystals.json');
+const ACCESS_KEY = 'IMAZrUxCyRIrng9vcCheZbje-hjpUJq6BQm5t4zvVoc';
+const OUTPUT_FILE = path.join(os.homedir(), 'Downloads', 'crystal-images.csv');
+const CRYSTALS_FILE = path.join(process.cwd(), 'app', 'data', 'crystals.json');
 const RESULTS_PER_CRYSTAL = 3;
 const DELAY_MS = 1200;
 
@@ -54,15 +51,12 @@ async function searchUnsplash(query) {
   const res = await fetch(url, {
     headers: { 'Authorization': `Client-ID ${ACCESS_KEY}`, 'Accept-Version': 'v1' }
   });
-
   const remaining = res.headers.get('x-ratelimit-remaining');
   if (remaining !== null) process.stdout.write(`[${remaining} left] `);
-
   if (res.status === 403 || res.status === 429) {
     return { rateLimited: true, resetTime: parseInt(res.headers.get('x-ratelimit-reset') || '0') };
   }
   if (!res.ok) throw new Error(`API ${res.status}: ${await res.text()}`);
-
   return { results: (await res.json()).results || [], rateLimited: false };
 }
 
@@ -89,18 +83,27 @@ async function main() {
     console.log('Cleared previous results.\n');
   }
 
+  if (!fs.existsSync(CRYSTALS_FILE)) {
+    console.error(`Can't find crystals.json at: ${CRYSTALS_FILE}`);
+    console.error('Run this from the crystal-almanac project folder:');
+    console.error('  cd ~/Downloads/crystal-almanac && node scripts/fetch-unsplash-images.js');
+    process.exit(1);
+  }
+
   const crystals = JSON.parse(fs.readFileSync(CRYSTALS_FILE, 'utf-8'));
   const done = getCompletedIds();
   const todo = crystals.filter(c => !done.has(c.id));
 
-  console.log(`Total: ${crystals.length} | Done: ${done.size} | Remaining: ${todo.length}\n`);
+  console.log(`Total: ${crystals.length} | Done: ${done.size} | Remaining: ${todo.length}`);
+  console.log(`Output: ${OUTPUT_FILE}\n`);
   if (!todo.length) { console.log('All done! Use --reset to redo.'); return; }
 
   let found = 0, missed = 0, missList = [];
 
   for (let i = 0; i < todo.length; i++) {
     const c = todo[i];
-    process.stdout.write(`[${done.size + found + missed + 1}/${crystals.length}] ${c.name}... `);
+    const globalIndex = crystals.indexOf(c) + 1;
+    process.stdout.write(`[${globalIndex}/${crystals.length}] ${c.name}... `);
 
     const r = await searchWithFallback(c);
 
@@ -109,7 +112,7 @@ async function main() {
       console.log(`\n\n--- RATE LIMITED ---`);
       console.log(`Waiting ${Math.ceil(waitMs / 60000)} min. Progress saved. Ctrl+C to quit and re-run later.\n`);
       await sleep(waitMs);
-      i--; // retry
+      i--;
       continue;
     }
 
@@ -134,6 +137,6 @@ async function main() {
 }
 
 main().catch(e => {
-  console.error(`\nError: ${e.message}\nProgress saved. Re-run to resume.`);
+  console.error(`\nError: ${e.message}\nProgress saved at ${OUTPUT_FILE}. Re-run to resume.`);
   process.exit(1);
 });
