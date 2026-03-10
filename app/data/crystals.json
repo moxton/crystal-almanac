@@ -17350,5 +17350,1722 @@
     ],
     "priceRange": "$20-80 small Sikhote-Alin fragments  ·  $50-300 polished slices showing Widmanstätten pattern  ·  $500-10,000+ large or rare specimens",
     "seoDescription": "Iron meteorite: 4.5-billion-year-old metal from shattered protoplanets. Guide to the Widmanstätten pattern, authentication, and famous falls."
+  },
+  {
+    "id": "granite",
+    "name": "Granite",
+    "subtitle": "The Backbone of Continents",
+    "category": "Igneous Rock (Plutonic)",
+    "colors": [
+      "Speckled Gray-White",
+      "Pink",
+      "Black-and-White Salt-and-Pepper"
+    ],
+    "colorHexes": [
+      "#9CA3AF",
+      "#FECDD3",
+      "#D4D4D8"
+    ],
+    "hardness": 6.5,
+    "chemicalFormula": "Quartz + Feldspar + Mica (variable)",
+    "crystalSystem": "None (polycrystalline rock)",
+    "luster": "Vitreous to Dull",
+    "streak": "N/A (rock)",
+    "transparency": "Opaque",
+    "specificGravity": "2.63-2.75",
+    "localities": [
+      {
+        "name": "Worldwide",
+        "region": "Every continent",
+        "note": "The most abundant rock in Earth's continental crust"
+      },
+      {
+        "name": "India",
+        "region": "Rajasthan, Tamil Nadu",
+        "note": "Major commercial quarrying and export"
+      },
+      {
+        "name": "Brazil",
+        "region": "Various",
+        "note": "Decorative granite production"
+      },
+      {
+        "name": "Italy",
+        "region": "Sardinia",
+        "note": "Fine-grained historic quarries"
+      }
+    ],
+    "formation": "Granite is the signature rock of Earth's continents. It forms deep underground when silica-rich magma cools slowly over thousands to millions of years, giving individual mineral grains time to grow large enough to see with the naked eye. The result is the characteristic speckled 'salt and pepper' texture.\n\nThe three main mineral components are visible in any granite countertop: glassy quartz (gray or clear), blocky feldspar (white, pink, or cream), and sparkly mica (black biotite or silvery muscovite). The proportions determine the color. More pink feldspar makes pink granite. More biotite makes darker granite.\n\nGranite underlies virtually every continent and forms the cores of major mountain ranges. Without granite, Earth would look more like Mars or Venus, lacking the buoyant continental crust that rises above the oceans. In a real sense, granite is the material that makes dry land possible.",
+    "identification": "Granite is identified by its visible interlocking mineral grains (coarse-grained texture), the presence of quartz (glassy, irregular grains), feldspar (blocky, often pink or white), and mica (sparkly flakes). Overall hardness around 6-7 because quartz dominates.\n\nDistinguish from gabbro (darker, no visible quartz), diorite (intermediate color, less quartz), gneiss (banded rather than randomly speckled), and marble (softer, effervesces in acid, no visible mica).",
+    "howToSpotFakes": "In the building trade, 'granite' is used loosely for any hard decorative stone. Many commercial 'granites' are actually gneiss, gabbro, anorthosite, or other rocks. True geological granite must contain at least 20% quartz and more alkali feldspar than plagioclase. For kitchen countertops this distinction is academic, but for geology students it matters.",
+    "metaphysical": {
+      "chakra": "Root",
+      "zodiac": "Capricorn",
+      "element": "Earth",
+      "traditions": "Granite is associated with stability, permanence, and strength. Ancient civilizations chose it for temples and monuments precisely because of its durability. The Egyptian pyramids' interior chambers are lined with granite from Aswan. In crystal healing, granite is considered a grounding stone that reinforces physical and emotional stability."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Quartz",
+        "relation": "Major component mineral",
+        "color": "#F0F9FF"
+      },
+      {
+        "name": "Feldspar",
+        "relation": "Major component mineral",
+        "color": "#FECDD3"
+      },
+      {
+        "name": "Gneiss",
+        "relation": "Metamorphosed granite",
+        "color": "#6B7280"
+      }
+    ],
+    "priceRange": "$2-10 specimen pieces  ·  $40-100/sq ft countertop slabs  ·  $20-80 polished display specimens",
+    "seoDescription": "Granite: the rock that makes continents possible. Guide to the three minerals inside, identification, and why it's everywhere."
+  },
+  {
+    "id": "marble",
+    "name": "Marble",
+    "subtitle": "The Sculptor's Canvas",
+    "category": "Metamorphic Rock",
+    "colors": [
+      "Pure White",
+      "Veined Gray-White",
+      "Pink",
+      "Green",
+      "Black"
+    ],
+    "colorHexes": [
+      "#FAFAF9",
+      "#D4D4D8",
+      "#FECDD3",
+      "#86EFAC",
+      "#1C1917"
+    ],
+    "hardness": 3,
+    "chemicalFormula": "CaCO₃ (recrystallized calcite or dolomite)",
+    "crystalSystem": "None (polycrystalline rock)",
+    "luster": "Vitreous to Sugary",
+    "streak": "White",
+    "transparency": "Translucent (thin slabs)",
+    "specificGravity": "2.71",
+    "localities": [
+      {
+        "name": "Italy",
+        "region": "Carrara, Tuscany",
+        "note": "The world's most famous marble, used by Michelangelo"
+      },
+      {
+        "name": "Greece",
+        "region": "Paros, Naxos, Penteli",
+        "note": "Ancient quarries supplied the Parthenon and Venus de Milo"
+      },
+      {
+        "name": "Turkey",
+        "region": "Afyon, Denizli",
+        "note": "Major modern producer"
+      },
+      {
+        "name": "India",
+        "region": "Rajasthan (Makrana)",
+        "note": "Source marble for the Taj Mahal"
+      }
+    ],
+    "formation": "Marble is limestone that has been metamorphosed by heat and pressure. The original calcite crystals in the limestone recrystallize into larger, interlocking grains, transforming soft, fossiliferous sedimentary rock into a dense, polishable metamorphic one.\n\nPure marble is white. The famous Carrara marble that Michelangelo used for David and the Pietà is nearly pure calcite. Colors come from impurities: iron oxides create pink and red, chlorite and serpentine produce green, graphite makes gray to black, and limonite creates yellow.\n\nThe characteristic veining in marble forms when mineral-rich fluids flow through fractures during metamorphism, depositing contrasting minerals along the cracks. Each vein pattern is unique, which is why marble has been prized for decorative use for over 5,000 years. The translucency of fine marble in thin slabs gives sculptures a subtle warm glow that no other stone can match.",
+    "identification": "Marble is identified by its crystalline sugary texture (visible interlocking calcite grains), ability to take a high polish, and effervescence in dilute hydrochloric acid. The hardness is only 3, so it scratches easily with a knife.\n\nDistinguish from quartzite (much harder, no acid reaction), limestone (finer-grained, may contain fossils), and alabaster (even softer, gypsum-based). The acid test instantly separates marble from quartzite: marble fizzes, quartzite doesn't.",
+    "howToSpotFakes": "In the building trade, some 'marble' is actually limestone that hasn't been fully metamorphosed, or dolomite marble (which reacts more slowly with acid). Cultured marble is a manufactured product of crusite resin mixed with marble dust. For decorative purposes these distinctions are minor, but genuine Carrara, Calacatta, and Statuario marbles command premium prices.",
+    "metaphysical": {
+      "chakra": "Crown",
+      "zodiac": "Cancer",
+      "element": "Water",
+      "traditions": "Marble has been associated with purity, immortality, and divine beauty since antiquity. Greek temples were built from marble to honor the gods. The translucent quality of fine marble was believed to hold inner light. In crystal healing, marble is connected to clarity of purpose, inner peace, and transformation from ordinary to extraordinary."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Calcite",
+        "relation": "The mineral that marble is made of",
+        "color": "#FEF3C7"
+      },
+      {
+        "name": "Limestone",
+        "relation": "Marble's parent rock before metamorphism",
+        "color": "#D6D3D1"
+      },
+      {
+        "name": "Travertine",
+        "relation": "Another decorative calcium carbonate stone",
+        "color": "#FDE68A"
+      }
+    ],
+    "priceRange": "$3-15 specimen pieces  ·  $20-100/sq ft slabs (commodity)  ·  $200-1,000+/sq ft premium Calacatta",
+    "seoDescription": "Marble: from Michelangelo's David to modern countertops. Guide to Carrara marble, the acid test, and why it glows from within."
+  },
+  {
+    "id": "basalt",
+    "name": "Basalt",
+    "subtitle": "The Ocean Floor Rock",
+    "category": "Igneous Rock (Volcanic)",
+    "colors": [
+      "Dark Gray",
+      "Black",
+      "Vesicular Gray-Black"
+    ],
+    "colorHexes": [
+      "#374151",
+      "#1C1917",
+      "#4B5563"
+    ],
+    "hardness": 6,
+    "chemicalFormula": "Plagioclase + Pyroxene + Olivine (variable)",
+    "crystalSystem": "None (fine-grained rock)",
+    "luster": "Dull to Vitreous",
+    "streak": "N/A (rock)",
+    "transparency": "Opaque",
+    "specificGravity": "2.8-3.0",
+    "localities": [
+      {
+        "name": "Worldwide",
+        "region": "Ocean floors globally",
+        "note": "Makes up virtually all oceanic crust"
+      },
+      {
+        "name": "Iceland",
+        "region": "Entire island",
+        "note": "Iceland is built almost entirely of basalt"
+      },
+      {
+        "name": "India",
+        "region": "Deccan Traps",
+        "note": "Massive basalt flood province, 500,000 km²"
+      },
+      {
+        "name": "United States",
+        "region": "Columbia River Plateau, Hawaii",
+        "note": "Major continental and oceanic basalt"
+      }
+    ],
+    "formation": "Basalt is the most common rock on Earth's surface. It forms the entire ocean floor and makes up massive volcanic provinces on every continent. It erupts as low-viscosity lava that flows easily, sometimes traveling tens of kilometers from its source.\n\nUnlike granite (which cools slowly underground to form large crystals), basalt cools rapidly at the surface, producing a fine-grained texture where individual mineral grains are too small to see without magnification. The minerals present are the same as in gabbro (its slow-cooled equivalent): plagioclase feldspar, pyroxene, and olivine.\n\nBasalt is the rock that fills the cavities where zeolites, agates, and amethyst form. When basaltic lava solidifies, trapped gas bubbles create vesicles (holes). Over millions of years, mineral-rich groundwater fills these cavities with secondary minerals, producing the geodes and crystal-lined cavities that crystal collectors prize.",
+    "identification": "Basalt is identified by its dark gray to black color, fine-grained texture (crystals too small to see), and density (noticeably heavier than granite). Vesicular basalt contains round gas-bubble holes. Columnar basalt forms dramatic hexagonal columns (Giant's Causeway, Devils Postpile).\n\nDistinguish from obsidian (glassy, no visible texture), gabbro (same minerals but coarse-grained), and slate (layered, can split into sheets). Basalt feels dense and solid with a uniform dark appearance.",
+    "howToSpotFakes": "Basalt is too common and inexpensive to fake. The main distinction worth knowing: commercial 'basalt' hot stone massage sets may actually be any dark, fine-grained rock. True basalt retains heat well due to its density, making it genuinely superior for hot stone therapy compared to lighter alternatives.",
+    "metaphysical": {
+      "chakra": "Root",
+      "zodiac": "Aries, Scorpio",
+      "element": "Earth, Fire",
+      "traditions": "Basalt carries the raw energy of volcanic eruption. Hot basalt massage is one of the oldest therapeutic uses of stone, practiced across Polynesian, Native American, and Asian traditions for millennia. In crystal healing, basalt is associated with grounding, courage, and the transformative power of Earth's interior."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Obsidian",
+        "relation": "Glassy version of the same magma",
+        "color": "#1C1917"
+      },
+      {
+        "name": "Lava Rock",
+        "relation": "Vesicular basalt, porous and lightweight",
+        "color": "#292524"
+      },
+      {
+        "name": "Gabbro",
+        "relation": "Same composition but slow-cooled, coarse-grained",
+        "color": "#374151"
+      }
+    ],
+    "priceRange": "$1-5 tumbled  ·  $10-40 columnar basalt specimens  ·  $20-80 specimen-quality vesicular basalt",
+    "seoDescription": "Basalt: the dark volcanic rock covering Earth's ocean floor. Guide to columnar basalt, hot stone therapy, and why it hosts crystal geodes."
+  },
+  {
+    "id": "limestone",
+    "name": "Limestone",
+    "subtitle": "The Fossil Record",
+    "category": "Sedimentary Rock",
+    "colors": [
+      "Cream-White",
+      "Tan",
+      "Gray",
+      "Fossiliferous Brown"
+    ],
+    "colorHexes": [
+      "#FEF3C7",
+      "#D6D3D1",
+      "#9CA3AF",
+      "#A16207"
+    ],
+    "hardness": 3,
+    "chemicalFormula": "CaCO₃ (primarily calcite)",
+    "crystalSystem": "None (sedimentary rock)",
+    "luster": "Dull to Earthy",
+    "streak": "White",
+    "transparency": "Opaque",
+    "specificGravity": "2.3-2.7",
+    "localities": [
+      {
+        "name": "Worldwide",
+        "region": "Every continent",
+        "note": "One of the most abundant sedimentary rocks"
+      },
+      {
+        "name": "England",
+        "region": "White Cliffs of Dover",
+        "note": "Iconic chalk (a type of limestone)"
+      },
+      {
+        "name": "Egypt",
+        "region": "Giza Plateau",
+        "note": "The Great Pyramids are built of limestone blocks"
+      },
+      {
+        "name": "United States",
+        "region": "Indiana, Texas, Florida",
+        "note": "Major limestone regions"
+      }
+    ],
+    "formation": "Limestone is the Earth's biological archive. Most limestone forms from the accumulated shells, skeletons, and remains of marine organisms: corals, foraminifera, mollusks, and crinoids. When these organisms die, their calcium carbonate shells settle on the seafloor and gradually compact into rock.\n\nThis means every piece of limestone was once alive. A limestone building block may contain millions of individual microscopic shells. Fossiliferous limestone preserves visible shells and marine life, making it a direct window into ancient oceans. The Great Pyramids of Giza are built from Eocene limestone roughly 40-50 million years old.\n\nLimestone is also the parent rock of marble (metamorphosed limestone), cave formations (dissolved and redeposited limestone), and karst landscapes (sinkholes, caves, and underground rivers formed by limestone dissolution).",
+    "identification": "Limestone is identified by its light color (cream, tan, gray), fine-grained texture, visible fossils (often), and vigorous effervescence in dilute hydrochloric acid. Hardness around 3. Often breaks along fossil boundaries or bedding planes.\n\nDistinguish from marble (recrystallized, sugary texture, no fossils), dolomite (slower acid reaction), sandstone (gritty texture, no acid reaction), and chalk (extremely fine-grained, soft, white limestone variety).",
+    "howToSpotFakes": "Limestone is too common and inexpensive to fake. The main confusion is with dolomite, which looks similar but reacts more slowly with acid (only effervesces in warm or powdered form). In the building trade, limestone and marble are sometimes used interchangeably for softer decorative stones.",
+    "metaphysical": {
+      "chakra": "Root, Crown",
+      "zodiac": "Cancer",
+      "element": "Earth, Water",
+      "traditions": "Limestone carries the accumulated energy of millions of years of marine life. Crystal practitioners associate it with patience, understanding cycles of growth, and connecting with ancestral or ancient wisdom. Fossils within limestone are considered especially powerful for past-life work and understanding deep time."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Marble",
+        "relation": "Metamorphosed limestone",
+        "color": "#FAFAF9"
+      },
+      {
+        "name": "Calcite",
+        "relation": "The mineral limestone is made of",
+        "color": "#FEF3C7"
+      },
+      {
+        "name": "Chalk",
+        "relation": "Extremely fine-grained white limestone",
+        "color": "#F5F5F4"
+      }
+    ],
+    "priceRange": "$1-5 specimen pieces  ·  $10-50 fossiliferous slabs  ·  $20-100 display-quality fossil limestone",
+    "seoDescription": "Limestone: the rock made of ancient sea life. Guide to fossils, the Great Pyramids connection, and why every piece was once alive."
+  },
+  {
+    "id": "slate",
+    "name": "Slate",
+    "subtitle": "The Splitting Stone",
+    "category": "Metamorphic Rock",
+    "colors": [
+      "Dark Gray",
+      "Blue-Gray",
+      "Green-Gray",
+      "Purple-Gray"
+    ],
+    "colorHexes": [
+      "#374151",
+      "#475569",
+      "#4B5563",
+      "#6B7280"
+    ],
+    "hardness": 5.5,
+    "chemicalFormula": "Quartz + Mica + Chlorite (variable)",
+    "crystalSystem": "None (foliated rock)",
+    "luster": "Dull to Pearly",
+    "streak": "N/A (rock)",
+    "transparency": "Opaque",
+    "specificGravity": "2.7-2.8",
+    "localities": [
+      {
+        "name": "Wales",
+        "region": "Snowdonia, North Wales",
+        "note": "Historic slate quarries, world's finest roofing slate"
+      },
+      {
+        "name": "Spain",
+        "region": "Galicia",
+        "note": "Major modern producer"
+      },
+      {
+        "name": "Brazil",
+        "region": "Minas Gerais",
+        "note": "Decorative slate production"
+      },
+      {
+        "name": "United States",
+        "region": "Vermont, Pennsylvania",
+        "note": "Historic American slate belt"
+      }
+    ],
+    "formation": "Slate forms when shale (a clay-rich sedimentary rock) is subjected to low-grade regional metamorphism. The pressure reorients microscopic clay and mica minerals perpendicular to the direction of compression, creating a foliation (layered structure) that allows the rock to split into thin, flat sheets.\n\nThis ability to cleave into smooth, flat sheets is called slaty cleavage, and it's what made slate one of civilization's most important building materials. Welsh slate roofs from the 1800s still protect buildings today. Before paper was cheap, students wrote on slate boards with chalk. Billiard tables use slate beds for their perfect flatness.\n\nThe dark gray color comes from organic carbon and fine-grained iron sulfide minerals. Green slate contains chlorite. Purple and red slates owe their color to iron oxides. Welsh slate is prized for its blue-gray color and ability to split into extremely thin, uniform sheets.",
+    "identification": "Slate is identified by its ability to split into thin, flat sheets along cleavage planes, fine-grained texture (individual grains invisible), and characteristic gray to gray-blue color. It rings with a clear tone when tapped (used as a quality test by quarrymen).\n\nDistinguish from shale (softer, crumbles rather than splitting cleanly), schist (coarser, visible mica flakes), and phyllite (intermediate between slate and schist, silky sheen).",
+    "howToSpotFakes": "Slate is not faked, but quality varies enormously. The best roofing slate can last 200+ years. Lower-quality slate contains iron pyrite that oxidizes and causes staining and spalling. The 'ring test' (clear tone when tapped) indicates dense, high-quality slate. Dull thuds suggest internal fractures or poor quality.",
+    "metaphysical": {
+      "chakra": "Root",
+      "zodiac": "Capricorn",
+      "element": "Earth",
+      "traditions": "Slate is associated with practicality, permanence, and starting fresh (the phrase 'clean slate' comes from erasing chalk from slate boards). In crystal healing, slate represents grounding, protection, and the ability to shed layers to reveal your true self."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Shale",
+        "relation": "Parent rock before metamorphism",
+        "color": "#4B5563"
+      },
+      {
+        "name": "Muscovite",
+        "relation": "One of the mica minerals creating the foliation",
+        "color": "#D4D4D8"
+      },
+      {
+        "name": "Phyllite",
+        "relation": "Between slate and schist in metamorphic grade",
+        "color": "#6B7280"
+      }
+    ],
+    "priceRange": "$2-10 specimens  ·  $5-15/sq ft roofing slate  ·  $15-60 decorative pieces",
+    "seoDescription": "Slate: the metamorphic rock that splits into perfect sheets. Guide to Welsh slate, the ring test, and 200-year roofs."
+  },
+  {
+    "id": "quartzite",
+    "name": "Quartzite",
+    "subtitle": "The Indestructible Sandstone",
+    "category": "Metamorphic Rock",
+    "colors": [
+      "White",
+      "Pink",
+      "Gray",
+      "Pale Green"
+    ],
+    "colorHexes": [
+      "#FAFAF9",
+      "#FECDD3",
+      "#D4D4D8",
+      "#D9F99D"
+    ],
+    "hardness": 7,
+    "chemicalFormula": "SiO₂ (recrystallized quartz grains)",
+    "crystalSystem": "None (polycrystalline rock)",
+    "luster": "Vitreous to Greasy",
+    "streak": "White",
+    "transparency": "Opaque to Translucent",
+    "specificGravity": "2.65",
+    "localities": [
+      {
+        "name": "Worldwide",
+        "region": "Wherever sandstone has been metamorphosed",
+        "note": "Very common globally"
+      },
+      {
+        "name": "Brazil",
+        "region": "Various",
+        "note": "Decorative quartzite slabs"
+      },
+      {
+        "name": "India",
+        "region": "Rajasthan",
+        "note": "Commercial quarrying"
+      },
+      {
+        "name": "United States",
+        "region": "South Dakota (Sioux Quartzite)",
+        "note": "Famous pink quartzite, 1.7 billion years old"
+      }
+    ],
+    "formation": "Quartzite forms when sandstone is metamorphosed by heat and pressure. The original sand grains (which were individual quartz crystals) recrystallize and fuse together, creating an interlocking mosaic of quartz that is far harder and more durable than the original sandstone.\n\nThe transformation is dramatic. Sandstone breaks around its grains (you can see individual sand grains on broken surfaces). Quartzite breaks through its grains, producing a smooth, conchoidal fracture because the grain boundaries have been obliterated by recrystallization.\n\nPure quartzite is white. Pink quartzite (like South Dakota's Sioux Quartzite) contains iron oxide. Green quartzite may contain fuchsite mica. Quartzite is one of the most durable natural materials available, resisting weathering, heat, and chemicals. It's increasingly popular as a countertop material, marketed as a premium alternative to granite.",
+    "identification": "Quartzite is identified by its extreme hardness (Mohs 7, scratches steel and glass), granular texture of fused quartz grains, conchoidal fracture (breaks through grains, not around them), and lack of acid reaction.\n\nDistinguish from marble (softer, effervesces in acid), sandstone (softer, breaks around grains, gritty feel), and granite (contains visible feldspar and mica in addition to quartz).",
+    "howToSpotFakes": "In the countertop industry, some 'quartzite' is actually dolomite marble or other softer stone that won't hold up as well. True quartzite should scratch glass easily and not react with acid. The term 'soft quartzite' is sometimes used for dolomite marble, which is misleading. If you can scratch it with a knife, it's not quartzite.",
+    "metaphysical": {
+      "chakra": "Crown",
+      "zodiac": "Capricorn, Scorpio",
+      "element": "Earth, Fire",
+      "traditions": "Quartzite is associated with endurance, determination, and the transformation of something ordinary into something extraordinary. The metamorphic journey from loose sand to fused stone mirrors themes of personal growth through pressure. Practitioners use it for persistence and long-term goal setting."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Sandstone",
+        "relation": "Parent rock before metamorphism",
+        "color": "#D6D3D1"
+      },
+      {
+        "name": "Clear Quartz",
+        "relation": "The mineral quartzite is made of",
+        "color": "#F0F9FF"
+      },
+      {
+        "name": "Aventurine",
+        "relation": "Quartzite with fuchsite mica inclusions",
+        "color": "#4ADE80"
+      }
+    ],
+    "priceRange": "$2-10 specimens  ·  $50-150/sq ft countertop slabs  ·  $15-60 polished display specimens",
+    "seoDescription": "Quartzite: sandstone transformed into one of nature's hardest rocks. Guide to the marble vs. quartzite countertop debate and identification."
+  },
+  {
+    "id": "sandstone",
+    "name": "Sandstone",
+    "subtitle": "The Desert Archive",
+    "category": "Sedimentary Rock",
+    "colors": [
+      "Tan",
+      "Red-Orange",
+      "Cream-Yellow",
+      "Brown"
+    ],
+    "colorHexes": [
+      "#D6D3D1",
+      "#EA580C",
+      "#FEF3C7",
+      "#92400E"
+    ],
+    "hardness": 6,
+    "chemicalFormula": "SiO₂ (cemented quartz grains)",
+    "crystalSystem": "None (clastic sedimentary rock)",
+    "luster": "Dull to Earthy",
+    "streak": "N/A (rock)",
+    "transparency": "Opaque",
+    "specificGravity": "2.2-2.8",
+    "localities": [
+      {
+        "name": "United States",
+        "region": "Utah, Arizona (Canyon Country)",
+        "note": "Spectacular red sandstone formations"
+      },
+      {
+        "name": "Australia",
+        "region": "Uluru (Ayers Rock)",
+        "note": "Iconic red sandstone monolith"
+      },
+      {
+        "name": "Jordan",
+        "region": "Petra",
+        "note": "Ancient city carved from sandstone"
+      },
+      {
+        "name": "England",
+        "region": "Yorkshire, Peak District",
+        "note": "Millstone grit and building stone"
+      }
+    ],
+    "formation": "Sandstone is compressed and cemented sand. Each grain is typically a tiny quartz crystal that was eroded from older rocks, transported by rivers or wind, deposited in layers, and eventually lithified (turned to stone) by mineral cements filling the spaces between grains.\n\nThe colors tell the story of the environment: red sandstone (iron oxide cement, deposited in arid conditions), white sandstone (pure quartz, typically beach or dune deposits), and brown sandstone (iron and clay cements). Cross-bedding patterns (angled layers within the rock) record ancient sand dunes and river channels.\n\nSandstone landscapes are among the most spectacular on Earth. The red rock country of Utah and Arizona, Uluru in Australia, and the rose-red city of Petra in Jordan are all sculpted from sandstone. These formations were shaped by millions of years of water and wind erosion acting on horizontal rock layers.",
+    "identification": "Sandstone is identified by its gritty texture (you can feel individual sand grains), visible layering or cross-bedding, and warm colors. It breaks around grains rather than through them, leaving a rough, granular fracture surface.\n\nDistinguish from quartzite (breaks through grains, much harder), limestone (effervesces in acid), and shale (much finer-grained, clay-based).",
+    "howToSpotFakes": "Sandstone is not faked. The main quality concern is durability. Well-cemented sandstone makes excellent building stone (many medieval cathedrals), while poorly cemented sandstone crumbles. The brown sandstone buildings of New York City ('brownstones') demonstrate both: some have lasted 150+ years while others require constant repair.",
+    "metaphysical": {
+      "chakra": "Root, Sacral",
+      "zodiac": "Leo, Gemini",
+      "element": "Earth, Air",
+      "traditions": "Sandstone is associated with creativity, truth, and collective unity (millions of individual grains forming a cohesive whole). The layered structure connects it to understanding life in stages and chapters. Red sandstone carries additional associations with passion and the transformative energy of desert environments."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Quartzite",
+        "relation": "Metamorphosed sandstone",
+        "color": "#FAFAF9"
+      },
+      {
+        "name": "Clear Quartz",
+        "relation": "The mineral making up each sand grain",
+        "color": "#F0F9FF"
+      },
+      {
+        "name": "Limestone",
+        "relation": "Fellow common sedimentary rock",
+        "color": "#FEF3C7"
+      }
+    ],
+    "priceRange": "$1-5 specimens  ·  $10-40 decorative slabs  ·  $20-100 fossil-bearing or cross-bedded specimens",
+    "seoDescription": "Sandstone: ancient desert and beach sand turned to stone. Guide to red rock country, Petra, Uluru, and how to read the layers."
+  },
+  {
+    "id": "soapstone",
+    "name": "Soapstone",
+    "subtitle": "The Carver's Stone",
+    "category": "Metamorphic Rock",
+    "colors": [
+      "Gray-Green",
+      "Dark Green",
+      "Cream",
+      "Brown"
+    ],
+    "colorHexes": [
+      "#6B7280",
+      "#166534",
+      "#FEF3C7",
+      "#78350F"
+    ],
+    "hardness": 1.5,
+    "chemicalFormula": "Primarily talc (Mg₃Si₄O₁₀(OH)₂) with chlorite, pyroxene",
+    "crystalSystem": "None (polycrystalline rock)",
+    "luster": "Pearly to Greasy",
+    "streak": "White",
+    "transparency": "Opaque",
+    "specificGravity": "2.7-2.8",
+    "localities": [
+      {
+        "name": "Brazil",
+        "region": "Minas Gerais",
+        "note": "Major source, carving tradition"
+      },
+      {
+        "name": "India",
+        "region": "Rajasthan, Andhra Pradesh",
+        "note": "Extensive deposits, cookware production"
+      },
+      {
+        "name": "Finland",
+        "region": "Various",
+        "note": "Finnish soapstone stoves and fireplace surrounds"
+      },
+      {
+        "name": "United States",
+        "region": "Virginia, Vermont",
+        "note": "Historic quarries"
+      }
+    ],
+    "formation": "Soapstone (also called steatite) is a metamorphic rock composed primarily of talc, the softest mineral on the Mohs scale. It forms when magnesium-rich rocks like serpentinite or dunite undergo hydrothermal alteration, converting original minerals into talc, chlorite, and other soft sheet silicates.\n\nThe 'soapy' feel that gives it its name comes from the talc content. This extreme softness makes soapstone the easiest natural stone to carve, which is why it has been used for sculpture, cookware, and decorative objects for thousands of years. Inuit carvings, West African sculptures, Chinese seal stones, and Brazilian artisan work all rely on soapstone's carvability.\n\nDespite its softness, soapstone has remarkable thermal properties. It absorbs heat slowly, holds it for a long time, and releases it gradually. Finnish and Scandinavian soapstone stoves, which store heat from a brief fire and radiate it for hours, have been used since the 1700s. Soapstone is also chemically inert, making it ideal for laboratory countertops and acid-resistant sinks.",
+    "identification": "Soapstone is identified by its soapy, greasy feel, extreme softness (easily scratched with a fingernail), and gray-green color. It can be carved with a pocket knife. The surface feels distinctly slippery, almost waxy.\n\nDistinguish from serpentine (harder, doesn't feel soapy), marble (harder, effervesces in acid), and jade (much harder, can't be scratched with a knife).",
+    "howToSpotFakes": "Soapstone is not commonly faked. The main quality distinction is talc content: higher-talc soapstone is softer and easier to carve but less durable. Architectural-grade soapstone for countertops typically has lower talc and higher chlorite/pyroxene content, making it harder and more resistant. The soapy feel and extreme softness are unmistakable.",
+    "metaphysical": {
+      "chakra": "Heart, Root",
+      "zodiac": "Sagittarius",
+      "element": "Earth",
+      "traditions": "Soapstone is associated with gentle nurturing energy, creativity, and warmth. Its use in carvings across cultures connects it to artistic expression. The heat-retention properties reinforce associations with sustained comfort and reliable support. Indigenous carving traditions from the Inuit to the Shona imbue soapstone with deep cultural significance."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Talc",
+        "relation": "Primary mineral component",
+        "color": "#F5F5F4"
+      },
+      {
+        "name": "Serpentine",
+        "relation": "Related metamorphic stone, harder",
+        "color": "#65A30D"
+      },
+      {
+        "name": "Nephrite",
+        "relation": "Much harder carving stone, sometimes confused",
+        "color": "#4D7C0F"
+      }
+    ],
+    "priceRange": "$5-20 carving blanks  ·  $20-100 finished carvings  ·  $80-200/sq ft countertop grade",
+    "seoDescription": "Soapstone: the softest carving stone, from Inuit art to Finnish stoves. Guide to identification, thermal properties, and the talc connection."
+  },
+  {
+    "id": "painite",
+    "name": "Painite",
+    "subtitle": "The Once-Rarest Mineral",
+    "category": "Borate Mineral",
+    "colors": [
+      "Dark Brownish Red",
+      "Orange-Brown",
+      "Garnet Red"
+    ],
+    "colorHexes": [
+      "#7F1D1D",
+      "#92400E",
+      "#DC2626"
+    ],
+    "hardness": 8,
+    "chemicalFormula": "CaZrBAl₉O₁₈",
+    "crystalSystem": "Hexagonal",
+    "luster": "Vitreous",
+    "streak": "Red",
+    "transparency": "Transparent to Translucent",
+    "specificGravity": "4.01",
+    "localities": [
+      {
+        "name": "Myanmar",
+        "region": "Mogok, Shan State",
+        "note": "Only significant source, all known specimens from here"
+      },
+      {
+        "name": "Myanmar",
+        "region": "Namya (Nanyaseik)",
+        "note": "Secondary locality, lower-quality material"
+      }
+    ],
+    "formation": "Painite held the Guinness World Record as the world's rarest mineral for decades. From its discovery in 1951 until 2005, fewer than 25 crystals were known to exist in the entire world. Recent finds in Myanmar have increased the count to over 1,000 known specimens, but gem-quality material remains extraordinarily rare.\n\nPainite was discovered by British gemologist Arthur C.D. Pain in Mogok, Myanmar. For over 50 years it was known from only three crystals and remained a near-mythical collector item. The extreme rarity results from its unusual chemistry: it requires calcium, zirconium, boron, and aluminum all present in precise proportions in the same geological environment.\n\nIt forms in metamorphosed limestone (marble) alongside ruby, sapphire, and spinel in Myanmar's legendary Mogok Stone Tract. The same geological kitchen that produces some of the world's finest gemstones also created one of its rarest minerals.",
+    "identification": "Painite is identified by its dark brownish-red color (similar to dark garnet), hexagonal crystal system, hardness of 8, and very high specific gravity (4.01). Strong pleochroism shows different colors from different angles: red, brown, and pale yellow.\n\nDistinguish from garnet (isometric, singly refractive), ruby (trigonal, different SG), and dark tourmaline (trigonal, lower SG). Lab verification is essential for any claimed painite.",
+    "howToSpotFakes": "Any stone claimed to be painite absolutely requires lab certification from GIA, Gübelin, SSEF, or another reputable gemological laboratory. Dark garnet, dark tourmaline, and other brown-red gems could be mistaken for or deliberately substituted. The combination of hexagonal crystal system, hardness 8, SG 4.01, and strong pleochroism narrows identification considerably, but the stakes warrant professional testing.",
+    "metaphysical": {
+      "chakra": "Root, Crown",
+      "zodiac": "Scorpio",
+      "element": "Earth, Fire",
+      "traditions": "Painite's extreme rarity gives it a near-mythical status. Crystal practitioners associate it with recognizing your own unique value and the power of patience. The 50 years between discovery and broader availability connects it to themes of delayed gratification and hidden treasure. Its rarity means few practitioners have actually worked with it."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Ruby",
+        "relation": "Found in the same Mogok deposits",
+        "color": "#DC2626"
+      },
+      {
+        "name": "Sapphire",
+        "relation": "Fellow Mogok corundum gemstone",
+        "color": "#2563EB"
+      },
+      {
+        "name": "Spinel",
+        "relation": "Another rare gem from the same metamorphic environment",
+        "color": "#EC4899"
+      }
+    ],
+    "priceRange": "$200-1,000 small rough crystals  ·  $1,000-10,000 faceted gems under 1ct  ·  $10,000-100,000+ fine gem-quality stones",
+    "seoDescription": "Painite: the mineral that held the world's rarest record. Guide to the Mogok connection, only 25 crystals for 50 years, and identification."
+  },
+  {
+    "id": "red-beryl",
+    "name": "Red Beryl",
+    "subtitle": "The Scarlet Emerald",
+    "category": "Beryl Family",
+    "colors": [
+      "Raspberry Red",
+      "Strawberry Pink-Red",
+      "Deep Rose"
+    ],
+    "colorHexes": [
+      "#E11D48",
+      "#FB7185",
+      "#BE123C"
+    ],
+    "hardness": 7.5,
+    "chemicalFormula": "Be₃Al₂Si₆O₁₈ (with Mn³⁺)",
+    "crystalSystem": "Hexagonal",
+    "luster": "Vitreous",
+    "streak": "White",
+    "transparency": "Transparent to Translucent",
+    "specificGravity": "2.66-2.70",
+    "localities": [
+      {
+        "name": "United States",
+        "region": "Wah Wah Mountains, Utah",
+        "note": "Only gem-quality source in the world"
+      },
+      {
+        "name": "United States",
+        "region": "Thomas Range, Utah",
+        "note": "Small crystals, mostly non-gem"
+      },
+      {
+        "name": "Mexico",
+        "region": "Various",
+        "note": "Very rare, mostly non-gem"
+      }
+    ],
+    "formation": "Red beryl (also called bixbite, though this name is discouraged to avoid confusion with bixbyite) is the rarest variety of beryl, found in gem quality at only one location on Earth: the Wah Wah Mountains of southwestern Utah.\n\nWhile emerald (green beryl) gets its color from chromium and aquamarine (blue beryl) from iron, red beryl's raspberry color comes from manganese (Mn³⁺). It forms in topaz-bearing rhyolite (a volcanic rock), where beryllium, manganese, aluminum, and silicon are all present in the right proportions. The geological conditions required are so specific that red beryl has never been found in gem quality anywhere else.\n\nRed beryl crystals are tiny. Stones over 1 carat are museum pieces. A fine 2-carat red beryl is rarer and more valuable per carat than a comparable diamond. The mine produces so little material that red beryl is estimated to be 1,000 times rarer than diamond.",
+    "identification": "Red beryl is identified by its raspberry-red color in hexagonal prismatic crystals, beryl-family optical properties (RI 1.564-1.574), and association with topaz-bearing rhyolite. The crystals are typically small (under 2cm) and often included.\n\nDistinguish from rubellite tourmaline (trigonal, different RI), red spinel (isometric, higher RI), and ruby (higher RI and SG). The hexagonal crystal form and beryl RI range are diagnostic.",
+    "howToSpotFakes": "Lab-created red beryl exists (hydrothermal process) and is occasionally sold without disclosure. Synthetic red beryl may be too clean and vivid compared to natural stones, which are typically small and included. Any red beryl over 1 carat should be lab-certified. Provenance from the Wah Wah Mountains is essential. Red glass, red CZ, and red tourmaline are all potential substitutes at lower price points.",
+    "metaphysical": {
+      "chakra": "Heart, Root",
+      "zodiac": "Taurus",
+      "element": "Earth, Fire",
+      "traditions": "Red beryl's extreme rarity connects it to themes of finding something truly unique and irreplaceable. Crystal practitioners associate it with passionate love, personal power, and the courage to be authentic. Its beryl family membership links it to the protective and harmonizing properties attributed to emerald and aquamarine."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Emerald",
+        "relation": "Green beryl, same mineral species",
+        "color": "#059669"
+      },
+      {
+        "name": "Morganite",
+        "relation": "Pink beryl, manganese-colored like red beryl but lighter",
+        "color": "#FDA4AF"
+      },
+      {
+        "name": "Aquamarine",
+        "relation": "Blue beryl, same mineral species",
+        "color": "#67E8F9"
+      }
+    ],
+    "priceRange": "$2,000-10,000/ct small gems  ·  $10,000-50,000/ct fine stones  ·  $100,000+/ct exceptional stones over 1ct",
+    "seoDescription": "Red beryl: 1,000 times rarer than diamond, found in only one place on Earth. Guide to the Wah Wah Mountains gem and why it's so valuable."
+  },
+  {
+    "id": "grandidierite",
+    "name": "Grandidierite",
+    "subtitle": "The Madagascar Blue-Green",
+    "category": "Borosilicate Mineral",
+    "colors": [
+      "Blue-Green",
+      "Teal",
+      "Greenish Blue"
+    ],
+    "colorHexes": [
+      "#0D9488",
+      "#06B6D4",
+      "#2DD4BF"
+    ],
+    "hardness": 7.5,
+    "chemicalFormula": "(Mg,Fe²⁺)Al₃(BO₃)(SiO₄)O₂",
+    "crystalSystem": "Orthorhombic",
+    "luster": "Vitreous",
+    "streak": "White",
+    "transparency": "Transparent to Translucent",
+    "specificGravity": "2.98-3.00",
+    "localities": [
+      {
+        "name": "Madagascar",
+        "region": "Andrahomana, Fort Dauphin area",
+        "note": "Only significant gem-quality source"
+      },
+      {
+        "name": "Sri Lanka",
+        "region": "Various",
+        "note": "Extremely rare, occasional finds"
+      },
+      {
+        "name": "Madagascar",
+        "region": "Tranomaro",
+        "note": "Type locality, first described 1902"
+      }
+    ],
+    "formation": "Grandidierite was first described in 1902 from southern Madagascar and named after French explorer Alfred Grandidier, who documented Madagascar's natural history. For over a century it was considered a geological curiosity, found only as translucent fragments in metamorphic rocks.\n\nIn 2014, transparent gem-quality grandidierite was discovered near Andrahomana in southern Madagascar, causing a sensation in the gem world. The material was beautiful, hard enough for jewelry (7.5), and extraordinarily rare. It quickly became one of the most sought-after new gems.\n\nGrandidierite forms in boron-rich, aluminum-rich metamorphic rocks (pegmatites and contact zones). Its teal to blue-green color comes from iron in the crystal structure. The mineral shows strong pleochroism: blue-green, colorless, and dark green from different directions. The finest cut stones are oriented to show the most saturated blue-green face.",
+    "identification": "Grandidierite is identified by its blue-green color, strong trichroic pleochroism (colorless, blue-green, dark green), orthorhombic crystal system, and RI of 1.590-1.623. SG of 2.98-3.00 helps separate it from similar-looking gems.\n\nDistinguish from tourmaline (trigonal), apatite (softer), and lazulite (different RI). The specific combination of teal color, strong pleochroism, and orthorhombic symmetry narrows identification significantly.",
+    "howToSpotFakes": "Synthetic grandidierite does not exist commercially (yet). The main risks are misidentified blue-green tourmaline, apatite, or glass. Lab certification is recommended for any claimed grandidierite. Prices for fine stones are high enough to warrant professional verification. Translucent non-gem grandidierite from the type locality exists and is much more affordable.",
+    "metaphysical": {
+      "chakra": "Heart, Throat",
+      "zodiac": "Aquarius",
+      "element": "Water, Air",
+      "traditions": "Grandidierite is too recently discovered as a gem to have deep metaphysical traditions, but practitioners have quickly adopted it as a stone of truthful expression from the heart. Its blue-green color bridges the heart and throat chakras. Some associate it with the adventurous spirit of its namesake explorer, Alfred Grandidier."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Kornerupine",
+        "relation": "Another rare borosilicate collector gem",
+        "color": "#22C55E"
+      },
+      {
+        "name": "Lazulite",
+        "relation": "Similar blue color, different mineral",
+        "color": "#1D4ED8"
+      },
+      {
+        "name": "Serendibite",
+        "relation": "Fellow extremely rare borosilicate",
+        "color": "#1C1917"
+      }
+    ],
+    "priceRange": "$100-500/ct translucent material  ·  $1,000-5,000/ct fine transparent stones  ·  $10,000-30,000+/ct exceptional gems",
+    "seoDescription": "Grandidierite: the teal gem that stunned the gem world in 2014. Guide to Madagascar's rarest export, identification, and collecting."
+  },
+  {
+    "id": "taaffeite",
+    "name": "Taaffeite",
+    "subtitle": "The Gem Found in a Jeweler's Box",
+    "category": "Oxide Mineral (Beryllium-Magnesium Aluminum)",
+    "colors": [
+      "Lavender",
+      "Mauve",
+      "Pale Pink-Violet",
+      "Colorless"
+    ],
+    "colorHexes": [
+      "#C4B5FD",
+      "#DDD6FE",
+      "#F9A8D4",
+      "#F5F5F4"
+    ],
+    "hardness": 8,
+    "chemicalFormula": "BeMgAl₄O₈",
+    "crystalSystem": "Hexagonal",
+    "luster": "Vitreous",
+    "streak": "White",
+    "transparency": "Transparent",
+    "specificGravity": "3.60-3.62",
+    "localities": [
+      {
+        "name": "Sri Lanka",
+        "region": "Ratnapura",
+        "note": "Primary gem source"
+      },
+      {
+        "name": "Tanzania",
+        "region": "Various",
+        "note": "Occasional finds"
+      },
+      {
+        "name": "Myanmar",
+        "region": "Mogok",
+        "note": "Rare occurrences"
+      },
+      {
+        "name": "China",
+        "region": "Xinjiang",
+        "note": "Some rough material"
+      }
+    ],
+    "formation": "Taaffeite has one of the most unusual discovery stories in gemology. In 1945, Count Edward Charles Richard Taaffe, an Irish-Austrian gemologist, was sorting a parcel of cut spinels he had purchased from a Dublin jeweler. One pale mauve stone looked like spinel but showed double refraction under a polariscope, which spinel (being isometric) cannot do.\n\nTaaffe sent the stone for analysis, and it turned out to be an entirely new mineral. It was the only mineral ever discovered from a faceted gemstone in a jeweler's box rather than from a geological specimen in the field.\n\nTaaffeite forms in metamorphic rocks, particularly in marble and skarn deposits. It requires beryllium, magnesium, and aluminum all concentrated together under metamorphic conditions. These requirements are so specific that taaffeite remains one of the rarest gems on Earth, with total known gem-quality production measured in the hundreds of stones.",
+    "identification": "Taaffeite is identified by its lavender to mauve color, double refraction (distinguishing it from spinel), hardness of 8, and SG of 3.60-3.62. Under a polariscope, it shows the double refraction that spinel lacks, which is exactly how Count Taaffe originally spotted it.\n\nDistinguish from spinel (singly refractive, isometric), pink sapphire (higher RI), and amethyst (lower hardness, lower RI). The double-refraction test on a lavender stone with spinel-like appearance is the key diagnostic.",
+    "howToSpotFakes": "Any claimed taaffeite requires lab certification. Its rarity and value make it a target for substitution with lavender spinel, light amethyst, or synthetic sapphire. The double-refraction test separates it from spinel. Full gemological testing (RI 1.719-1.730, SG 3.60-3.62, biaxial optic sign) confirms identity. GIA, Gübelin, or SSEF reports are essential for purchase.",
+    "metaphysical": {
+      "chakra": "Crown, Third Eye",
+      "zodiac": "Sagittarius",
+      "element": "Air, Spirit",
+      "traditions": "Taaffeite's discovery story connects it to themes of recognizing hidden value, looking more closely at what seems familiar, and the rewards of careful observation. Crystal practitioners who know of it associate it with heightened perception and the ability to see what others miss. Its extreme rarity means few healers have worked with genuine specimens."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Spinel",
+        "relation": "The mineral taaffeite was mistaken for",
+        "color": "#EC4899"
+      },
+      {
+        "name": "Musgravite",
+        "relation": "Closely related mineral, similarly rare",
+        "color": "#9CA3AF"
+      },
+      {
+        "name": "Chrysoberyl",
+        "relation": "Another beryllium-bearing oxide",
+        "color": "#EAB308"
+      }
+    ],
+    "priceRange": "$2,000-10,000/ct small stones  ·  $10,000-35,000/ct fine gem quality  ·  $50,000+/ct exceptional large stones",
+    "seoDescription": "Taaffeite: the only mineral discovered in a jeweler's gemstone box. Guide to the world's rarest lavender gem, the spinel mix-up, and identification."
+  },
+  {
+    "id": "musgravite",
+    "name": "Musgravite",
+    "subtitle": "The Rarest of the Rare",
+    "category": "Oxide Mineral (Beryllium-Magnesium Aluminum)",
+    "colors": [
+      "Grayish Green",
+      "Olive",
+      "Violet-Gray",
+      "Purple-Gray"
+    ],
+    "colorHexes": [
+      "#6B7280",
+      "#4D7C0F",
+      "#7C3AED",
+      "#9CA3AF"
+    ],
+    "hardness": 8,
+    "chemicalFormula": "Be(Mg,Fe,Zn)₂Al₆O₁₂",
+    "crystalSystem": "Trigonal",
+    "luster": "Vitreous",
+    "streak": "White",
+    "transparency": "Transparent to Translucent",
+    "specificGravity": "3.68",
+    "localities": [
+      {
+        "name": "Australia",
+        "region": "Musgrave Ranges, South Australia",
+        "note": "Type locality, discovered 1967"
+      },
+      {
+        "name": "Madagascar",
+        "region": "Various",
+        "note": "Some gem-quality material found"
+      },
+      {
+        "name": "Greenland",
+        "region": "Various",
+        "note": "Rare occurrences"
+      },
+      {
+        "name": "Antarctica",
+        "region": "Various",
+        "note": "Identified in geological samples"
+      }
+    ],
+    "formation": "Musgravite is closely related to taaffeite and is possibly even rarer. It was discovered in 1967 in the Musgrave Ranges of central Australia and for decades was known from only a handful of tiny specimens.\n\nThe mineral forms in high-grade metamorphic rocks, specifically in granulite-facies rocks where extreme temperatures and pressures produce unusual mineral assemblages. The beryllium-magnesium-aluminum chemistry requires conditions found in only a few geological settings on Earth.\n\nGem-quality musgravite was essentially unknown until 2005, when a few transparent stones were identified and faceted. These are among the rarest faceted gemstones in existence. The total number of gem-quality musgravite stones known is estimated at fewer than 20, making it a contender for the title of rarest gem in the world.",
+    "identification": "Musgravite is identified by its grayish-green to violet-gray color, hardness of 8, trigonal crystal system, and SG of 3.68. It's closely related to taaffeite but has a different crystal structure (trigonal vs. hexagonal) and slightly higher SG.\n\nDistinguish from taaffeite (hexagonal, slightly lower SG), spinel (isometric, singly refractive), and sapphire (different RI range). Professional laboratory analysis is the only reliable method for distinguishing musgravite from taaffeite.",
+    "howToSpotFakes": "Musgravite is so rare that most gemologists have never seen one. Any claimed musgravite absolutely requires certification from a major gemological laboratory with experience in rare gems (GIA, Gübelin, SSEF). The distinction from taaffeite requires advanced crystallographic analysis. Given that fewer than 20 gem-quality specimens are believed to exist, extraordinary claims require extraordinary proof.",
+    "metaphysical": {
+      "chakra": "Crown",
+      "zodiac": "Scorpio",
+      "element": "Earth, Spirit",
+      "traditions": "Musgravite is essentially unknown in the crystal healing world due to its extreme rarity. The few practitioners who have encountered it describe it as carrying an ancient, profound energy connected to Earth's deepest geological processes. Its Australian outback origins connect it to Aboriginal Dreamtime concepts of deep time and creation."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Taaffeite",
+        "relation": "Closest chemical relative, similarly rare",
+        "color": "#C4B5FD"
+      },
+      {
+        "name": "Spinel",
+        "relation": "Same oxide class, much more common",
+        "color": "#EC4899"
+      },
+      {
+        "name": "Chrysoberyl",
+        "relation": "Another beryllium oxide, different structure",
+        "color": "#EAB308"
+      }
+    ],
+    "priceRange": "$5,000-20,000/ct rough  ·  $35,000-100,000+/ct faceted gem quality",
+    "seoDescription": "Musgravite: a contender for the world's rarest gemstone. Guide to fewer than 20 known gems, the Australian discovery, and identification."
+  },
+  {
+    "id": "flower-agate",
+    "name": "Flower Agate",
+    "subtitle": "The Blooming Stone",
+    "category": "Chalcedony (Quartz Family)",
+    "colors": [
+      "Pink-Peach Base",
+      "White Plume Flowers",
+      "Clear Translucent Zones"
+    ],
+    "colorHexes": [
+      "#FECDD3",
+      "#FFFFFF",
+      "#F0F9FF"
+    ],
+    "hardness": 7,
+    "chemicalFormula": "SiO₂ (with plume-like inclusions)",
+    "crystalSystem": "Trigonal (microcrystalline)",
+    "luster": "Waxy to Vitreous",
+    "streak": "White",
+    "transparency": "Translucent to Opaque",
+    "specificGravity": "2.58-2.64",
+    "localities": [
+      {
+        "name": "Madagascar",
+        "region": "Various",
+        "note": "Only known source, discovered ~2018-2019"
+      }
+    ],
+    "formation": "Flower agate is a recently discovered variety of agate from Madagascar that contains three-dimensional plume-like inclusions resembling cherry blossoms or bouquets of flowers. It first appeared on the crystal market around 2018-2019 and quickly became one of the most popular new discoveries in the crystal community.\n\nThe 'flowers' are plume agate formations: feathery, branching inclusions of iron oxide and manganese oxide that grew within the chalcedony during formation. These plumes formed when mineral-rich fluids infiltrated the silica gel as it was solidifying, creating delicate branching structures that were frozen in place as the agate hardened.\n\nThe pink-peach background color comes from trace iron and manganese in the chalcedony matrix. The white 'flower' plumes are areas of purer chalcedony with different trace chemistry. When cut and polished, the three-dimensional plumes appear to float within the translucent agate like flowers preserved in glass.",
+    "identification": "Flower agate is identified by its distinctive three-dimensional plume inclusions that resemble flowers or cherry blossoms within a pink-peach translucent chalcedony base. The 'flowers' appear to have depth when the stone is held to light.\n\nDistinguish from moss agate (green dendrites rather than flower plumes), pink opal (no plume inclusions, not chalcedony), and dyed agate (the floral patterns in genuine flower agate are three-dimensional, not surface patterns).",
+    "howToSpotFakes": "Genuine flower agate has three-dimensional plume structures visible from different angles. Printed or painted patterns appear flat and don't change perspective when the stone is tilted. The pink-peach base color should show natural variation. Very uniform, bright pink stones with perfectly arranged 'flowers' may be enhanced. Since the only source is Madagascar, all genuine flower agate should trace back there.",
+    "metaphysical": {
+      "chakra": "Heart, Root",
+      "zodiac": "Virgo, Taurus",
+      "element": "Earth",
+      "traditions": "Flower agate has become a social media sensation in the crystal community since its discovery, with an entire metaphysical tradition developing in just a few years. It's associated with personal growth, blooming into your full potential, and nurturing new beginnings. The flower imagery connects it to fertility, self-development, and the patience required for organic growth."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Moss Agate",
+        "relation": "Fellow inclusion agate, green dendrites instead of flowers",
+        "color": "#22C55E"
+      },
+      {
+        "name": "Plume Agate",
+        "relation": "Same plume formation mechanism, different colors",
+        "color": "#F97316"
+      },
+      {
+        "name": "Cherry Blossom Agate",
+        "relation": "Alternate name sometimes used for similar material",
+        "color": "#FDA4AF"
+      }
+    ],
+    "priceRange": "$5-20 tumbled  ·  $20-80 polished towers or palm stones  ·  $50-300 large display specimens with prominent flowers",
+    "seoDescription": "Flower agate: Madagascar's blooming stone with 3D flower inclusions. Guide to the TikTok-famous crystal, identification, and real vs. fake."
+  },
+  {
+    "id": "polychrome-jasper",
+    "name": "Polychrome Jasper",
+    "subtitle": "The Desert Sunset Stone",
+    "category": "Chalcedony (Quartz Family)",
+    "colors": [
+      "Warm Desert Tan",
+      "Rust Red Swirls",
+      "Cream",
+      "Brown Bands",
+      "Olive Green"
+    ],
+    "colorHexes": [
+      "#D6D3D1",
+      "#B91C1C",
+      "#FEF3C7",
+      "#78350F",
+      "#4D7C0F"
+    ],
+    "hardness": 6.5,
+    "chemicalFormula": "SiO₂ (with multiple iron oxide inclusions)",
+    "crystalSystem": "Trigonal (microcrystalline)",
+    "luster": "Waxy to Vitreous",
+    "streak": "White",
+    "transparency": "Opaque",
+    "specificGravity": "2.58-2.91",
+    "localities": [
+      {
+        "name": "Madagascar",
+        "region": "Various",
+        "note": "Primary source, discovered ~2006-2008"
+      }
+    ],
+    "formation": "Polychrome jasper (also called desert jasper or royal savannah jasper) is a multicolored jasper from Madagascar discovered in the early 2000s. The name 'polychrome' means 'many colors,' and the stone lives up to it: swirling patterns of tan, brown, rust, cream, olive, and orange create landscapes that resemble aerial views of desert terrain.\n\nThe multiple colors come from varying concentrations and oxidation states of iron throughout the silica matrix. Different iron compounds produce the range: hematite (red), goethite (brown-yellow), limonite (yellow-brown), and chlorite (green). The swirling patterns result from flow structures in the original volcanic material combined with subsequent weathering and mineral infiltration.\n\nPolychrome jasper is often found in free-form shapes that are polished to follow the stone's natural contours, producing organic, sculptural display pieces that highlight the flowing color patterns.",
+    "identification": "Polychrome jasper is identified by its warm, multicolored swirling patterns in desert earth tones. The colors should blend smoothly rather than forming sharp boundaries. Hardness 6.5-7 and opaque chalcedony properties confirm jasper classification.\n\nDistinguish from mookaite (Australian, different color palette, typically includes mauve), ocean jasper (orbicular patterns rather than flowing swirls), and picture jasper (landscape scenes rather than abstract swirls).",
+    "howToSpotFakes": "Polychrome jasper is affordable and not commonly faked. The main concern is that generic multicolored jasper from other sources may be labeled as polychrome jasper, which properly refers only to the Madagascan material. Genuine polychrome jasper has a specific warm palette and flowing, organic patterns. Very bright or unnatural colors may indicate dyeing.",
+    "metaphysical": {
+      "chakra": "Root, Sacral, Solar Plexus",
+      "zodiac": "Virgo, Leo",
+      "element": "Earth, Fire",
+      "traditions": "Polychrome jasper is associated with vitality, transformation, and embracing all aspects of your experience. The multiple colors are interpreted as representing the many facets of a whole person. Practitioners use it for grounding during periods of change, accessing creative energy, and finding passion for new endeavors."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Mookaite",
+        "relation": "Another multicolored Australian jasper",
+        "color": "#EAB308"
+      },
+      {
+        "name": "Ocean Jasper",
+        "relation": "Fellow Madagascan jasper, orbicular patterns",
+        "color": "#22C55E"
+      },
+      {
+        "name": "Picture Jasper",
+        "relation": "Scenic patterns, different style",
+        "color": "#A16207"
+      }
+    ],
+    "priceRange": "$5-15 tumbled  ·  $15-60 polished free-forms  ·  $50-200 large display pieces",
+    "seoDescription": "Polychrome jasper: the desert sunset stone from Madagascar. Guide to identification, the multicolor palette, and the many names for this jasper."
+  },
+  {
+    "id": "chrome-diopside",
+    "name": "Chrome Diopside",
+    "subtitle": "The Siberian Emerald",
+    "category": "Pyroxene Group (Silicate)",
+    "colors": [
+      "Vivid Forest Green",
+      "Chrome Green",
+      "Deep Green"
+    ],
+    "colorHexes": [
+      "#16A34A",
+      "#15803D",
+      "#166534"
+    ],
+    "hardness": 5.5,
+    "chemicalFormula": "CaMgSi₂O₆ (with Cr³⁺)",
+    "crystalSystem": "Monoclinic",
+    "luster": "Vitreous",
+    "streak": "White to Pale Green",
+    "transparency": "Transparent",
+    "specificGravity": "3.22-3.38",
+    "localities": [
+      {
+        "name": "Russia",
+        "region": "Yakutia (Sakha Republic), Siberia",
+        "note": "Primary gem source, linked to diamond pipes"
+      },
+      {
+        "name": "Pakistan",
+        "region": "Swat Valley",
+        "note": "Good gem material"
+      },
+      {
+        "name": "Finland",
+        "region": "Outokumpu",
+        "note": "Fine specimens"
+      },
+      {
+        "name": "Brazil",
+        "region": "Bahia",
+        "note": "Some gem-quality production"
+      }
+    ],
+    "formation": "Chrome diopside is the chromium-bearing variety of diopside, a calcium-magnesium pyroxene. The vivid green color comes from chromium (Cr³⁺) substituting into the crystal structure, the same element responsible for emerald's green.\n\nThe most important gem source is in the kimberlite pipes of Yakutia, Siberia, where chrome diopside occurs alongside diamond. The same deep mantle conditions that deliver diamonds to the surface also produce chrome diopside. This geological association gives chrome diopside an interesting marketing angle: it's literally a diamond's neighbor.\n\nChrome diopside offers an affordable alternative to emerald and tsavorite garnet. Its vivid green rivals both, and stones over 1 carat are readily available at a fraction of emerald prices. The main limitation is softness (5.5) and two cleavage directions, which make it less durable for everyday ring wear.",
+    "identification": "Chrome diopside is identified by its vivid chrome-green color, monoclinic crystal system, two cleavage directions at nearly 90 degrees (characteristic of pyroxenes), and RI of 1.675-1.701.\n\nDistinguish from emerald (hexagonal, higher RI), tsavorite garnet (isometric, singly refractive), and chrome tourmaline (trigonal, different RI). Chrome diopside's pyroxene cleavage and lower hardness separate it from most green gems.",
+    "howToSpotFakes": "Chrome diopside is affordable enough that direct fakes are rare. Green glass or green CZ might be substituted at very low price points. The main consumer knowledge gap is the hardness limitation. Some sellers market chrome diopside for rings without disclosing that at 5.5 with two cleavage directions, it's better suited for earrings, pendants, and brooches than daily-wear rings.",
+    "metaphysical": {
+      "chakra": "Heart",
+      "zodiac": "Virgo, Gemini",
+      "element": "Earth",
+      "traditions": "Chrome diopside is strongly associated with the heart chakra and connection to nature. Its vivid green and origin near diamonds connects it to themes of finding value in unexpected places. Practitioners use it for emotional healing, deepening connection with the natural world, and academic learning."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Diopside",
+        "relation": "Parent mineral, chrome diopside is the chromium variety",
+        "color": "#22C55E"
+      },
+      {
+        "name": "Emerald",
+        "relation": "More famous green gem, same chromium chromophore",
+        "color": "#059669"
+      },
+      {
+        "name": "Tsavorite",
+        "relation": "Green garnet competitor in the green gem market",
+        "color": "#16A34A"
+      }
+    ],
+    "priceRange": "$10-50/ct commercial grade  ·  $50-200/ct fine vivid green  ·  $200-500/ct exceptional larger stones",
+    "seoDescription": "Chrome diopside: the affordable Siberian emerald found alongside diamonds. Guide to identification, the emerald comparison, and gem quality."
+  },
+  {
+    "id": "hematoid-quartz",
+    "name": "Hematoid Quartz",
+    "subtitle": "The Fire Crystal",
+    "category": "Quartz Family",
+    "colors": [
+      "Red-Orange Inclusions",
+      "Golden Yellow Staining",
+      "Clear with Red Phantoms"
+    ],
+    "colorHexes": [
+      "#DC2626",
+      "#F59E0B",
+      "#F0F9FF"
+    ],
+    "hardness": 7,
+    "chemicalFormula": "SiO₂ (with Fe₂O₃ hematite inclusions)",
+    "crystalSystem": "Trigonal",
+    "luster": "Vitreous",
+    "streak": "White",
+    "transparency": "Transparent to Translucent",
+    "specificGravity": "2.65",
+    "localities": [
+      {
+        "name": "Brazil",
+        "region": "Minas Gerais",
+        "note": "Primary source for vivid red-included specimens"
+      },
+      {
+        "name": "Madagascar",
+        "region": "Various",
+        "note": "Good quality specimens"
+      },
+      {
+        "name": "China",
+        "region": "Various",
+        "note": "Commercial material"
+      }
+    ],
+    "formation": "Hematoid quartz (also sold as fire quartz, harlequin quartz, or ferruginous quartz) is clear or milky quartz containing inclusions of hematite (iron oxide). The hematite creates vivid red, orange, or golden zones within or on the surface of the quartz crystal.\n\nThe inclusions can appear as red phantom outlines within the crystal (recording earlier stages of crystal growth that were dusted with hematite), as scattered red flecks and streaks, or as a pervasive reddish staining throughout. Each pattern tells a different story about when during the crystal's growth the iron-rich fluids were present.\n\nThe name 'hematoid' simply means 'containing hematite.' 'Fire quartz' is a trade name emphasizing the red-orange coloring. 'Harlequin quartz' typically refers to specimens with distinct red spots or streaks on a clear background, creating a patterned appearance.",
+    "identification": "Hematoid quartz is identified as quartz (hardness 7, vitreous luster, hexagonal prisms) with visible red-orange hematite inclusions. The inclusions should be clearly iron oxide, visible as red zones, phantoms, or streaks.\n\nDistinguish from strawberry quartz (finer, more evenly distributed pink inclusions from lepidocrocite), tangerine quartz (surface coating rather than internal inclusions), and red jasper (opaque microcrystalline quartz). In hematoid quartz, the clear quartz host and the red hematite inclusions should both be visible.",
+    "howToSpotFakes": "Some sellers heat-treat low-quality hematoid quartz to intensify the red color. Natural specimens show organic variation in the hematite distribution. Very uniformly red quartz without clear zones may be dyed or heavily treated. Genuine hematoid quartz should show distinct hematite inclusions, not uniform coloring throughout.",
+    "metaphysical": {
+      "chakra": "Root, Sacral, Solar Plexus",
+      "zodiac": "Aries, Aquarius",
+      "element": "Fire, Earth",
+      "traditions": "Hematoid quartz is considered a powerful combination of quartz's amplifying properties with hematite's grounding energy. The fire imagery connects it to courage, vitality, and passionate action. Practitioners use it for boosting self-esteem, increasing physical energy, and transforming negative patterns into positive ones."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Strawberry Quartz",
+        "relation": "Similar concept but with lepidocrocite instead of hematite",
+        "color": "#F87171"
+      },
+      {
+        "name": "Tangerine Quartz",
+        "relation": "Surface iron-oxide coating rather than inclusions",
+        "color": "#EA580C"
+      },
+      {
+        "name": "Hematite",
+        "relation": "The iron oxide creating the red inclusions",
+        "color": "#6B7280"
+      }
+    ],
+    "priceRange": "$5-20 tumbled  ·  $15-80 crystal points  ·  $50-300 fine phantom or harlequin specimens",
+    "seoDescription": "Hematoid quartz (fire quartz): clear crystal with vivid red hematite inclusions. Guide to identification, the many trade names, and meaning."
+  },
+  {
+    "id": "black-moonstone",
+    "name": "Black Moonstone",
+    "subtitle": "The Dark Moon Crystal",
+    "category": "Feldspar Group",
+    "colors": [
+      "Charcoal Gray-Black Base",
+      "Silver Flash",
+      "Blue Schiller"
+    ],
+    "colorHexes": [
+      "#292524",
+      "#D4D4D8",
+      "#60A5FA"
+    ],
+    "hardness": 6,
+    "chemicalFormula": "KAlSi₃O₈ (potassium feldspar with labradorite)",
+    "crystalSystem": "Monoclinic",
+    "luster": "Vitreous to Pearly",
+    "streak": "White",
+    "transparency": "Translucent to Opaque",
+    "specificGravity": "2.55-2.63",
+    "localities": [
+      {
+        "name": "Madagascar",
+        "region": "Various",
+        "note": "Primary commercial source"
+      },
+      {
+        "name": "India",
+        "region": "Various",
+        "note": "Some material available"
+      },
+      {
+        "name": "Sri Lanka",
+        "region": "Various",
+        "note": "Occasional specimens"
+      }
+    ],
+    "formation": "Black moonstone is a dark-bodied variety of feldspar that shows silvery or blue schiller (adularescence or labradorescence) when light catches the internal structure at the right angle. The dark background intensifies the optical effect, creating a dramatic flash against a near-black base.\n\nThe exact mineralogy of 'black moonstone' varies by source. Some material is genuinely dark orthoclase (true moonstone, potassium feldspar) with adularescence. Other material sold as black moonstone is actually dark labradorite (plagioclase feldspar) with labradorescence. Both display attractive light effects, but through slightly different optical mechanisms.\n\nThe dark body color comes from microscopic inclusions of iron oxide, magnetite, or other dark minerals dispersed throughout the feldspar. These inclusions reduce transparency while providing a contrasting backdrop that makes the silvery-blue flash more visible.",
+    "identification": "Black moonstone is identified by its dark gray to black feldspar body with silvery or blue schiller visible when rotated in light. Hardness 6, two cleavage directions, and characteristic optical flash confirm feldspar identity.\n\nDistinguish from obsidian (glassy, no cleavage, no schiller), black labradorite (may be the same material under a different name), and larvikite (similar but is a rock containing multiple minerals, not a single crystal).",
+    "howToSpotFakes": "The main issue isn't faking but naming confusion. 'Black moonstone' and 'black labradorite' are often the same material. Some sellers also label dark larvikite (a Norwegian rock) as black moonstone. For buyers, the practical question is: does the stone show an attractive flash? If it does, the mineralogical distinction is mostly academic. Black dyed glass without internal flash would be a true fake.",
+    "metaphysical": {
+      "chakra": "Root, Third Eye, Crown",
+      "zodiac": "Cancer, Scorpio",
+      "element": "Water, Earth",
+      "traditions": "Black moonstone is associated with the new moon, shadow work, and the integration of unconscious patterns. Where white moonstone represents the full moon's illumination, black moonstone represents the introspective darkness of the new moon. Practitioners use it for deep meditation, psychic protection, and working through hidden emotional patterns."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Moonstone",
+        "relation": "White variety of the same feldspar species",
+        "color": "#F5F5F4"
+      },
+      {
+        "name": "Labradorite",
+        "relation": "May actually be dark labradorite",
+        "color": "#6B7280"
+      },
+      {
+        "name": "Larvikite",
+        "relation": "Norwegian rock sometimes sold as black moonstone",
+        "color": "#374151"
+      }
+    ],
+    "priceRange": "$5-20 tumbled  ·  $20-80 polished palm stones  ·  $50-300 display-quality specimens with strong flash",
+    "seoDescription": "Black moonstone: the dark moon crystal with silvery flash. Guide to the labradorite confusion, new moon associations, and identification."
+  },
+  {
+    "id": "talc",
+    "name": "Talc",
+    "subtitle": "The Softest Mineral",
+    "category": "Silicate Mineral (Phyllosilicate)",
+    "colors": [
+      "Pale Green",
+      "White",
+      "Gray",
+      "Apple Green"
+    ],
+    "colorHexes": [
+      "#D9F99D",
+      "#FAFAF9",
+      "#D4D4D8",
+      "#86EFAC"
+    ],
+    "hardness": 1,
+    "chemicalFormula": "Mg₃Si₄O₁₀(OH)₂",
+    "crystalSystem": "Monoclinic (but typically massive)",
+    "luster": "Pearly to Greasy",
+    "streak": "White",
+    "transparency": "Translucent to Opaque",
+    "specificGravity": "2.75",
+    "localities": [
+      {
+        "name": "Brazil",
+        "region": "Various",
+        "note": "Major world producer"
+      },
+      {
+        "name": "China",
+        "region": "Various",
+        "note": "Significant production"
+      },
+      {
+        "name": "India",
+        "region": "Rajasthan",
+        "note": "Important source"
+      },
+      {
+        "name": "United States",
+        "region": "Vermont, Montana, Texas",
+        "note": "Historic mining districts"
+      }
+    ],
+    "formation": "Talc is the softest mineral on Earth, defining position 1 on the Mohs hardness scale. You can scratch it with your fingernail. It forms through the hydrothermal alteration of magnesium-rich rocks, particularly when ultramafic rocks (like peridotite) react with silica-bearing fluids at temperatures below 800°C.\n\nThe softness comes from talc's crystal structure: stacked sheets of silica-magnesia-silica connected by only weak van der Waals forces. The sheets slide over each other with minimal effort, creating the characteristic greasy, soapy feel.\n\nTalc is the primary ingredient in talcum powder and a major industrial mineral used in ceramics, paint, paper, plastics, and cosmetics. Soapstone is a rock composed primarily of talc. French chalk (used by tailors), and the chalk used on pool cues are talc products. The mineral is so soft that massive talc can be carved with a fingernail.",
+    "identification": "Talc is identified by its extreme softness (Mohs 1, scratched by everything), greasy or soapy feel, pearly luster, and pale green to white color. It can be scratched by a fingernail and leaves a mark on cloth.\n\nDistinguish from gypsum (slightly harder at 2, different crystal habit), chlorite (slightly harder, different feel), and serpentine (harder, not as soft-feeling). Talc's combination of extreme softness and soapy feel is unmistakable.",
+    "howToSpotFakes": "Nobody fakes talc. It's one of the most abundant and inexpensive minerals on Earth. The main educational point: talc defines Mohs hardness 1, making it the essential reference mineral for the most widely used hardness scale in geology.",
+    "metaphysical": {
+      "chakra": "Crown",
+      "zodiac": "Sagittarius, Capricorn",
+      "element": "Air, Earth",
+      "traditions": "Talc is associated with gentleness, humility, and the strength found in softness. Paradoxically, the softest mineral on Earth is one of the most commercially important. Crystal practitioners use this as a metaphor for the power of flexibility and yielding. Its soapy feel is calming to handle."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Soapstone",
+        "relation": "Rock made primarily of talc",
+        "color": "#6B7280"
+      },
+      {
+        "name": "Serpentine",
+        "relation": "Often found together, slightly harder",
+        "color": "#65A30D"
+      },
+      {
+        "name": "Muscovite",
+        "relation": "Fellow sheet silicate with pearly luster",
+        "color": "#D4D4D8"
+      }
+    ],
+    "priceRange": "$2-10 specimen pieces  ·  $5-30 massive talc blocks  ·  $20-100 rare crystallized talc specimens",
+    "seoDescription": "Talc: the softest mineral on Earth, Mohs hardness 1. Guide to the soapy feel, industrial uses, and why soft doesn't mean unimportant."
+  },
+  {
+    "id": "gypsum",
+    "name": "Gypsum",
+    "subtitle": "The Crystal Cave Builder",
+    "category": "Sulfate Mineral",
+    "colors": [
+      "Colorless",
+      "White",
+      "Pale Yellow",
+      "Pink"
+    ],
+    "colorHexes": [
+      "#F5F5F4",
+      "#FFFFFF",
+      "#FEF9C3",
+      "#FECDD3"
+    ],
+    "hardness": 2,
+    "chemicalFormula": "CaSO₄·2H₂O",
+    "crystalSystem": "Monoclinic",
+    "luster": "Vitreous to Silky (fibrous) to Pearly",
+    "streak": "White",
+    "transparency": "Transparent to Translucent",
+    "specificGravity": "2.32",
+    "localities": [
+      {
+        "name": "Mexico",
+        "region": "Naica Mine, Chihuahua",
+        "note": "Crystal Cave with 12-meter gypsum crystals, the largest on Earth"
+      },
+      {
+        "name": "Worldwide",
+        "region": "Every continent",
+        "note": "One of the most common minerals"
+      },
+      {
+        "name": "Morocco",
+        "region": "Various",
+        "note": "Fine crystal specimens"
+      },
+      {
+        "name": "United States",
+        "region": "White Sands, New Mexico",
+        "note": "White gypsum dune field, 275 sq miles"
+      }
+    ],
+    "formation": "Gypsum is one of the most abundant minerals on Earth and defines position 2 on the Mohs hardness scale. It forms primarily through evaporation of saline water: as shallow seas, lakes, or lagoons dry up, dissolved calcium sulfate precipitates as gypsum.\n\nThe Naica Mine in Chihuahua, Mexico contains the most spectacular gypsum crystals ever found. The Cueva de los Cristales (Cave of Crystals) holds selenite (transparent gypsum) beams up to 12 meters (39 feet) long and weighing 55 tons. These grew over approximately 500,000 years in a cave filled with mineral-saturated water heated by volcanic activity below.\n\nGypsum occurs in several named varieties: selenite (transparent crystals), satin spar (fibrous, chatoyant), alabaster (massive, fine-grained, carvable), and desert rose (rosette-shaped clusters formed in sand). All are chemically identical calcium sulfate dihydrate.\n\nGypsum is the basis of plaster of Paris and modern drywall, making it one of the most commercially important minerals in construction.",
+    "identification": "Gypsum is identified by its low hardness (Mohs 2, can be scratched with a fingernail but takes more effort than talc), perfect cleavage in one direction, and characteristic crystal forms. Selenite crystals are unmistakable: clear, flat, blade-like forms.\n\nDistinguish from calcite (harder at 3, effervesces in acid), selenite the mineral vs. 'selenite' lamps (which may actually be halite), and talc (softer at 1, greasier feel).",
+    "howToSpotFakes": "Gypsum itself is not faked, but 'selenite' products require attention. Some 'selenite' towers and lamps are actually orange halite (salt) or carved marble rather than true gypsum. Real selenite is relatively soft (scratchable with a fingernail), and dissolves slowly in water. If your 'selenite' lamp tastes salty, it's halite. Genuine selenite should not be cleansed with water as it will gradually dissolve.",
+    "metaphysical": {
+      "chakra": "Crown, Third Eye",
+      "zodiac": "Cancer, Taurus",
+      "element": "Water, Air",
+      "traditions": "Selenite (clear gypsum) is one of the most popular crystals in the metaphysical market, used for cleansing other crystals, clearing spaces, and connecting to higher guidance. The Naica crystal cave specimens are considered among the most energetically powerful mineral formations on Earth. Named after Selene, Greek goddess of the Moon."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Selenite",
+        "relation": "Transparent variety of gypsum (same mineral)",
+        "color": "#F5F5F4"
+      },
+      {
+        "name": "Desert Rose",
+        "relation": "Rosette-shaped gypsum in sand (same mineral)",
+        "color": "#D6D3D1"
+      },
+      {
+        "name": "Anhydrite",
+        "relation": "Same chemistry minus water (CaSO₄)",
+        "color": "#BFDBFE"
+      }
+    ],
+    "priceRange": "$2-10 small specimens  ·  $10-50 selenite towers  ·  $50-500+ fine crystal specimens or desert roses",
+    "seoDescription": "Gypsum: from the world's largest crystals (39 feet!) to your drywall. Guide to selenite, desert roses, Mohs hardness 2, and the Naica cave."
+  },
+  {
+    "id": "diopside",
+    "name": "Diopside",
+    "subtitle": "The Emerald's Understudy",
+    "category": "Pyroxene Group (Silicate)",
+    "colors": [
+      "Light Green",
+      "Bottle Green",
+      "Dark Green-Black"
+    ],
+    "colorHexes": [
+      "#86EFAC",
+      "#22C55E",
+      "#14532D"
+    ],
+    "hardness": 5.5,
+    "chemicalFormula": "CaMgSi₂O₆",
+    "crystalSystem": "Monoclinic",
+    "luster": "Vitreous",
+    "streak": "White to Pale Green",
+    "transparency": "Transparent to Opaque",
+    "specificGravity": "3.22-3.38",
+    "localities": [
+      {
+        "name": "Russia",
+        "region": "Yakutia, Baikal area",
+        "note": "Chrome diopside gem source"
+      },
+      {
+        "name": "Italy",
+        "region": "Piedmont",
+        "note": "Type locality, first described here"
+      },
+      {
+        "name": "Austria",
+        "region": "Tyrol",
+        "note": "Classic European specimens"
+      },
+      {
+        "name": "India",
+        "region": "Various",
+        "note": "Star diopside (4-ray star effect)"
+      }
+    ],
+    "formation": "Diopside is a calcium-magnesium pyroxene that forms in metamorphic and igneous rocks, particularly in contact-metamorphosed limestones (skarns) and in mafic igneous rocks. It's one of the most important pyroxene minerals and a key indicator of metamorphic grade.\n\nThe mineral occurs in several gem-worthy varieties. Chrome diopside (vivid green from chromium) is the most valuable. Black star diopside from India displays a four-rayed star (asterism) caused by magnetite needle inclusions. Violane is a rare blue-violet variety from Italy.\n\nDiopside plays a critical role in petrology: its presence or absence helps geologists determine the temperature and pressure conditions under which a rock formed. In metamorphosed impure limestones, diopside first appears at approximately 400°C, making it a useful metamorphic thermometer.",
+    "identification": "Diopside is identified by its green color (variable intensity), two nearly perpendicular cleavage planes (characteristic of pyroxenes at ~87° and ~93°), hardness of 5.5-6, and vitreous luster. Stubby, prismatic crystals are typical.\n\nDistinguish from epidote (pistachio green, monoclinic but different cleavage angle), actinolite (amphibole cleavage at ~56°/124°), and augite (darker, more iron-rich pyroxene). The near-90° cleavage angle is the key pyroxene identifier.",
+    "howToSpotFakes": "Diopside is affordable and not commonly faked. The main confusion is between regular diopside and the more valuable chrome diopside variety. True chrome diopside has a vivid, saturated green from chromium. Pale or dark green diopside without the chromium-green intensity should not be marketed as chrome diopside.",
+    "metaphysical": {
+      "chakra": "Heart, Third Eye",
+      "zodiac": "Virgo, Pisces",
+      "element": "Earth",
+      "traditions": "Diopside is associated with learning, academic achievement, and connecting intellect with intuition. The green variety connects to the heart chakra. Star diopside (with its four-rayed star) is considered particularly powerful for finding direction and making decisions. Some traditions associate it with healing the planet and environmental awareness."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Chrome Diopside",
+        "relation": "Chromium-bearing vivid green variety",
+        "color": "#16A34A"
+      },
+      {
+        "name": "Augite",
+        "relation": "Fellow pyroxene, darker and more iron-rich",
+        "color": "#1C1917"
+      },
+      {
+        "name": "Actinolite",
+        "relation": "Amphibole cousin, similar green color",
+        "color": "#22C55E"
+      }
+    ],
+    "priceRange": "$5-20 crystal specimens  ·  $15-80 star diopside cabochons  ·  $30-200 fine chrome diopside",
+    "seoDescription": "Diopside: the versatile green pyroxene from star stones to chrome gems. Guide to identification, the pyroxene cleavage test, and varieties."
+  },
+  {
+    "id": "phenakite",
+    "name": "Phenakite",
+    "subtitle": "The Deceiver's Crystal",
+    "category": "Silicate Mineral (Nesosilicate)",
+    "colors": [
+      "Colorless",
+      "Pale Yellow",
+      "Pink",
+      "Brown"
+    ],
+    "colorHexes": [
+      "#F0F9FF",
+      "#FEF9C3",
+      "#FECDD3",
+      "#A16207"
+    ],
+    "hardness": 7.5,
+    "chemicalFormula": "Be₂SiO₄",
+    "crystalSystem": "Trigonal",
+    "luster": "Vitreous",
+    "streak": "White",
+    "transparency": "Transparent",
+    "specificGravity": "2.93-2.97",
+    "localities": [
+      {
+        "name": "Brazil",
+        "region": "Minas Gerais",
+        "note": "Fine transparent crystals"
+      },
+      {
+        "name": "Russia",
+        "region": "Ural Mountains (Malyshevo)",
+        "note": "Classic specimens alongside emerald"
+      },
+      {
+        "name": "Myanmar",
+        "region": "Mogok",
+        "note": "Gem-quality crystals"
+      },
+      {
+        "name": "Nigeria",
+        "region": "Jos Plateau",
+        "note": "Large transparent crystals"
+      }
+    ],
+    "formation": "Phenakite (also spelled phenacite) is a beryllium silicate named from the Greek 'phenax' meaning 'deceiver,' because it was frequently mistaken for quartz. The two minerals share similar appearance, transparency, and hardness, but phenakite has different crystal symmetry and optical properties.\n\nIt forms in granitic pegmatites and hydrothermal veins alongside other beryllium minerals like emerald, chrysoberyl, and bertrandite. The beryllium-rich environments that produce emerald occasionally also produce phenakite, making them geological companions.\n\nPhenakite's significance lies partly in its beryllium content: it's one of the few beryllium minerals transparent and hard enough for gemstone use. Faceted phenakite can be strikingly brilliant, with a vitreous luster and good dispersion. However, its relative obscurity keeps it a collector's gem rather than a mainstream jeweler's stone.",
+    "identification": "Phenakite is identified by its colorless to pale transparency, trigonal crystal system, hardness 7.5 (slightly harder than quartz), and RI of 1.654-1.670 (higher than quartz's 1.544-1.553). Crystals are often rhombohedral or prismatic.\n\nDistinguish from quartz (lower RI, different crystal habit), topaz (orthorhombic, perfect cleavage), and white sapphire (higher RI and SG). The RI reading is the most practical way to separate phenakite from quartz.",
+    "howToSpotFakes": "Phenakite is most often confused with quartz rather than deliberately faked. The key test is refractive index: phenakite at 1.654-1.670 is significantly higher than quartz at 1.544-1.553. If you have a colorless crystal from a pegmatite that looks like quartz but gives a higher RI reading, it may be phenakite. Lab testing is recommended for valuable specimens.",
+    "metaphysical": {
+      "chakra": "Crown, Third Eye",
+      "zodiac": "Gemini",
+      "element": "Air, Spirit",
+      "traditions": "Phenakite is considered one of the highest-vibration crystals in healing traditions, associated with spiritual awakening, interdimensional awareness, and accelerated personal evolution. Its 'deceiver' name is reinterpreted as the ability to see through illusion to deeper truth. Its rarity and association with emerald deposits add to its metaphysical reputation."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Clear Quartz",
+        "relation": "Commonly confused due to similar appearance",
+        "color": "#F0F9FF"
+      },
+      {
+        "name": "Emerald",
+        "relation": "Fellow beryllium mineral from same deposits",
+        "color": "#059669"
+      },
+      {
+        "name": "Chrysoberyl",
+        "relation": "Another beryllium mineral, different structure",
+        "color": "#EAB308"
+      }
+    ],
+    "priceRange": "$30-100 small crystals  ·  $100-500 faceted gems  ·  $500-3,000+ large transparent crystals",
+    "seoDescription": "Phenakite: the beryllium crystal named 'the deceiver' for mimicking quartz. Guide to identification, the RI test, and this collector gem."
+  },
+  {
+    "id": "scapolite",
+    "name": "Scapolite",
+    "subtitle": "The Shaft Stone",
+    "category": "Silicate Mineral (Tectosilicate)",
+    "colors": [
+      "Purple-Violet",
+      "Golden Yellow",
+      "Pink",
+      "Colorless"
+    ],
+    "colorHexes": [
+      "#8B5CF6",
+      "#FCD34D",
+      "#FDA4AF",
+      "#F0F9FF"
+    ],
+    "hardness": 6,
+    "chemicalFormula": "Na₄Al₃Si₉O₂₄Cl – Ca₄Al₆Si₆O₂₄CO₃ (solid solution)",
+    "crystalSystem": "Tetragonal",
+    "luster": "Vitreous",
+    "streak": "White",
+    "transparency": "Transparent to Translucent",
+    "specificGravity": "2.55-2.74",
+    "localities": [
+      {
+        "name": "Tanzania",
+        "region": "Umba Valley, Morogoro",
+        "note": "Fine purple and yellow gem material"
+      },
+      {
+        "name": "Myanmar",
+        "region": "Mogok",
+        "note": "Pink and violet crystals"
+      },
+      {
+        "name": "Brazil",
+        "region": "Bahia",
+        "note": "Large yellow crystals"
+      },
+      {
+        "name": "Canada",
+        "region": "Quebec, Ontario",
+        "note": "Large crystal specimens"
+      }
+    ],
+    "formation": "Scapolite (from the Greek 'skapos' meaning shaft or stick, referring to its prismatic crystal habit) is actually a solid solution series between two end members: marialite (sodium-rich) and meionite (calcium-rich). Most specimens fall between these extremes.\n\nIt forms in metamorphic rocks, particularly in skarns (contact-metamorphosed limestones), amphibolites, and granulites. In these environments, scapolite replaces plagioclase feldspar through a process called scapolitization, where chlorine and carbon dioxide-bearing fluids alter the original feldspar.\n\nGem-quality scapolite comes in attractive purple, golden yellow, and pink varieties. Purple specimens can resemble amethyst, and yellow stones can look like golden beryl. Cat's-eye scapolite (showing chatoyancy from needle inclusions) is particularly sought-after.",
+    "identification": "Scapolite is identified by its tetragonal prismatic crystal habit (long, square-cross-section columns), moderate hardness (6), and vitreous luster. RI of 1.536-1.600 and biaxial optic sign help separate it from similar-looking gems.\n\nDistinguish from amethyst (trigonal, different RI for purple varieties), golden beryl (hexagonal, different RI for yellow varieties), and topaz (orthorhombic, higher RI). The tetragonal crystal system and specific RI range are diagnostic.",
+    "howToSpotFakes": "Scapolite is not well-known enough to be commonly faked. The main confusion is with more familiar gems of similar color: purple scapolite for amethyst, yellow scapolite for citrine, and pink scapolite for morganite. RI measurements distinguish between these. Cat's-eye scapolite is distinctive enough to be less commonly confused.",
+    "metaphysical": {
+      "chakra": "Third Eye, Solar Plexus (varies by color)",
+      "zodiac": "Taurus",
+      "element": "Air",
+      "traditions": "Scapolite is associated with problem-solving, independence, and breaking free from self-imposed limitations. Its columnar crystal habit connects it to themes of direction and reaching for goals. The replacement of feldspar by scapolite in nature is interpreted as a metaphor for transformation and upgrades in personal development."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Plagioclase",
+        "relation": "The feldspar it often replaces during metamorphism",
+        "color": "#F5F5F4"
+      },
+      {
+        "name": "Amethyst",
+        "relation": "Similar color (purple variety), different mineral",
+        "color": "#7C3AED"
+      },
+      {
+        "name": "Danburite",
+        "relation": "Similar crystal habit, often confused",
+        "color": "#F5F5F4"
+      }
+    ],
+    "priceRange": "$10-40/ct common quality  ·  $40-200/ct fine purple or yellow  ·  $100-500/ct cat's-eye specimens",
+    "seoDescription": "Scapolite: the underrated gem in purple, yellow, and pink. Guide to cat's-eye scapolite, identification, and the amethyst look-alike."
+  },
+  {
+    "id": "brazilianite",
+    "name": "Brazilianite",
+    "subtitle": "The Chartreuse Gem",
+    "category": "Phosphate Mineral",
+    "colors": [
+      "Chartreuse Yellow-Green",
+      "Olive Green",
+      "Pale Yellow"
+    ],
+    "colorHexes": [
+      "#BEF264",
+      "#84CC16",
+      "#FEF9C3"
+    ],
+    "hardness": 5.5,
+    "chemicalFormula": "NaAl₃(PO₄)₂(OH)₄",
+    "crystalSystem": "Monoclinic",
+    "luster": "Vitreous",
+    "streak": "White",
+    "transparency": "Transparent to Translucent",
+    "specificGravity": "2.98",
+    "localities": [
+      {
+        "name": "Brazil",
+        "region": "Conselheiro Pena, Minas Gerais",
+        "note": "Type locality, finest gem crystals"
+      },
+      {
+        "name": "United States",
+        "region": "Palermo Mine, New Hampshire",
+        "note": "Co-type locality, good crystal specimens"
+      },
+      {
+        "name": "Brazil",
+        "region": "Divino das Laranjeiras, Minas Gerais",
+        "note": "Additional production"
+      }
+    ],
+    "formation": "Brazilianite was first described in 1945 from pegmatites in Minas Gerais, Brazil. It was initially mistaken for chrysoberyl because of its yellow-green color and vitreous luster, but analysis revealed it was an entirely new mineral - a sodium-aluminum phosphate.\n\nIt forms in lithium-bearing granitic pegmatites, crystallizing from phosphate-rich fluids in the late stages of pegmatite formation. The distinctive chartreuse (yellow-green) color is inherent to the chemistry rather than from trace elements. Brazilianite crystals can be large (up to 15cm+), well-formed, and highly transparent.\n\nDespite its beauty, brazilianite remains a collector's gem rather than a mainstream jeweler's stone. The relatively low hardness (5.5) and perfect cleavage make it somewhat fragile for ring wear. Its unusual chartreuse color is unique among faceted gemstones and is its primary appeal.",
+    "identification": "Brazilianite is identified by its distinctive chartreuse yellow-green color, monoclinic crystal habit (elongated prismatic), hardness of 5.5, and perfect cleavage. RI of 1.602-1.623 and SG of 2.98 distinguish it from most similar-looking gems.\n\nDistinguish from chrysoberyl (much harder at 8.5), peridot (orthorhombic, different RI), and amblygonite (paler, slightly different RI range). Brazilianite's specific chartreuse tone is rare among gem minerals.",
+    "howToSpotFakes": "Brazilianite is too obscure and affordable to be commonly faked. The main risk is confusion with more valuable chrysoberyl or peridot. Hardness testing quickly separates them: brazilianite at 5.5 is dramatically softer than chrysoberyl at 8.5. The cleavage and lower hardness make brazilianite more fragile than most jewelry stones.",
+    "metaphysical": {
+      "chakra": "Solar Plexus, Heart",
+      "zodiac": "Capricorn",
+      "element": "Fire, Earth",
+      "traditions": "Brazilianite is associated with personal empowerment, ethical action, and creative expression. Its unique color (not quite yellow, not quite green) connects it to the space between the solar plexus and heart chakras. Practitioners use it for overcoming self-doubt and aligning personal will with higher purpose."
+    },
+    "relatedMinerals": [
+      {
+        "name": "Amblygonite",
+        "relation": "Fellow lithium pegmatite phosphate",
+        "color": "#FEF9C3"
+      },
+      {
+        "name": "Chrysoberyl",
+        "relation": "Originally mistaken for this due to color",
+        "color": "#EAB308"
+      },
+      {
+        "name": "Peridot",
+        "relation": "Similar yellow-green, completely different mineral",
+        "color": "#84CC16"
+      }
+    ],
+    "priceRange": "$20-80 crystal specimens  ·  $50-200 faceted gems  ·  $200-1,000+ large transparent crystals",
+    "seoDescription": "Brazilianite: the chartreuse phosphate gem mistaken for chrysoberyl. Guide to this unique color, identification, and collector appeal."
   }
 ]

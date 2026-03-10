@@ -145,7 +145,7 @@ function Footer() {
             reserved.
           </p>
           <span>·</span>
-          <span>v1.5</span>
+          <span>v1.6</span>
         </div>
       </div>
     </footer>

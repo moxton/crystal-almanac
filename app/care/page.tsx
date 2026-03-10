@@ -136,6 +136,15 @@ function getCareNotes(crystal: Crystal): string {
     "native-sulfur": "FLAMMABLE. Keep away from heat, flame, and sparks. Can crack from thermal shock (even body heat on cold specimens). Store at stable room temperature. Never heat. Wash hands after handling.",
     "iron-meteorite": "RUSTS if exposed to moisture. Store with desiccant packets in sealed container. If surface shows orange rust spots, treat with gun oil or Renaissance Wax. Never submerge in water. Handle with clean dry hands.",
     "wolframite": "Very heavy and durable. Avoid prolonged water contact. Clean with dry cloth. The density can surprise you - handle securely.",
+    "gypsum": "DISSOLVES IN WATER. This includes selenite towers and satin spar. Never cleanse with water. Store in dry conditions. Extremely soft (Mohs 2).",
+    "talc": "The softest mineral (Mohs 1). Scratches with fingernail. Handle gently. Dust can be an irritant if inhaled. Clean with dry cloth only.",
+    "marble": "Soft (Mohs 3) and acid-sensitive. Avoid vinegar, lemon juice, and acidic cleaners. Stains easily. Clean with pH-neutral soap only.",
+    "limestone": "Soft and acid-sensitive like marble. Effervesces in vinegar. Avoid acidic cleaners. Fossils within may be fragile.",
+    "soapstone": "Very soft (talc-based). Scratches easily. Oil or wax can enhance and protect the surface. Do not use abrasive cleaners.",
+    "granite": "Extremely durable. Safe for water, mild cleaners. One of the most resilient natural stones. Avoid only harsh acids on polished surfaces.",
+    "basalt": "Dense and durable. Safe for water. Used in hot stone massage due to excellent heat retention. Handle carefully when heated.",
+    "painite": "Durable (Mohs 8). Safe for careful handling. Extremely valuable - store securely in padded display.",
+    "red-beryl": "Durable (Mohs 7.5) but extremely valuable. Handle with care due to investment value, not fragility. Store securely.",
   };
   return notes[id] || (crystal.hardness >= 7 ? "Durable. Safe for cleaning with mild soap and water." : "Clean with dry or slightly damp cloth. Store away from harder minerals.");
 }

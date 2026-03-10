@@ -142,7 +142,7 @@ export const MINERAL_GROUPS: MineralGroup[] = [
     hex: "#C4B5FD",
     description: "Sheet silicates characterized by perfect basal cleavage that allows them to split into thin, flexible sheets. Muscovite (clear), biotite (black), lepidolite (purple, lithium-bearing), and fuchsite (green, chromium-bearing) are the major species. Micas are found in virtually every type of rock on Earth.",
     matchPatterns: ["mica", "phyllosilicate", "clinochlore"],
-    matchIds: ["muscovite", "lepidolite", "fuchsite", "seraphinite", "serpentine"],
+    matchIds: ["muscovite", "lepidolite", "fuchsite", "seraphinite", "serpentine", "soapstone", "talc"],
   },
   {
     slug: "zeolite",
@@ -196,7 +196,7 @@ export const MINERAL_GROUPS: MineralGroup[] = [
     hex: "#F472B6",
     description: "Smaller mineral groups that each contain only a handful of well-known species. Borates include howlite and ulexite (the television stone). Tungstates include scheelite and wolframite, the ores of the highest-melting metal. Molybdates (wulfenite) and chromates (crocoite) round out these uncommon but visually striking mineral families.",
     matchPatterns: ["borate", "tungstate", "molybdate", "chromate"],
-    matchIds: ["howlite", "ulexite", "kornerupine", "scheelite", "wolframite", "wulfenite", "crocoite"],
+    matchIds: ["howlite", "ulexite", "kornerupine", "scheelite", "wolframite", "wulfenite", "crocoite", "grandidierite", "painite"],
   },
   {
     slug: "rocks-composites",
@@ -204,7 +204,7 @@ export const MINERAL_GROUPS: MineralGroup[] = [
     shortName: "Rocks",
     hex: "#78716C",
     description: "Not single minerals but rocks or multi-mineral assemblages valued as gem materials. Lapis lazuli combines lazurite, pyrite, and calcite. Unakite mixes epidote and feldspar. Tiger iron bands tiger eye, hematite, and jasper. These composite stones often tell richer geological stories than any single mineral could.",
-    matchPatterns: ["igneous rock", "metamorphic rock", "altered granite", "granite with", "banded iron", "concretion"],
+    matchPatterns: ["igneous rock", "metamorphic rock", "altered granite", "granite with", "banded iron", "concretion", "sedimentary rock"],
     matchIds: ["lapis-lazuli", "unakite", "septarian", "k2-stone", "nuummite", "preseli-bluestone", "dalmatian-stone", "tigers-iron", "chrysanthemum-stone", "shungite", "tiffany-stone"],
   },
 ];
