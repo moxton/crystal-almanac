@@ -43,17 +43,17 @@ function Logo() {
         />
         <path
           d="M32 12L50 24V42L32 52L14 42V24L32 12Z"
-          stroke="#A78BFA"
+          stroke="#C4B5FD"
           strokeWidth="1.5"
-          fill="none"
-          opacity="0.6"
+          fill="#A78BFA"
+          fillOpacity="0.1"
         />
         <path
           d="M32 20L42 28V38L32 44L22 38V28L32 20Z"
-          stroke="#A78BFA"
+          stroke="#C4B5FD"
           strokeWidth="1"
-          fill="none"
-          opacity="0.3"
+          fill="#A78BFA"
+          fillOpacity="0.35"
         />
       </svg>
       <div className="flex flex-col">
