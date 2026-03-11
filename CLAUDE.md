@@ -94,6 +94,11 @@ interface Crystal {
   relatedMinerals: RelatedMineral[];  // 3 entries with name, relation, color hex
   priceRange: string;      // Format: "$X-Y low · $X-Y mid · $X-Y high"
   seoDescription: string;  // ~150 chars for meta description
+  imageUrl: string;        // Unsplash regular (1080w) URL, empty string if none
+  imageSmall: string;      // Unsplash small (400w) URL for cards, empty string if none
+  imageCredit: string;     // Photographer name (Unsplash attribution required)
+  imageCreditUrl: string;  // Photographer's Unsplash profile URL
+  imageUnsplashUrl: string; // Link to photo on Unsplash
 }
 ```
 
@@ -115,7 +120,7 @@ Blog content is markdown in `app/data/blog/`. The index is `app/data/blog-index.
 ### Adding a crystal profile:
 
 1. Add the entry to `app/data/crystals.json` (append to the array)
-2. Ensure all 21 fields are present (copy structure from any existing entry)
+2. Ensure all 26 fields are present (copy structure from any existing entry)
 3. Add care notes in `app/care/page.tsx` if the mineral is toxic, water-sensitive, light-sensitive, or fragile
 4. Add to a collection in `app/lib/collections.ts` if it fits (add both to `crystalIds` array AND `reasons` object)
 5. Verify the mineral matches a group in `app/lib/groups.ts` (check `matchPatterns` and `matchIds`)
@@ -188,9 +193,9 @@ git push origin main --force
 ```
 Vercel auto-deploys from `main`. No build step needed locally (but `npm run build` to verify). DNS is on Vercel. Domain: crystalalmanac.com.
 
-## Current State (v1.6)
+## Current State (v1.7)
 
-- **258** crystal/mineral/rock profiles
+- **258** crystal/mineral/rock profiles (**205 with Unsplash images**, 53 gradient fallback)
 - **10** blog posts (guides + VS comparisons)
 - **8** themed collections (calming, protection, love, creativity, grounding, abundance, communication, meditation)
 - **8** color families

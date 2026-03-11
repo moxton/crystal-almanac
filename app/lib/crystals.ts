@@ -41,6 +41,11 @@ export interface Crystal {
   relatedMinerals: RelatedMineral[];
   priceRange: string;
   seoDescription: string;
+  imageUrl: string;
+  imageSmall: string;
+  imageCredit: string;
+  imageCreditUrl: string;
+  imageUnsplashUrl: string;
 }
 
 export function getAllCrystals(): Crystal[] {
