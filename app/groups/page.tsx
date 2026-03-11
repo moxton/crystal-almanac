@@ -63,9 +63,12 @@ export default function GroupsPage() {
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center gap-3 flex-wrap">
-                    <h2 className="font-heading text-xl text-white">
-                      {group.name}
-                    </h2>
+                    <Link
+                      href={`/?search=${encodeURIComponent(group.name)}`}
+                      className="font-heading text-xl text-white hover:text-brand-accent transition-colors"
+                    >
+                      <h2>{group.name}</h2>
+                    </Link>
                     <span className="text-xs font-body text-brand-muted bg-white/5 px-2 py-0.5 rounded-full">
                       {crystals.length} {crystals.length === 1 ? "mineral" : "minerals"}
                     </span>
