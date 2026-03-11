@@ -211,11 +211,11 @@ export default async function CrystalPage({
           )}
         </div>
 
-        <div className="max-w-4xl mx-auto px-4 -mt-16 relative">
+        <div className="max-w-4xl mx-auto px-4 -mt-8 relative">
           <nav className="mb-4">
             <Link
               href="/"
-              className="text-brand-accent text-sm font-body hover:underline"
+              className="text-white/70 hover:text-white text-sm font-body hover:underline transition-colors"
             >
               ← All Crystals
             </Link>
@@ -224,7 +224,7 @@ export default async function CrystalPage({
           <div className="mb-6">
             <Link
               href={`/?search=${encodeURIComponent(crystal.category)}`}
-              className="text-brand-accent text-sm uppercase tracking-[0.15em] font-body mb-2 inline-block hover:underline"
+              className="text-white/70 hover:text-white text-sm uppercase tracking-[0.15em] font-body mb-2 inline-block hover:underline transition-colors"
             >
               {crystal.category}
             </Link>
