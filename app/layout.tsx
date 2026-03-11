@@ -37,7 +37,7 @@ function Logo() {
       >
         <path
           d="M32 4L58 20V46L32 60L6 46V20L32 4Z"
-          stroke="#A78BFA"
+          stroke="#C4B5FD"
           strokeWidth="2"
           fill="none"
         />
@@ -46,14 +46,14 @@ function Logo() {
           stroke="#C4B5FD"
           strokeWidth="1.5"
           fill="#A78BFA"
-          fillOpacity="0.1"
+          fillOpacity="0.15"
         />
         <path
           d="M32 20L42 28V38L32 44L22 38V28L32 20Z"
-          stroke="#C4B5FD"
+          stroke="#DDD6FE"
           strokeWidth="1"
-          fill="#A78BFA"
-          fillOpacity="0.35"
+          fill="#C4B5FD"
+          fillOpacity="0.4"
         />
       </svg>
       <div className="flex flex-col">
