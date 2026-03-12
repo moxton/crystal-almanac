@@ -18,46 +18,20 @@ export default function AboutPage() {
 
       <div className="mt-10 space-y-6 text-white/85 font-body leading-relaxed">
         <p>
-          Crystal Almanac was built out of frustration with a gap that shouldn't
-          exist.
+          Geology databases have accurate data and terrible interfaces. Crystal
+          wellness sites have beautiful design and questionable science. Crystal
+          Almanac bridges both: every profile is built on real mineralogy -
+          formation conditions, chemical composition, hardness, locality data -
+          written the way great science journalism reads. Vivid, specific, and
+          honest.
         </p>
 
         <p>
-          On one side: geology databases with accurate mineralogical data buried
-          in interfaces that look like they were built in 2003. On the other:
-          crystal wellness sites full of gorgeous photography and deeply
-          questionable science. Collectors and geology enthusiasts get rigorous
-          data with no soul. Crystal and wellness communities get beautiful
-          content with no accountability.
-        </p>
-
-        <p>Nobody was bridging both audiences with something that was both accurate and worth looking at.</p>
-
-        <p>
-          Crystal Almanac is that bridge. Every profile here is built on
-          verifiable mineralogical science - hardness, crystal system, formation
-          conditions, chemical composition, locality data. We write the way great
-          science journalists write: vivid, specific, and fascinating. Not dry.
-          Not dumbed down. Not making claims we can't support.
-        </p>
-
-        <p>
-          When we cover metaphysical and cultural traditions, we present them as
-          exactly that - traditions. Beliefs with deep historical roots and
-          genuine cultural significance, clearly labeled as distinct from
-          scientific evidence. We don't mock them. We don't endorse them as
-          medical claims. We honor them as part of each mineral's full human
-          story.
-        </p>
-
-        <p>
-          Every crystal page includes a Spotting Fakes section because the
+          When we cover metaphysical traditions, we present them as exactly that -
+          traditions with real cultural history, clearly distinct from scientific
+          evidence. Every profile includes a fake-spotting section because the
           crystal market is full of dyed, synthetic, and mislabeled material. If
           you're spending money on a stone, you should know what you're buying.
-        </p>
-
-        <p className="text-brand-accent font-medium">
-          Beautiful, accurate, honest. That's the whole idea.
         </p>
       </div>
 
