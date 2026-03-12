@@ -113,7 +113,7 @@ function RelatedMineralItem({
 
   if (hasPage && slug) {
     return (
-      <Link href={`/crystals/${slug}`} className="group block hover:bg-brand-border/20 -mx-2 px-2 py-1 rounded-lg transition-colors">
+      <Link href={`/crystals/${slug}`} className="group block hover:bg-brand-border/20 -mx-3 px-3 py-2 rounded-lg transition-colors">
         {content}
       </Link>
     );
@@ -188,7 +188,7 @@ export default async function CrystalPage({
       {/* Hero - tighter */}
       <div className="relative">
         <div
-          className="h-40 md:h-56"
+          className="h-40 sm:h-48 md:h-56"
           style={{ background: gradient }}
         >
           {crystal.imageUrl && (
