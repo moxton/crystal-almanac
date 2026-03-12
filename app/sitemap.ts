@@ -1,6 +1,7 @@
 import { getAllCrystals } from "@/app/lib/crystals";
 import { getAllCollectionSlugs } from "@/app/lib/collections";
 import { COLOR_FAMILIES } from "@/app/lib/colors";
+import { getAllPostSlugs } from "@/app/lib/blog";
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -80,5 +81,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
     ...colorPages,
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
+    },
+    ...getAllPostSlugs().map((slug) => ({
+      url: `${baseUrl}/blog/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
+    {
+      url: `${baseUrl}/crystals`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
   ];
 }
