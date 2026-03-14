@@ -71,9 +71,9 @@ function FeaturedCrystal({ crystal }: { crystal: Crystal }) {
     <Link href={`/crystals/${crystal.id}`} className="group block">
       <div className="bg-brand-surface border border-brand-border rounded-2xl overflow-hidden hover:border-brand-accent/40 transition-all">
         <div className="flex flex-col sm:flex-row">
-          {/* Square image - contained, not stretched */}
+          {/* Crystal image - constrained height on mobile */}
           <div
-            className="w-full sm:w-64 md:w-72 shrink-0 aspect-square sm:aspect-auto sm:min-h-[280px] relative overflow-hidden"
+            className="w-full sm:w-64 md:w-72 shrink-0 h-56 sm:h-auto sm:min-h-[280px] relative overflow-hidden"
             style={{ background: gradient }}
           >
             <img
@@ -341,20 +341,20 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
       {/* Hero - tight, with featured crystal */}
       <section className="max-w-6xl mx-auto px-4 pt-10 md:pt-14">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
-          <div>
-            <p className="text-brand-accent text-xs uppercase tracking-[0.2em] font-body mb-2">
-              Encyclopedia of {crystals.length} Crystals, Minerals & Stones
+          <div className="text-center md:text-left">
+            <p className="text-brand-accent text-sm uppercase tracking-[0.15em] font-body mb-2">
+              Encyclopedia of Crystals, Minerals & Stones
             </p>
             <h1 className="font-heading text-3xl md:text-5xl text-white leading-tight">
               Crystal <em>Almanac</em>
             </h1>
-            <p className="text-brand-muted text-sm md:text-base font-body mt-2 max-w-sm md:max-w-lg">
+            <p className="text-brand-muted text-base md:text-lg font-body mt-3 max-w-md md:max-w-lg mx-auto md:mx-0 leading-relaxed">
               Where geological science meets the story behind every stone.
             </p>
           </div>
           <button
             onClick={() => setShowFullGrid(true)}
-            className="text-brand-accent text-sm font-body hover:underline whitespace-nowrap self-start md:self-auto"
+            className="text-brand-accent text-sm font-body hover:underline whitespace-nowrap self-center md:self-auto"
           >
             Browse all crystals & minerals →
           </button>

@@ -250,13 +250,13 @@ export default async function CrystalPage({
             <h3 className="font-heading text-lg text-white mb-3">
               Quick Facts
             </h3>
-            <div className="grid grid-cols-2 gap-x-4">
+            <div>
               <PropertyRow label="Formula" value={crystal.chemicalFormula} />
-              <PropertyRow label="System" value={crystal.crystalSystem} />
+              <PropertyRow label="Crystal System" value={crystal.crystalSystem} />
               <PropertyRow label="Luster" value={crystal.luster} />
               <PropertyRow label="Streak" value={crystal.streak} />
               <PropertyRow label="Transparency" value={crystal.transparency} />
-              <PropertyRow label="Sp. Gravity" value={crystal.specificGravity} />
+              <PropertyRow label="Specific Gravity" value={crystal.specificGravity} />
             </div>
             <div className="mt-3">
               <span className="text-brand-muted text-sm font-body">

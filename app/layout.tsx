@@ -67,13 +67,15 @@ function Logo() {
 }
 
 import { GuidesDropdown } from "@/app/components/GuidesDropdown";
+import { MobileMenu } from "@/app/components/MobileMenu";
 
 function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-brand-bg/80 backdrop-blur-xl border-b border-brand-border">
       <nav className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-8">
         <Logo />
-        <div className="flex items-center gap-1 md:gap-2 text-sm font-body">
+        {/* Desktop nav */}
+        <div className="hidden md:flex items-center gap-2 text-sm font-body">
           <Link
             href="/?browse=all"
             className="text-brand-muted hover:text-white active:text-white transition-colors px-3 py-2"
@@ -100,6 +102,8 @@ function Header() {
             About
           </Link>
         </div>
+        {/* Mobile hamburger */}
+        <MobileMenu />
       </nav>
     </header>
   );
