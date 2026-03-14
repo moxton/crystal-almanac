@@ -171,7 +171,7 @@ export default function QuizPage() {
   const question = questions[current];
 
   return (
-    <div className="max-w-2xl mx-auto px-4 py-20">
+    <div className="max-w-4xl mx-auto px-4 py-20">
       {/* Page header */}
       <p className="text-brand-accent text-sm uppercase tracking-[0.15em] font-body mb-4">
         Test Your Knowledge
@@ -227,54 +227,55 @@ export default function QuizPage() {
               />
             </div>
 
-            {/* ── Crystal image ─────────────────────── */}
-            <div className="flex justify-center mb-6">
-              <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-xl overflow-hidden border border-brand-border">
-                <img
-                  src={`/crystals/${question.correct.id}.webp`}
-                  alt="Mystery crystal"
-                  className="w-full h-full object-cover"
-                />
+            {/* ── Image + answers: side-by-side on desktop, stacked on mobile ── */}
+            <div className="flex flex-col md:flex-row gap-6">
+              {/* Left: image + hint */}
+              <div className="flex flex-col items-center md:items-start shrink-0">
+                <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-xl overflow-hidden border border-brand-border">
+                  <img
+                    src={`/crystals/${question.correct.id}.webp`}
+                    alt="Mystery crystal"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="text-brand-muted text-sm font-body italic mt-3 text-center md:text-left md:max-w-[16rem]">
+                  Hint: {question.correct.subtitle}
+                </p>
               </div>
-            </div>
 
-            {/* ── Hint (subtitle) ───────────────────── */}
-            <p className="text-center text-brand-muted text-sm font-body italic mb-6">
-              Hint: {question.correct.subtitle}
-            </p>
+              {/* Right: answer buttons */}
+              <div className="flex-1 flex flex-col justify-center space-y-3">
+                {question.options.map((option) => {
+                  const isCorrectAnswer = option.id === question.correct.id;
+                  const isSelected = selected === option.id;
+                  const revealed = phase === "revealed";
 
-            {/* ── Answer buttons ────────────────────── */}
-            <div className="space-y-3">
-              {question.options.map((option) => {
-                const isCorrectAnswer = option.id === question.correct.id;
-                const isSelected = selected === option.id;
-                const revealed = phase === "revealed";
+                  let btnClass =
+                    "w-full text-left px-4 py-3 rounded-lg border font-body text-sm transition-all ";
 
-                let btnClass =
-                  "w-full text-left px-4 py-3 rounded-lg border font-body text-sm transition-all ";
+                  if (revealed && isCorrectAnswer) {
+                    btnClass += "border-emerald-500 bg-emerald-500/15 text-emerald-300";
+                  } else if (revealed && isSelected && !isCorrectAnswer) {
+                    btnClass += "border-red-500 bg-red-500/15 text-red-300";
+                  } else if (revealed) {
+                    btnClass += "border-brand-border bg-brand-surface text-brand-muted opacity-50";
+                  } else {
+                    btnClass +=
+                      "border-brand-border bg-brand-surface text-white hover:border-brand-accent/40 hover:bg-brand-border/30 cursor-pointer";
+                  }
 
-                if (revealed && isCorrectAnswer) {
-                  btnClass += "border-emerald-500 bg-emerald-500/15 text-emerald-300";
-                } else if (revealed && isSelected && !isCorrectAnswer) {
-                  btnClass += "border-red-500 bg-red-500/15 text-red-300";
-                } else if (revealed) {
-                  btnClass += "border-brand-border bg-brand-surface text-brand-muted opacity-50";
-                } else {
-                  btnClass +=
-                    "border-brand-border bg-brand-surface text-white hover:border-brand-accent/40 hover:bg-brand-border/30 cursor-pointer";
-                }
-
-                return (
-                  <button
-                    key={option.id}
-                    onClick={() => handleAnswer(option.id)}
-                    disabled={phase === "revealed"}
-                    className={btnClass}
-                  >
-                    {option.name}
-                  </button>
-                );
-              })}
+                  return (
+                    <button
+                      key={option.id}
+                      onClick={() => handleAnswer(option.id)}
+                      disabled={phase === "revealed"}
+                      className={btnClass}
+                    >
+                      {option.name}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
           </>
         )}

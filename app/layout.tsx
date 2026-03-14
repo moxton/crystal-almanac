@@ -88,6 +88,12 @@ function Header() {
             Blog
           </Link>
           <Link
+            href="/quiz"
+            className="text-brand-muted hover:text-white active:text-white transition-colors px-3 py-2"
+          >
+            Quiz
+          </Link>
+          <Link
             href="/about"
             className="text-brand-muted hover:text-white active:text-white transition-colors px-3 py-2"
           >
