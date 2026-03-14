@@ -131,7 +131,7 @@ function PopularRow({ crystals }: { crystals: Crystal[] }) {
             className="group shrink-0 w-32"
           >
             <div
-              className="h-24 rounded-xl relative overflow-hidden border border-brand-border group-hover:border-brand-accent/40 transition-all"
+              className="w-32 aspect-square rounded-xl relative overflow-hidden border border-brand-border group-hover:border-brand-accent/40 transition-all"
               style={{ background: gradient }}
             >
               <img
