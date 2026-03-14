@@ -10,6 +10,7 @@ const GUIDES = [
   { href: "/birthstones", label: "Birthstones", sub: "Stones by month" },
   { href: "/hardness", label: "Hardness Scale", sub: "Mohs scale mapped" },
   { href: "/care", label: "Crystal Care", sub: "Water, sun & handling" },
+  { href: "/quiz", label: "Crystal Quiz", sub: "Test your knowledge" },
 ];
 
 export function GuidesDropdown() {
