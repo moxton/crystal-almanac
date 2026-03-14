@@ -69,29 +69,37 @@ function FeaturedCrystal({ crystal }: { crystal: Crystal }) {
 
   return (
     <Link href={`/crystals/${crystal.id}`} className="group block">
-      <div className="relative rounded-2xl overflow-hidden" style={{ background: gradient }}>
-        <img
-          src={`/crystals/${crystal.id}.webp`}
-          alt={crystal.name}
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-bg/80 via-brand-bg/40 to-transparent" />
-        <div className="relative p-8 md:p-12 min-h-[280px] flex flex-col justify-end">
-          <p className="text-brand-accent text-xs uppercase tracking-[0.2em] font-body mb-2">
-            Featured Crystal
-          </p>
-          <h2 className="font-heading text-3xl md:text-4xl text-white group-hover:text-brand-accent transition-colors">
-            {crystal.name}
-          </h2>
-          <p className="font-heading text-lg text-white/60 italic mt-1">
-            {crystal.subtitle}
-          </p>
-          <p className="text-white/50 text-sm font-body mt-3 max-w-md leading-relaxed line-clamp-2">
-            {crystal.formation.split("\n\n")[0].substring(0, 180)}...
-          </p>
-          <span className="inline-flex items-center gap-1 text-brand-accent text-sm font-body mt-4 group-hover:underline">
-            Read full profile →
-          </span>
+      <div className="bg-brand-surface border border-brand-border rounded-2xl overflow-hidden hover:border-brand-accent/40 transition-all">
+        <div className="flex flex-col sm:flex-row">
+          {/* Square image - contained, not stretched */}
+          <div
+            className="w-full sm:w-64 md:w-72 shrink-0 aspect-square sm:aspect-auto sm:min-h-[280px] relative overflow-hidden"
+            style={{ background: gradient }}
+          >
+            <img
+              src={`/crystals/${crystal.id}.webp`}
+              alt={crystal.name}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          {/* Info */}
+          <div className="p-6 md:p-8 flex flex-col justify-center flex-1">
+            <p className="text-brand-accent text-xs uppercase tracking-[0.2em] font-body mb-2">
+              Featured Crystal
+            </p>
+            <h2 className="font-heading text-3xl md:text-4xl text-white group-hover:text-brand-accent transition-colors">
+              {crystal.name}
+            </h2>
+            <p className="font-heading text-lg text-white/60 italic mt-1">
+              {crystal.subtitle}
+            </p>
+            <p className="text-white/50 text-sm font-body mt-3 max-w-md leading-relaxed line-clamp-2">
+              {crystal.formation.split("\n\n")[0].substring(0, 180)}...
+            </p>
+            <span className="inline-flex items-center gap-1 text-brand-accent text-sm font-body mt-4 group-hover:underline">
+              Read full profile →
+            </span>
+          </div>
         </div>
       </div>
     </Link>

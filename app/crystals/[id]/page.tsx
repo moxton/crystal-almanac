@@ -185,58 +185,59 @@ export default async function CrystalPage({
     <>
       <CrystalJsonLd crystal={crystal} />
 
-      {/* Hero - tighter */}
-      <div className="relative">
-        <div
-          className="h-40 sm:h-48 md:h-56"
-          style={{ background: gradient }}
-        >
-          <img
-            src={`/crystals/${crystal.id}.webp`}
-            alt={crystal.name}
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-brand-bg via-brand-bg/60 to-transparent" />
-        </div>
+      {/* Hero - square image + info */}
+      <div className="max-w-4xl mx-auto px-4 pt-8">
+        <nav className="mb-6">
+          <Link
+            href="/"
+            className="text-white/70 hover:text-white text-sm font-body hover:underline transition-colors"
+          >
+            ← All Crystals
+          </Link>
+        </nav>
 
-        <div className="max-w-4xl mx-auto px-4 -mt-8 relative">
-          <nav className="mb-4">
-            <Link
-              href="/"
-              className="text-white/70 hover:text-white text-sm font-body hover:underline transition-colors"
-            >
-              ← All Crystals
-            </Link>
-          </nav>
+        <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 mb-8">
+          {/* Square image */}
+          <div
+            className="w-full sm:w-56 md:w-64 shrink-0 aspect-square rounded-xl overflow-hidden border border-brand-border"
+            style={{ background: gradient }}
+          >
+            <img
+              src={`/crystals/${crystal.id}.webp`}
+              alt={crystal.name}
+              className="w-full h-full object-cover"
+            />
+          </div>
 
-          <div className="mb-6">
+          {/* Info */}
+          <div className="flex flex-col justify-center">
             <Link
               href={`/?search=${encodeURIComponent(crystal.category)}`}
               className="text-white/70 hover:text-white text-sm uppercase tracking-[0.15em] font-body mb-2 inline-block hover:underline transition-colors"
             >
               {crystal.category}
             </Link>
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-white">
+            <h1 className="font-heading text-4xl md:text-5xl text-white">
               {crystal.name}
             </h1>
             <p className="font-heading text-xl md:text-2xl text-brand-muted italic mt-1">
               {crystal.subtitle}
             </p>
-          </div>
 
-          {/* Color swatches - compact */}
-          <div className="flex flex-wrap gap-2 mb-6">
-            {crystal.colors.map((color, i) => (
-              <div key={i} className="flex items-center gap-1.5">
-                <div
-                  className="w-4 h-4 rounded-full border border-white/20"
-                  style={{ backgroundColor: crystal.colorHexes[i] }}
-                />
-                <span className="text-xs text-brand-muted font-body">
-                  {color}
-                </span>
-              </div>
-            ))}
+            {/* Color swatches */}
+            <div className="flex flex-wrap gap-2 mt-4">
+              {crystal.colors.map((color, i) => (
+                <div key={i} className="flex items-center gap-1.5">
+                  <div
+                    className="w-4 h-4 rounded-full border border-white/20"
+                    style={{ backgroundColor: crystal.colorHexes[i] }}
+                  />
+                  <span className="text-xs text-brand-muted font-body">
+                    {color}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
