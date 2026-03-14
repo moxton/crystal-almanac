@@ -85,11 +85,18 @@ export default async function CollectionPage({
               className="group block bg-brand-surface border border-brand-border rounded-xl overflow-hidden hover:border-brand-accent/40 transition-all duration-300"
             >
               <div className="flex flex-col sm:flex-row">
-                {/* Color strip */}
+                {/* Crystal image */}
                 <div
-                  className="h-3 sm:h-auto sm:w-24 shrink-0"
+                  className="h-24 sm:h-auto sm:w-28 shrink-0 relative overflow-hidden"
                   style={{ background: gradient }}
-                />
+                >
+                  <img
+                    src={`/crystals/${crystal.id}.webp`}
+                    alt={crystal.name}
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                </div>
                 <div className="p-5 flex-1">
                   <div className="flex items-start justify-between">
                     <div>

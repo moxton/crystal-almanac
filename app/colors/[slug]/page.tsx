@@ -94,9 +94,15 @@ export default async function ColorPage({
                 className="group bg-brand-surface border border-brand-border rounded-xl overflow-hidden hover:border-brand-accent/40 transition-all duration-300 hover:-translate-y-1"
               >
                 <div
-                  className="h-20 relative"
+                  className="h-20 relative overflow-hidden"
                   style={{ background: gradient }}
                 >
+                  <img
+                    src={`/crystals/${crystal.id}.webp`}
+                    alt={crystal.name}
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-bg/40 to-transparent" />
                 </div>
                 <div className="p-4">

@@ -20,14 +20,12 @@ function CrystalCard({ crystal }: { crystal: Crystal }) {
           className="aspect-[4/3] relative overflow-hidden"
           style={{ background: gradient }}
         >
-          {crystal.imageSmall && (
-            <img
-              src={crystal.imageSmall}
-              alt={crystal.name}
-              loading="lazy"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-          )}
+          <img
+            src={`/crystals/${crystal.id}.webp`}
+            alt={crystal.name}
+            loading="lazy"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-bg/60 to-transparent" />
           <div className="absolute bottom-3 left-3 right-3">
             <span className="text-xs font-body uppercase tracking-wider text-white/70">
@@ -72,13 +70,11 @@ function FeaturedCrystal({ crystal }: { crystal: Crystal }) {
   return (
     <Link href={`/crystals/${crystal.id}`} className="group block">
       <div className="relative rounded-2xl overflow-hidden" style={{ background: gradient }}>
-        {crystal.imageUrl && (
-          <img
-            src={crystal.imageUrl}
-            alt={crystal.name}
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-        )}
+        <img
+          src={`/crystals/${crystal.id}.webp`}
+          alt={crystal.name}
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-brand-bg/80 via-brand-bg/40 to-transparent" />
         <div className="relative p-8 md:p-12 min-h-[280px] flex flex-col justify-end">
           <p className="text-brand-accent text-xs uppercase tracking-[0.2em] font-body mb-2">
@@ -130,6 +126,12 @@ function PopularRow({ crystals }: { crystals: Crystal[] }) {
               className="h-24 rounded-xl relative overflow-hidden border border-brand-border group-hover:border-brand-accent/40 transition-all"
               style={{ background: gradient }}
             >
+              <img
+                src={`/crystals/${crystal.id}.webp`}
+                alt={crystal.name}
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-bg/70 to-transparent" />
             </div>
             <p className="font-heading text-sm text-white group-hover:text-brand-accent transition-colors mt-2 text-center">

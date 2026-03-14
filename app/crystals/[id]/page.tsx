@@ -191,24 +191,12 @@ export default async function CrystalPage({
           className="h-40 sm:h-48 md:h-56"
           style={{ background: gradient }}
         >
-          {crystal.imageUrl && (
-            <img
-              src={crystal.imageUrl}
-              alt={crystal.name}
-              className="w-full h-full object-cover"
-            />
-          )}
+          <img
+            src={`/crystals/${crystal.id}.webp`}
+            alt={crystal.name}
+            className="w-full h-full object-cover"
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-bg via-brand-bg/60 to-transparent" />
-          {crystal.imageCredit && (
-            <a
-              href={crystal.imageUnsplashUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="absolute top-3 right-4 text-white/30 hover:text-white/60 text-xs font-body transition-colors"
-            >
-              Photo: {crystal.imageCredit}
-            </a>
-          )}
         </div>
 
         <div className="max-w-4xl mx-auto px-4 -mt-8 relative">
