@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
+import { useState, useMemo, useEffect, useRef } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import type { Crystal } from "@/app/lib/crystals";
 
@@ -185,11 +185,47 @@ const COLOR_FILTERS = [
 // ── Main Browse Page ────────────────────────────────────────
 export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
   const searchParams = useSearchParams();
+  const router = useRouter();
   const [search, setSearch] = useState("");
   const [hardnessFilter, setHardnessFilter] = useState<string | null>(null);
   const [colorFilter, setColorFilter] = useState<string | null>(null);
   const [metaFilter, setMetaFilter] = useState<{ type: string; value: string } | null>(null);
   const [showFullGrid, setShowFullGrid] = useState(false);
+
+  // Homepage search dropdown state
+  const [homeSearch, setHomeSearch] = useState("");
+  const [homeSearchOpen, setHomeSearchOpen] = useState(false);
+  const homeSearchRef = useRef<HTMLDivElement>(null);
+
+  // Close dropdown on outside click
+  useEffect(() => {
+    function handleClick(e: MouseEvent) {
+      if (homeSearchRef.current && !homeSearchRef.current.contains(e.target as Node)) {
+        setHomeSearchOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, []);
+
+  // Filtered results for homepage dropdown
+  const homeResults = useMemo(() => {
+    if (!homeSearch) return [];
+    const q = homeSearch.toLowerCase();
+    const matches = crystals.filter(
+      (c) =>
+        c.name.toLowerCase().includes(q) ||
+        c.category.toLowerCase().includes(q) ||
+        c.crystalSystem.toLowerCase().includes(q)
+    );
+    // Boost name-starts-with matches to top
+    matches.sort((a, b) => {
+      const aName = a.name.toLowerCase().startsWith(q) ? 0 : 1;
+      const bName = b.name.toLowerCase().startsWith(q) ? 0 : 1;
+      return aName - bName;
+    });
+    return matches.slice(0, 8);
+  }, [crystals, homeSearch]);
 
   useEffect(() => {
     const urlSearch = searchParams.get("search");
@@ -343,7 +379,8 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
           <div className="text-center md:text-left">
             <p className="text-brand-accent text-sm uppercase tracking-[0.15em] font-body mb-2">
-              Encyclopedia of Crystals, Minerals & Stones
+              <span className="inline md:hidden">Encyclopedia of Crystals,<br />Minerals & Stones</span>
+              <span className="hidden md:inline">Encyclopedia of Crystals, Minerals & Stones</span>
             </p>
             <h1 className="font-heading text-3xl md:text-5xl text-white leading-tight">
               Crystal <em>Almanac</em>
@@ -354,18 +391,78 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
           </div>
         </div>
 
-        {/* Search bar */}
-        <div className="relative max-w-md mx-auto md:mx-0 mb-8">
-          <svg className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-brand-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        {/* Search bar with dropdown */}
+        <div ref={homeSearchRef} className="relative max-w-md mx-auto md:mx-0 mb-8">
+          <svg className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-brand-muted z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
           </svg>
           <input
             type="text"
             placeholder="Search crystals, minerals, colors..."
-            onFocus={() => setShowFullGrid(true)}
-            onChange={(e) => { setSearch(e.target.value); setShowFullGrid(true); }}
+            value={homeSearch}
+            onFocus={() => setHomeSearchOpen(true)}
+            onChange={(e) => { setHomeSearch(e.target.value); setHomeSearchOpen(true); }}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" && homeSearch.trim()) {
+                setSearch(homeSearch);
+                setShowFullGrid(true);
+                setHomeSearchOpen(false);
+              }
+            }}
             className="w-full bg-brand-surface/60 border border-brand-border rounded-full pl-10 pr-4 py-2.5 text-white placeholder-brand-muted/60 font-body text-sm focus:outline-none focus:border-brand-accent/40 focus:bg-brand-surface transition-colors"
           />
+
+          {/* Dropdown results */}
+          {homeSearchOpen && homeSearch && (
+            <div className="absolute top-full left-0 right-0 mt-2 bg-brand-surface border border-brand-border rounded-xl shadow-2xl shadow-black/40 overflow-hidden z-50">
+              {homeResults.length > 0 ? (
+                <>
+                  {homeResults.map((crystal) => {
+                    const grad = crystal.colorHexes.length >= 2
+                      ? `linear-gradient(135deg, ${crystal.colorHexes.slice(0, 2).join(", ")})`
+                      : crystal.colorHexes[0] || "#A78BFA";
+                    return (
+                      <Link
+                        key={crystal.id}
+                        href={`/crystals/${crystal.id}`}
+                        onClick={() => { setHomeSearchOpen(false); setHomeSearch(""); }}
+                        className="flex items-center gap-3 px-4 py-2.5 hover:bg-brand-accent/10 transition-colors"
+                      >
+                        <div
+                          className="w-8 h-8 rounded-lg shrink-0 overflow-hidden border border-brand-border"
+                          style={{ background: grad }}
+                        >
+                          <img
+                            src={`/crystals/${crystal.id}.webp`}
+                            alt=""
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                        <div className="min-w-0">
+                          <p className="text-white text-sm font-body truncate">{crystal.name}</p>
+                          <p className="text-brand-muted text-xs font-body truncate">{crystal.subtitle}</p>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                  <button
+                    onClick={() => {
+                      setSearch(homeSearch);
+                      setShowFullGrid(true);
+                      setHomeSearchOpen(false);
+                    }}
+                    className="w-full px-4 py-2.5 text-brand-accent text-xs font-body text-left hover:bg-brand-accent/10 transition-colors border-t border-brand-border"
+                  >
+                    Browse all results for &ldquo;{homeSearch}&rdquo; →
+                  </button>
+                </>
+              ) : (
+                <div className="px-4 py-4">
+                  <p className="text-brand-muted text-sm font-body">No crystals found for &ldquo;{homeSearch}&rdquo;</p>
+                </div>
+              )}
+            </div>
+          )}
         </div>
 
         {/* Featured Crystal */}

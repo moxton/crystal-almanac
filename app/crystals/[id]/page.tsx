@@ -162,10 +162,51 @@ export default async function CrystalPage({
     crystalNameToId.set(c.name.toLowerCase(), c.id);
   }
 
+  // Alias map for related mineral names that don't directly match crystal IDs
+  const MINERAL_ALIASES: Record<string, string> = {
+    "copper": "native-copper",
+    "sulfur": "native-sulfur",
+    "native gold": "gold",
+    "onyx": "black-onyx",
+    "jadeite": "jade",
+    "zoisite": "ruby-zoisite",
+    "ruby in zoisite": "ruby-zoisite",
+    "spessartine": "spessartine-garnet",
+    "green aventurine": "aventurine",
+    "star sapphire": "sapphire",
+    "padparadscha sapphire": "sapphire",
+    "red spinel": "spinel",
+    "white sapphire": "sapphire",
+    "mother of pearl": "pearl",
+    "blue calcite": "calcite",
+    "blue opal": "opal",
+    "green jasper": "jasper",
+    "green tourmaline": "tourmaline",
+    "pink tourmaline": "tourmaline",
+    "bi-color tourmaline": "tourmaline",
+    "brecciated jasper": "jasper",
+    "leopard skin jasper": "jasper",
+    "scenic jasper": "jasper",
+    "manganese calcite": "calcite",
+    "sand calcite": "calcite",
+    "hyalite opal": "opal",
+    "grossular garnet": "garnet",
+    "color-change garnet": "garnet",
+    "dumortierite quartz": "dumortierite",
+    "white marble": "marble",
+    "blue apatite": "blue-apatite",
+    "apatite": "blue-apatite",
+    "goldstone": "sunstone",
+  };
+
   // Helper to find if a related mineral has a page
   function findCrystalSlug(name: string): string | undefined {
-    // Direct name match
     const lower = name.toLowerCase();
+    // Check alias map first
+    if (MINERAL_ALIASES[lower] && crystalIdSet.has(MINERAL_ALIASES[lower])) {
+      return MINERAL_ALIASES[lower];
+    }
+    // Direct name match
     if (crystalNameToId.has(lower)) return crystalNameToId.get(lower);
     // Try common transformations
     const slug = lower.replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "");
