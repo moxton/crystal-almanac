@@ -3,11 +3,14 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 
-const GUIDES = [
+const LEARN = [
   { href: "/beginners", label: "Beginners Guide", sub: "Start here" },
   { href: "/identify", label: "Identification Guide", sub: "ID any mineral" },
   { href: "/fakes", label: "Spot Fakes", sub: "Tests & red flags" },
   { href: "/water-safe", label: "Water Safety", sub: "Can it get wet?" },
+];
+
+const BROWSE = [
   { href: "/collections", label: "Collections", sub: "Curated by tradition" },
   { href: "/groups", label: "Mineral Groups", sub: "Browse by family" },
   { href: "/colors", label: "Browse by Color", sub: "The geology of color" },
@@ -55,12 +58,34 @@ export function GuidesDropdown() {
 
       {open && (
         <div className="absolute top-full right-0 mt-3 w-56 bg-brand-surface border border-brand-border rounded-xl shadow-xl shadow-black/30 overflow-hidden z-50">
-          {GUIDES.map((guide) => (
+          <div className="px-4 pt-3 pb-1.5">
+            <span className="text-brand-accent text-[10px] uppercase tracking-[0.15em] font-body">Learn</span>
+          </div>
+          {LEARN.map((guide) => (
             <Link
               key={guide.href}
               href={guide.href}
               onClick={() => setOpen(false)}
-              className="block px-4 py-3 hover:bg-brand-border/30 transition-colors border-b border-brand-border/30 last:border-0"
+              className="block px-4 py-2.5 hover:bg-brand-border/30 transition-colors"
+            >
+              <span className="text-white text-sm font-body font-medium">
+                {guide.label}
+              </span>
+              <span className="text-brand-muted text-xs font-body block mt-0.5">
+                {guide.sub}
+              </span>
+            </Link>
+          ))}
+          <div className="border-t border-brand-border/40 mx-3 my-1" />
+          <div className="px-4 pt-2 pb-1.5">
+            <span className="text-brand-accent text-[10px] uppercase tracking-[0.15em] font-body">Browse</span>
+          </div>
+          {BROWSE.map((guide) => (
+            <Link
+              key={guide.href}
+              href={guide.href}
+              onClick={() => setOpen(false)}
+              className="block px-4 py-2.5 hover:bg-brand-border/30 transition-colors"
             >
               <span className="text-white text-sm font-body font-medium">
                 {guide.label}
