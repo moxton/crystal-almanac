@@ -5,6 +5,10 @@ import Link from "next/link";
 
 const LINKS = [
   { href: "/?browse=all", label: "Browse" },
+  { href: "/beginners", label: "Beginners Guide" },
+  { href: "/identify", label: "Identification Guide" },
+  { href: "/fakes", label: "Spot Fakes" },
+  { href: "/water-safe", label: "Water Safety" },
   { href: "/collections", label: "Collections" },
   { href: "/groups", label: "Mineral Groups" },
   { href: "/colors", label: "Browse by Color" },

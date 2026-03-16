@@ -141,6 +141,10 @@ function Footer() {
               <Link href="/birthstones" className="text-brand-muted hover:text-white transition-colors">Birthstones</Link>
               <Link href="/hardness" className="text-brand-muted hover:text-white transition-colors">Hardness Scale</Link>
               <Link href="/care" className="text-brand-muted hover:text-white transition-colors">Crystal Care</Link>
+              <Link href="/beginners" className="text-brand-muted hover:text-white transition-colors">Beginners Guide</Link>
+              <Link href="/identify" className="text-brand-muted hover:text-white transition-colors">Identification</Link>
+              <Link href="/fakes" className="text-brand-muted hover:text-white transition-colors">Spot Fakes</Link>
+              <Link href="/water-safe" className="text-brand-muted hover:text-white transition-colors">Water Safety</Link>
               <Link href="/quiz" className="text-brand-muted hover:text-white transition-colors">Crystal Quiz</Link>
             </div>
             <div className="flex flex-col gap-2">

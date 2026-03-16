@@ -4,6 +4,10 @@ import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 
 const GUIDES = [
+  { href: "/beginners", label: "Beginners Guide", sub: "Start here" },
+  { href: "/identify", label: "Identification Guide", sub: "ID any mineral" },
+  { href: "/fakes", label: "Spot Fakes", sub: "Tests & red flags" },
+  { href: "/water-safe", label: "Water Safety", sub: "Can it get wet?" },
   { href: "/collections", label: "Collections", sub: "Curated by tradition" },
   { href: "/groups", label: "Mineral Groups", sub: "Browse by family" },
   { href: "/colors", label: "Browse by Color", sub: "The geology of color" },
@@ -31,7 +35,7 @@ export function GuidesDropdown() {
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen(!open)}
-        className="text-brand-muted hover:text-white transition-colors flex items-center gap-1"
+        className="text-brand-muted hover:text-white transition-colors flex items-center gap-1 px-3 py-2"
       >
         Guides
         <svg
