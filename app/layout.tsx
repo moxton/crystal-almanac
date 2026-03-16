@@ -71,7 +71,7 @@ import { MobileMenu } from "@/app/components/MobileMenu";
 
 function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-brand-bg/80 backdrop-blur-xl border-b border-brand-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-brand-surface border-b border-brand-border">
       <nav className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-8">
         <Logo />
         {/* Desktop nav */}

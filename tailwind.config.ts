@@ -10,9 +10,9 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          bg: '#07070c',
-          surface: '#0f0f17',
-          border: '#1a1a2e',
+          bg: '#0d0d14',
+          surface: '#14141e',
+          border: '#1e1e32',
           accent: '#A78BFA',
           'accent-dark': '#7C3AED',
           muted: '#8b8b9e',

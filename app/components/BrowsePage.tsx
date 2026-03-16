@@ -15,7 +15,7 @@ function CrystalCard({ crystal }: { crystal: Crystal }) {
 
   return (
     <Link href={`/crystals/${crystal.id}`} className="group block">
-      <article className="bg-brand-surface border border-brand-border rounded-xl overflow-hidden hover:border-brand-accent/40 transition-all duration-300 hover:-translate-y-1">
+      <article className="bg-brand-surface border border-brand-border rounded-xl overflow-hidden hover:border-brand-accent/40 transition-colors duration-200">
         <div
           className="aspect-[4/3] relative overflow-hidden"
           style={{ background: gradient }}
@@ -526,7 +526,7 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
             <Link
               key={col.slug}
               href={`/collections/${col.slug}`}
-              className="group bg-brand-surface border border-brand-border rounded-xl overflow-hidden hover:border-brand-accent/40 transition-all hover:-translate-y-0.5"
+              className="group bg-brand-surface border border-brand-border rounded-xl overflow-hidden hover:border-brand-accent/40 transition-all "
             >
               <div className="h-1.5" style={{ backgroundColor: col.color }} />
               <div className="p-5">
@@ -546,7 +546,7 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
       <section className="max-w-6xl mx-auto px-4 mt-14">
         <h2 className="font-heading text-xl text-white mb-6">Reference Tools</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-          <Link href="/birthstones" className="group bg-brand-surface border border-brand-border rounded-xl overflow-hidden hover:border-brand-accent/40 transition-all hover:-translate-y-0.5">
+          <Link href="/birthstones" className="group bg-brand-surface border border-brand-border rounded-xl overflow-hidden hover:border-brand-accent/40 transition-all ">
             <div className="h-1.5 bg-gradient-to-r from-red-500 via-emerald-500 to-blue-500" />
             <div className="p-6">
               <h3 className="font-heading text-lg text-white group-hover:text-brand-accent transition-colors">
@@ -560,7 +560,7 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
               </span>
             </div>
           </Link>
-          <Link href="/hardness" className="group bg-brand-surface border border-brand-border rounded-xl overflow-hidden hover:border-brand-accent/40 transition-all hover:-translate-y-0.5">
+          <Link href="/hardness" className="group bg-brand-surface border border-brand-border rounded-xl overflow-hidden hover:border-brand-accent/40 transition-all ">
             <div className="h-1.5 bg-gradient-to-r from-rose-500 via-amber-500 to-cyan-500" />
             <div className="p-6">
               <h3 className="font-heading text-lg text-white group-hover:text-brand-accent transition-colors">
@@ -574,7 +574,7 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
               </span>
             </div>
           </Link>
-          <Link href="/care" className="group bg-brand-surface border border-brand-border rounded-xl overflow-hidden hover:border-brand-accent/40 transition-all hover:-translate-y-0.5">
+          <Link href="/care" className="group bg-brand-surface border border-brand-border rounded-xl overflow-hidden hover:border-brand-accent/40 transition-all ">
             <div className="h-1.5 bg-gradient-to-r from-emerald-500 via-amber-500 to-rose-500" />
             <div className="p-6">
               <h3 className="font-heading text-lg text-white group-hover:text-brand-accent transition-colors">
