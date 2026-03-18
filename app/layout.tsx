@@ -75,7 +75,7 @@ function Header() {
       <nav className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-8">
         <Logo />
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-2 text-sm font-body">
+        <div className="hidden md:flex items-center gap-1 text-sm font-body">
           <Link
             href="/?browse=all"
             className="text-brand-muted hover:text-white active:text-white transition-colors px-3 py-2"
