@@ -36,10 +36,19 @@ function BlogJsonLd({ title, description, date, slug }: { title: string; descrip
     headline: title,
     description,
     datePublished: date,
+    author: {
+      "@type": "Organization",
+      name: "Crystal Almanac",
+      url: "https://crystalalmanac.com",
+    },
     publisher: {
       "@type": "Organization",
       name: "Crystal Almanac",
       url: "https://crystalalmanac.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://crystalalmanac.com/icon-512.png",
+      },
     },
     mainEntityOfPage: `https://crystalalmanac.com/blog/${slug}`,
   };

@@ -123,19 +123,84 @@ function RelatedMineralItem({
 }
 
 function CrystalJsonLd({ crystal }: { crystal: Crystal }) {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    name: crystal.name,
-    headline: `${crystal.name} - ${crystal.subtitle}`,
-    description: crystal.seoDescription,
-    publisher: {
-      "@type": "Organization",
-      name: "Crystal Almanac",
-      url: "https://crystalalmanac.com",
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      name: crystal.name,
+      headline: `${crystal.name} - ${crystal.subtitle}`,
+      description: crystal.seoDescription,
+      author: {
+        "@type": "Organization",
+        name: "Crystal Almanac",
+        url: "https://crystalalmanac.com",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "Crystal Almanac",
+        url: "https://crystalalmanac.com",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://crystalalmanac.com/icon-512.png",
+        },
+      },
+      mainEntityOfPage: `https://crystalalmanac.com/crystals/${crystal.id}`,
+      about: {
+        "@type": "MineralSubstance" as string,
+        name: crystal.name,
+        description: crystal.seoDescription,
+      },
     },
-    mainEntityOfPage: `https://crystalalmanac.com/crystals/${crystal.id}`,
-  };
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      name: `${crystal.name} Mineral Properties`,
+      description: `Scientific data for ${crystal.name}: chemical formula, crystal system, Mohs hardness, and physical properties.`,
+      url: `https://crystalalmanac.com/crystals/${crystal.id}`,
+      creator: {
+        "@type": "Organization",
+        name: "Crystal Almanac",
+      },
+      variableMeasured: [
+        {
+          "@type": "PropertyValue",
+          name: "Chemical Formula",
+          value: crystal.chemicalFormula,
+        },
+        {
+          "@type": "PropertyValue",
+          name: "Crystal System",
+          value: crystal.crystalSystem,
+        },
+        {
+          "@type": "PropertyValue",
+          name: "Mohs Hardness",
+          value: String(crystal.hardness),
+          unitCode: "MOH",
+        },
+        {
+          "@type": "PropertyValue",
+          name: "Luster",
+          value: crystal.luster,
+        },
+        {
+          "@type": "PropertyValue",
+          name: "Streak",
+          value: crystal.streak,
+        },
+        {
+          "@type": "PropertyValue",
+          name: "Specific Gravity",
+          value: crystal.specificGravity,
+        },
+        {
+          "@type": "PropertyValue",
+          name: "Transparency",
+          value: crystal.transparency,
+        },
+      ],
+    },
+  ];
 
   return (
     <script
