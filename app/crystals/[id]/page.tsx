@@ -471,12 +471,12 @@ export default async function CrystalPage({
                   return (
                     <div
                       key={i}
-                      className="flex items-center justify-between py-2 border-b border-brand-border/50 last:border-0"
+                      className="flex items-baseline justify-between gap-4 py-2 border-b border-brand-border/50 last:border-0"
                     >
-                      <span className={`text-xs font-body uppercase tracking-wider ${colors[i] || "text-brand-muted"}`}>
+                      <span className={`text-xs font-body uppercase tracking-wider shrink-0 ${colors[i] || "text-brand-muted"}`}>
                         {labels[i] || "Premium"}
                       </span>
-                      <span className="text-white/85 text-sm font-body">
+                      <span className="text-white/85 text-sm font-body text-right">
                         {tier.trim()}
                       </span>
                     </div>
