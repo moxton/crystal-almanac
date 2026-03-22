@@ -31,7 +31,7 @@ function getWaterSafety(crystal: Crystal): "safe" | "brief" | "avoid" | "dissolv
   if (name.includes("halite") || name.includes("gypsum")) return "dissolves";
   // Avoid water - soft, porous, or reactive
   if (crystal.hardness <= 3) return "avoid";
-  if (["malachite", "azurite", "chrysocolla", "lepidolite", "lapis-lazuli", "pyrite", "hematite", "galena", "vanadinite", "wulfenite", "crocoite", "cuprite", "native-copper", "gold", "silver", "calcite", "aragonite", "rhodochrosite", "celestite", "amber", "pearl", "jet", "coral", "turquoise", "howlite", "shungite", "k2-stone", "bumble-bee-jasper", "magnetite", "coral", "cinnabar", "peacock-ore", "mimetite", "adamite", "pyromorphite", "cassiterite", "vivianite", "caribbean-calcite", "dolomite", "epidote", "scolecite", "stilbite", "cavansite", "bismuth", "moldavite", "realgar", "orpiment", "stibnite", "erythrite", "legrandite", "marcasite", "aurichalcite", "cobaltocalcite", "chalcopyrite", "shattuckite", "creedite", "covellite", "iron-meteorite"].includes(id)) return "avoid";
+  if (["malachite", "azurite", "chrysocolla", "lepidolite", "lapis-lazuli", "pyrite", "hematite", "galena", "vanadinite", "wulfenite", "crocoite", "cuprite", "native-copper", "gold", "silver", "calcite", "aragonite", "rhodochrosite", "celestite", "amber", "pearl", "jet", "coral", "turquoise", "howlite", "shungite", "k2-stone", "bumblebee-jasper", "magnetite", "coral", "cinnabar", "peacock-ore", "mimetite", "adamite", "pyromorphite", "cassiterite", "vivianite", "caribbean-calcite", "dolomite", "epidote", "scolecite", "stilbite", "cavansite", "bismuth", "moldavite", "realgar", "orpiment", "stibnite", "erythrite", "legrandite", "marcasite", "aurichalcite", "cobaltocalcite", "chalcopyrite", "shattuckite", "creedite", "covellite", "iron-meteorite"].includes(id)) return "avoid";
   // Brief rinse only
   if (crystal.hardness <= 5) return "brief";
   if (["fluorite", "fluorapatite", "apophyllite", "kunzite", "moonstone", "opal", "sunstone", "larimar", "amazonite", "labradorite", "kyanite"].includes(id)) return "brief";
@@ -71,7 +71,7 @@ function getCareNotes(crystal: Crystal): string {
     "vanadinite": "Contains lead. Handle with care. Never use for gem elixirs.",
     "wulfenite": "Contains lead. Very fragile. Display only.",
     "crocoite": "Contains lead and hexavalent chromium. Handle carefully.",
-    "bumble-bee-jasper": "Contains arsenic minerals. Never use for gem elixirs. Wash hands after handling.",
+    "bumblebee-jasper": "Contains arsenic minerals. Never use for gem elixirs. Wash hands after handling.",
     "chrysocolla": "Porous and soft. Brief rinse acceptable but don't soak.",
     "amber": "Organic gem. Avoid chemicals, perfumes, heat. Clean with damp cloth.",
     "pearl": "Organic gem. Avoid chemicals and perfume. Wipe with soft damp cloth after wearing. Store separately.",
@@ -186,7 +186,7 @@ export default function CarePage() {
   const waterDanger = careData.filter((c) => c.water === "dissolves" || c.water === "avoid");
   const sunDanger = careData.filter((c) => c.sun === "fades" || c.sun === "avoid");
   const toxicStones = careData.filter((c) =>
-    ["galena", "vanadinite", "wulfenite", "crocoite", "bumble-bee-jasper", "malachite", "cinnabar", "mimetite", "adamite", "pyromorphite", "realgar", "orpiment", "erythrite", "legrandite", "stibnite"].includes(c.id)
+    ["galena", "vanadinite", "wulfenite", "crocoite", "bumblebee-jasper", "malachite", "cinnabar", "mimetite", "adamite", "pyromorphite", "realgar", "orpiment", "erythrite", "legrandite", "stibnite", "arsenopyrite", "chrysotile", "proustite", "anglesite"].includes(c.id)
   );
 
   return (
