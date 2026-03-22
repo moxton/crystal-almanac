@@ -119,7 +119,7 @@ export const COLLECTIONS: Collection[] = [
     description: "Grounding stones share a pattern: they're typically dark, dense, and often metallic or earthy in appearance. This isn't coincidence. The heaviest, most earth-connected minerals naturally suggest stability. When you hold a piece of hematite and feel its unexpected weight, or run your thumb across a polished obsidian surface, the physical experience itself is grounding. These stones have been used for centering practices across cultures.",
     disclaimer: "Grounding associations are cultural traditions. The physical experience of holding a dense, smooth stone can be genuinely calming through tactile focus, but this is a sensory effect, not a metaphysical one.",
     accentColor: "#78716C",
-    crystalIds: ["hematite", "black-tourmaline", "obsidian", "smoky-quartz", "tiger-eye", "jasper", "garnet", "bloodstone", "shungite", "magnetite", "petrified-wood", "tigers-iron", "red-jasper", "kambaba-jasper"],
+    crystalIds: ["hematite", "black-tourmaline", "obsidian", "smoky-quartz", "tiger-eye", "jasper", "garnet", "bloodstone", "shungite", "magnetite", "petrified-wood", "tigers-iron", "red-jasper", "kambaba-jasper", "schorl", "almandine-garnet"],
     reasons: {
       "hematite": "Specific gravity 5.26 - it feels shockingly heavy. The physical weight creates an immediate sense of substance and connection to earth.",
       "black-tourmaline": "The most popular grounding crystal. Its striated crystal faces and solid black color reinforce the 'rooted' association.",
@@ -135,6 +135,8 @@ export const COLLECTIONS: Collection[] = [
       "tigers-iron": "2.5 billion years old - formed during the Great Oxidation Event. Combines three grounding minerals (tiger eye, hematite, red jasper) into one ancient stone.",
       "red-jasper": "Called the 'supreme nurturer.' Roman soldiers carried it for endurance. The most universally used grounding stone, with a tradition spanning every culture that had access to it.",
       "kambaba-jasper": "Dark green orbicular stone from Madagascar, hundreds of millions of years old. Its deep earth tones and ancient geological age connect it to primal grounding energy and ancestral wisdom.",
+      "schorl": "The mineralogical name for black tourmaline. 90% of all tourmaline on Earth is schorl. Its iron-rich composition and solid black color make it one of the most universally used grounding stones.",
+      "almandine-garnet": "The most common garnet species, found in metamorphic rocks worldwide. Its deep red color and high density (SG 4.3) create a physically weighty, earth-connected grounding experience.",
     },
   },
   {

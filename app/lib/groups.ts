@@ -19,7 +19,7 @@ export const MINERAL_GROUPS: MineralGroup[] = [
     hex: "#A78BFA",
     description: "The most abundant mineral family on Earth's surface. Includes macrocrystalline quartz (amethyst, citrine, smoky quartz) and microcrystalline chalcedony (agate, jasper, carnelian). All share the formula SiO₂ but form under different conditions, producing an enormous variety of colors and patterns.",
     matchPatterns: ["quartz", "chalcedony"],
-    matchIds: ["aqua-aura-quartz", "opal", "pink-opal", "fire-opal", "boulder-opal"],
+    matchIds: ["aqua-aura-quartz", "opal", "pink-opal", "fire-opal", "boulder-opal", "merlinite", "tanzan-aura-quartz"],
   },
   {
     slug: "feldspar",
@@ -70,7 +70,7 @@ export const MINERAL_GROUPS: MineralGroup[] = [
     shortName: "Sulfides",
     hex: "#EAB308",
     description: "Metal-sulfur compounds with characteristically metallic lusters. Includes pyrite (fool's gold), galena (lead ore), chalcopyrite (copper ore), and stibnite (antimony ore). Many are important industrial ores. Their metallic appearance and crystal habits make them popular display specimens.",
-    matchPatterns: ["sulfide"],
+    matchPatterns: ["sulfide", "sulfosalt"],
   },
   {
     slug: "oxide",
@@ -79,7 +79,7 @@ export const MINERAL_GROUPS: MineralGroup[] = [
     hex: "#6B7280",
     description: "Metal-oxygen compounds ranging from the hardest natural substances (corundum, Mohs 9) to common iron ores (hematite, magnetite). Includes ruby and sapphire (both corundum), spinel, rutile, and chrysoberyl. This group contains some of the most economically important and gemologically prized minerals.",
     matchPatterns: ["oxide", "hydroxide", "corundum", "chrysoberyl", "spinel"],
-    matchIds: ["ruby", "sapphire", "spinel", "chrysoberyl", "cats-eye-chrysoberyl", "alexandrite", "goethite", "diaspore"],
+    matchIds: ["ruby", "sapphire", "star-sapphire", "spinel", "chrysoberyl", "cats-eye-chrysoberyl", "alexandrite", "goethite", "diaspore", "coltan"],
   },
   {
     slug: "phosphate",
@@ -97,7 +97,7 @@ export const MINERAL_GROUPS: MineralGroup[] = [
     hex: "#BFDBFE",
     description: "Built around the sulfate ion (SO₄²⁻). Includes selenite/gypsum (the crystal cave mineral), celestite (sky-blue strontium sulfate), and barite (the heaviest common non-metallic mineral). Many form beautiful crystals from evaporating water, giving them associations with clarity and purification.",
     matchPatterns: ["sulfate"],
-    matchIds: ["selenite", "celestite", "barite", "desert-rose"],
+    matchIds: ["selenite", "celestite", "barite", "desert-rose", "satin-spar", "anhydrite", "anglesite"],
   },
   {
     slug: "native-elements",
@@ -142,7 +142,7 @@ export const MINERAL_GROUPS: MineralGroup[] = [
     hex: "#C4B5FD",
     description: "Sheet silicates characterized by perfect basal cleavage that allows them to split into thin, flexible sheets. Muscovite (clear), biotite (black), lepidolite (purple, lithium-bearing), and fuchsite (green, chromium-bearing) are the major species. Micas are found in virtually every type of rock on Earth.",
     matchPatterns: ["mica", "phyllosilicate", "clinochlore"],
-    matchIds: ["muscovite", "lepidolite", "fuchsite", "seraphinite", "serpentine", "soapstone", "talc"],
+    matchIds: ["muscovite", "lepidolite", "fuchsite", "seraphinite", "serpentine", "soapstone", "talc", "chrysotile"],
   },
   {
     slug: "zeolite",
@@ -187,7 +187,7 @@ export const MINERAL_GROUPS: MineralGroup[] = [
     hex: "#8B5CF6",
     description: "Silicate minerals that don't fit neatly into the major families above. Includes nesosilicates (isolated tetrahedra) like topaz, zircon, and peridot; cyclosilicates (ring structures) like beryl, tourmaline, and dioptase; and unique minerals like charoite, sugilite, and larimar that defy easy categorization. The silicate class is the largest in mineralogy, comprising about 90% of Earth's crust.",
     matchPatterns: ["nesosilicate", "cyclosilicate", "tectosilicate", "silicate mineral", "silicate group", "olivine", "cordierite", "pectolite", "charoite"],
-    matchIds: ["topaz", "imperial-topaz", "blue-topaz", "kyanite", "black-kyanite", "zircon", "staurolite", "dumortierite", "peridot", "titanite", "chiastolite", "iolite", "sugilite", "dioptase", "benitoite", "eudialyte", "danburite", "larimar", "charoite", "jade"],
+    matchIds: ["topaz", "imperial-topaz", "blue-topaz", "kyanite", "black-kyanite", "zircon", "staurolite", "dumortierite", "peridot", "titanite", "chiastolite", "iolite", "sugilite", "dioptase", "benitoite", "eudialyte", "danburite", "larimar", "charoite", "jade", "wollastonite"],
   },
   {
     slug: "borate-tungstate",
