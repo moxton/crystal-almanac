@@ -21,7 +21,7 @@ from pathlib import Path
 # CONFIGURATION
 # ═══════════════════════════════════════════
 
-API_KEY = "AIzaSyB8tRWAOQXqJvpiK0uhtUfVXbOJINBO_A8"
+API_KEY = ""  # Paste your key here, or export GEMINI_API_KEY='your-key'
 
 # "gemini-2.5-flash-image"     - fast, good quality (start here)
 # "gemini-3-pro-image-preview" - best quality (final batch)
