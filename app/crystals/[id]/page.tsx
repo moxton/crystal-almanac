@@ -2,6 +2,10 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getCrystalById, getAllCrystalIds, getAllCrystals } from "@/app/lib/crystals";
 import type { Crystal } from "@/app/lib/crystals";
+import { getCrystalGroup } from "@/app/lib/groups";
+import { COLLECTIONS } from "@/app/lib/collections";
+import { COLOR_FAMILIES } from "@/app/lib/colors";
+import { getAllPosts, getPostContent } from "@/app/lib/blog";
 import type { Metadata } from "next";
 
 export function generateStaticParams() {
@@ -30,15 +34,17 @@ export async function generateMetadata({
 
 function HardnessBar({ hardness }: { hardness: number }) {
   return (
-    <div className="flex items-center gap-2">
-      <div className="flex-1 h-2 bg-brand-border rounded-full overflow-hidden">
-        <div
-          className="h-full rounded-full bg-gradient-to-r from-brand-accent/60 to-brand-accent"
-          style={{ width: `${(hardness / 10) * 100}%` }}
-        />
+    <Link href="/hardness" className="block group">
+      <div className="flex items-center gap-2">
+        <div className="flex-1 h-2 bg-brand-border rounded-full overflow-hidden">
+          <div
+            className="h-full rounded-full bg-gradient-to-r from-brand-accent/60 to-brand-accent"
+            style={{ width: `${(hardness / 10) * 100}%` }}
+          />
+        </div>
+        <span className="text-sm font-body text-brand-muted w-8 group-hover:text-brand-accent transition-colors">{hardness}</span>
       </div>
-      <span className="text-sm font-body text-brand-muted w-8">{hardness}</span>
-    </div>
+    </Link>
   );
 }
 
@@ -210,6 +216,105 @@ function CrystalJsonLd({ crystal }: { crystal: Crystal }) {
   );
 }
 
+// Find blog posts that mention this crystal
+function findBlogPostsForCrystal(crystalName: string): { slug: string; title: string }[] {
+  const posts = getAllPosts();
+  const results: { slug: string; title: string }[] = [];
+  const regex = new RegExp(`\\b${crystalName.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i");
+  for (const post of posts) {
+    const content = getPostContent(post.file);
+    if (regex.test(content)) {
+      results.push({ slug: post.slug, title: post.title });
+    }
+    if (results.length >= 3) break;
+  }
+  return results;
+}
+
+function ExploreMore({ crystal }: { crystal: Crystal }) {
+  const group = getCrystalGroup(crystal);
+  const collections = COLLECTIONS.filter((c) => c.crystalIds.includes(crystal.id));
+  const blogPosts = findBlogPostsForCrystal(crystal.name);
+
+  // Relevant guide pages based on crystal properties
+  const guides: { href: string; title: string; reason: string }[] = [];
+  if (crystal.hardness) guides.push({ href: "/hardness", title: "Mohs Hardness Scale", reason: `See where ${crystal.name} sits on the scale` });
+  guides.push({ href: "/care", title: "Crystal Care Guide", reason: "Water safety, sunlight, and handling tips" });
+  if (crystal.metaphysical.zodiac) guides.push({ href: "/birthstones", title: "Birthstones by Month", reason: "Traditional and modern birthstone guide" });
+
+  const hasContent = group || collections.length > 0 || blogPosts.length > 0;
+  if (!hasContent) return null;
+
+  return (
+    <section className="mt-14 pt-10 border-t border-brand-border">
+      <h2 className="font-heading text-2xl text-white mb-6">Explore More</h2>
+      <div className="space-y-3">
+        {group && (
+          <Link
+            href="/groups"
+            className="group flex items-center gap-4 bg-brand-surface border border-brand-border rounded-xl px-5 py-4 hover:border-brand-accent/40 transition-colors"
+          >
+            <div className="w-3 h-3 rounded-full shrink-0" style={{ backgroundColor: group.hex }} />
+            <div>
+              <span className="text-xs text-brand-accent font-body uppercase tracking-wider">Mineral Group</span>
+              <p className="font-heading text-sm text-white group-hover:text-brand-accent transition-colors">
+                {group.name}
+              </p>
+            </div>
+          </Link>
+        )}
+        {collections.map((col) => (
+          <Link
+            key={col.slug}
+            href={`/collections/${col.slug}`}
+            className="group flex items-center gap-4 bg-brand-surface border border-brand-border rounded-xl px-5 py-4 hover:border-brand-accent/40 transition-colors"
+          >
+            <div className="w-3 h-3 rounded-full shrink-0" style={{ backgroundColor: col.accentColor }} />
+            <div>
+              <span className="text-xs text-emerald-400 font-body uppercase tracking-wider">Collection</span>
+              <p className="font-heading text-sm text-white group-hover:text-brand-accent transition-colors">
+                {col.title}
+              </p>
+              <p className="text-brand-muted text-xs font-body mt-0.5">{col.reasons[crystal.id]}</p>
+            </div>
+          </Link>
+        ))}
+        {blogPosts.map((post) => (
+          <Link
+            key={post.slug}
+            href={`/blog/${post.slug}`}
+            className="group flex items-center gap-4 bg-brand-surface border border-brand-border rounded-xl px-5 py-4 hover:border-brand-accent/40 transition-colors"
+          >
+            <div className="w-3 h-3 rounded-full shrink-0 bg-amber-400" />
+            <div>
+              <span className="text-xs text-amber-400 font-body uppercase tracking-wider">Blog</span>
+              <p className="font-heading text-sm text-white group-hover:text-brand-accent transition-colors">
+                {post.title}
+              </p>
+            </div>
+          </Link>
+        ))}
+        {guides.slice(0, 2).map((guide) => (
+          <Link
+            key={guide.href}
+            href={guide.href}
+            className="group flex items-center gap-4 bg-brand-surface border border-brand-border rounded-xl px-5 py-4 hover:border-brand-accent/40 transition-colors"
+          >
+            <div className="w-3 h-3 rounded-full shrink-0 bg-brand-accent/60" />
+            <div>
+              <span className="text-xs text-brand-accent font-body uppercase tracking-wider">Guide</span>
+              <p className="font-heading text-sm text-white group-hover:text-brand-accent transition-colors">
+                {guide.title}
+              </p>
+              <p className="text-brand-muted text-xs font-body mt-0.5">{guide.reason}</p>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 export default async function CrystalPage({
   params,
 }: {
@@ -340,19 +445,34 @@ export default async function CrystalPage({
               {crystal.subtitle}
             </p>
 
-            {/* Color swatches */}
+            {/* Color swatches - linked to color family pages */}
             <div className="flex flex-wrap gap-2 mt-4">
-              {crystal.colors.map((color, i) => (
-                <div key={i} className="flex items-center gap-1.5">
-                  <div
-                    className="w-4 h-4 rounded-full border border-white/20"
-                    style={{ backgroundColor: crystal.colorHexes[i] }}
-                  />
-                  <span className="text-xs text-brand-muted font-body">
-                    {color}
-                  </span>
-                </div>
-              ))}
+              {crystal.colors.map((color, i) => {
+                const colorLower = color.toLowerCase();
+                const family = COLOR_FAMILIES.find((f) =>
+                  f.matchTerms.some((term) => colorLower.includes(term))
+                );
+                const inner = (
+                  <>
+                    <div
+                      className="w-4 h-4 rounded-full border border-white/20"
+                      style={{ backgroundColor: crystal.colorHexes[i] }}
+                    />
+                    <span className="text-xs text-brand-muted font-body group-hover:text-white transition-colors">
+                      {color}
+                    </span>
+                  </>
+                );
+                return family ? (
+                  <Link key={i} href={`/colors/${family.slug}`} className="flex items-center gap-1.5 group">
+                    {inner}
+                  </Link>
+                ) : (
+                  <div key={i} className="flex items-center gap-1.5">
+                    {inner}
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -375,9 +495,9 @@ export default async function CrystalPage({
               <PropertyRow label="Specific Gravity" value={crystal.specificGravity} />
             </div>
             <div className="mt-3">
-              <span className="text-brand-muted text-sm font-body">
-                Mohs Hardness
-              </span>
+              <Link href="/hardness" className="text-brand-muted text-sm font-body hover:text-brand-accent transition-colors">
+                Mohs Hardness →
+              </Link>
               <div className="mt-1.5">
                 <HardnessBar hardness={crystal.hardness} />
               </div>
@@ -608,6 +728,9 @@ export default async function CrystalPage({
             </div>
           </div>
         </div>
+
+        {/* Explore More - contextual links */}
+        <ExploreMore crystal={crystal} />
       </div>
     </>
   );
