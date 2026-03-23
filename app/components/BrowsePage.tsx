@@ -4,6 +4,8 @@ import { useState, useMemo, useEffect, useRef } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import type { Crystal } from "@/app/lib/crystals";
+import { getCrystalGroup, MINERAL_GROUPS } from "@/app/lib/groups";
+import { COLOR_FAMILIES } from "@/app/lib/colors";
 
 // ── Crystal Card (used in grid) ──────────────────────────────
 function CrystalCard({ crystal }: { crystal: Crystal }) {
@@ -289,6 +291,9 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
     return result;
   }, [crystals, search, hardnessFilter, colorFilter, metaFilter]);
 
+  const [viewTab, setViewTab] = useState<"az" | "family" | "color">("az");
+  const [expandedSections, setExpandedSections] = useState<Set<string>>(new Set());
+
   const hasAnyFilter = search || hardnessFilter || colorFilter || metaFilter;
 
   function clearAll() {
@@ -297,12 +302,75 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
     setColorFilter(null);
     setMetaFilter(null);
     setShowFullGrid(false);
+    setExpandedSections(new Set());
     window.history.replaceState({}, "", "/");
   }
+
+  // Sync viewTab from URL
+  useEffect(() => {
+    const view = searchParams.get("view");
+    if (view === "family" || view === "color") setViewTab(view);
+  }, [searchParams]);
+
+  function setViewAndUrl(tab: "az" | "family" | "color") {
+    setViewTab(tab);
+    setExpandedSections(new Set());
+    const params = new URLSearchParams(window.location.search);
+    if (tab === "az") params.delete("view");
+    else params.set("view", tab);
+    const qs = params.toString();
+    window.history.replaceState({}, "", qs ? `/?${qs}` : "/?browse=all");
+  }
+
+  function toggleSection(key: string) {
+    setExpandedSections((prev) => {
+      const next = new Set(prev);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
+  }
+
+  // Group filtered crystals by first letter for A-Z view
+  const alphabetGroups = useMemo(() => {
+    const groups: Record<string, Crystal[]> = {};
+    for (const c of filtered) {
+      const letter = c.name[0].toUpperCase();
+      if (!groups[letter]) groups[letter] = [];
+      groups[letter].push(c);
+    }
+    return groups;
+  }, [filtered]);
+
+  // Group filtered crystals by mineral family
+  const familyGroups = useMemo(() => {
+    return MINERAL_GROUPS.map((group) => ({
+      group,
+      crystals: filtered
+        .filter((c) => getCrystalGroup(c)?.slug === group.slug)
+        .sort((a, b) => a.name.localeCompare(b.name)),
+    })).filter((g) => g.crystals.length > 0);
+  }, [filtered]);
+
+  // Group filtered crystals by color family
+  const colorGroups = useMemo(() => {
+    return COLOR_FAMILIES.map((family) => ({
+      family,
+      crystals: filtered
+        .filter((c) =>
+          c.colors.some((col) =>
+            family.matchTerms.some((term) => col.toLowerCase().includes(term))
+          )
+        )
+        .sort((a, b) => a.name.localeCompare(b.name)),
+    })).filter((g) => g.crystals.length > 0);
+  }, [filtered]);
 
   // Pick a "featured" crystal deterministically by day
   const dayIndex = Math.floor(Date.now() / 86400000) % crystals.length;
   const featuredCrystal = crystals[dayIndex];
+
+  const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
   // If user has active filters or clicked "browse all," show the grid
   if (hasAnyFilter || showFullGrid) {
@@ -320,6 +388,8 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
               ← Back to Home
             </button>
           </div>
+
+          {/* Search + Filters */}
           <div className="flex flex-col sm:flex-row gap-3">
             <div className="relative flex-1">
               <svg className="absolute left-3.5 top-1/2 -translate-y-1/2 w-5 h-5 text-brand-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -342,6 +412,8 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
               {COLOR_FILTERS.map((f) => (<option key={f.label} value={f.label}>{f.label}</option>))}
             </select>
           </div>
+
+          {/* Filter status */}
           {hasAnyFilter && (
             <div className="flex items-center gap-3 mt-3">
               <span className="text-brand-muted text-sm font-body">{filtered.length} result{filtered.length !== 1 ? "s" : ""}</span>
@@ -354,16 +426,145 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
               <button onClick={clearAll} className="text-brand-accent text-sm font-body hover:underline">Clear all</button>
             </div>
           )}
-        </section>
-        <section className="max-w-6xl mx-auto px-4 pb-16">
-          {filtered.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-              {filtered.map((crystal) => (<CrystalCard key={crystal.id} crystal={crystal} />))}
+
+          {/* View Tabs */}
+          <div className="flex gap-1 mt-5 bg-brand-surface border border-brand-border rounded-lg p-1">
+            {([["az", "A-Z"], ["family", "By Family"], ["color", "By Color"]] as const).map(([key, label]) => (
+              <button
+                key={key}
+                onClick={() => setViewAndUrl(key)}
+                className={`flex-1 px-3 py-2 text-sm font-body rounded-md transition-colors ${
+                  viewTab === key
+                    ? "bg-brand-accent text-white"
+                    : "text-brand-muted hover:text-white"
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+
+          {/* Alphabet Jump Bar (A-Z tab only) */}
+          {viewTab === "az" && (
+            <div className="flex gap-0.5 mt-4 overflow-x-auto pb-1 scrollbar-none">
+              {ALPHABET.map((letter) => {
+                const has = !!alphabetGroups[letter];
+                return (
+                  <button
+                    key={letter}
+                    disabled={!has}
+                    onClick={() => {
+                      const el = document.getElementById(`letter-${letter}`);
+                      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+                    }}
+                    className={`shrink-0 w-8 h-8 rounded text-xs font-body font-medium transition-colors ${
+                      has
+                        ? "text-white hover:bg-brand-accent/20 hover:text-brand-accent"
+                        : "text-brand-border cursor-default"
+                    }`}
+                  >
+                    {letter}
+                  </button>
+                );
+              })}
             </div>
-          ) : (
+          )}
+        </section>
+
+        {/* Grid Content */}
+        <section className="max-w-6xl mx-auto px-4 pb-16">
+          {filtered.length === 0 ? (
             <div className="text-center py-16">
               <p className="text-brand-muted text-lg font-body">No crystals match your search.</p>
               <button onClick={clearAll} className="text-brand-accent mt-2 font-body hover:underline">Clear all filters</button>
+            </div>
+          ) : viewTab === "az" ? (
+            /* ── A-Z View: Alphabetical sections ── */
+            <div className="space-y-8">
+              {ALPHABET.filter((l) => alphabetGroups[l]).map((letter) => (
+                <div key={letter} id={`letter-${letter}`} className="scroll-mt-4">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="font-heading text-3xl text-brand-accent">{letter}</span>
+                    <div className="h-px flex-1 bg-brand-border" />
+                    <span className="text-brand-muted text-xs font-body">{alphabetGroups[letter].length}</span>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    {alphabetGroups[letter].map((crystal) => (
+                      <CrystalCard key={crystal.id} crystal={crystal} />
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : viewTab === "family" ? (
+            /* ── Family View: Mineral group sections ── */
+            <div className="space-y-10">
+              {familyGroups.map(({ group, crystals: groupCrystals }) => {
+                const isExpanded = expandedSections.has(group.slug);
+                const showCount = 6;
+                const visible = isExpanded ? groupCrystals : groupCrystals.slice(0, showCount);
+                const hasMore = groupCrystals.length > showCount;
+                return (
+                  <div key={group.slug} id={`family-${group.slug}`}>
+                    <div className="flex items-center gap-3 mb-1">
+                      <div className="w-3 h-3 rounded-full shrink-0" style={{ backgroundColor: group.hex }} />
+                      <h3 className="font-heading text-xl text-white">{group.name}</h3>
+                      <span className="text-brand-muted text-xs font-body">{groupCrystals.length} stone{groupCrystals.length !== 1 ? "s" : ""}</span>
+                    </div>
+                    <p className="text-brand-muted text-sm font-body mb-4 max-w-2xl line-clamp-2">
+                      {group.description.split(".").slice(0, 2).join(".")}.
+                    </p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                      {visible.map((crystal) => (
+                        <CrystalCard key={crystal.id} crystal={crystal} />
+                      ))}
+                    </div>
+                    {hasMore && (
+                      <button
+                        onClick={() => toggleSection(group.slug)}
+                        className="mt-4 text-brand-accent text-sm font-body hover:underline"
+                      >
+                        {isExpanded ? "Show less" : `Show all ${groupCrystals.length} →`}
+                      </button>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          ) : (
+            /* ── Color View: Color family sections ── */
+            <div className="space-y-10">
+              {colorGroups.map(({ family, crystals: colorCrystals }) => {
+                const isExpanded = expandedSections.has(family.slug);
+                const showCount = 6;
+                const visible = isExpanded ? colorCrystals : colorCrystals.slice(0, showCount);
+                const hasMore = colorCrystals.length > showCount;
+                return (
+                  <div key={family.slug} id={`color-${family.slug}`}>
+                    <div className="flex items-center gap-3 mb-1">
+                      <div className="w-3 h-3 rounded-full shrink-0" style={{ backgroundColor: family.hex }} />
+                      <h3 className="font-heading text-xl text-white">{family.name}</h3>
+                      <span className="text-brand-muted text-xs font-body">{colorCrystals.length} stone{colorCrystals.length !== 1 ? "s" : ""}</span>
+                    </div>
+                    <p className="text-brand-muted text-sm font-body mb-4 max-w-2xl line-clamp-2">
+                      {family.science.split(".").slice(0, 2).join(".")}.
+                    </p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                      {visible.map((crystal) => (
+                        <CrystalCard key={crystal.id} crystal={crystal} />
+                      ))}
+                    </div>
+                    {hasMore && (
+                      <button
+                        onClick={() => toggleSection(family.slug)}
+                        className="mt-4 text-brand-accent text-sm font-body hover:underline"
+                      >
+                        {isExpanded ? "Show less" : `Show all ${colorCrystals.length} →`}
+                      </button>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           )}
         </section>
