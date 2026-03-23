@@ -488,7 +488,7 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
                     <div className="h-px flex-1 bg-brand-border" />
                     <span className="text-brand-muted text-xs font-body">{alphabetGroups[letter].length}</span>
                   </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                     {alphabetGroups[letter].map((crystal) => (
                       <CrystalCard key={crystal.id} crystal={crystal} />
                     ))}
@@ -514,7 +514,7 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
                     <p className="text-brand-muted text-sm font-body mb-4 max-w-2xl line-clamp-2">
                       {group.description.split(".").slice(0, 2).join(".")}.
                     </p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                       {visible.map((crystal) => (
                         <CrystalCard key={crystal.id} crystal={crystal} />
                       ))}
@@ -549,7 +549,7 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
                     <p className="text-brand-muted text-sm font-body mb-4 max-w-2xl line-clamp-2">
                       {family.science.split(".").slice(0, 2).join(".")}.
                     </p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                       {visible.map((crystal) => (
                         <CrystalCard key={crystal.id} crystal={crystal} />
                       ))}
