@@ -587,7 +587,7 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
               Crystal <em>Almanac</em>
             </h1>
             <p className="text-brand-muted text-base md:text-lg font-body mt-3 max-w-md md:max-w-lg mx-auto md:mx-0 leading-relaxed">
-              Where geological science meets the story<br className="hidden md:inline" /> behind every stone.
+              Where geological science meets<br className="hidden md:inline" /> the story behind every stone.
             </p>
           </div>
         </div>
