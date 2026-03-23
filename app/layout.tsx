@@ -134,13 +134,16 @@ function Footer() {
               <Link href="/contact" className="text-brand-muted hover:text-white transition-colors">Contact</Link>
             </div>
             <div className="flex flex-col gap-2">
-              <span className="text-white font-medium mb-1">Guides</span>
+              <span className="text-white font-medium mb-1">Reference</span>
               <Link href="/collections" className="text-brand-muted hover:text-white transition-colors">Collections</Link>
               <Link href="/groups" className="text-brand-muted hover:text-white transition-colors">Mineral Groups</Link>
               <Link href="/colors" className="text-brand-muted hover:text-white transition-colors">By Color</Link>
               <Link href="/birthstones" className="text-brand-muted hover:text-white transition-colors">Birthstones</Link>
               <Link href="/hardness" className="text-brand-muted hover:text-white transition-colors">Hardness Scale</Link>
               <Link href="/care" className="text-brand-muted hover:text-white transition-colors">Crystal Care</Link>
+            </div>
+            <div className="flex flex-col gap-2">
+              <span className="text-white font-medium mb-1">Tools</span>
               <Link href="/beginners" className="text-brand-muted hover:text-white transition-colors">Beginners Guide</Link>
               <Link href="/identify" className="text-brand-muted hover:text-white transition-colors">Identification</Link>
               <Link href="/fakes" className="text-brand-muted hover:text-white transition-colors">Spot Fakes</Link>
@@ -160,7 +163,7 @@ function Footer() {
             reserved.
           </p>
           <span>·</span>
-          <span>v1.7</span>
+          <span>v1.8</span>
         </div>
       </div>
     </footer>
