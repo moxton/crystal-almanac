@@ -610,7 +610,7 @@ export function BrowsePage({ crystals }: { crystals: Crystal[] }) {
                 setHomeSearchOpen(false);
               }
             }}
-            className="w-full bg-brand-surface/60 border border-brand-border rounded-full pl-10 pr-4 py-2.5 text-white placeholder-brand-muted/60 font-body text-sm focus:outline-none focus:border-brand-accent/40 focus:bg-brand-surface transition-colors"
+            className="w-full bg-brand-surface/60 border border-brand-border rounded-full pl-10 pr-4 py-2.5 text-white placeholder-brand-muted/60 font-body text-base focus:outline-none focus:border-brand-accent/40 focus:bg-brand-surface transition-colors"
           />
 
           {/* Dropdown results */}
