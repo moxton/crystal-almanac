@@ -8,7 +8,7 @@
  */
 
 const KEY = "82544bec3ee3b23e4621bad0b9dca0bc";
-const HOST = "https://www.crystalalmanac.com";
+const HOST = "https://crystalalmanac.com";
 
 async function main() {
   const args = process.argv.slice(2);
