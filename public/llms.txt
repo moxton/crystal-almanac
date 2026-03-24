@@ -1,0 +1,42 @@
+# Crystal Almanac
+
+> A science-first encyclopedia of 300 crystals, minerals, stones, and rocks. Every profile includes chemical formula, crystal system, Mohs hardness, formation geology, identification tips, fake-spotting guidance, and cultural traditions.
+
+## Site Structure
+
+- Homepage: https://crystalalmanac.com
+- Crystal Profiles (300): https://crystalalmanac.com/crystals/{id}
+- Blog (31 posts): https://crystalalmanac.com/blog/{slug}
+- Collections (8): https://crystalalmanac.com/collections/{slug}
+- Color Families (8): https://crystalalmanac.com/colors/{slug}
+- Mineral Groups: https://crystalalmanac.com/groups
+- Mohs Hardness Scale: https://crystalalmanac.com/hardness
+- Birthstones: https://crystalalmanac.com/birthstones
+- Crystal Care & Safety: https://crystalalmanac.com/care
+- How to Spot Fakes: https://crystalalmanac.com/fakes
+- Water Safety Guide: https://crystalalmanac.com/water-safe
+- Crystal Identification: https://crystalalmanac.com/identify
+- Beginners Guide: https://crystalalmanac.com/beginners
+
+## What Each Crystal Profile Contains
+
+Every crystal profile includes: name, subtitle, mineral category, colors with hex codes, Mohs hardness, chemical formula (Unicode subscripts), crystal system, luster, streak, transparency, specific gravity, 3-5 localities with geological notes, 2-3 paragraph formation geology, hand-specimen identification guide, practical fake-spotting instructions, metaphysical traditions (presented as cultural history, not claims), 3 related minerals, three-tier price range, and SEO description.
+
+## Data Model
+
+Crystal profiles are structured data with these fields: id, name, subtitle, category, colors, colorHexes, hardness, chemicalFormula, crystalSystem, luster, streak, transparency, specificGravity, localities, formation, identification, howToSpotFakes, metaphysical (chakra, zodiac, element, traditions), relatedMinerals, priceRange.
+
+## Editorial Approach
+
+Crystal Almanac leads with geological science: formation conditions, chemical processes, identification techniques, and fake-spotting. Metaphysical and healing traditions are documented as cultural history, not endorsed as medical or therapeutic claims. Content is written by E.M. Larkspur, M.S. Geological Sciences.
+
+## Key Reference Pages
+
+- Mohs Hardness Scale: Complete 1-10 scale with 300+ minerals mapped to hardness values
+- Crystal Care: Water safety (never/brief/safe), sun sensitivity, toxic minerals (lead, arsenic, mercury, asbestos)
+- Birthstones: Month-by-month traditional and modern birthstones
+- Mineral Groups: 22 mineral group families with member crystals
+
+## Sitemap
+
+https://crystalalmanac.com/sitemap.xml

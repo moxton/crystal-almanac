@@ -24,9 +24,13 @@ export async function generateMetadata({
   return {
     title: `${crystal.name} - ${crystal.subtitle}`,
     description: crystal.seoDescription,
+    alternates: {
+      canonical: `https://crystalalmanac.com/crystals/${id}`,
+    },
     openGraph: {
       title: `${crystal.name} - ${crystal.subtitle} | Crystal Almanac`,
       description: crystal.seoDescription,
+      url: `https://crystalalmanac.com/crystals/${id}`,
       type: "article",
     },
   };
@@ -132,14 +136,27 @@ function CrystalJsonLd({ crystal }: { crystal: Crystal }) {
   const jsonLd = [
     {
       "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://crystalalmanac.com" },
+        { "@type": "ListItem", position: 2, name: "Crystals", item: "https://crystalalmanac.com/crystals" },
+        { "@type": "ListItem", position: 3, name: crystal.name, item: `https://crystalalmanac.com/crystals/${crystal.id}` },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
       "@type": "Article",
       name: crystal.name,
       headline: `${crystal.name} - ${crystal.subtitle}`,
       description: crystal.seoDescription,
+      image: crystal.imageUrl || `https://crystalalmanac.com/crystals/${crystal.id}.webp`,
+      datePublished: "2026-03-08",
+      dateModified: "2026-03-23",
       author: {
-        "@type": "Organization",
-        name: "Crystal Almanac",
-        url: "https://crystalalmanac.com",
+        "@type": "Person",
+        name: "E.M. Larkspur",
+        jobTitle: "Geologist & Mineralogist",
+        url: "https://crystalalmanac.com/about",
       },
       publisher: {
         "@type": "Organization",
@@ -159,13 +176,43 @@ function CrystalJsonLd({ crystal }: { crystal: Crystal }) {
     },
     {
       "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: `How can you tell if ${crystal.name} is real?`,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: crystal.howToSpotFakes.split("\n\n")[0],
+          },
+        },
+        {
+          "@type": "Question",
+          name: `How does ${crystal.name} form?`,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: crystal.formation.split("\n\n")[0],
+          },
+        },
+        {
+          "@type": "Question",
+          name: `How much does ${crystal.name} cost?`,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: crystal.priceRange,
+          },
+        },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
       "@type": "Dataset",
       name: `${crystal.name} Mineral Properties`,
       description: `Scientific data for ${crystal.name}: chemical formula, crystal system, Mohs hardness, and physical properties.`,
       url: `https://crystalalmanac.com/crystals/${crystal.id}`,
       creator: {
-        "@type": "Organization",
-        name: "Crystal Almanac",
+        "@type": "Person",
+        name: "E.M. Larkspur",
       },
       variableMeasured: [
         {
