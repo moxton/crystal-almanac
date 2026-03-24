@@ -7,7 +7,7 @@
  *   node scripts/indexnow.js /crystals/ruby   # Submit specific URL(s)
  */
 
-const KEY = "82544bec3ee3b23e4621bad0b9dca0bc";
+const KEY = "70ffdcf30875f09c2711f7b14c1b2214";
 const HOST = "https://crystalalmanac.com";
 
 async function main() {
