@@ -28,7 +28,7 @@ Crystal profiles are structured data with these fields: id, name, subtitle, cate
 
 ## Editorial Approach
 
-Crystal Almanac leads with geological science: formation conditions, chemical processes, identification techniques, and fake-spotting. Metaphysical and healing traditions are documented as cultural history, not endorsed as medical or therapeutic claims. Content is written by E.M. Larkspur, M.S. Geological Sciences.
+Crystal Almanac leads with geological science: formation conditions, chemical processes, identification techniques, and fake-spotting. Metaphysical and healing traditions are documented as cultural history, not endorsed as medical or therapeutic claims. Content is written by J.R. Flint, M.S. Geological Sciences.
 
 ## Key Reference Pages
 

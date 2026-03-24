@@ -154,7 +154,7 @@ function CrystalJsonLd({ crystal }: { crystal: Crystal }) {
       dateModified: "2026-03-23",
       author: {
         "@type": "Person",
-        name: "E.M. Larkspur",
+        name: "J.R. Flint",
         jobTitle: "Geologist & Mineralogist",
         url: "https://crystalalmanac.com/about",
       },
@@ -212,7 +212,7 @@ function CrystalJsonLd({ crystal }: { crystal: Crystal }) {
       url: `https://crystalalmanac.com/crystals/${crystal.id}`,
       creator: {
         "@type": "Person",
-        name: "E.M. Larkspur",
+        name: "J.R. Flint",
       },
       variableMeasured: [
         {
