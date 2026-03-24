@@ -26,8 +26,8 @@ async function main() {
 
   console.log(`Submitting ${urls.length} URLs to IndexNow...`);
 
-  // IndexNow accepts max 10,000 URLs per request
-  const batchSize = 10000;
+  // IndexNow works best with smaller batches
+  const batchSize = 100;
   for (let i = 0; i < urls.length; i += batchSize) {
     const batch = urls.slice(i, i + batchSize);
     const r = await fetch("https://api.indexnow.org/indexnow", {
@@ -41,6 +41,7 @@ async function main() {
       }),
     });
     console.log(`Batch ${Math.floor(i / batchSize) + 1}: ${r.status} ${r.ok ? "OK" : "FAILED"}`);
+    if (i + batchSize < urls.length) await new Promise((r) => setTimeout(r, 5000));
   }
 
   console.log("Done.");
